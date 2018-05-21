@@ -11,9 +11,9 @@ local SiteName2 = SiteName:gsub('"', '&quot;')
 local menuW = 185
 local clH1border = '#dadade'
 local clBorder = '#ccc'
-local clSel0 = '#77a7e3'
-local clSel = RGB(clSel0)
---local clH4grad = '235, 237, 248'
+local clSel = '#77a7e3'
+local clSelX = RGB(clSel)
+-- local clH4grad = '235, 237, 248'
 ]
 <style type="text/css">
 	body {
@@ -76,8 +76,8 @@ local clSel = RGB(clSel0)
 		padding: 1px 4px;
 	}
 	#content {
-		padding: 0 17px 15px;
-		margin: 5px 5px 5px $menuW!px;
+		padding: 0 17px 25px;
+		margin: 5px 5px 20px $menuW!px;
 		border: 1px solid $clBorder;
 		background-color: white;
 	}
@@ -127,16 +127,16 @@ local clSel = RGB(clSel0)
 		display: inline-block;
 		font-size: 1.5em;
 		text-decoration: none;
-		border: 1px solid #-[(MixCl(MixCl(clSel0, 0, 0.8), 0xffffff, 0.3))];
+		border: 1px solid #-[(MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3))];
 		border-radius: 4px;
 		padding: 4px 6px;
 		background-color: white;
 	}
 	#menu-lang span {
-		border-color: rgba($clSel, 1);
+		border-color: $clSel;
 	}
 	#menu-lang a:hover {
-		border-color: rgba($clSel, 0.7);
+		border-color: rgba($clSelX, 0.7);
 		/* background-color: #f8f8f8; */
 	}
 	#menu-lang a:not(:active) {
@@ -177,7 +177,7 @@ local clSel = RGB(clSel0)
 		margin-bottom: 7px;
 	}
 	.menu-sel {
-		background-color: rgba($clSel, 1);
+		background-color: $clSel;
 		/* border: 1px solid ; */
 		color: white;
 		font-weight: bold;
@@ -193,30 +193,28 @@ local clSel = RGB(clSel0)
 	#menu-contact div {
 		margin: 0 10px 0 8px;
 	}
-	#menu-contact a:not(:hover):not(:active) {
-		text-decoration: none;
-		border-bottom: 1px solid rgba(78, 93, 191, 0.5);
-	}
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	#menubar {
-		position: static;
+		position: relative;
+		top: 0;
+		left: 0;
+		left: calc(50% - $menuW!px + 3px);
 	}
 	#menu-lang, #menu-contact {
 		position: absolute;
 		width: -[(menuW-20)]px;
 		left: -[(menuW-10)]px;
-		top: -8px;
 	}
 	#menu-lang {
-		top: 13px;
+		top: 3px;
 		margin-top: 0;
 	}
 	#menu-contact {
-		top: 53px;
-		top: calc(2em + 21.5px);
+		top: 43px;
+		top: calc(2em + 12px);
 	}
 	h1 {
 		margin: 3px -9px 15px;
@@ -225,7 +223,7 @@ local clSel = RGB(clSel0)
 		margin-left: -2px;
 	}
 	#content {
-		padding: 0 10px 15px;
+		padding: 0 10px 25px;
 		margin: 5px 0 0;
 		width: auto;
 		border-left: none;
@@ -234,6 +232,9 @@ local clSel = RGB(clSel0)
 	}
 }
 @media (max-width: -[(menuW*2)]px) {
+	#menubar {
+		left: calc(50% - $menuW!px/2 + 1px);
+	}
 	#menu-lang, #menu-contact {
 		position: static;
 	}	
