@@ -93,20 +93,12 @@ local clSel = RGB(clSel0)
 		/* background: linear-gradient(110deg, #ffffff 65%, rgba(-[(clH4grad)], 0.5) 75%, #ffffff 85%); */
 	}
 	#site-name {
-		position: relative;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
+		float: right;
 		font-size: 80%;
-		color: gray;
-	}
-	#site-name span {
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 100px;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		color: #eee;
+		text-shadow: 1px 1px $clBorder;
+		margin-right: 5px;
+		vertical-align: top;
 	}
 	#menubar {
 		position: absolute;
@@ -284,7 +276,7 @@ local clSel = RGB(clSel0)
 		</div>
 	</div>
 	<div id="content">
-		<h1>-[(Title)]<span id="site-name"><span title="-[(SiteName2)]">&nbsp;&middot; -[(SiteName)]</span></span></h1>
+		<h1>-[(Title)]<span id="site-name" title="-[(SiteName2)]">GrayFace</span><div style="clear:both"></div></h1>
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)
 				]<h3 id="toc-header">en|Contents|ru|Содержание|</h3>
