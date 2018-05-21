@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 -[local SiteName = 'en|Sergey "GrayFace" Rozhenko Homepage|ru|Сайт Сергея "GrayFace" Роженко|'
-local SiteName2 = SiteName:gsub('"', '&quot;')
 ]
 <html lang="en|en|ru|ru|">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>-[(Title.." &ndash; "..SiteName)]</title>
+	<title>$[Title] &ndash; $[SiteName]</title>
 -[
 local menuW = 185
 local clH1border = '#dadade'
 local clBorder = '#ccc'
 local clSel = '#77a7e3'
 local clSelX = RGB(clSel)
+local clMenuBorder = '#'..MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3)
 -- local clH4grad = '235, 237, 248'
 ]
-<style type="text/css">
+<style>
 	body {
 		font-family: Arial;
-		font-size: 90%;
+		font-size: 85%;
 		padding: 0 0;
-		margin: 0 0;
+		margin: 0 auto;
+		position: relative;
+		max-width: 1200px;
 		background-color: #e2e4f0;
 
 		background:
-			repeating-linear-gradient(45deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.14) 1px, rgba(0,0,0,0) 11px),
-			repeating-linear-gradient(105deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.14) 1px, rgba(0,0,0,0) 11px),
-			repeating-linear-gradient(165deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.18) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(45deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.12) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.12) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.15) 1px, rgba(0,0,0,0) 11px),
 			linear-gradient(190deg, #d7d9ec 0%, #dfe1f4 60%, #cfd1e2 100%);
 		background-attachment: fixed;
 	}
@@ -77,7 +79,7 @@ local clSelX = RGB(clSel)
 	}
 	#content {
 		padding: 0 17px 25px;
-		margin: 5px 5px 20px $menuW!px;
+		margin: 5px 5px 20px $[menuW]px;
 		border: 1px solid $clBorder;
 		background-color: white;
 	}
@@ -113,7 +115,7 @@ local clSelX = RGB(clSel)
 	}
 	#menubar {
 		position: absolute;
-		width: $menuW!px;
+		width: $[menuW]px;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -127,7 +129,7 @@ local clSelX = RGB(clSel)
 		display: inline-block;
 		font-size: 1.5em;
 		text-decoration: none;
-		border: 1px solid #-[(MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3))];
+		border: 1px solid $clMenuBorder;
 		border-radius: 4px;
 		padding: 4px 6px;
 		background-color: white;
@@ -201,7 +203,7 @@ local clSelX = RGB(clSel)
 		position: relative;
 		top: 0;
 		left: 0;
-		left: calc(50% - $menuW!px + 3px);
+		left: calc(50% - $[menuW]px + 3px);
 	}
 	#menu-lang, #menu-contact {
 		position: absolute;
@@ -233,7 +235,7 @@ local clSelX = RGB(clSel)
 }
 @media (max-width: -[(menuW*2)]px) {
 	#menubar {
-		left: calc(50% - $menuW!px/2 + 1px);
+		left: calc(50% - $[menuW]px/2 + 1px);
 	}
 	#menu-lang, #menu-contact {
 		position: static;
@@ -260,7 +262,7 @@ local clSelX = RGB(clSel)
 				local _, t = Include(id..".htm")
 				local href = GetPath(id, PageId)
 				if id ~= PageId then
-					]<a href="-[(href)]/index.html">-[
+					]<a href="$[href]/index.html">-[
 				else
 					]<span class="menu-sel">-[
 				end]-[(t.MenuTitle)
@@ -293,7 +295,7 @@ local clSelX = RGB(clSel)
 		</div>
 	</div>
 	<div id="content">
-		<h1>-[(Title)]<span id="site-name" title="-[(SiteName2)]">GrayFace</span><div style="clear:both"></div></h1>
+		<h1>$[Title]<span id="site-name" title=$[SiteName]>GrayFace</span><div style="clear:both"></div></h1>
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)
 				]<h3 id="toc-header">en|Contents|ru|Содержание|</h3>

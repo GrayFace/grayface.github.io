@@ -68,4 +68,16 @@ function P.RGB(r, g, b)
 	return ("%s, %s, %s"):format(r:And(0xFF0000)/0x10000, r:And(0xFF00)/0x100, r:And(0xFF))
 end
 
+function P.Escape(s, cont)
+	s = s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
+	if not cont or cont == '"' then
+		s = s:gsub('"', "&quot;")
+	end
+	if not cont or cont == "'" then
+		s = s:gsub("'", "&#39;")
+	end
+	-- this doesn't cover all contexts: https://wonko.com/post/html-escaping
+	return s
+end
+
 return P
