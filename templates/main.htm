@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+-[local SiteName = 'en|Sergey "GrayFace" Rozhenko Homepage|ru|Сайт Сергея "GrayFace" Роженко|'
+local SiteName2 = SiteName:gsub('"', '&quot;')
+]
+<html lang="en|en|ru|ru|">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>-[(Title.." &ndash; "..SiteName)]</title>
+-[
+local menuW = 185
+local clH1border = '#dadade'
+local clBorder = '#ccc'
+local clSel0 = '#77a7e3'
+local clSel = RGB(clSel0)
+--local clH4grad = '235, 237, 248'
+]
+<style type="text/css">
+	body {
+		font-family: Arial;
+		font-size: 90%;
+		padding: 0 0;
+		margin: 0 0;
+		background-color: #e2e4f0;
+
+		background:
+			repeating-linear-gradient(45deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.14) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.14) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.18) 1px, rgba(0,0,0,0) 11px),
+			linear-gradient(190deg, #d7d9ec 0%, #dfe1f4 60%, #cfd1e2 100%);
+		background-attachment: fixed;
+	}
+	ul {
+		margin: 3px 0px;
+		padding-left: 20px;
+	}
+	#toc {
+		padding-bottom: 1.3em;
+	}
+	#toc ul {
+		/* list-style-type: none; */
+		color: #dbdef2;
+		margin-top: 0px;
+		margin-bottom: 3px;
+		padding-left: 20px;
+		/* text-indent: -10px; */
+	}
+	#toc li ul {
+		color: #a6aedf;
+	}
+	#toc ul a {
+		text-decoration: none;
+	}
+	#toc ul a:link {
+		color: #3e4a99;
+	}
+	a:link:hover, a:visited:hover {
+		background-color: #E8E8FF;
+		border-radius: 4px;
+	}
+	a:link {
+		color: #4e5dbf;
+	}
+	a:link:active, a:visited:active {
+		color: #d00;
+	}
+	#menu-lang a:visited {
+		color: #513ba5;
+	}
+	table {
+		border-collapse: collapse;
+		margin: 5px 0;
+	}
+	table, table td, table th {
+		border: 1px solid #999;
+		padding: 1px 4px;
+	}
+	#content {
+		padding: 0 17px 15px;
+		margin: 5px 5px 5px $menuW!px;
+		border: 1px solid $clBorder;
+		background-color: white;
+	}
+	#toc-header {
+		margin-bottom: 10px;
+	}
+	h1 {
+		padding: 10px 10px 10px 20px;
+		margin: 3px -16px 15px;
+		border-bottom: 3px double $clH1border;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		/* background: linear-gradient(110deg, #ffffff 65%, rgba(-[(clH4grad)], 0.5) 75%, #ffffff 85%); */
+	}
+	#site-name {
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 80%;
+		color: gray;
+	}
+	#site-name span {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 100px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	#menubar {
+		position: absolute;
+		width: $menuW!px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	}
+	#menu-lang {
+		text-align: center;
+		margin: 19px 10px 11px;
+		margin: calc(0.5em + 11px) 10px 11px;
+	}
+	#menu-lang a, #menu-lang span {
+		display: inline-block;
+		font-size: 1.5em;
+		text-decoration: none;
+		border: 1px solid #-[(MixCl(MixCl(clSel0, 0, 0.8), 0xffffff, 0.3))];
+		border-radius: 4px;
+		padding: 4px 6px;
+		background-color: white;
+	}
+	#menu-lang span {
+		border-color: rgba($clSel, 1);
+	}
+	#menu-lang a:hover {
+		border-color: rgba($clSel, 0.7);
+		/* background-color: #f8f8f8; */
+	}
+	#menu-lang a:not(:active) {
+		border-right-width: 2px;
+		border-bottom-width: 2px;
+		padding-bottom: 3px;
+		padding-right: 5px;
+	}
+	.menu, #menu-lang * {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.15);
+	}
+	#menu-lang a {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.25);
+	}
+	.menu {
+		background-color: white;
+		margin: 10px 10px;
+		padding-bottom: 5px;
+		border: 1px solid $clBorder;
+	}
+	#menu a, .menu-sel {
+		display: block;
+		text-decoration: none;
+		padding: 1.5px 5px;
+		margin: 0 5px;
+		border-radius: 2px;
+	}
+	.menu h4 {
+		margin: 2px 2px 5px 2px;
+		padding: 4px 8px;
+		border-bottom: 1px solid $clH1border;
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, rgba(-[(clH4grad)], 0.0) 75%, #ffffff 90%); */
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, #ffffff 70%, rgba(-[(clH4grad)], 0.4) 100%); */
+	}
+	#menu-contact h4 {
+		margin-bottom: 7px;
+	}
+	.menu-sel {
+		background-color: rgba($clSel, 1);
+		/* border: 1px solid ; */
+		color: white;
+		font-weight: bold;
+	}
+	.submenu {
+		padding-left: 11px;
+	}
+	.menu-icon {
+		height: 18px;
+		vertical-align:middle;
+		margin: 1px 0 3px 0;
+	}
+	#menu-contact div {
+		margin: 0 10px 0 8px;
+	}
+	#menu-contact a {
+		text-decoration: none;
+		border-bottom: 1px solid rgba(78, 93, 191, 0.5);
+	}
+	#menu-contact a:visited {
+		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
+	}
+@media (max-width: 600px) {
+	#menubar {
+		position: static;
+	}
+	#menu-lang, #menu-contact {
+		position: absolute;
+		width: -[(menuW-20)]px;
+		left: -[(menuW-10)]px;
+		top: -8px;
+	}
+	#menu-lang {
+		top: 13px;
+		margin-top: 0;
+	}
+	#menu-contact {
+		top: 53px;
+		top: calc(2em + 21.5px);
+	}
+	h1 {
+		margin: 3px -9px 15px;
+	}
+	#content {
+		padding: 0 10px 15px;
+		margin: 5px 0 0;
+		width: auto;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+}
+@media (max-width: -[(menuW*2)]px) {
+	#menu-lang, #menu-contact {
+		position: static;
+	}	
+	#menu-lang {
+		margin-top: 11px;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="menubar">
+		<div id="menu-lang">
+			en|<span title="English">EN</span>
+			<a title="Русский" href="-[(GetPath('ru^'..PageId, PageId))]">RU</a>|
+			ru|<a title="English" href="-[(GetPath(PageId, 'ru^'..PageId))]">EN</a>
+			<span title="Русский">RU</span>|				
+		</div>
+		<div id="menu" class="menu">
+			<h4>Menu</h4>
+			-[local menu = {"", "mm", "wog", "heroes", "ks", "elma"}
+			
+			local function MenuItem(id)
+				local _, t = Include(id..".htm")
+				local href = GetPath(id, PageId)
+				if id ~= PageId then
+					]<a href="-[(href)]/index.html">-[
+				else
+					]<span class="menu-sel">-[
+				end]-[(t.MenuTitle)
+				CloseTag(id ~= PageId and "a" or "span")
+				local id2 = PageId:match("^"..id.."%^[^%^]+")
+				if id2 then
+					]<div class="submenu">-[
+					MenuItem(id2)
+					]</div>-[
+				end
+			end
+			for i = 1, #menu do
+				MenuItem(menu[i])
+			end]
+		</div>
+		<div id="menu-contact" class="menu">
+			<h4>Contacts</h4>
+			<div>
+				-[(Include"svg/mail.svg")]
+				sergroj at mail ru
+			</div>
+			<div>
+				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1">-[(Include"svg/twitter.svg")]</a>
+				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
+			</div>
+			<div>
+				<a href="https://vk.com/grayface" tabindex="-1">-[(Include"svg/vk.svg")]</a>
+				<a href="https://vk.com/grayface">vk.com/grayface</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>-[(Title)]<span id="site-name"><span title="-[(SiteName2)]">&nbsp;&middot; -[(SiteName)]</span></span></h1>
+			-[if NeedTOC then
+				Content, TOC = require"HelpTOC".TOC(Content, true)
+				]<h3 id="toc-header">en|Contents|ru|Содержание|</h3>
+				<div id="toc">-[(TOC)]</div>
+			-[end]
+			-[(Content)]
+	</div>
+</body>
+</html>
