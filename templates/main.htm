@@ -14,6 +14,13 @@ local clSel = '#77a7e3'
 local clSelX = RGB(clSel)
 local clMenuBorder = '#'..MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3)
 -- local clH4grad = '235, 237, 248'
+local MainGradCl2 = '#004000'
+local MainGradMix = 0.09
+local clMainGrad1 = '#'..MixCl(MainGradCl2, '#d7d9ec', MainGradMix)
+local clMainGrad2 = '#'..MixCl(MainGradCl2, '#dfe1f4', MainGradMix)
+local clMainGrad3 = '#'..MixCl(MainGradCl2, '#cfd1e2', MainGradMix)
+local MainGradLight = 0.09
+local MainGradLight2 = MainGradLight*1.25
 ]
 <style>
 	body {
@@ -26,10 +33,10 @@ local clMenuBorder = '#'..MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3)
 		background-color: #e2e4f0;
 
 		background:
-			repeating-linear-gradient(45deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.12) 1px, rgba(0,0,0,0) 11px),
-			repeating-linear-gradient(105deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.12) 1px, rgba(0,0,0,0) 11px),
-			repeating-linear-gradient(165deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255,0.15) 1px, rgba(0,0,0,0) 11px),
-			linear-gradient(190deg, #d7d9ec 0%, #dfe1f4 60%, #cfd1e2 100%);
+			repeating-linear-gradient(45deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255, $MainGradLight) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255, $MainGradLight) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255, $MainGradLight2) 1px, rgba(0,0,0,0) 11px),
+			linear-gradient(190deg, $clMainGrad1 0%, $clMainGrad2 60%, $clMainGrad3 100%);
 		background-attachment: fixed;
 	}
 	ul {
@@ -122,15 +129,15 @@ local clMenuBorder = '#'..MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3)
 	}
 	#menu-lang {
 		text-align: center;
-		margin: 19px 10px 11px;
-		margin: calc(0.5em + 11px) 10px 11px;
+		margin: 13.8px 10px 11px;
+		margin: calc(0.5em + 7px) 10px 11px;
 	}
-	#menu-lang a, #menu-lang span {
+	#menu-lang * {
 		display: inline-block;
 		font-size: 1.5em;
 		text-decoration: none;
 		border: 1px solid $clMenuBorder;
-		border-radius: 4px;
+		border-radius: 5px;
 		padding: 4px 6px;
 		background-color: white;
 	}
@@ -152,6 +159,9 @@ local clMenuBorder = '#'..MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3)
 	}
 	#menu-lang a {
 		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.25);
+	}
+	#content {
+		box-shadow: 0 1px 0 0 rgba(0,0,0,0.15);
 	}
 	.menu {
 		background-color: white;
@@ -211,12 +221,12 @@ local clMenuBorder = '#'..MixCl(MixCl(clSel, 0, 0.8), 0xffffff, 0.3)
 		left: -[(menuW-10)]px;
 	}
 	#menu-lang {
-		top: 3px;
+		top: 1px;
 		margin-top: 0;
 	}
 	#menu-contact {
-		top: 43px;
-		top: calc(2em + 12px);
+		top: 35.2px;
+		top: calc(2em + 8px);
 	}
 	h1 {
 		margin: 3px -9px 15px;
