@@ -85,17 +85,20 @@ local MainGradLight2 = MainGradLight*1.25
 		padding: 1px 4px;
 	}
 	#content {
-		padding: 0 17px 25px;
+		padding: 0;
 		margin: 5px 5px 20px $[menuW]px;
 		border: 1px solid $clBorder;
 		background-color: white;
+	}
+	#content2 {
+		padding: 0 19px 25px 22px;
 	}
 	#toc-header {
 		margin-bottom: 10px;
 	}
 	h1 {
 		padding: 10px 10px 10px 20px;
-		margin: 3px -16px 15px;
+		margin: 3px 1px 15px;
 		border-bottom: 3px double $clH1border;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -129,15 +132,15 @@ local MainGradLight2 = MainGradLight*1.25
 	}
 	#menu-lang {
 		text-align: center;
-		margin: 13.8px 10px 11px;
-		margin: calc(0.5em + 7px) 10px 11px;
+		margin: 13.08px 10px 11.72px;
+		margin: calc(0.3em + 9px) 10px calc(0.2em + 9px);
 	}
 	#menu-lang * {
 		display: inline-block;
 		font-size: 1.5em;
 		text-decoration: none;
 		border: 1px solid $clMenuBorder;
-		border-radius: 5px;
+		border-radius: 3px;
 		padding: 4px 6px;
 		background-color: white;
 	}
@@ -208,6 +211,11 @@ local MainGradLight2 = MainGradLight*1.25
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
+@media (max-width: 900px) {
+	#content2 {
+		padding: 0 15px 25px 17px;
+	}
+}
 @media (max-width: 700px) {
 	#menubar {
 		position: relative;
@@ -228,14 +236,13 @@ local MainGradLight2 = MainGradLight*1.25
 		top: 35.2px;
 		top: calc(2em + 8px);
 	}
-	h1 {
-		margin: 3px -9px 15px;
-	}
 	h2, h3:not(#toc-header) {
 		margin-left: -2px;
 	}
+	#content2 {
+		padding: 0 13px 25px 15px;
+	}
 	#content {
-		padding: 0 10px 25px;
 		margin: 5px 0 0;
 		width: auto;
 		border-left: none;
@@ -254,6 +261,11 @@ local MainGradLight2 = MainGradLight*1.25
 		margin-top: 11px;
 	}
 }
+@media (max-width: 500px) {
+	#content2 {
+		padding: 0 8px 25px 10px;
+	}
+}
 </style>
 </head>
 <body>
@@ -266,8 +278,9 @@ local MainGradLight2 = MainGradLight*1.25
 		</div>
 		<div id="menu" class="menu">
 			<h4>Menu</h4>
-			-[local menu = {"", "mm", "wog", "heroes", "ks", "elma"}
-			
+-[
+			local menu = {"", "mm", "wog", "heroes", "ks", "elma"}
+
 			local function MenuItem(id)
 				local _, t = Include(id..".htm")
 				local href = GetPath(id, PageId)
@@ -286,7 +299,8 @@ local MainGradLight2 = MainGradLight*1.25
 			end
 			for i = 1, #menu do
 				MenuItem(menu[i])
-			end]
+			end
+]
 		</div>
 		<div id="menu-contact" class="menu">
 			<h4>Contacts</h4>
@@ -306,12 +320,14 @@ local MainGradLight2 = MainGradLight*1.25
 	</div>
 	<div id="content">
 		<h1>$[Title]<span id="site-name" title=$[SiteName]>GrayFace</span><div style="clear:both"></div></h1>
+			<div id="content2">
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)
 				]<h3 id="toc-header">en|Contents|ru|Содержание|</h3>
 				<div id="toc">-[(TOC)]</div>
 			-[end]
 			-[(Content)]
+			</div>
 	</div>
 </body>
 </html>
