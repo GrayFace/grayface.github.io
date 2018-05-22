@@ -1,0 +1,68 @@
+return {
+	{
+		Date = "2018 and so on",
+		Title = [[GrayFace MM6 Patch v2.0]],
+		TitleRU = [[Какой-то релиз]],
+		Desc = "[+] Hello.\n[-] Bye.",
+		DescRU = "[+] Привет.\n[-] Пока.",
+		Files = {
+			"https://sites.google.com/site/sergroj/mm/MM6patch.rar",
+			"https://sites.google.com/site/sergroj/mm/MM6patchBuka.rar?attredirects=0",
+			"https://sites.google.com/site/sergroj/mm/MM6patchLoc.rar?attredirects=0",
+			"https://sites.google.com/site/sergroj/mm/MM6PatchReadMe.TXT?attredirects=0",
+			"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0",
+		},
+		FileInfo = {
+			"Patch for English version of the game",
+			"Patch for Russian localization by Buka",
+			"Patch for other localized versions of the game",
+			"Full list of changes",
+			"Patch source code",
+		},
+		FileInfoRU = {
+			"Патч для английской версии игры",
+			"Патч для русской версии от Буки",
+			"Патч для других переводов",
+			"Полный список изменений",
+			"Исходники",
+		},
+	},
+	{
+		Date = "2019",
+		Title = [[Some release]],
+		TitleRU = [[Какой-то релиз]],
+		Desc = "[+] Hello.\n[-] Bye.",
+		DescRU = "[+] Привет.\n[-] Пока.",
+		Files = {
+			"https://sites.google.com/site/sergroj/mm/MM6patch.rar",
+		},
+	},
+	{
+		Date = "2018 and so on",
+		Title = [[GrayFace MM6 Patch v2.0]],
+		TitleRU = [[Какой-то релиз]],
+		Desc = "[+] Hello.\n[-] Bye.",
+		DescRU = "[+] Привет.\n[-] Пока.",
+		Files = {
+			"https://sites.google.com/site/sergroj/mm/MM6patch.rar",
+			"https://sites.google.com/site/sergroj/mm/MM6patchBuka.rar?attredirects=0",
+			"https://sites.google.com/site/sergroj/mm/MM6patchLoc.rar?attredirects=0",
+			"https://sites.google.com/site/sergroj/mm/MM6PatchReadMe.TXT?attredirects=0",
+			"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0",
+		},
+		FileInfo = {
+			"Patch for English version of the game",
+			"Patch for Russian localization by Buka",
+			"Patch for other localized versions of the game",
+			"Full list of changes",
+			"Patch source code",
+		},
+		FileInfoRU = {
+			"Патч для английской версии игры",
+			"Патч для русской версии от Буки",
+			"Патч для других переводов",
+			"Полный список изменений",
+			"Исходники",
+		},
+	},
+}

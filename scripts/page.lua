@@ -7,8 +7,9 @@ local P = {
 
 function P.Include(fname, t)
 	t = t or P.new()
-	t.PageId = t.PageId or path.setext(fname, '')
-	return include(fname, t), t
+	local id = path.setext(fname, '')
+	t.PageId = t.PageId or id == "index" and "" or id
+	return include(fname == ".htm" and "index.htm" or fname, t), t
 end
 
 function P.SetTitle(short, long)
@@ -69,7 +70,10 @@ function P.RGB(r, g, b)
 end
 
 function P.Escape(s, cont)
-	s = s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
+	s = s:gsub("&", "&amp;")
+	if not cont or cont == 'main' then
+		s = s:gsub("<", "&lt;"):gsub(">", "&gt;"):gsub("\r?\n", "<br>")
+	end
 	if not cont or cont == '"' then
 		s = s:gsub('"', "&quot;")
 	end
