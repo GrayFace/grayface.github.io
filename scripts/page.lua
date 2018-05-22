@@ -84,4 +84,59 @@ function P.Escape(s, cont)
 	return s
 end
 
+-- incomplete on purpose, so that ecs(esc(s)) = esc(s) if it's an URL with %20 etc.
+function P.EscapeURL(s, cont)
+	return P.Escape(s, cont):gsub('[%z- ]', |s| ('%%%x'):format(s:byte()))
+end
+
+local function LinkData(name)
+	return require'dataLinks'[name]
+end
+
+function P.GetLink(name)
+	return P.EscapeURL(LinkData(name)[1], '"')
+end
+
+local function GetVersion(fname)
+	local function N(s)
+		local a, b = s:byte(1, 2)
+		return a + b*256
+	end
+	local s, v, mul = io.LoadString(fname), nil, nil
+	s:gsub(UTF16p("VS_VERSION_INFO")..".?.?..\xBD\4\xEF\xFE....(..)(..)(..)(..)",
+		(|v2, v1, v4, v3| v, mul = N(v1).."."..N(v2).."."..N(v3).."."..N(v4), v)
+	)
+	if not v or mul then
+		return GetFileVersion(fname)
+	end
+	return v:gsub("%.0$", ""):gsub("%.0$", "")
+end
+
+function P.LinkVer(name)
+	local t = LinkData(name)
+	if t.VersionFile then
+		return "v"..GetVersion(t.VersionFile)
+	end
+	return "v"..t.OriginalVersion
+end
+
+function P.Link(name, title)
+	local t = LinkData(name)
+	local q = P.ResTable
+	title = title or t.Name
+	if title:match("##") then
+		title = title:gsub("##", P.LinkVer(name))
+	end
+	title = title..(t.NameSuffix or "")
+	q[#q+1] = ('<a href="%s">%s</a>'):format(P.EscapeURL(t[1], '"'), P.Escape(title, 'main'))
+end
+
+function P.HeaderLink(name, title, tag)
+	tag = tag or 'h3'
+	local q = P.ResTable
+	q[#q+1] = '<'..tag..'>'
+	P.Link(name, title)
+	q[#q+1] = '</'..tag..'>'
+end
+
 return P

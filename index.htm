@@ -41,7 +41,7 @@
 <div>
 -[
 package.loaded.releases = nil
-local releases = require"releases"
+local releases = require"dataNews"
 
 function item(t)
 	local a = |s| ("en|%s|ru|%s|"):format(t[s], t[s.."RU"] or t[s])
@@ -63,7 +63,7 @@ function item(t)
 		]<div class="files">-[
 		for i = 1, #files do
 			local url = files[i]
-			local name = url:match("[^?]*"):match(".*/([^/]+)/?$")
+			--local name = url:match("[^?]*"):match(".*/([^/]+)/?$")
 			local en = info[i] or "Download"
 			local ru = infoRU[i] or info[i] or "Скачать"
 			local desc = ("en|%s|ru|%s|"):format(en, ru)
