@@ -68,10 +68,12 @@ r.attribStr = {
 }
 r.attrib1 = {
 	{"%$%[", call = "qattrib1", gsub = "(Escape(("},
+	{import = "check"},
 	{import = "str1"},
 }
 r.attrib2 = {
 	{"%$%[", call = "qattrib2", gsub = "(Escape(("},
+	{import = "check"},
 	{import = "str2"},
 }
 r.attribVal = {
