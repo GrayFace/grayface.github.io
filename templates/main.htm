@@ -19,8 +19,9 @@ local MainGradMix = 0.09
 local clMainGrad1 = '#'..MixCl(MainGradCl2, '#d7d9ec', MainGradMix)
 local clMainGrad2 = '#'..MixCl(MainGradCl2, '#dfe1f4', MainGradMix)
 local clMainGrad3 = '#'..MixCl(MainGradCl2, '#cfd1e2', MainGradMix)
-local MainGradLight = 0.09
+local MainGradLight = 0.08
 local MainGradLight2 = MainGradLight*1.25
+local MainGradDark = MainGradLight*0.1
 ]
 <style>
 	body {
@@ -33,9 +34,9 @@ local MainGradLight2 = MainGradLight*1.25
 		background-color: #e2e4f0;
 
 		background:
-			repeating-linear-gradient(45deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255, $MainGradLight) 1px, rgba(0,0,0,0) 11px),
-			repeating-linear-gradient(105deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255, $MainGradLight) 1px, rgba(0,0,0,0) 11px),
-			repeating-linear-gradient(165deg, rgba(0,0,0,0) 0px, rgba(240, 242, 255, $MainGradLight2) 1px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(45deg, rgba(0,0,0,$MainGradDark) 2px, rgba(240, 242, 255, $MainGradLight) 3.5px, rgba(0,0,0,0) 9px, rgba(0,0,0,0) 13px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,$MainGradDark) 0px, rgba(240, 242, 255, $MainGradLight) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,$MainGradDark) 0px, rgba(240, 242, 255, $MainGradLight2) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
 			linear-gradient(190deg, $clMainGrad1 0%, $clMainGrad2 60%, $clMainGrad3 100%);
 		background-attachment: fixed;
 	}
