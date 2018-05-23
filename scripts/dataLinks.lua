@@ -278,4 +278,10 @@ return {
 	HEROES2Wnew_Ida = {
 		"https://www.dropbox.com/s/nkrdmaxmz5glefo/HEROES2Wnew_Ida.rar?dl=1"
 	},
+	mm7resmod = {
+		"https://www.dropbox.com/s/gkvid0g7glemv84/mm7resmod-GrayFace.rar?dl=1"
+	},
+	mm8resmod = {
+		"https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod-GrayFace.rar?dl=1"
+	},
 }
