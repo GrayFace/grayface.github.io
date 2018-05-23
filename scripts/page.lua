@@ -39,7 +39,7 @@ end
 function P.GetPath(s, base)
 	base = base or P.PageId
 	if s:match("img[/%^]") then
-		return "en|"..DoGetPath(s, base).."ru|"..DoGetPath(s, 'ru^'..base)
+		return "en|"..DoGetPath(s, base).."|ru|"..DoGetPath(s, 'ru^'..base).."|"
 	end
 	return DoGetPath(s, base)
 end
