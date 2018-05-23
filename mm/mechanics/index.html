@@ -301,6 +301,11 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 				<div id="toc"><ul><li><a href="#Statistics">Statistics</a></li><li><a href="#Chance-To-Hit-and-Resistances">Chance To Hit and Resistances</a></li><li><a href="#Recovery-Time">Recovery Time</a></li><li><a href="#Dual-Weapons">Dual Weapons</a></li><li><a href="#Other">Other</a></li></ul></div>
 			
 			
+<style>
+	.math {
+		color: #049;
+	}
+</style>
 <div>
 <div>
 <a name="Statistics" ></a><h2>Statistics</h2>
@@ -445,7 +450,7 @@ Intellect</b> and/or <b>Personality</b> effects are multiplied by mana multiplie
 Accuracy</b> effect is added to Attack and Shoot.<br>
 <b>
 Endurance</b> effect is multiplied by HP multiplier of the class and added to HP. It also decreases time of recovery from enemy attacks. 
-The formula is <span style="color:rgb(7,55,99)">20 &ndash; EnduranceEffect</span>. So, with Endurance of 350 and more the recovery is immediate.<br>
+The formula is <span class="math">20 &ndash; EnduranceEffect</span>. So, with Endurance of 350 and more the recovery is immediate.<br>
 <b>
 Speed</b> effect is added to Armor Class and subtracted from recovery time.<br>
 <b>
@@ -456,37 +461,37 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 <b>Experience<br>
 <br>
 </b>N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that.<br>
-Here's the formula for total experience for N'th level: <span style="color:rgb(7,55,99)">TotalExp(N) = N*(N+1)*500</span><br>
+Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
 <br>
 <a name="Chance-To-Hit-and-Resistances" ></a><h2>Chance To Hit and Resistances</h2>
-Chance that your character will hit monster is <span style="color:rgb(7,55,99)">(15 + PlayerAttack*2)/(</span><span style="color:rgb(7,55,99)">30 + PlayerAttack*2 + </span><span style="color:rgb(7,55,99)">MonsterArmorClass)</span>.<br>
-Chance that monster will hit your character in a physic attack is <span style="color:rgb(7,55,99)">(5 + MonsterLevel*2)/(10 + </span><span style="color:rgb(7,55,99)">MonsterLevel*2 + PlayerArmorClass</span><span style="color:rgb(7,55,99)">)</span>.<br>
+Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass)</span>.<br>
+Chance that monster will hit your character in a physic attack is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
 <br>
-Chance of spells like Paralyze or Slow to succeed is <span style="color:rgb(7,55,99)">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span style="color:rgb(7,55,99)">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6.<br>
+Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6.<br>
  <br>
-Chance that enemy will to do some bad thing to you (poison, break item and so on) is <span style="color:rgb(7,55,99)">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing:<br>
-<div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span style="color:rgb(7,55,99)">EnduranceEffect</span><br>
+Chance that enemy will to do some bad thing to you (poison, break item and so on) is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing:<br>
+<div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect</span><br>
 </div>
-<div style="margin-left:40px">Curse:&nbsp; <span style="color:rgb(7,55,99)">PersonalityEffect</span><br>
-DrainSP, Dispel Magic:&nbsp; <span style="color:rgb(7,55,99)">(PersonalityEffect + IntellectEffect)/2</span><br>
-Insane, Paralyze, Afraid:&nbsp; <span style="color:rgb(7,55,99)">MindResistance</span><br>
-Stone:&nbsp; <span style="color:rgb(7,55,99)">EarthResistance</span><br>
-Poison, Dead, Eradicated:&nbsp; <span style="color:rgb(7,55,99)">BodyResistance</span><br>
-Break or Steal Item:&nbsp; <span style="color:rgb(7,55,99)">Item strength</span><br>
+<div style="margin-left:40px">Curse:&nbsp; <span class="math">PersonalityEffect</span><br>
+DrainSP, Dispel Magic:&nbsp; <span class="math">(PersonalityEffect + IntellectEffect)/2</span><br>
+Insane, Paralyze, Afraid:&nbsp; <span class="math">MindResistance</span><br>
+Stone:&nbsp; <span class="math">EarthResistance</span><br>
+Poison, Dead, Eradicated:&nbsp; <span class="math">BodyResistance</span><br>
+Break or Steal Item:&nbsp; <span class="math">Item strength</span><br>
 </div>
-<div style="margin-left:40px"><span style="color:rgb(7,55,99)"><br>
+<div style="margin-left:40px"><span class="math"><br>
 </span></div>
 In MM6 it's different:</div>
-<div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Afraid:&nbsp;&nbsp;<span style="color:rgb(7,55,99)">EnduranceEffect</span><br>
+<div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Afraid:&nbsp;&nbsp;<span class="math">EnduranceEffect</span><br>
 </div>
-<div style="margin-left:40px">Curse:&nbsp;&nbsp;<span style="color:rgb(7,55,99)">PersonalityEffect</span><br>
-Insane:&nbsp;&nbsp;<span style="color:rgb(7,55,99)">IntellectEffect</span><br>
-Poison:&nbsp;&nbsp;<span style="color:rgb(7,55,99)">PoisonResistance</span></div>
-<div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span style="color:rgb(7,55,99)">MagicResistance</span></div>
-<div style="margin-left:40px">Break or Steal Item:&nbsp;&nbsp;<span style="color:rgb(7,55,99)">Item strength</span></div>
+<div style="margin-left:40px">Curse:&nbsp;&nbsp;<span class="math">PersonalityEffect</span><br>
+Insane:&nbsp;&nbsp;<span class="math">IntellectEffect</span><br>
+Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
+<div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span class="math">MagicResistance</span></div>
+<div style="margin-left:40px">Break or Steal Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>
 <div><br>
 <p><b>Resistances</b></p>
-When your character gets hit by magic, there is <span style="color:rgb(7,55,99)">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
+When your character gets hit by magic, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
 Dice is dropped. If you are unlucky, you get full 100% damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
@@ -532,7 +537,7 @@ To put it simple, I've calculated average damage for some values of resistance (
 </tbody>
 </table>
 <br>
-When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span style="color:rgb(7,55,99)">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage.<br>
+When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage.<br>
 <br>
 <a name="Recovery-Time" ></a><h2>Recovery Time</h2>
 Recovery time is delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 (except for blasters and bows).<br>
@@ -697,7 +702,7 @@ it doesn't work on today's computers. In my MM6 patch it works and increases rec
 <p><b>Vampiric weapons<br>
 </b></p>
 Vampiric weapons add 1/5 of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP.</div>
-<div>In MM8 you get <font color="#073763">min(damage/5, LeftHP/5)</font> where <font color="#073763">LeftHP</font> is amount of HP monster has after you hit him.<br>
+<div>In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him.<br>
 <br>
 </div>
 <div>
