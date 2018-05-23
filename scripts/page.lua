@@ -107,27 +107,8 @@ function P.GetLink(name)
 	return P.EscapeURL(lnk, '"')
 end
 
-local function GetVersion(fname)
-	local function N(s)
-		local a, b = s:byte(1, 2)
-		return a + b*256
-	end
-	local s, v, mul = io.LoadString(fname), nil, nil
-	s:gsub(UTF16p("VS_VERSION_INFO")..".?.?..\xBD\4\xEF\xFE....(..)(..)(..)(..)",
-		(|v2, v1, v4, v3| v, mul = N(v1).."."..N(v2).."."..N(v3).."."..N(v4), v)
-	)
-	if not v or mul then
-		return GetFileVersion(fname)
-	end
-	return v:gsub("%.0$", ""):gsub("%.0$", "")
-end
-
 function P.LinkVer(name)
-	local t = LinkData(name)
-	if t.VersionFile then
-		return "v"..GetVersion(t.VersionFile)
-	end
-	return "v"..t.OriginalVersion
+	return "v"..LinkData(name).Version
 end
 
 function P.Link(name, title)

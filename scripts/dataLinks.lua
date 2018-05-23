@@ -4,7 +4,7 @@ return {
 	},
 	AggPack = {
 		"https://sites.google.com/site/sergroj/heroes/AggPack.rar?attredirects=0",
-		OriginalVersion = "1.3"
+		Version = "1.3"
 	},
 	AggPackH1Demo = {
 		"https://sites.google.com/site/sergroj/heroes/AggPackH1Demo.rar?attredirects=0"
@@ -14,14 +14,14 @@ return {
 	},
 	DefPreview = {
 		"https://sites.google.com/site/sergroj/wog/DefPreview.rar?attredirects=0",
-		OriginalVersion = "1.2"
+		Version = "1.2"
 	},
 	DefPreviewSrc = {
 		"https://sites.google.com/site/sergroj/wog/DefPreviewSrc.rar?attredirects=0&d=1"
 	},
 	DefTool2 = {
 		"https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0",
-		OriginalVersion = "2.1.1"
+		Version = "2.1.1"
 	},
 	["GrayFaceLgr.png"] = {
 		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr.png"
@@ -49,7 +49,7 @@ return {
 	},
 	H3DefTool = {
 		"https://sites.google.com/site/sergroj/wog/H3DefTool.rar?attredirects=0",
-		OriginalVersion = "3.4.1"
+		Version = "3.4.1"
 	},
 	H3DefToolSrc = {
 		"https://sites.google.com/site/sergroj/wog/H3DefToolSrc.rar?attredirects=0&d=1"
@@ -65,7 +65,7 @@ return {
 	},
 	IcnPack = {
 		"https://sites.google.com/site/sergroj/heroes/IcnPack.rar?attredirects=0",
-		OriginalVersion = "1.3.1"
+		Version = "1.3.1"
 	},
 	IcnPackSrc = {
 		"https://sites.google.com/site/sergroj/heroes/IcnPackSrc.rar?attredirects=0"
@@ -78,21 +78,21 @@ return {
 	},
 	LodCompare = {
 		"https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0",
-		OriginalVersion = "1.3.1"
+		Version = "1.3.1"
 	},
 	LodCompareSrc = {
 		"https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&d=1"
 	},
 	LodMerge = {
 		"https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0",
-		OriginalVersion = "1.1.1"
+		Version = "1.1.1"
 	},
 	LodMergeSrc = {
 		"https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&d=1"
 	},
 	MM6Controls = {
 		"https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0",
-		OriginalVersion = "1.1"
+		Version = "1.1"
 	},
 	MM6MouseLook = {
 		"https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0"
@@ -153,7 +153,7 @@ return {
 	},
 	MMArchive = {
 		"https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0",
-		OriginalVersion = "1.2"
+		Version = "1.2"
 	},
 	MMArchiveSrc = {
 		"https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&d=1"
@@ -184,11 +184,11 @@ return {
 	},
 	RSBinkPlayer = {
 		"https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0",
-		OriginalVersion = "1.2.5"
+		Version = "1.2.5"
 	},
 	SimpleLod = {
 		"https://sites.google.com/site/sergroj/wog/SimpleLod.rar?attredirects=0",
-		OriginalVersion = "1.3"
+		Version = "1.3"
 	},
 	SimpleLodSrc = {
 		"https://sites.google.com/site/sergroj/wog/SimpleLodSrc.rar?attredirects=0&d=1"
@@ -210,14 +210,14 @@ return {
 	},
 	TilPack = {
 		"https://sites.google.com/site/sergroj/heroes/TilPack.rar?attredirects=0",
-		OriginalVersion = "1.3"
+		Version = "1.3"
 	},
 	TilPackSrc = {
 		"https://sites.google.com/site/sergroj/heroes/TilPackSrc.rar?attredirects=0"
 	},
 	TxtEdit = {
 		"https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0",
-		OriginalVersion = "1.3"
+		Version = "1.3"
 	},
 	TxtEditSrc = {
 		"https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&d=1"
@@ -246,14 +246,14 @@ return {
 	},
 	MMEditor = {
 		"https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1",
-		OriginalVersion = "2.1"
+		Version = "2.1"
 	},
 	MMEditorDlgSrc = {
 		"https://www.dropbox.com/s/johei6ngdgn7asm/MMEditorDlgSrc.rar?dl=1"
 	},
 	MMExtension = {
 		"https://www.dropbox.com/s/qohxt8ijjh74mcw/MMExtensionTmp.rar?dl=1",
-		OriginalVersion = "2.1.1"
+		Version = "2.1.1"
 	},
 	MMExtensionSrc = {
 		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
