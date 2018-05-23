@@ -271,5 +271,11 @@ return {
 	},
 	["mm6hd_before.png"] = {
 		"https://www.dropbox.com/s/ip52o2pdiwu51y7/mm6hd_before.png?dl=1"
-	}
+	},
+	HEROES2W_Ida = {
+		"https://www.dropbox.com/s/znrrq6mowgtlklx/HEROES2W_Ida.rar?dl=1"
+	},
+	HEROES2Wnew_Ida = {
+		"https://www.dropbox.com/s/nkrdmaxmz5glefo/HEROES2Wnew_Ida.rar?dl=1"
+	},
 }
