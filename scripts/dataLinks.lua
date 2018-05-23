@@ -242,7 +242,7 @@ return {
 		NameSuffix = " (en|Sorry, I need to release a bugfix first|ru|Пока недоступен, нужно собрать версию с исправленным багом|)"
 	},
 	["MM8ChooseParty.png"] = {
-		"https://www.dropbox.com/s/2trqbyzfplgbuxs/MM8ChooseParty.png?dl=0"
+		"img/MM8ChooseParty.png"
 	},
 	MMEditor = {
 		"https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1",
@@ -267,10 +267,10 @@ return {
 		NameSuffix = " (en|Sorry, I need to upload new version of MM6 patch first|ru|Пока недоступен, нужно залить новую версию патча для MM6|)"
 	},
 	["mm6hd_after.png"] = {
-		"https://www.dropbox.com/s/lmuib9uvupqwup2/mm6hd_after.png?dl=0"
+		"img/mm6hd_after.png"
 	},
 	["mm6hd_before.png"] = {
-		"https://www.dropbox.com/s/ip52o2pdiwu51y7/mm6hd_before.png?dl=0"
+		"img/mm6hd_before.png"
 	},
 	HEROES2W_Ida = {
 		"https://www.dropbox.com/s/znrrq6mowgtlklx/HEROES2W_Ida.rar?dl=1"
