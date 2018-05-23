@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Might and Magic &ndash; Сайт Сергея "GrayFace" Роженко</title>
+
+<style>
+	body {
+		font-family: Arial;
+		font-size: 85%;
+		padding: 0 0;
+		margin: 0 auto;
+		position: relative;
+		max-width: 1200px;
+		background-color: #e2e4f0;
+
+		background:
+			repeating-linear-gradient(45deg, rgba(0,0,0,0.008) 2px, rgba(240, 242, 255, 0.08) 3.5px, rgba(0,0,0,0) 9px, rgba(0,0,0,0) 13px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,0.008) 0px, rgba(240, 242, 255, 0.08) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,0.008) 0px, rgba(240, 242, 255, 0.1) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			linear-gradient(190deg, #c3cbd7 0%, #cad2de 60%, #bcc3ce 100%);
+		background-attachment: fixed;
+	}
+	ul {
+		margin: 3px 0px;
+		padding-left: 20px;
+	}
+	#toc {
+		padding-bottom: 1.3em;
+	}
+	#toc ul {
+		/* list-style-type: none; */
+		color: #d4d7eb;
+		margin-top: 0px;
+		margin-bottom: 3px;
+		padding-left: 20px;
+		/* text-indent: -10px; */
+	}
+	#toc li ul {
+		color: #a6aedf;
+	}
+	#toc ul a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	#toc ul a:link {
+		color: #3e4a99;
+	}
+	a:link:hover, a:visited:hover {
+		background-color: #E8E8FF;
+		border-radius: 4px;
+	}
+	a:link {
+		color: #4e5dbf;
+	}
+	a:link:active, a:visited:active {
+		color: #d00;
+	}
+	#menu-lang a:visited {
+		color: #513ba5;
+	}
+	table {
+		border-collapse: collapse;
+		margin: 5px 0;
+	}
+	table, table td, table th {
+		border: 1px solid #999;
+		padding: 1px 4px;
+	}
+	#content {
+		padding: 0;
+		margin: 5px 5px 20px 185px;
+		border: 1px solid #ccc;
+		background-color: white;
+	}
+	#content2 {
+		padding: 0 19px 25px 22px;
+	}
+	#toc-header {
+		margin-bottom: 10px;
+	}
+	h1 {
+		padding: 10px 10px 10px 20px;
+		margin: 3px 1px 15px;
+		border-bottom: 3px double #dadade;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		/* background: linear-gradient(110deg, #ffffff 65%, rgba(-[(clH4grad)], 0.5) 75%, #ffffff 85%); */
+	}
+	h2, h3:not(#toc-header) {
+		display: table;
+		padding: 3px 8px;
+		border-radius: 10px;
+		border: 1px solid rgba(0,0,0,0.25);
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.4);
+		margin-left: -4px;
+	}
+	h3 a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	#content h4 {
+		margin-top: 2em;
+		margin-bottom: 0.6em;
+	}
+	img {
+		max-width: 100%;
+		max-height: 100vh;
+	}
+	#site-name {
+		float: right;
+		font-size: 80%;
+		color: #eee;
+		text-shadow: 1px 1px #ccc;
+		margin-right: 5px;
+		vertical-align: top;
+	}
+	#menubar {
+		position: absolute;
+		width: 185px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	}
+	#menu-lang {
+		text-align: center;
+		margin: 13.08px 10px 11.72px;
+		margin: calc(0.3em + 9px) 10px calc(0.2em + 9px);
+	}
+	#menu-lang * {
+		display: inline-block;
+		font-size: 1.5em;
+		text-decoration: none;
+		border: 1px solid #cfdae9;
+		border-radius: 3px;
+		padding: 4px 6px;
+		background-color: white;
+	}
+	#menu-lang span {
+		border-color: #77a7e3;
+	}
+	#menu-lang a:hover {
+		border-color: rgba(119, 167, 227, 0.7);
+		/* background-color: #f8f8f8; */
+	}
+	#menu-lang a:not(:active) {
+		border-right-width: 2px;
+		border-bottom-width: 2px;
+		padding-bottom: 3px;
+		padding-right: 5px;
+	}
+	.menu, #menu-lang * {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.15);
+	}
+	#menu-lang a {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.25);
+	}
+	#content {
+		box-shadow: 0 1px 0 0 rgba(0,0,0,0.15);
+	}
+	.menu {
+		background-color: white;
+		margin: 10px 10px;
+		padding-bottom: 5px;
+		border: 1px solid #ccc;
+	}
+	#menu a, .menu-sel {
+		display: block;
+		padding: 1.5px 5px;
+		margin: 0 5px;
+		border-radius: 2px;
+	}
+	#menu a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	.menu h4 {
+		margin: 2px 2px 5px 2px;
+		padding: 4px 8px;
+		border-bottom: 1px solid #dadade;
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, rgba(-[(clH4grad)], 0.0) 75%, #ffffff 90%); */
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, #ffffff 70%, rgba(-[(clH4grad)], 0.4) 100%); */
+	}
+	#menu-contact h4 {
+		margin-bottom: 7px;
+	}
+	.menu-sel {
+		background-color: #77a7e3;
+		/* border: 1px solid ; */
+		color: white;
+		font-weight: bold;
+	}
+	.submenu {
+		padding-left: 11px;
+	}
+	.menu-icon {
+		height: 18px;
+		vertical-align:middle;
+		margin: 1px 0 3px 0;
+	}
+	#menu-contact div {
+		margin: 0 10px 0 8px;
+	}
+	#menu-contact a:visited:not(:hover):not(:active) {
+		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
+	}
+@media (max-width: 900px) {
+	#content2 {
+		padding: 0 15px 25px 17px;
+	}
+}
+@media (max-width: 700px) {
+	#menubar {
+		position: relative;
+		top: 0;
+		left: 0;
+		left: calc(50% - 185px + 3px);
+	}
+	#menu-lang, #menu-contact {
+		position: absolute;
+		width: 165px;
+		left: 175px;
+	}
+	#menu-lang {
+		top: 1px;
+		margin-top: 0;
+	}
+	#menu-contact {
+		top: 35.2px;
+		top: calc(2em + 8px);
+	}
+	h2, h3:not(#toc-header) {
+		margin-left: -2px;
+	}
+	#content2 {
+		padding: 0 13px 25px 15px;
+	}
+	#content {
+		margin: 5px 0 0;
+		width: auto;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+}
+@media (max-width: 370px) {
+	#menubar {
+		left: calc(50% - 185px/2 + 1px);
+	}
+	#menu-lang, #menu-contact {
+		position: static;
+	}	
+	#menu-lang {
+		margin-top: 11px;
+	}
+}
+@media (max-width: 500px) {
+	#content2 {
+		padding: 0 8px 25px 10px;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="menubar">
+		<div id="menu-lang">
+			
+			<a title="English" href="../../mm">EN</a>
+			<span title="Русский">RU</span>				
+		</div>
+		<div id="menu" class="menu">
+			<h4>Menu</h4>
+<a href="..">Новости</a><span class="menu-sel">Might and Magic</span><a href="../wog">Heroes 3.5 WoG</a><a href="../heroes">Heroes 1 и 2</a><a href="../ks">Knytt Stories</a><a href="../elma">Elastomania</a>
+		</div>
+		<div id="menu-contact" class="menu">
+			<h4>Contacts</h4>
+			<div>
+				<span title="Почта" alt="Email"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon" style="background-color: gray"><g><path fill="#FFFFFF" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g></svg></span>
+				sergroj at mail ru
+			</div>
+			<div>
+				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" alt="Twitter"><svg viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon"><g><rect fill="#55ACEE" width="48" height="48"></rect><path fill="#FFFFFF" d="M40,14.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C33.8,11.8,32,11,30.2,11c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8v0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C10.9,36,14.4,37,18.1,37c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C38,16.6,39.1,15.4,40,14.1z"></path></g></svg></a>
+				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
+			</div>
+			<div>
+				<a href="https://vk.com/grayface" tabindex="-1" title="ВКонтакте" alt="ВКонтакте"><svg viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon"><g><rect fill="#42678E" width="48" height="48"></rect><path fill="#FFFFFF" d="M34.6,33.7h-0.2c-1.7-0.3-2.9-1.5-3.9-2.6c-0.6-0.6-1.4-2.1-2.5-1.9c-1.5,0.2-0.7,2.7-1.4,3.8
+c-0.5,0.9-2.6,0.7-4.1,0.6c-4.6-0.5-6.9-2.9-9-5.5c-2.2-2.8-3.9-5.7-5.5-9C7.7,18,7,16.9,7,15.6c0.7-0.6,2-0.4,3.2-0.4
+c1,0,2.7-0.2,3.4,0.2c0.5,0.2,0.9,1.4,1.3,2.2c0.8,1.8,1.6,3.1,2.6,4.5c0.4,0.6,1.1,1.8,1.9,1.7c0.8-0.2,0.8-2,0.9-3.2
+c0-1.4,0-3.1-0.4-3.8c-0.4-0.7-1.1-0.7-1.8-1.1c0.6-1.2,2.2-1.3,4.1-1.3c1.6,0,3.8-0.2,4.5,0.9c0.6,1.1,0.2,3,0.2,4.4
+c0,1.6-0.3,3.3,0.8,4c0.9-0.1,1.3-0.9,1.8-1.6c1.1-1.4,1.8-2.7,2.6-4.5c0.3-0.8,0.7-2.1,1.4-2.3c1-0.4,2.5-0.1,3.9-0.1
+c1.2,0,3.2-0.3,3.6,0.5c0.3,0.7-0.6,2.3-0.9,2.8c-1.1,1.7-2.1,2.8-3.3,4.4c-0.5,0.6-1.4,1.6-1.4,2.5c0,0.7,0.8,1.3,1.4,1.8
+c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"></path>
+</g></svg></a>
+				<a href="https://vk.com/grayface">vk.com/grayface</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Might and Magic<span id="site-name" title="Сайт Сергея &quot;GrayFace&quot; Роженко">GrayFace</span><div style="clear:both"></div></h1>
+			<div id="content2">
+			<h3 id="toc-header">Содержание</h3>
+				<div id="toc"><ul><li><a href="#GrayFace-MM6-Patch">GrayFace MM6 Patch v2.0</a><ul><li><a href="#MM6-Controls">MM6 Controls v1.1</a></li></ul></li><li><a href="#GrayFace-MM7-Patch">GrayFace MM7 Patch v2.0</a></li><li><a href="#GrayFace-MM8-Patch">GrayFace MM8 Patch v2.0</a></li><li><a href="#Skill-Teachers-Patch-for-MM8">Список учителей умений для MM8</a></li><li><a href="#MM8-Choose-Party-(Sorry,-I-need-to-release-a-bugfix-first)">MM8 Choose Party (Пока недоступен, нужно собрать версию с исправленным багом)</a></li><li><a href="#MM6-Upscaled-Textures-(Sorry,-I-need-to-upload-new-version-of-MM6-patch-first)">Текстуры повышенного разрешения для MM6 (Пока недоступен, нужно залить новую версию патча для MM6)</a></li><li><a href="#Game-Mechanics">Игровая механика</a></li><li><a href="#MMExtension-v2.1.1-+-MMEditor">MMExtension v2.1.1 + MMEditor v2.1</a></li><li><a href="#MMArchive">MMArchive v1.2</a></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#Links">Ссылки</a><ul><li><a href="#The-Chaos-Conspiracy-mod-for-MM6">The Chaos Conspiracy mod for MM6</a></li><li><a href="#MM7Rev4Mod">MM7Rev4Mod</a></li><li><a href="#Maestro-Mod-for-MM7">Maestro Mod for MM7</a></li><li><a href="#Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine">Объединение Might and Magic 6, 7 и 8 на основе движка MM8</a></li><li><a href="#High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2">Поддержка высокого разрешения с использованием dgVoodoo 2</a></li><li><a href="#Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-and-Resolution-Mod-for-MM8">Resolution Mod for MM6, Resolution Mod for MM7 и Resolution Mod for MM8</a></li><li><a href="#Modding-Tools">Утилиты для моддинга</a></li><li><a href="#Sites">Сайты</a></li></ul></li></ul></div>
+			
+			
+<a name="GrayFace-MM6-Patch" ></a><h3>GrayFace MM6 Patch v2.0</h3>
+GrayFace MM6 Patch 
+- это неофициальный патч для MM6. Он включает в себя патчи Мока и Ангела, правит много багов, добавляет быстрые сохранения, настройку клавишь, ускорение игры, управление мышью и т.д. В том числе исправляет проблемы, связанные с запуском игры на новых компьютерах или операционных системах. Должен запускаться на новых версиях Windows без каких-либо проблем (и без установки совместимости с Win 9x).<br>
+
+<a href="https://sites.google.com/site/sergroj/mm/MM6PatchReadMe_rus.TXT?attredirects=0">Полный список изменений</a>
+<br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM6patch.rar?attredirects=0">Патч для английской версии игры</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li>
+<a href="https://sites.google.com/site/sergroj/mm/MM6patchBuka.rar?attredirects=0">Патч для русской версии от Буки</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchLoc.rar?attredirects=0">Патч для других переводов</a><br>
+
+Не включает в себя изменения текстовых файлов из официальных патчей 1.1 и 1.2. Поэтому, для пираток в файле global.txt из icons.lod придется вручную поменять "MT" на "%s выстрелил в %s и нанес %d повреждений".<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0">Исходники</a><br>
+Delphi 2006.</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0">Настройки клавиш для управления мышью</a><br>
+Установки, которые я использую для управления мышью.</li></ul>
+<a name="MM6-Controls" ></a><h4><a href="https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0">MM6 Controls v1.1</a></h4>
+MM6 Controls - это утилита для настройки клавиш в патче для MM6. Она меняет секцию [Controls] в mm6.ini. Также показывает код нажатой клавиши, который потом можно использовать для настройки клавиш, добавленных в патчах.<br>
+<br>
+<br>
+<a name="GrayFace-MM7-Patch" ></a><h3>GrayFace MM7 Patch v2.0</h3>
+GrayFace MM7 Patch 
+- это неофициальный патч для MM7. Включает патчи Мока и Black Phantom'а, правит много багов, добавляет быстрые сохранения, ускорение игры, управление мышью и т.д. Должен запускаться на новых версиях Windows без каких-либо проблем (и без установки совместимости с Win 9x).<br>
+
+<a href="https://sites.google.com/site/sergroj/mm/MM7PatchReadMe_rus.TXT?attredirects=0">Полный список изменений</a>
+<br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM7patch.rar?attredirects=0">Патч для английской версии игры</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li>
+<a href="https://sites.google.com/site/sergroj/mm/MM7patchBuka.rar?attredirects=0">Патч для русской версии от Буки</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchLoc.rar?attredirects=0">Патч для других языков</a><br>
+
+Не включает в себя изменения текстовых файлов из официального патча 1.1.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0">Исходники</a><br>
+Delphi 2006. Для компилляции требуются <a href="http://www.clootie.ru/delphi/download_dx92.html">заголовочные файлы DirectX</a>.</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7MouseLook.rar?attredirects=0">Настройки клавишь для управления мышью</a><br>
+Установки, которые я использую для управления мышью.</li></ul>
+<br>
+<br>
+<a name="GrayFace-MM8-Patch" ></a><h3>GrayFace MM8 Patch v2.0</h3>
+GrayFace MM8 Patch 
+
+- это неофициальный патч для MM8. Включает патч Мока, правит много багов, добавляет быстрые сохранения, ускорение
+игры, управление мышью и т.д. Должен запускаться на новых версиях Windows без каких-либо проблем (и без установки совместимости с Win 9x).<br>
+
+<a href="https://sites.google.com/site/sergroj/mm/MM8PatchReadMe_rus.TXT?attredirects=0">Полный список изменений</a>
+<br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM8patch.rar?attredirects=0">Патч для любой версии игры</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0">Исходники</a><br>
+Delphi 2006. Для компилляции требуются <a href="http://www.clootie.ru/delphi/download_dx92.html">заголовочные файлы DirectX</a>.</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0">Настройки клавишь для управления мышью</a><br>
+Установки, которые я использую для управления мышью.</li></ul>
+<br>
+<br>
+<a name="Skill-Teachers-Patch-for-MM8" ></a><h3>Список учителей умений для MM8</h3>
+Этот патч делает список учителей умений в Авто заметках удобным. Если у Вас установлен GrayFace MM8 Patch, просто распакуйте архив в папку с игрой. Если не установлен, добавьте autonotes.txt из архива в EnglishT.lod с помощью MMArchive.<br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8.rar?attredirects=0">Английская версия</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_ru.rar?attredirects=0">Русская версия (автор &ndash; SVShu)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_pl.rar?attredirects=0">Польская версия (автор &ndash; majaczek)</a><br>
+<br>
+<br>
+<a name="MM8-Choose-Party-(Sorry,-I-need-to-release-a-bugfix-first)" ></a><h3><a href="../404">MM8 Choose Party (Пока недоступен, нужно собрать версию с исправленным багом)</a></h3>
+Эти скрипты позволяют выбирать команду при старте игры. Можно выбирать команду любого размера, а также включать в неё драконов. Включает в себя MMExtension. <a href="https://www.dropbox.com/s/2trqbyzfplgbuxs/MM8ChooseParty.png?dl=0">Скриншот</a><br>
+<br>
+<br>
+<a name="MM6-Upscaled-Textures-(Sorry,-I-need-to-upload-new-version-of-MM6-patch-first)" ></a><h3><a href="../404">Текстуры повышенного разрешения для MM6 (Пока недоступен, нужно залить новую версию патча для MM6)</a></h3>
+Увеличенные в 2 раза спрайты и текстуры MM6 и скрипт, чтобы всё это работало. Требует <a href="ext">MMExtension</a>. Скиншоты: <a href="https://www.dropbox.com/s/ip52o2pdiwu51y7/mm6hd_before.png?dl=0">до</a>, <a href="https://www.dropbox.com/s/lmuib9uvupqwup2/mm6hd_after.png?dl=0">после</a><br>
+<br>
+<br>
+<a name="Game-Mechanics" ></a><h3><a href="mechanics">Игровая механика</a></h3>
+
+Здесь описаны некоторые неочевидные аспекты игровой механики Might and Magic.<br>
+<br>
+<br>
+<a name="MMExtension-v2.1.1-+-MMEditor" ></a><h3><a href="ext">MMExtension v2.1.1 + MMEditor v2.1</a></h3>
+MMExtension - это мощное расширение MM6-8 для моддинга, с полноценным редактором уровней. Оно 
+
+использует скрипты на Lua, позволяет вызывать все команды внутреннего 
+языка скриптов M&amp;M (команды <b>evt</b>) и позволяет делать многое 
+другое. Также, после первого запуска в папке <b>Data\Tables</b> создаются таблицы, в 
+которых можно менять, например, параметры и доступные умения классов.<br>
+<br>
+<br>
+<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0">MMArchive v1.2</a></h3>
+Универсальный редактор архивов M&amp;M и Heroes 3. Поддерживает все типы архивов, кроме *.hwl. <a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0">LodCompare v1.3.1</a></h3>
+Устарел, т.к. включён в MMArchive. Сравнивает 2 архива lod/vid/snd и показывает список измененных
+файлов.
+Позволяет создать новый архив, содержащий только эти файлы. Это более эффективный способ распространения модов: распространять только  архив с измененными файлами, как свой LOD, загружаемый моим патчем, или добавлять его к архиву пользователя с помощью LodMerge. 
+<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0">LodMerge v1.1.1</a></h3>
+
+Позволяет соединить 2 архива  lod/vid/snd. 
+<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0">Txt Edit v1.3</a></h3>
+Редактор текстовых таблиц Heroes 3 и M&amp;M. 
+<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0">RSBinkPlayer v1.2.5</a></h3>
+Просмотрщик файлов .bik и .smk. Умеет просматривать геройские .bik-файлы.<br>
+<br>
+<br>
+<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0">Fnt Editor</a></h3>
+Старая программа для редактирования шрифтов Heroes 3 и M&amp;M.<br>
+<br>
+<br>
+<a name="Links" ></a><h3>Ссылки</h3>
+
+<a name="The-Chaos-Conspiracy-mod-for-MM6" ></a><h4><a href="http://www.mediafire.com/my%20files/bdjs">The Chaos Conspiracy mod for MM6</a></h4>
+The Chaos Conspiracy (TCC) - это огромный мод для MM6, состоящий из 2 частей. В нем новые история, монстры и даже внешние локации (в части 2). Авторы -
+BDJ, Vladimir-Maestro, Jeff и Hodge Podge. Я тоже принял небольшое участие.<br>
+<a name="MM7Rev4Mod" ></a><h4><a href="http://www.mediafire.com/my%20files/bdjs">MM7Rev4Mod</a></h4>
+MM7Rev4Mod - это большой мод для MM7, созданный до TCC. Автор &ndash; BDJ. Pascal aka Asterix15 &ndash; автор измененной графики предметов.<br>
+
+<a name="Maestro-Mod-for-MM7" ></a><h4><a href="http://mmgames.ru/index.php?option=com_content&amp;view=article&amp;id=95&amp;Itemid=191&amp;lang=en">Maestro Mod for MM7</a></h4>
+Основан на Rev4 Mod. Изменен баланс, графика и немного квесты.<br>
+
+<a name="Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16657">Объединение Might and Magic 6, 7 и 8 на основе движка MM8</a></h4>
+TODO: add description
+
+<a name="High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16658">Поддержка высокого разрешения с использованием dgVoodoo 2</a></h4>
+TODO: add description
+
+<a name="Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-and-Resolution-Mod-for-MM8" ></a><h4><a href="https://sites.google.com/site/angelddeath/#TOC-Might-Magic-6-resolution-mod">Resolution Mod for MM6</a>, <a href="https://www.dropbox.com/s/gkvid0g7glemv84/mm7resmod%2dGrayFace.rar?dl=1">Resolution Mod for MM7</a> и <a href="https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod%2dGrayFace.rar?dl=1">Resolution Mod for MM8</a></h4>
+Моды Angel Death'а, которые растягивают окно игры до заданного размера в оконном режиме.<br>
+Чтобы использовать мод для MM6 вместе с моим патчем, создейте в папке игры подпапку ExeMods и положите туда файл DLL.<br>
+Я изменил мод для MM7 для лучшей работы с моим патчем и создал на его основе мод для MM8. Просто запускайте их из папки с игрой.
+
+<br>
+<a name="Modding-Tools" ></a><h4>Утилиты для моддинга</h4>
+Классичексие редакторы для M&amp;M &ndash; это <a href="http://sourceforge.net/projects/mm8leveleditor/files/MM8LevelEditor/">mm8leveleditor</a> и <a href="http://shrines.rpgclassics.com/pc/mm7/Extras/MM7Edit.zip">MM7View</a>. С помощью <a href="../../angelddeath/#TOC-Might-Magic-6-8-Map-Viewer">MM Map Viewer</a> вы можете смотреть карты M&amp;M и свойства всех их элементов.<br>
+<br>
+<a name="Sites" ></a><h4>Сайты</h4>
+Наиболее интересные английские сайты по M&amp;M &ndash; это <a href="http://www.celestialheavens.com/">Celestial Heavens</a> и <a href="http://telp.org/">telp.org</a> (учтите, что на telp не стоит постить ссылки &ndash; в половине случаев это приводит к бану от спам-фильтра). На <a href="http://www.celestialheavens.com/forums/viewforum.php?f=10">форуме</a> Celestial Heavens можно найти ссылки на множество других проектов по M&amp;M.<br>
+
+Активный русский форум &ndash; <a href="http://forum.df2.ru/index.php?showforum=70">на DF2</a>. В шапке ветки <a href="http://forums.ag.ru/?board=ti_main&amp;action=display&amp;num=1058981382">на ag.ru</a> есть некоторые интересные ссылки.<br>
+
+			</div>
+	</div>
+</body>
+</html>

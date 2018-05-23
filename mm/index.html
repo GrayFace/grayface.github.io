@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Might and Magic &ndash; Sergey "GrayFace" Rozhenko Homepage</title>
+
+<style>
+	body {
+		font-family: Arial;
+		font-size: 85%;
+		padding: 0 0;
+		margin: 0 auto;
+		position: relative;
+		max-width: 1200px;
+		background-color: #e2e4f0;
+
+		background:
+			repeating-linear-gradient(45deg, rgba(0,0,0,0.008) 2px, rgba(240, 242, 255, 0.08) 3.5px, rgba(0,0,0,0) 9px, rgba(0,0,0,0) 13px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,0.008) 0px, rgba(240, 242, 255, 0.08) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,0.008) 0px, rgba(240, 242, 255, 0.1) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			linear-gradient(190deg, #c3cbd7 0%, #cad2de 60%, #bcc3ce 100%);
+		background-attachment: fixed;
+	}
+	ul {
+		margin: 3px 0px;
+		padding-left: 20px;
+	}
+	#toc {
+		padding-bottom: 1.3em;
+	}
+	#toc ul {
+		/* list-style-type: none; */
+		color: #d4d7eb;
+		margin-top: 0px;
+		margin-bottom: 3px;
+		padding-left: 20px;
+		/* text-indent: -10px; */
+	}
+	#toc li ul {
+		color: #a6aedf;
+	}
+	#toc ul a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	#toc ul a:link {
+		color: #3e4a99;
+	}
+	a:link:hover, a:visited:hover {
+		background-color: #E8E8FF;
+		border-radius: 4px;
+	}
+	a:link {
+		color: #4e5dbf;
+	}
+	a:link:active, a:visited:active {
+		color: #d00;
+	}
+	#menu-lang a:visited {
+		color: #513ba5;
+	}
+	table {
+		border-collapse: collapse;
+		margin: 5px 0;
+	}
+	table, table td, table th {
+		border: 1px solid #999;
+		padding: 1px 4px;
+	}
+	#content {
+		padding: 0;
+		margin: 5px 5px 20px 185px;
+		border: 1px solid #ccc;
+		background-color: white;
+	}
+	#content2 {
+		padding: 0 19px 25px 22px;
+	}
+	#toc-header {
+		margin-bottom: 10px;
+	}
+	h1 {
+		padding: 10px 10px 10px 20px;
+		margin: 3px 1px 15px;
+		border-bottom: 3px double #dadade;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		/* background: linear-gradient(110deg, #ffffff 65%, rgba(-[(clH4grad)], 0.5) 75%, #ffffff 85%); */
+	}
+	h2, h3:not(#toc-header) {
+		display: table;
+		padding: 3px 8px;
+		border-radius: 10px;
+		border: 1px solid rgba(0,0,0,0.25);
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.4);
+		margin-left: -4px;
+	}
+	h3 a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	#content h4 {
+		margin-top: 2em;
+		margin-bottom: 0.6em;
+	}
+	img {
+		max-width: 100%;
+		max-height: 100vh;
+	}
+	#site-name {
+		float: right;
+		font-size: 80%;
+		color: #eee;
+		text-shadow: 1px 1px #ccc;
+		margin-right: 5px;
+		vertical-align: top;
+	}
+	#menubar {
+		position: absolute;
+		width: 185px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	}
+	#menu-lang {
+		text-align: center;
+		margin: 13.08px 10px 11.72px;
+		margin: calc(0.3em + 9px) 10px calc(0.2em + 9px);
+	}
+	#menu-lang * {
+		display: inline-block;
+		font-size: 1.5em;
+		text-decoration: none;
+		border: 1px solid #cfdae9;
+		border-radius: 3px;
+		padding: 4px 6px;
+		background-color: white;
+	}
+	#menu-lang span {
+		border-color: #77a7e3;
+	}
+	#menu-lang a:hover {
+		border-color: rgba(119, 167, 227, 0.7);
+		/* background-color: #f8f8f8; */
+	}
+	#menu-lang a:not(:active) {
+		border-right-width: 2px;
+		border-bottom-width: 2px;
+		padding-bottom: 3px;
+		padding-right: 5px;
+	}
+	.menu, #menu-lang * {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.15);
+	}
+	#menu-lang a {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.25);
+	}
+	#content {
+		box-shadow: 0 1px 0 0 rgba(0,0,0,0.15);
+	}
+	.menu {
+		background-color: white;
+		margin: 10px 10px;
+		padding-bottom: 5px;
+		border: 1px solid #ccc;
+	}
+	#menu a, .menu-sel {
+		display: block;
+		padding: 1.5px 5px;
+		margin: 0 5px;
+		border-radius: 2px;
+	}
+	#menu a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	.menu h4 {
+		margin: 2px 2px 5px 2px;
+		padding: 4px 8px;
+		border-bottom: 1px solid #dadade;
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, rgba(-[(clH4grad)], 0.0) 75%, #ffffff 90%); */
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, #ffffff 70%, rgba(-[(clH4grad)], 0.4) 100%); */
+	}
+	#menu-contact h4 {
+		margin-bottom: 7px;
+	}
+	.menu-sel {
+		background-color: #77a7e3;
+		/* border: 1px solid ; */
+		color: white;
+		font-weight: bold;
+	}
+	.submenu {
+		padding-left: 11px;
+	}
+	.menu-icon {
+		height: 18px;
+		vertical-align:middle;
+		margin: 1px 0 3px 0;
+	}
+	#menu-contact div {
+		margin: 0 10px 0 8px;
+	}
+	#menu-contact a:visited:not(:hover):not(:active) {
+		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
+	}
+@media (max-width: 900px) {
+	#content2 {
+		padding: 0 15px 25px 17px;
+	}
+}
+@media (max-width: 700px) {
+	#menubar {
+		position: relative;
+		top: 0;
+		left: 0;
+		left: calc(50% - 185px + 3px);
+	}
+	#menu-lang, #menu-contact {
+		position: absolute;
+		width: 165px;
+		left: 175px;
+	}
+	#menu-lang {
+		top: 1px;
+		margin-top: 0;
+	}
+	#menu-contact {
+		top: 35.2px;
+		top: calc(2em + 8px);
+	}
+	h2, h3:not(#toc-header) {
+		margin-left: -2px;
+	}
+	#content2 {
+		padding: 0 13px 25px 15px;
+	}
+	#content {
+		margin: 5px 0 0;
+		width: auto;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+}
+@media (max-width: 370px) {
+	#menubar {
+		left: calc(50% - 185px/2 + 1px);
+	}
+	#menu-lang, #menu-contact {
+		position: static;
+	}	
+	#menu-lang {
+		margin-top: 11px;
+	}
+}
+@media (max-width: 500px) {
+	#content2 {
+		padding: 0 8px 25px 10px;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="menubar">
+		<div id="menu-lang">
+			<span title="English">EN</span>
+			<a title="Русский" href="../ru/mm">RU</a>
+							
+		</div>
+		<div id="menu" class="menu">
+			<h4>Menu</h4>
+<a href="..">News</a><span class="menu-sel">Might and Magic</span><a href="../wog">Heroes 3.5 WoG</a><a href="../heroes">Heroes 1 and 2</a><a href="../ks">Knytt Stories</a><a href="../elma">Elastomania</a>
+		</div>
+		<div id="menu-contact" class="menu">
+			<h4>Contacts</h4>
+			<div>
+				<span title="Email" alt="Email"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon" style="background-color: gray"><g><path fill="#FFFFFF" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g></svg></span>
+				sergroj at mail ru
+			</div>
+			<div>
+				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" alt="Twitter"><svg viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon"><g><rect fill="#55ACEE" width="48" height="48"></rect><path fill="#FFFFFF" d="M40,14.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C33.8,11.8,32,11,30.2,11c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8v0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C10.9,36,14.4,37,18.1,37c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C38,16.6,39.1,15.4,40,14.1z"></path></g></svg></a>
+				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
+			</div>
+			<div>
+				<a href="https://vk.com/grayface" tabindex="-1" title="VK" alt="VK"><svg viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon"><g><rect fill="#42678E" width="48" height="48"></rect><path fill="#FFFFFF" d="M34.6,33.7h-0.2c-1.7-0.3-2.9-1.5-3.9-2.6c-0.6-0.6-1.4-2.1-2.5-1.9c-1.5,0.2-0.7,2.7-1.4,3.8
+c-0.5,0.9-2.6,0.7-4.1,0.6c-4.6-0.5-6.9-2.9-9-5.5c-2.2-2.8-3.9-5.7-5.5-9C7.7,18,7,16.9,7,15.6c0.7-0.6,2-0.4,3.2-0.4
+c1,0,2.7-0.2,3.4,0.2c0.5,0.2,0.9,1.4,1.3,2.2c0.8,1.8,1.6,3.1,2.6,4.5c0.4,0.6,1.1,1.8,1.9,1.7c0.8-0.2,0.8-2,0.9-3.2
+c0-1.4,0-3.1-0.4-3.8c-0.4-0.7-1.1-0.7-1.8-1.1c0.6-1.2,2.2-1.3,4.1-1.3c1.6,0,3.8-0.2,4.5,0.9c0.6,1.1,0.2,3,0.2,4.4
+c0,1.6-0.3,3.3,0.8,4c0.9-0.1,1.3-0.9,1.8-1.6c1.1-1.4,1.8-2.7,2.6-4.5c0.3-0.8,0.7-2.1,1.4-2.3c1-0.4,2.5-0.1,3.9-0.1
+c1.2,0,3.2-0.3,3.6,0.5c0.3,0.7-0.6,2.3-0.9,2.8c-1.1,1.7-2.1,2.8-3.3,4.4c-0.5,0.6-1.4,1.6-1.4,2.5c0,0.7,0.8,1.3,1.4,1.8
+c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"></path>
+</g></svg></a>
+				<a href="https://vk.com/grayface">vk.com/grayface</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Might and Magic<span id="site-name" title="Sergey &quot;GrayFace&quot; Rozhenko Homepage">GrayFace</span><div style="clear:both"></div></h1>
+			<div id="content2">
+			<h3 id="toc-header">Contents</h3>
+				<div id="toc"><ul><li><a href="#GrayFace-MM6-Patch">GrayFace MM6 Patch v2.0</a><ul><li><a href="#MM6-Controls">MM6 Controls v1.1</a></li></ul></li><li><a href="#GrayFace-MM7-Patch">GrayFace MM7 Patch v2.0</a></li><li><a href="#GrayFace-MM8-Patch">GrayFace MM8 Patch v2.0</a></li><li><a href="#Skill-Teachers-Patch-for-MM8">Skill Teachers Patch for MM8</a></li><li><a href="#MM8-Choose-Party-(Sorry,-I-need-to-release-a-bugfix-first)">MM8 Choose Party (Sorry, I need to release a bugfix first)</a></li><li><a href="#MM6-Upscaled-Textures-(Sorry,-I-need-to-upload-new-version-of-MM6-patch-first)">MM6 Upscaled Textures (Sorry, I need to upload new version of MM6 patch first)</a></li><li><a href="#Game-Mechanics">Game Mechanics</a></li><li><a href="#MMExtension-v2.1.1-+-MMEditor">MMExtension v2.1.1 + MMEditor v2.1</a></li><li><a href="#MMArchive">MMArchive v1.2</a></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#Links">Links</a><ul><li><a href="#The-Chaos-Conspiracy-mod-for-MM6">The Chaos Conspiracy mod for MM6</a></li><li><a href="#MM7Rev4Mod">MM7Rev4Mod</a></li><li><a href="#Maestro-Mod-for-MM7">Maestro Mod for MM7</a></li><li><a href="#Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine">Might and Magic 6, 7, 8 merge based on MM8 engine</a></li><li><a href="#High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2">High Resolution Might and Magic 6 7 8 with dgVoodoo 2</a></li><li><a href="#Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-and-Resolution-Mod-for-MM8">Resolution Mod for MM6, Resolution Mod for MM7 and Resolution Mod for MM8</a></li><li><a href="#Modding-Tools">Modding Tools</a></li><li><a href="#Sites">Sites</a></li></ul></li></ul></div>
+			
+			
+<a name="GrayFace-MM6-Patch" ></a><h3>GrayFace MM6 Patch v2.0</h3>
+GrayFace MM6 Patch 
+is an unofficial patch for MM6. It includes Mok's patch and Angel's patch. In addition to features like "Always Run" and "Flip On Exit" it adds quick saves, changing controls, playing MP3 tracks, double speed mode, mouse look and so on. It should run on new Windows versions without any problems (no need to set compatibility with Win 9x).<br>
+<a href="https://sites.google.com/site/sergroj/mm/MM6PatchReadMe.TXT?attredirects=0">Full list of changes</a>
+
+<br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM6patch.rar?attredirects=0">Patch for English version of the game</a><br>
+Install on any version of the game. All changes are included.<br>
+</li>
+<li>
+<a href="https://sites.google.com/site/sergroj/mm/MM6patchBuka.rar?attredirects=0">Patch for Russian localization by Buka</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchLoc.rar?attredirects=0">Patch for other localized versions of the game</a><br>
+In this case it's recommended that you install official patches 1.1 and 1.2 first due to changes they make in TXT files. 
+The most important change is that "MT" string is changed into "%s shoots %s for %d points" in global.txt in icons.lod.<br>
+
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0">Patch source code</a><br>
+Delphi 2006.</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0">Mouse Look keys settings</a><br>
+The settings I use for mouse look.</li></ul>
+<a name="MM6-Controls" ></a><h4><a href="https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0">MM6 Controls v1.1</a></h4>
+MM6 Controls is a tool to set up keys for MM6. It changes [Controls] section in mm6.ini of my patch. It also shows key codes which you can use to configure the patches.<br>
+<br>
+<br>
+<a name="GrayFace-MM7-Patch" ></a><h3>GrayFace MM7 Patch v2.0</h3>
+GrayFace MM7 Patch 
+is an unofficial patch for MM7. Is includes Mok's patch. Adds quick saves, playing MP3 tracks, double speed mode, mouse look and so on. It should run on new Windows versions without any problems (no need to set compatibility with Win 9x).<br>
+<a href="https://sites.google.com/site/sergroj/mm/MM7PatchReadMe.TXT?attredirects=0">Full list of changes</a>
+
+<br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM7patch.rar?attredirects=0">Patch for English version of the game</a><br>
+Install on any version of the game. All changes are included.<br>
+</li>
+<li>
+<a href="https://sites.google.com/site/sergroj/mm/MM7patchBuka.rar?attredirects=0">Patch for Russian localization by Buka</a><br>
+Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchLoc.rar?attredirects=0">Patch for other localized versions of the game</a><br>
+In this case it's recommended that you install official patch 1.1 first
+due to changes it makes in TXT files.<br>
+
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0">Patch source code</a><br>
+Delphi 2006. You'll also need <a href="http://www.clootie.ru/delphi/download_dx92.html">DirectX headers</a>.</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7MouseLook.rar?attredirects=0">Mouse Look keys settings</a><br>
+The settings I use for mouse look.</li></ul>
+<br>
+<br>
+<a name="GrayFace-MM8-Patch" ></a><h3>GrayFace MM8 Patch v2.0</h3>
+GrayFace MM8 Patch 
+is an unofficial patch for MM8. Is includes Mok's
+
+patch. Adds quick saves, playing MP3 tracks, double speed mode, mouse look and so on. It should run on new Windows versions without any problems (no need to set compatibility with Win 9x).<br>
+<a href="https://sites.google.com/site/sergroj/mm/MM8PatchReadMe.TXT?attredirects=0">Full list of changes</a>
+
+<br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM8patch.rar?attredirects=0">Patch for any version of the game</a><br>
+Install on any version of the game. All changes are included.<br>
+</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0">Patch source code</a><br>
+Delphi 2006. You'll also need <a href="http://www.clootie.ru/delphi/download_dx92.html">DirectX headers</a>.</li>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0">Mouse Look keys settings</a><br>
+The settings I use for mouse look.</li></ul>
+<br>
+<br>
+<a name="Skill-Teachers-Patch-for-MM8" ></a><h3>Skill Teachers Patch for MM8</h3>
+This patch makes skill teachers list in Autonotes more functional. If you have GrayFace MM8 Patch installed, just extract archive contents into your MM8 directory. Otherwise, add autonotes.txt from the archive into your EnglishT.lod using MMArchive.<br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8.rar?attredirects=0">English version</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_ru.rar?attredirects=0">Russian version by SVShu</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_pl.rar?attredirects=0">Polish version by majaczek</a><br>
+<br>
+<br>
+<a name="MM8-Choose-Party-(Sorry,-I-need-to-release-a-bugfix-first)" ></a><h3><a href="../404">MM8 Choose Party (Sorry, I need to release a bugfix first)</a></h3>
+These scripts let you choose your party on game start. You can choose party of any size and it can include dragons, too. MMExtension is included. <a href="https://www.dropbox.com/s/2trqbyzfplgbuxs/MM8ChooseParty.png?dl=0">Screenshot</a><br>
+<br>
+<br>
+<a name="MM6-Upscaled-Textures-(Sorry,-I-need-to-upload-new-version-of-MM6-patch-first)" ></a><h3><a href="../404">MM6 Upscaled Textures (Sorry, I need to upload new version of MM6 patch first)</a></h3>
+Upscaled x2 sprites and textures for MM6 and a script to make it work. Requires <a href="ext">MMExtension</a>. Screenshots: <a href="https://www.dropbox.com/s/ip52o2pdiwu51y7/mm6hd_before.png?dl=0">before</a>, <a href="https://www.dropbox.com/s/lmuib9uvupqwup2/mm6hd_after.png?dl=0">after</a><br>
+<br>
+<br>
+<a name="Game-Mechanics" ></a><h3><a href="mechanics">Game Mechanics</a></h3>
+Some unobvious aspects of game mechanics are described here.<br>
+
+<br>
+<br>
+<a name="MMExtension-v2.1.1-+-MMEditor" ></a><h3><a href="ext">MMExtension v2.1.1 + MMEditor v2.1</a></h3>
+MMExtension is a rich modding environment for MM6-8. It features a complete level editor, uses Lua 
+scripting language, lets you use
+all commands of internal M&amp;M scripts language (<b>evt</b> commands) and
+lets you do a lot of other things. Must have for modders! After the 
+first run of an MM game you can also edit some tables in <b>Data\Tables</b> folder. 
+For example, you can change stats and available skills of classes.<br>
+
+<br>
+<br>
+<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0">MMArchive v1.2</a></h3>
+Fully-featured M&amp;M and Heroes 3 archives editor. Supports all archive types except ".hwl". <a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0">LodCompare v1.3.1</a></h3>
+Obsolete, fully incorporated into MMArchive. Lets you compare two lod/vid/snd archives and see which files have changed. 
+Lets you create a new archive containing only those files. Thus you can minimize size of a mod by distributing only this archive as a custom LOD to be loaded by my patch or by merging it with user's archive using LodMerge. 
+<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0">LodMerge v1.1.1</a></h3>
+Lets you merge two lod/vid/snd archives together. 
+
+<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0">Txt Edit v1.3</a></h3>
+Txt tables editor for Heroes 3 and M&amp;M. 
+<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0">RSBinkPlayer v1.2.5</a></h3>
+Convenient .bik and .smk player. Can show Heroes 3 videos.<br>
+<br>
+<br>
+<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0">Fnt Editor</a></h3>
+An old program for editing Heroes 3 and M&amp;M fonts.<br>
+<br>
+<br>
+<a name="Links" ></a><h3>Links</h3>
+
+<a name="The-Chaos-Conspiracy-mod-for-MM6" ></a><h4><a href="http://www.mediafire.com/my%20files/bdjs">The Chaos Conspiracy mod for MM6</a></h4>
+The Chaos Conspiracy (TCC) is a huge mod for MM6 in two parts. It has its own new story, monsters and even outdoor maps (in part 2). Made by BDJ, Vladimir-Maestro, Jeff and Hodge Podge. I also took a small part.<br>
+
+<a name="MM7Rev4Mod" ></a><h4><a href="http://www.mediafire.com/my%20files/bdjs">MM7Rev4Mod</a></h4>
+MM7Rev4Mod is a big mod for MM7 made by BDJ before TCC. It changes characteristics of monsters and items, adds a lot of new quests, but still keeps many old ones. Pascal aka Asterix15 contributed graphics of some items.<br>
+
+<a name="Maestro-Mod-for-MM7" ></a><h4><a href="http://mmgames.ru/index.php?option=com_content&amp;view=article&amp;id=95&amp;Itemid=191&amp;lang=en">Maestro Mod for MM7</a></h4>
+Based on Rev4 Mod. The game is rebalanced, there are many changes in graphics and a few in quests.<br>
+
+<a name="Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16657">Might and Magic 6, 7, 8 merge based on MM8 engine</a></h4>
+TODO: add description
+
+<a name="High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16658">High Resolution Might and Magic 6 7 8 with dgVoodoo 2</a></h4>
+TODO: add description
+
+<a name="Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-and-Resolution-Mod-for-MM8" ></a><h4><a href="https://sites.google.com/site/angelddeath/#TOC-Might-Magic-6-resolution-mod">Resolution Mod for MM6</a>, <a href="https://www.dropbox.com/s/gkvid0g7glemv84/mm7resmod%2dGrayFace.rar?dl=1">Resolution Mod for MM7</a> and <a href="https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod%2dGrayFace.rar?dl=1">Resolution Mod for MM8</a></h4>
+Mods by Angel Death that make the game scale in windowed mode to the desired resolution.<br>
+To use the mode for MM6 with my patch, create ExeMods subfolder inside the game folder and put the DLL there.<br>
+I've modified the mod for MM7 work with my patch properly and created one for MM8 based on it. Just run them from the game folder.
+
+<br>
+<a name="Modding-Tools" ></a><h4>Modding Tools</h4>
+Classic M&amp;M editing tools are <a href="http://sourceforge.net/projects/mm8leveleditor/files/MM8LevelEditor/">mm8leveleditor</a> and <a href="http://shrines.rpgclassics.com/pc/mm7/Extras/MM7Edit.zip">MM7View</a>. With <a href="http://sites.google.com/site/angelddeath/#TOC-Might-Magic-6-8-Map-Viewer">MM Map Viewer</a> you can view M&amp;M maps and properties of their elements.<br>
+<br>
+<a name="Sites" ></a><h4>Sites</h4>
+The most important English site about classic M&amp;M is <a href="http://www.celestialheavens.com/">Celestial Heavens</a>. <a href="http://telp.org">telp.org</a> is also good, but the forums there are buggy &ndash; if you post a link, you're likely to be banned by spam-filter, so be careful. You can find links to many other MM projects on Celestial Heavens <a href="http://www.celestialheavens.com/forums/viewforum.php?f=10">forum</a>.<br>
+<br>
+
+
+			</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heroes 3.5 In the Wake of Gods &ndash; Sergey "GrayFace" Rozhenko Homepage</title>
+
+<style>
+	body {
+		font-family: Arial;
+		font-size: 85%;
+		padding: 0 0;
+		margin: 0 auto;
+		position: relative;
+		max-width: 1200px;
+		background-color: #e2e4f0;
+
+		background:
+			repeating-linear-gradient(45deg, rgba(0,0,0,0.008) 2px, rgba(240, 242, 255, 0.08) 3.5px, rgba(0,0,0,0) 9px, rgba(0,0,0,0) 13px),
+			repeating-linear-gradient(105deg, rgba(0,0,0,0.008) 0px, rgba(240, 242, 255, 0.08) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			repeating-linear-gradient(165deg, rgba(0,0,0,0.008) 0px, rgba(240, 242, 255, 0.1) 1.5px, rgba(0,0,0,0) 7px, rgba(0,0,0,0) 11px),
+			linear-gradient(190deg, #c3cbd7 0%, #cad2de 60%, #bcc3ce 100%);
+		background-attachment: fixed;
+	}
+	ul {
+		margin: 3px 0px;
+		padding-left: 20px;
+	}
+	#toc {
+		padding-bottom: 1.3em;
+	}
+	#toc ul {
+		/* list-style-type: none; */
+		color: #d4d7eb;
+		margin-top: 0px;
+		margin-bottom: 3px;
+		padding-left: 20px;
+		/* text-indent: -10px; */
+	}
+	#toc li ul {
+		color: #a6aedf;
+	}
+	#toc ul a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	#toc ul a:link {
+		color: #3e4a99;
+	}
+	a:link:hover, a:visited:hover {
+		background-color: #E8E8FF;
+		border-radius: 4px;
+	}
+	a:link {
+		color: #4e5dbf;
+	}
+	a:link:active, a:visited:active {
+		color: #d00;
+	}
+	#menu-lang a:visited {
+		color: #513ba5;
+	}
+	table {
+		border-collapse: collapse;
+		margin: 5px 0;
+	}
+	table, table td, table th {
+		border: 1px solid #999;
+		padding: 1px 4px;
+	}
+	#content {
+		padding: 0;
+		margin: 5px 5px 20px 185px;
+		border: 1px solid #ccc;
+		background-color: white;
+	}
+	#content2 {
+		padding: 0 19px 25px 22px;
+	}
+	#toc-header {
+		margin-bottom: 10px;
+	}
+	h1 {
+		padding: 10px 10px 10px 20px;
+		margin: 3px 1px 15px;
+		border-bottom: 3px double #dadade;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		/* background: linear-gradient(110deg, #ffffff 65%, rgba(-[(clH4grad)], 0.5) 75%, #ffffff 85%); */
+	}
+	h2, h3:not(#toc-header) {
+		display: table;
+		padding: 3px 8px;
+		border-radius: 10px;
+		border: 1px solid rgba(0,0,0,0.25);
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.4);
+		margin-left: -4px;
+	}
+	h3 a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	#content h4 {
+		margin-top: 2em;
+		margin-bottom: 0.6em;
+	}
+	img {
+		max-width: 100%;
+		max-height: 100vh;
+	}
+	#site-name {
+		float: right;
+		font-size: 80%;
+		color: #eee;
+		text-shadow: 1px 1px #ccc;
+		margin-right: 5px;
+		vertical-align: top;
+	}
+	#menubar {
+		position: absolute;
+		width: 185px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	}
+	#menu-lang {
+		text-align: center;
+		margin: 13.08px 10px 11.72px;
+		margin: calc(0.3em + 9px) 10px calc(0.2em + 9px);
+	}
+	#menu-lang * {
+		display: inline-block;
+		font-size: 1.5em;
+		text-decoration: none;
+		border: 1px solid #cfdae9;
+		border-radius: 3px;
+		padding: 4px 6px;
+		background-color: white;
+	}
+	#menu-lang span {
+		border-color: #77a7e3;
+	}
+	#menu-lang a:hover {
+		border-color: rgba(119, 167, 227, 0.7);
+		/* background-color: #f8f8f8; */
+	}
+	#menu-lang a:not(:active) {
+		border-right-width: 2px;
+		border-bottom-width: 2px;
+		padding-bottom: 3px;
+		padding-right: 5px;
+	}
+	.menu, #menu-lang * {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.15);
+	}
+	#menu-lang a {
+		box-shadow: 1px 1px 0 0 rgba(0,0,0,0.25);
+	}
+	#content {
+		box-shadow: 0 1px 0 0 rgba(0,0,0,0.15);
+	}
+	.menu {
+		background-color: white;
+		margin: 10px 10px;
+		padding-bottom: 5px;
+		border: 1px solid #ccc;
+	}
+	#menu a, .menu-sel {
+		display: block;
+		padding: 1.5px 5px;
+		margin: 0 5px;
+		border-radius: 2px;
+	}
+	#menu a:not(:hover):not(:active) {
+		text-decoration: none;
+	}
+	.menu h4 {
+		margin: 2px 2px 5px 2px;
+		padding: 4px 8px;
+		border-bottom: 1px solid #dadade;
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, rgba(-[(clH4grad)], 0.0) 75%, #ffffff 90%); */
+		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, #ffffff 70%, rgba(-[(clH4grad)], 0.4) 100%); */
+	}
+	#menu-contact h4 {
+		margin-bottom: 7px;
+	}
+	.menu-sel {
+		background-color: #77a7e3;
+		/* border: 1px solid ; */
+		color: white;
+		font-weight: bold;
+	}
+	.submenu {
+		padding-left: 11px;
+	}
+	.menu-icon {
+		height: 18px;
+		vertical-align:middle;
+		margin: 1px 0 3px 0;
+	}
+	#menu-contact div {
+		margin: 0 10px 0 8px;
+	}
+	#menu-contact a:visited:not(:hover):not(:active) {
+		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
+	}
+@media (max-width: 900px) {
+	#content2 {
+		padding: 0 15px 25px 17px;
+	}
+}
+@media (max-width: 700px) {
+	#menubar {
+		position: relative;
+		top: 0;
+		left: 0;
+		left: calc(50% - 185px + 3px);
+	}
+	#menu-lang, #menu-contact {
+		position: absolute;
+		width: 165px;
+		left: 175px;
+	}
+	#menu-lang {
+		top: 1px;
+		margin-top: 0;
+	}
+	#menu-contact {
+		top: 35.2px;
+		top: calc(2em + 8px);
+	}
+	h2, h3:not(#toc-header) {
+		margin-left: -2px;
+	}
+	#content2 {
+		padding: 0 13px 25px 15px;
+	}
+	#content {
+		margin: 5px 0 0;
+		width: auto;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+	}
+}
+@media (max-width: 370px) {
+	#menubar {
+		left: calc(50% - 185px/2 + 1px);
+	}
+	#menu-lang, #menu-contact {
+		position: static;
+	}	
+	#menu-lang {
+		margin-top: 11px;
+	}
+}
+@media (max-width: 500px) {
+	#content2 {
+		padding: 0 8px 25px 10px;
+	}
+}
+</style>
+</head>
+<body>
+	<div id="menubar">
+		<div id="menu-lang">
+			<span title="English">EN</span>
+			<a title="Русский" href="../ru/wog">RU</a>
+							
+		</div>
+		<div id="menu" class="menu">
+			<h4>Menu</h4>
+<a href="..">News</a><a href="../mm">Might and Magic</a><span class="menu-sel">Heroes 3.5 WoG</span><a href="../heroes">Heroes 1 and 2</a><a href="../ks">Knytt Stories</a><a href="../elma">Elastomania</a>
+		</div>
+		<div id="menu-contact" class="menu">
+			<h4>Contacts</h4>
+			<div>
+				<span title="Email" alt="Email"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon" style="background-color: gray"><g><path fill="#FFFFFF" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g></svg></span>
+				sergroj at mail ru
+			</div>
+			<div>
+				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" alt="Twitter"><svg viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon"><g><rect fill="#55ACEE" width="48" height="48"></rect><path fill="#FFFFFF" d="M40,14.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C33.8,11.8,32,11,30.2,11c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8v0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C10.9,36,14.4,37,18.1,37c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C38,16.6,39.1,15.4,40,14.1z"></path></g></svg></a>
+				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
+			</div>
+			<div>
+				<a href="https://vk.com/grayface" tabindex="-1" title="VK" alt="VK"><svg viewBox="0 0 48 48" preserveAspectRatio="xMidYMid meet" focusable="false" class="menu-icon"><g><rect fill="#42678E" width="48" height="48"></rect><path fill="#FFFFFF" d="M34.6,33.7h-0.2c-1.7-0.3-2.9-1.5-3.9-2.6c-0.6-0.6-1.4-2.1-2.5-1.9c-1.5,0.2-0.7,2.7-1.4,3.8
+c-0.5,0.9-2.6,0.7-4.1,0.6c-4.6-0.5-6.9-2.9-9-5.5c-2.2-2.8-3.9-5.7-5.5-9C7.7,18,7,16.9,7,15.6c0.7-0.6,2-0.4,3.2-0.4
+c1,0,2.7-0.2,3.4,0.2c0.5,0.2,0.9,1.4,1.3,2.2c0.8,1.8,1.6,3.1,2.6,4.5c0.4,0.6,1.1,1.8,1.9,1.7c0.8-0.2,0.8-2,0.9-3.2
+c0-1.4,0-3.1-0.4-3.8c-0.4-0.7-1.1-0.7-1.8-1.1c0.6-1.2,2.2-1.3,4.1-1.3c1.6,0,3.8-0.2,4.5,0.9c0.6,1.1,0.2,3,0.2,4.4
+c0,1.6-0.3,3.3,0.8,4c0.9-0.1,1.3-0.9,1.8-1.6c1.1-1.4,1.8-2.7,2.6-4.5c0.3-0.8,0.7-2.1,1.4-2.3c1-0.4,2.5-0.1,3.9-0.1
+c1.2,0,3.2-0.3,3.6,0.5c0.3,0.7-0.6,2.3-0.9,2.8c-1.1,1.7-2.1,2.8-3.3,4.4c-0.5,0.6-1.4,1.6-1.4,2.5c0,0.7,0.8,1.3,1.4,1.8
+c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"></path>
+</g></svg></a>
+				<a href="https://vk.com/grayface">vk.com/grayface</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<h1>Heroes 3.5 In the Wake of Gods<span id="site-name" title="Sergey &quot;GrayFace&quot; Rozhenko Homepage">GrayFace</span><div style="clear:both"></div></h1>
+			<div id="content2">
+			<h3 id="toc-header">Contents</h3>
+				<div id="toc"><ul><li><a href="#Map-Editor-Patch">Map Editor Patch v3.3</a></li><li><a href="#Map-Editor-Help">Map Editor Help v1.2</a></li><li><a href="#32BitPatch">32BitPatch</a></li><li><a href="#Darker-Interface-Colors">Darker Interface Colors</a></li><li><a href="#New-Battle-Grids">New Battle Grids</a></li><li><a href="#Synchronized-Creatures-Sounds">Synchronized Creatures Sounds</a></li><li><a href="#MMArchive">MMArchive v1.2</a><ul><li><a href="#Lod-Favorites">Lod Favorites</a></li></ul></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#SimpleLod">SimpleLod v1.3</a></li><li><a href="#Def-Preview">Def Preview v1.2</a></li><li><a href="#Def-Tool">Def Tool v3.4.1</a><ul><li><a href="#Def-Tool-">Def Tool v2.1.1</a></li></ul></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#Dialogs-Editor-for-!!DL-reciever">Dialogs Editor for !!DL reciever</a></li><li><a href="#Portraits-Manager">Portraits Manager</a></li><li><a href="#Mon-Power">Mon Power</a></li></ul></div>
+			
+			
+<a name="Map-Editor-Patch" ></a><h3>Map Editor Patch v3.3</h3>
+Map Editor Patch makes new features (new monsters, artifacts etc.) fully-functional in Map Editor and adds new functionality like editing objects' appearance, copying a part of map from one place to another, events binding etc.<br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdPatch.rar?attredirects=0">English version</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdPatchRus.rar?attredirects=0">Russian version</a><br>
+New in version 3.3:<br>
+[+]&nbsp;&nbsp; Copy Map Area and Paste Map Area buttons added in Obstacle Tool page.<br>
+[+]&nbsp;&nbsp; Missing def files don't cause Map Editor to crash and don't display endless error dialogs.<br>
+[+]&nbsp;&nbsp; You can choose between WOG and SOD formats when saving a map.<br>
+[+]&nbsp;&nbsp; Now Map Validation reports overlapping objects.<br>
+[-]&nbsp;&nbsp; A critical bug of Advanced Properties fixed. This bug sometimes caused maps corruption.<br>
+[-]&nbsp;&nbsp; Before this version you could press Redo after painting ground with Allow Single Squares option on.<br>
+<br>
+<br>
+<a name="Map-Editor-Help" ></a><h3>Map Editor Help v1.2</h3>
+Updated Map Editor help containing information about things added in WoG.<br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdHelp.rar?attredirects=0">English version</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdHelpRus.rar?attredirects=0">Russian version</a><br>
+New in version 1.2:<br>
+[-]&nbsp;&nbsp; Forgotten Shrine object wasn't described.<br>
+<br>
+<br>
+<a name="32BitPatch" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/32BitPatch.rar?attredirects=0">32BitPatch</a></h3>
+Lets you run Heroes 3 in windowed mode under any color depth set in screen properties. It can be installed on any Heroes 3 version, including Heroes Chronicles.<br>
+(c) Bourn and me<br>
+<br>
+<br>
+<a name="Darker-Interface-Colors" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/PLAYERS.rar?attredirects=0">Darker Interface Colors</a></h3>
+I never liked the way Heroes 3 interface looks due to  player colors not fitting in the interface.  Extract this little archive into your Data directory and the interface will look much better.<br>
+<br>
+<br>
+<a name="New-Battle-Grids" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/NewGrids.rar?attredirects=0">New Battle Grids</a></h3>
+Choose the one you like and put it into the Data directory. I recommend the third one.<br>
+<br>
+<br>
+<a name="Synchronized-Creatures-Sounds" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/SndSync.rar?attredirects=0">Synchronized Creatures Sounds</a></h3>
+Some creatures produce sound in the wrong moment. Like, when Air Elementals are hit, first comes animation and then they produce the sound. This fixes them. Extract into the game folder.<br>
+<br>
+<br>
+<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0">MMArchive v1.2</a></h3>
+Fully-featured M&amp;M and Heroes 3 archives editor. Supports all archive types except ".hwl". 
+
+<a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a name="Lod-Favorites" ></a><h4>Lod Favorites</h4>
+Favorites for h3sprites.lod and h3bitmaps.lod with categorized list of files, currently only available 
+
+<a href="https://sites.google.com/site/sergroj/wog/H3FavoritesRus.rar?attredirects=0&amp;d=1">in Russian</a>. 
+Made by Black Phantom, with my edits.<br>
+
+<br>
+<br>
+<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0">LodCompare v1.3.1</a></h3>
+Obsolete, fully incorporated into MMArchive. Lets you compare two lod/vid/snd archives and see which files have changed. 
+
+Lets you create a new archive containing only those files. Thus you can minimize size of a mod by distributing only this archive as a custom LOD to be loaded by my patch or by merging it with user's archive using LodMerge.
+<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0">LodMerge v1.1.1</a></h3>
+Lets you merge two lod/vid/snd archives together. 
+
+<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="SimpleLod" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/SimpleLod.rar?attredirects=0">SimpleLod v1.3</a></h3>
+A simple way to add files into .lod archives of Heroes 3. 
+<a href="https://sites.google.com/site/sergroj/wog/SimpleLodSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="Def-Preview" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/DefPreview.rar?attredirects=0">Def Preview v1.2</a></h3>
+Shows .def files, lets you extract frames and make a def-list for Def Tool. 
+<a href="https://sites.google.com/site/sergroj/wog/DefPreviewSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="Def-Tool" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3DefTool.rar?attredirects=0">Def Tool v3.4.1</a></h3>
+Lets you create .def files. It can also help with editing interface pictures. 
+
+<a href="https://sites.google.com/site/sergroj/wog/H3DefToolSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a name="Def-Tool-" ></a><h4><a href="https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0">Def Tool v2.1.1</a></h4>
+Old version of Def Tool. Combine and Uncombine buttons can be useful. It can help you prepare palette for def frames with better quality.<br>
+<br>
+<br>
+<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0">Txt Edit v1.3</a></h3>
+Txt tables editor for Heroes 3 and M&amp;M. 
+<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<br>
+<br>
+<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0">RSBinkPlayer v1.2.5</a></h3>
+Convenient .bik and .smk player. Can show Heroes 3 videos.<br>
+<br>
+<br>
+<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0">Fnt Editor</a></h3>
+An old program for editing Heroes 3 and M&amp;M fonts.<br>
+<br>
+<br>
+<a name="Dialogs-Editor-for-!!DL-reciever" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3DialogsDL.rar?attredirects=0">Dialogs Editor for !!DL reciever</a></h3>
+!!DL reciever lets you create custom dialogs for WoG TE / Era / 3.59. No help, sorry. The development has been discontinued. New version may eventually come out, but only for new dialogs system of WoG 3.59.<br>
+<br>
+<br>
+<a name="Portraits-Manager" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/PortraitsManager.rar?attredirects=0">Portraits Manager</a></h3>
+Lets you change heroes portraits easily.<br>
+<br>
+<br>
+<a name="Mon-Power" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3MonPower.rar?attredirects=0">Mon Power</a></h3>
+Calculates strength of monsters. The output values somewhat resemble AI Value and Fight Value. Only accounts for basic parameters (ignores Speed, shooting etc.)<br>
+
+			</div>
+	</div>
+</body>
+</html>
