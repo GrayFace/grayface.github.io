@@ -21,21 +21,27 @@ function P.TOC()
 	P.NeedTOC = true
 end
 
-function P.GetPath(s, base)
-	-- print(s, base)
-	s = ("^"..s):match("(.-)%^*$")
-	base = ("^"..(base or "")):match("(.-)%^*$")
+local function DoGetPath(s, base)
+	s = ("/"..s):gsub("%^", "/"):match("(.-)/*$")
+	base = ("/"..base):gsub("%^", "/"):match("(.-)/*$")
 	while true do
-		local s1, s2 = s:match"%^([^%^]*)(.*)"
-		local b1, b2 = base:match"%^([^%^]*)(.*)"
+		local s1, s2 = s:match"%^([^/]*)(.*)"
+		local b1, b2 = base:match"%^([^/]*)(.*)"
 		if not s1 or b1 ~= s1 then
 			break
 		end
 		s, base = s2, b2
 	end
-	local ret = (base:gsub("[^%^]*%^[^%^]*", "/..")..s:gsub("%^", "/")):gsub("^/", "")
-	-- print(s, base, ret)
+	local ret = (base:gsub("[^/]*/[^/]*", "/..")..s):gsub("^/", "")
 	return ret
+end
+
+function P.GetPath(s, base)
+	base = base or P.PageId
+	if s:match("img[/%^]") then
+		return "en|"..DoGetPath(s, base).."ru|"..DoGetPath(s, 'ru^'..base)
+	end
+	return DoGetPath(s, base)
 end
 
 function P.CloseTag(s)
@@ -69,6 +75,7 @@ function P.RGB(r, g, b)
 	return ("%s, %s, %s"):format(r:And(0xFF0000)/0x10000, r:And(0xFF00)/0x100, r:And(0xFF))
 end
 
+-- this doesn't cover all contexts: https://wonko.com/post/html-escaping
 function P.Escape(s, cont)
 	s = s:gsub("&", "&amp;")
 	if not cont or cont == 'main' then
@@ -79,8 +86,7 @@ function P.Escape(s, cont)
 	end
 	if not cont or cont == "'" then
 		s = s:gsub("'", "&#39;")
-	end
-	-- this doesn't cover all contexts: https://wonko.com/post/html-escaping
+	end	
 	return s
 end
 
@@ -94,7 +100,11 @@ local function LinkData(name)
 end
 
 function P.GetLink(name)
-	return P.EscapeURL(LinkData(name)[1], '"')
+	local lnk = LinkData(name)[1]
+	if not lnk:match("^https?://") then
+		return P.GetPath(lnk)
+	end
+	return P.EscapeURL(lnk, '"')
 end
 
 local function GetVersion(fname)
@@ -128,7 +138,7 @@ function P.Link(name, title)
 		title = title:gsub("##", P.LinkVer(name))
 	end
 	title = title..(t.NameSuffix or "")
-	q[#q+1] = ('<a href="%s">%s</a>'):format(P.EscapeURL(t[1], '"'), P.Escape(title, 'main'))
+	q[#q+1] = ('<a href="%s">%s</a>'):format(P.GetLink(name), P.Escape(title, 'main'))
 end
 
 function P.HeaderLink(name, title, tag)
