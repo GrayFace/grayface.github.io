@@ -129,10 +129,7 @@ end
 
 function P.Link(name, title)
 	local t = LinkData(name)
-	title = title or t.Name
-	if title:match("##") then
-		title = title:gsub("##", P.LinkVer(name))
-	end
+	title = (title or t.Name):gsub("##", || P.LinkVer(name))
 	title = title..(t.NameSuffix or "")
 	P.CustomLink(t[1], title, t.MirrorSF)
 end
