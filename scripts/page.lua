@@ -99,27 +99,42 @@ local function LinkData(name)
 	return require'dataLinks'[name]
 end
 
-function P.GetLink(name)
-	local lnk = LinkData(name)[1]
+local function ToLink(lnk)
 	if not lnk:match("^https?://") then
 		return P.GetPath(lnk)
 	end
 	return P.EscapeURL(lnk, '"')
 end
 
+function P.GetLink(name)
+	return ToLink(LinkData(name)[1])
+end
+
 function P.LinkVer(name)
 	return "v"..LinkData(name).Version
 end
 
+local MirrorLink = [[<a href="%s" title="en|Download from|ru|Скачать с| GitHubru|'а|">%s</a><a href="%s" class="mirror" title="ru|Зеркало на |SourceForgeen| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="(en|Mirror|ru|Зеркало|)"></a>]]
+
+function P.CustomLink(lnk, title, mirrorSF)
+	lnk = ToLink(lnk)
+	title = P.Escape(title, 'main')
+	local q = P.ResTable
+	if mirrorSF then
+		q[#q+1] = MirrorLink:format(lnk, title, ToLink(mirrorSF))
+	else
+		q[#q+1] = ('<a href="%s" title="en|Download|ru|Скачать|">%s</a>'):format(lnk, title)
+	end
+end
+
 function P.Link(name, title)
 	local t = LinkData(name)
-	local q = P.ResTable
 	title = title or t.Name
 	if title:match("##") then
 		title = title:gsub("##", P.LinkVer(name))
 	end
 	title = title..(t.NameSuffix or "")
-	q[#q+1] = ('<a href="%s">%s</a>'):format(P.GetLink(name), P.Escape(title, 'main'))
+	P.CustomLink(t[1], title, t.MirrorSF)
 end
 
 function P.HeaderLink(name, title, tag)
@@ -129,5 +144,53 @@ function P.HeaderLink(name, title, tag)
 	P.Link(name, title)
 	q[#q+1] = '</'..tag..'>'
 end
+
+-- SourceForge mirror:
+-- <style>
+-- 	.mirror, .mirror:hover, .mirror:link:hover {
+-- 		background-color:transparent;
+-- 	}
+-- 	.mirror {
+-- 		margin-left: 0.2em;
+-- 		margin-right: 0.2em;
+-- 	}
+-- 	h3 .mirror {
+-- 		margin-left: 0.3em;
+-- 	}
+-- 	.mirror img {
+-- 		vertical-align:middle;
+-- 		height:1em;
+-- 		margin: -0.1em 0 0.1em;
+-- 		border-radius:4px;
+-- 	}
+-- 	h3 .mirror img {
+-- 		margin: -0.1em -7px 0.1em 0;
+-- 	}
+-- 	.mirror img:hover {
+-- 	 	background-color: #E8E8FF;
+-- 	}
+-- </style>
+-- <h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0" title="en|Download from|ru|Скачать с| GitHubru|'а|">MMArchive v1.2</a><a href="https://sourceforge.net/favicon.ico" class="mirror" title="ru|Зеркало на |SourceForgeen| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="en|Mirror|ru|Зеркало|" title="ru|Зеркало на |SourceForgeen| Mirror|" style=""></a></h3>
+-- Fully-featured M&amp;M and Heroes 3 archives editor. <a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0" title="en|Download from|ru|Скачать с| GitHubru|'а|">MMArchive v1.2</a><a href="https://sourceforge.net/favicon.ico" class="mirror" title="ru|Зеркало на |SourceForgeen| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="en|Mirror|ru|Зеркало|" style=""></a> supports all archive types except ".hwl".
+
+-- Alternative style (not ok)
+-- <style>h3 img {
+-- 	position: absolute;
+-- 	left: 12px;
+-- 	top: -2px;
+-- 	height: 1em;
+-- 	min-width: 1em;
+-- 	padding: 3px;
+-- 	border-radius: 50%;
+-- 	border: 1px solid rgba(0,0,0,0.35);
+-- 	box-shadow: 1px 1px 0 0 rgba(0,0,0,0.4);
+-- 	/* margin-left: -4px; */
+-- }
+-- h3 img:hover {
+-- 	background-color: #E8E8FF;
+-- }	
+-- </style>
+-- <a name="MMArchive"></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0" title="en|Download from|ru|Скачать с| GitHubru|'а|">MMArchive v1.2</a><a href="https://sourceforge.net/favicon.ico" style="position:relative"><img src="https://sourceforge.net/favicon.ico" alt="Mirror" title="ru|Зеркало на |SourceForgeen| Mirror|"></a></h3>
+
 
 return P
