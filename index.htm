@@ -1,4 +1,4 @@
--[SetTitle"en|News|ru|Новости|"]
+-[SetTitle"`en|News|`ru|Новости|"]
 <style>
 	h3:not(#toc-header) {
 		display: inline-block;
@@ -38,9 +38,9 @@
 	}
 </style>
 <div id="welcome">
-	en|Welcome, travelers!|ru|Добро пожаловать!|<br><br>
-	en|Soon I'm going to release new versions of many things.|
-	ru|Скоро я выпущу новые версии многих программ.|
+	`en|Welcome, travelers!|`ru|Добро пожаловать!|<br><br>
+	`en|Soon I'm going to release new versions of many things.|
+	`ru|Скоро я выпущу новые версии многих программ.|
 </div>
 <div>
 -[
@@ -48,7 +48,7 @@ package.loaded.releases = nil
 local releases = require"dataNews"
 
 function item(t)
-	local a = |s| ("en|%s|ru|%s|"):format(t[s], t[s.."RU"] or t[s])
+	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
 	local desc = Escape(a"Desc", 'main')
 	desc = desc:gsub("%[([%+%-%*])%] ", '[<span>%1</span>]<span class="sp"> </span>'):gsub("<span>%-</span>", "<span>&ndash;</span>")
 	local info = t.FileInfo or {}
@@ -70,7 +70,7 @@ function item(t)
 			--local name = url:match("[^?]*"):match(".*/([^/]+)/?$")
 			local en = info[i] or "Download"
 			local ru = infoRU[i] or info[i] or "Скачать"
-			local desc = ("en|%s|ru|%s|"):format(en, ru)
+			local desc = ("`en|%s|`ru|%s|"):format(en, ru)
 			]<div><a href=$[url]>$[desc]</a></div>-[
 		end
 		]</div>-[

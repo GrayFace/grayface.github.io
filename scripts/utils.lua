@@ -96,17 +96,17 @@ end
 local function Conv(s, ru)
 	s = RSParse.gsub(s, {
 		main = {
-			{"en|", gsub = ru and "\1" or "", call = (ru and "close1" or "close")},
-			{"ru|", gsub = ru and "" or "\1", call = (ru and "close" or "close1")},
+			{"`en|", gsub = ru and "\1" or "", call = (ru and "close1" or "close")},
+			{"`ru|", gsub = ru and "" or "\1", call = (ru and "close" or "close1")},
 			-- {"|", gsub = error},
 		},
 		close1 = {
 			{import = "main"},
-			ret = {"|", gsub = "\2"},
+			ret = {"`?|", gsub = "\2"},
 		},
 		close = {
 			{import = "main"},
-			ret = {"|", gsub = ""},
+			ret = {"`?|", gsub = ""},
 		},
 	})
 	return s:gsub("%b\1\2", "")

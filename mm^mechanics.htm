@@ -1,4 +1,4 @@
--[SetTitle("en|Mechanics|ru|Маханика|", "en|Might and Magic Mechanics|ru|Маханика Might and Magic|")
+-[SetTitle("`en|Mechanics|`ru|Маханика|", "`en|Might and Magic Mechanics|`ru|Маханика Might and Magic|")
 TOC()]
 <style>
 	.math {
@@ -7,17 +7,17 @@ TOC()]
 </style>
 <div>
 <div>
-<h2>en|Statistics|ru|Показатели|</h2>
-en|All statistics give bonus according to the table below|ru|Все показатели дают бонус в соответствии с приведенной таблицей|.<br>
-en|The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic|ru|Первый столбец - барьер показателя, второй - бонус, который дается, если показатель равен барьеру или выше его|.<br>
-en|Example: If 400 &lt;= Might &lt; 500, then you will get +25 to melee damage.|
-ru|Например, если 400 &lt;= Сила &lt; 500, к повреждению добавится +25.|
+<h2>`en|Statistics|`ru|Показатели|</h2>
+`en|All statistics give bonus according to the table below|`ru|Все показатели дают бонус в соответствии с приведенной таблицей|.<br>
+`en|The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic|`ru|Первый столбец - барьер показателя, второй - бонус, который дается, если показатель равен барьеру или выше его|.<br>
+`en|Example: If 400 &lt;= Might &lt; 500, then you will get +25 to melee damage.|
+`ru|Например, если 400 &lt;= Сила &lt; 500, к повреждению добавится +25.|
 <br>
 <table>
 <tbody>
 <tr>
-<td style="width:50px;height:20px">&nbsp;en|Statistic|ru|Статистика|&nbsp;</td>
-<td style="width:50px;height:20px">&nbsp;en|Effect|ru|Эффект|&nbsp;</td>
+<td style="width:50px;height:20px">&nbsp;`en|Statistic|`ru|Статистика|&nbsp;</td>
+<td style="width:50px;height:20px">&nbsp;`en|Effect|`ru|Эффект|&nbsp;</td>
 </tr>
 <tr>
 <td style="width:50px;height:19px">&nbsp;500</td>
@@ -139,49 +139,49 @@ ru|Например, если 400 &lt;= Сила &lt; 500, к поврежден
 </table>
 <br>
 <br>
-en|I'll call values obtained from this table "MightEffect", "IntellectEffect" and so on|ru|Я буду называть значения, полученный на основе этой таблицы, "ЭффектСилы", "Эффект Интеллекта" и т.д|.<br>
+`en|I'll call values obtained from this table "MightEffect", "IntellectEffect" and so on|`ru|Я буду называть значения, полученный на основе этой таблицы, "ЭффектСилы", "Эффект Интеллекта" и т.д|.<br>
 <br>
-en|<b>Might</b> effect is added to melee damage|ru|Эффект <b>Силы</b> добавляется к рукопашному повреждению|.<br>
+`en|<b>Might</b> effect is added to melee damage|`ru|Эффект <b>Силы</b> добавляется к рукопашному повреждению|.<br>
 <b>
-en|Intellect</b> and/or <b>Personality</b> effects are multiplied by mana multiplier of character class and added to SP|ru|</b>Эффекты <b>Интеллекта</b> и/или <b>Силы духа</b> умножаются на множитель маны, зависящий от класса персонажа, и добавляются к Очкам магии|.<br>
-ru|Эффект <b>Меткости</b> добавляется к Атаке и Точн.п.<br>
+`en|Intellect</b> and/or <b>Personality</b> effects are multiplied by mana multiplier of character class and added to SP|`ru|</b>Эффекты <b>Интеллекта</b> и/или <b>Силы духа</b> умножаются на множитель маны, зависящий от класса персонажа, и добавляются к Очкам магии|.<br>
+`ru|Эффект <b>Меткости</b> добавляется к Атаке и Точн.п.<br>
 Эффект <b>Выносливости</b>, помноженный на множитель жизни класса персонажа, добавляется к максимальному Здоровью. Еще он уменьшает время, которое требуется персонажу, чтобы восстановиться после удара монстра. Оно равно <span class="math">20 - ЭффектВыносливости</span>. Если Выносливость перевалит за 350, восстановление будет мгновенным.<br>
 Эффект |
 <b>
-en|Accuracy</b> effect is added to Attack and Shoot|ru|Скорости</b> добавляется к Классу брони и вычитается из времени восстановления|.<br>
-en|<b>
+`en|Accuracy</b> effect is added to Attack and Shoot|`ru|Скорости</b> добавляется к Классу брони и вычитается из времени восстановления|.<br>
+`en|<b>
 Endurance</b> effect is multiplied by HP multiplier of the class and added to HP. It also decreases time of recovery from enemy attacks. 
 The formula is <span class="math">20 - EnduranceEffect</span>. So, with Endurance of 350 and more the recovery is immediate.<br>
 <b>
 Speed</b> effect is added to Armor Class and subtracted from recovery time.<br>
 <b>
 Luck</b> effect is added to all non-zero resistances, although this is not shown in your character screen. It also protects you from bad things monsters can do to you.<br>|
-ru|Эффект <b>
+`ru|Эффект <b>
 Удачи</b>, фактически, добавляется ко всем защитам, значение которых не равно 0, хоть это и не отражается в экране персонажа. Он также защищает от пакостей, которые могут сделать монстры (отравление, поломка вещей и т.д).<br>|
 <br>
 <br>
-<b>en|Experience|ru|Опыт|<br>
+<b>`en|Experience|`ru|Опыт|<br>
 <br>
-</b>en|N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that|ru|Для достижения уровеня N требуется N*1000 очков опыта в добавок к очкам предыдущего уровня. Для уровня 1 требуется 1000 опыта, для уровня 2 нужно еще 2000 опыта, т.е. в сумме 3000. Для уровня 3 нужно еще не 3000 больше|.<br>
-en|Here's the formula for total experience for N'th level:|ru|Таким образом, суммарный опыт для достижения уровня N определяется формулой| <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
+</b>`en|N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that|`ru|Для достижения уровеня N требуется N*1000 очков опыта в добавок к очкам предыдущего уровня. Для уровня 1 требуется 1000 опыта, для уровня 2 нужно еще 2000 опыта, т.е. в сумме 3000. Для уровня 3 нужно еще не 3000 больше|.<br>
+`en|Here's the formula for total experience for N'th level:|`ru|Таким образом, суммарный опыт для достижения уровня N определяется формулой| <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
 <br>
-<h2>en|Chance To Hit and Resistances|ru|Шанс попадания и Устойчивости|</h2>
-en|Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass|ru|Шанс, что Ваш игрок ударит монстра равен <span class="math">(15 + АтакаИгрока*2)/(</span><span class="math">30 + АтакаИгрока*2 + КлассБрониМонстра</span><span class="math">|)</span>.<br>
-en|Chance that monster will hit your character in a physic attack is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass|ru|Шанс, что монстр попадет в Вашего игрока равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока|</span><span class="math">)</span>.<br>
+<h2>`en|Chance To Hit and Resistances|`ru|Шанс попадания и Устойчивости|</h2>
+`en|Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass|`ru|Шанс, что Ваш игрок ударит монстра равен <span class="math">(15 + АтакаИгрока*2)/(</span><span class="math">30 + АтакаИгрока*2 + КлассБрониМонстра</span><span class="math">|)</span>.<br>
+`en|Chance that monster will hit your character in a physic attack is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass|`ru|Шанс, что монстр попадет в Вашего игрока равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока|</span><span class="math">)</span>.<br>
 <br>
-en|Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6|ru|В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>. В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>|.<br>
+`en|Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6|`ru|В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>. В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>|.<br>
  <br>
-en|Chance that enemy will to do some bad thing to you (poison, break item and so on) is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing|ru|Шанс, что враг сделает игроку какую-нибудь пакость равен <span class="math">30/(30 + ЭффектУдачи + ДругойЭффект)</span>, где ДругойЭффект зависит от пакости|:<br>
-<div style="margin-left:40px">en|Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect|ru|Слабость, Сон, Опьянение, Болезнь, Кома, Старение:&nbsp; <span class="math">ЭффектВыносливости|</span><br>
+`en|Chance that enemy will to do some bad thing to you (poison, break item and so on) is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing|`ru|Шанс, что враг сделает игроку какую-нибудь пакость равен <span class="math">30/(30 + ЭффектУдачи + ДругойЭффект)</span>, где ДругойЭффект зависит от пакости|:<br>
+<div style="margin-left:40px">`en|Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect|`ru|Слабость, Сон, Опьянение, Болезнь, Кома, Старение:&nbsp; <span class="math">ЭффектВыносливости|</span><br>
 </div>
-<div style="margin-left:40px">en|Curse:&nbsp; <span class="math">PersonalityEffect|ru|Проклятие:&nbsp; <span class="math">ЭффектСилыДуха|</span><br>
-en|DrainSP, Dispel Magic:&nbsp; <span class="math">(PersonalityEffect + IntellectEffect|ru|Высасывание очков магии, Рассеивание заклинаний:&nbsp; <span class="math">(ЭффектСилыДуха + ЭффектИнтеллекта|)/2</span><br>
-en|Insane, Paralyze, Afraid:&nbsp; <span class="math">MindResistance|ru|Сумасшествие, Паралич, Испуг:&nbsp; <span class="math">Устойчивость к Уму|</span><br>
-en|Stone:&nbsp; <span class="math">EarthResistance|ru|Окаменение:&nbsp; <span class="math">Устойчивость к Земле|</span><br>
-en|Poison, Dead, Eradicated:&nbsp; <span class="math">BodyResistance|ru|Отравление, Смерть, Уничтожение:&nbsp; <span class="math">Устойчивость к Телу|</span><br>
-en|Break or Steal Item:&nbsp; <span class="math">Item strength|ru|Поломка или Кража предмета:&nbsp; <span class="math">Сила предмета|</span><br>
+<div style="margin-left:40px">`en|Curse:&nbsp; <span class="math">PersonalityEffect|`ru|Проклятие:&nbsp; <span class="math">ЭффектСилыДуха|</span><br>
+`en|DrainSP, Dispel Magic:&nbsp; <span class="math">(PersonalityEffect + IntellectEffect|`ru|Высасывание очков магии, Рассеивание заклинаний:&nbsp; <span class="math">(ЭффектСилыДуха + ЭффектИнтеллекта|)/2</span><br>
+`en|Insane, Paralyze, Afraid:&nbsp; <span class="math">MindResistance|`ru|Сумасшествие, Паралич, Испуг:&nbsp; <span class="math">Устойчивость к Уму|</span><br>
+`en|Stone:&nbsp; <span class="math">EarthResistance|`ru|Окаменение:&nbsp; <span class="math">Устойчивость к Земле|</span><br>
+`en|Poison, Dead, Eradicated:&nbsp; <span class="math">BodyResistance|`ru|Отравление, Смерть, Уничтожение:&nbsp; <span class="math">Устойчивость к Телу|</span><br>
+`en|Break or Steal Item:&nbsp; <span class="math">Item strength|`ru|Поломка или Кража предмета:&nbsp; <span class="math">Сила предмета|</span><br>
 </div>
-en|<div style="margin-left:40px"><span class="math"><br>
+`en|<div style="margin-left:40px"><span class="math"><br>
 </span></div>
 In MM6 it's different:</div>
 <div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Afraid:&nbsp;&nbsp;<span class="math">EnduranceEffect</span><br>
@@ -192,14 +192,14 @@ Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
 <div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span class="math">MagicResistance</span></div>
 <div style="margin-left:40px">Break or Steal Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>|
 <div><br>
-en|<p><b>Resistances</b></p>
+`en|<p><b>Resistances</b></p>
 When your character gets hit by magic, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
 Dice is dropped. If you are unlucky, you get full 100% damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/8 (12.5%) damage.<br>
 If you are lucky, you get 1/16 (6.25%) damage.<br>|
-ru|</div>
+`ru|</div>
 <div>
 <div>В MM6 иначе:</div>
 <div style="margin-left:40px">Слабость,&nbsp;Сон,&nbsp;Опьянение,&nbsp;Болезнь,&nbsp;Кома,&nbsp;Испуг:&nbsp;&nbsp;<span class="math">ЭффектВыносливости</span></div>
@@ -218,7 +218,7 @@ ru|</div>
 Если повезло, кубик бросается в четвертый раз. Если не повезло, герой получает 1/8 (12.5%) повреждений.<br>
 Если повезло, герой получает 1/16 (6.25%) повреждений.<br>|
 <br>
-en|To put it simple, I've calculated average damage for some values of resistance (with LuckEffect added to it|ru|Для удобства я посчител средние повреждения, наносимые при некоторых значениях сопротивляемости (с прибавленной к ней Удачей|):<br>
+`en|To put it simple, I've calculated average damage for some values of resistance (with LuckEffect added to it|`ru|Для удобства я посчител средние повреждения, наносимые при некоторых значениях сопротивляемости (с прибавленной к ней Удачей|):<br>
 <table>
 <tbody>
 <tr>
@@ -256,128 +256,128 @@ en|To put it simple, I've calculated average damage for some values of resistanc
 </tbody>
 </table>
 <br>
-en|When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage|ru|Когда Вы попадаете по врагу, все происходит так же, только у него нет Удачи, так что формула такая: <span class="math">1 - 30/(30 + Устойчивость)</span>. В отличие от Вас, у монстров бывает устойчивость к физическому урону|.<br>
+`en|When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage|`ru|Когда Вы попадаете по врагу, все происходит так же, только у него нет Удачи, так что формула такая: <span class="math">1 - 30/(30 + Устойчивость)</span>. В отличие от Вас, у монстров бывает устойчивость к физическому урону|.<br>
 <br>
-<h2>en|Recovery Time|ru|Время восстановления|</h2>
-en|Recovery time is delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 (except for blasters and bows).<br>|
-ru|Время восстановления - это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 (за исключением бластеров и луков). <br>|
+<h2>`en|Recovery Time|`ru|Время восстановления|</h2>
+`en|Recovery time is delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 (except for blasters and bows).<br>|
+`ru|Время восстановления - это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 (за исключением бластеров и луков). <br>|
 <br>
 </div>
-<p><b>en|Base recovery times of weapons</b></p>|ru|Базовое время восстановления оружия<br>|
-en|Staff: 100
+<p><b>`en|Base recovery times of weapons</b></p>|`ru|Базовое время восстановления оружия<br>|
+`en|Staff: 100
 <br>
 Sword: 90
 <br>
 Dagger: 60
 <br>
 Axe: 100|
-ru|</b></p>
+`ru|</b></p>
 Посох: 100|
 <br>
-en|Spear: 80|
-ru|Меч: 90|
+`en|Spear: 80|
+`ru|Меч: 90|
 <br>
-en|Bow: 100|
-ru|Кинжал: 60|
+`en|Bow: 100|
+`ru|Кинжал: 60|
 <br>
-en|Mace: 80|
-ru|Топор: 100|
+`en|Mace: 80|
+`ru|Топор: 100|
 <br>
-en|Blaster: 30|
-ru|Копьё: 80|
+`en|Blaster: 30|
+`ru|Копьё: 80|
 <br>
-ru|Лук: 100|
+`ru|Лук: 100|
 <br>
-en|Unarmed combat: If you have Unarmed skill, recovery time will be
+`en|Unarmed combat: If you have Unarmed skill, recovery time will be
 the same as that of Dagger = 60. If you don't, recovery time will be
 the same as that of Staff = 100.|
-ru|Булава: 80|
+`ru|Булава: 80|
 <br>
-en|Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got recovery time 0 and 6 respectively. So, with a club you will always have recovery time of 30.<br>|
-ru|Бластер: 30|
+`en|Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got recovery time 0 and 6 respectively. So, with a club you will always have recovery time of 30.<br>|
+`ru|Бластер: 30|
 <br>
-en|<p><b>Recovery times of armor and shield</b></p>
+`en|<p><b>Recovery times of armor and shield</b></p>
 Shield: 10|
 <br>
-en|Leather: 10|
-ru|Без оружия: Если герой имеет умение "Рукопашный бой", то время восстановления равно 60, как у Кинжала. Если умения нет, то 100, как у Посоха.<br>
+`en|Leather: 10|
+`ru|Без оружия: Если герой имеет умение "Рукопашный бой", то время восстановления равно 60, как у Кинжала. Если умения нет, то 100, как у Посоха.<br>
 У дубинок в MM6 время восстановления 100 (как у посоха). В MM7 и MM8 разработчики недосмотрели и у дубинок получилось время восстановления 6 и 0 соответственно. Так что, с дубинкой в руках, игрок всегда будет иметь время восстановления 30.<br>|
 <br>
-en|Chain: 20|
-ru|<p><b>Время восстановления брони и щита<br>
+`en|Chain: 20|
+`ru|<p><b>Время восстановления брони и щита<br>
 </b></p>
 Щит: 10|
 <br>
-en|Plate: 30|
-ru|Кожа: 10|
+`en|Plate: 30|
+`ru|Кожа: 10|
 <br>
-ru|Кольчуга: 20|
+`ru|Кольчуга: 20|
 <br>
-en|Armor skills can reduce or eliminate this penalty.<br>|
-ru|Латы: 30|
+`en|Armor skills can reduce or eliminate this penalty.<br>|
+`ru|Латы: 30|
 <br>
-en|<p><b>Skills with 'reduces recovery time' feature</b></p>
+`en|<p><b>Skills with 'reduces recovery time' feature</b></p>
 -1*skill|
 <br>
-en|(-2*skill for GM Armsmaster)|
-ru|Развитие умения уменьшает и леквидирует данное время восстановления.<br>|
+`en|(-2*skill for GM Armsmaster)|
+`ru|Развитие умения уменьшает и леквидирует данное время восстановления.<br>|
 <br>
-en|Note that items that increase Bow/Axe/Sword skills are ignored here
+`en|Note that items that increase Bow/Axe/Sword skills are ignored here
 (only the skill of character is used). This bug is fixed in my patches. Armsmaster items are always included.|
-ru|<p><b>Уменьшающие время восстановления умения</b></p>
+`ru|<p><b>Уменьшающие время восстановления умения</b></p>
 -1*умение<br>
 (-2*умение в случае Магистра Оружейника)|
 <br>
 <br>
-en|<p><b>Speed</b></p>
+`en|<p><b>Speed</b></p>
 The SpeedEffect is subtracted from recovery time.|
-ru|Баг: предметы, увеличивающие умение Лука, Топора или Меча, не влияют на время восстановления. Учитывается только умение самого героя. Предметы, увеличивающие навык "Оружейник" учитываются в полном объёме. Баг исправлен в моих патчах.<br>|
+`ru|Баг: предметы, увеличивающие умение Лука, Топора или Меча, не влияют на время восстановления. Учитывается только умение самого героя. Предметы, увеличивающие навык "Оружейник" учитываются в полном объёме. Баг исправлен в моих патчах.<br>|
 <br>
-ru|<p><b>Скорость</b></p>
+`ru|<p><b>Скорость</b></p>
 ЭффектСкорости вычитается из времени восстановления.|
 <br>
-en|<p><b>Special effects</b></p>
+`en|<p><b>Special effects</b></p>
 Haste: -25 (in MM7 and MM8 it didn't work before Mok's patch)|
 <br>
-en|Swift: -20 (some artifacts and 2 'increases weapon speed' enchantments)|
-ru|<p><b>Особые эффекты<br>
+`en|Swift: -20 (some artifacts and 2 'increases weapon speed' enchantments)|
+`ru|<p><b>Особые эффекты<br>
 </b></p>
 Ускорение: -25 (в MM7 и MM8 заклинание не работало до патчей Мока)|
 <br>
-en|Slow: 20 (artifact sword 'Finality' only)|
-ru|Предметы, увеличивающие скорость нанесения ударов оружием: -20<br>
+`en|Slow: 20 (artifact sword 'Finality' only)|
+`ru|Предметы, увеличивающие скорость нанесения ударов оружием: -20<br>
 Замедление: 20 (только меч-артефакт 'Конец Всему')|
 <br>
-en|Also note that Herald's Boots were meant to reduce recovery time,
+`en|Also note that Herald's Boots were meant to reduce recovery time,
 but they cannot be used as a weapon, so they don't effect recovery
 time. This bug is fixed with my patch.<br>|
 <br>
-en|<p><b>Final Value</b></p>
+`en|<p><b>Final Value</b></p>
 Sum up these factors and you'll get the final value. If it is lower than 30, recovery time will be 30. However, this doesn't apply to Blaster and Bow in real time mode. Their lower limit is 0 in real time.<br>|
-ru|Баг: артефакт 'Сапоги Герольда' должен был уменьшать время восстановления, но не работает, поскольку его нельзя испоьзовать, как оружие. Баг исправлен в моём патче.<br>|
+`ru|Баг: артефакт 'Сапоги Герольда' должен был уменьшать время восстановления, но не работает, поскольку его нельзя испоьзовать, как оружие. Баг исправлен в моём патче.<br>|
 <br>
-en|Example 1:|
-ru|<p><b>Итого</b></p>
+`en|Example 1:|
+`ru|<p><b>Итого</b></p>
 Просуммируйте это все и получите время восстановления. Если получилось меньше 30, то время восстановления будет 30. Но есть одно исключение - в реальном времени время восстановления бластера и лука не ограничено - оно может опускаться до нуля.<br>|
 <br>
-en|Mace, Shield, Leather, 15 Speed. All skills are at initial level, no Armsmaster.|
-ru|Пример 1:|
+`en|Mace, Shield, Leather, 15 Speed. All skills are at initial level, no Armsmaster.|
+`ru|Пример 1:|
 <br>
-en|Recovery time will be  80 + 10 + 10 - 1 = 99.|
-ru|Булава, Щит, Кожа, 15 Скорости. Все умения на начальном уровне, Оружейника нет.|
+`en|Recovery time will be  80 + 10 + 10 - 1 = 99.|
+`ru|Булава, Щит, Кожа, 15 Скорости. Все умения на начальном уровне, Оружейника нет.|
 <br>
-ru|Время восстановления будет 80 + 10 + 10 - 1 = 99.|
+`ru|Время восстановления будет 80 + 10 + 10 - 1 = 99.|
 <br>
-en|Example 2:|
+`en|Example 2:|
 <br>
-en|Axe will be slower than Spear until Axe skill is more than 20. Only after that it will be faster.|
-ru|Пример 2:|
+`en|Axe will be slower than Spear until Axe skill is more than 20. Only after that it will be faster.|
+`ru|Пример 2:|
 <br>
-ru|Топор будет медленнее копья до тех пор, пока его умение не достигнет 20. Только потом он будет быстрее.<br>|
+`ru|Топор будет медленнее копья до тех пор, пока его умение не достигнет 20. Только потом он будет быстрее.<br>|
 <br>
-<h2>en|Dual Weapons|ru|Оружие в двух руках|</h2>
-<p><b>en|Recovery time</b></p>|ru|Время восстановления<br>|
-en|When wielding 2 weapons the one with higher base recovery time is
+<h2>`en|Dual Weapons|`ru|Оружие в двух руках|</h2>
+<p><b>`en|Recovery time</b></p>|`ru|Время восстановления<br>|
+`en|When wielding 2 weapons the one with higher base recovery time is
 used in calculations. If both weapons have the same recovery time, the one in the main (right) hand is used.
 <br>
 Only skill and properties of this weapon are used. The other weapon doesn't effect recovery time at all.
@@ -391,36 +391,36 @@ In MM6 recovery time of the weapon
 in the second hand was added to the calculated value. Thus, wielding
 second weapon was useless. Starting with version 1.4 of my patch this is fixed (but you can turn the fix off if you wish).<br>
 |
-ru|</b></p>
+`ru|</b></p>
 Если игрок держит 2 оружия, то учитывается только то, у которого больше базовое время восстановления. Если оба оружия имеют одинаковое базовое время восстановления, то учитывается оружие в основной (правой) руке. Умение и свойства другого оружия не влияют на время восстановления.<br>
 Пример 1: если игрок держит копьё и меч, то время восстановления полностью определяется мечом - его свойствами и умением Меч.<br>
 Пример 2: если у Вас есть 2 меча, один из которых увеличивает скорость нанесения ударов, то берите его в основную руку. Иначе его свойство не будет учитываться.<br>
 В MM6 к полученному времени восстановления добавлялось базовое время восстановления оружия во второй руке. В результате использовать второе оружие было бессмысленно. В версии 1.4 моего патча это исправлено (при желании это исправление можно отключить).<br>|
 <br>
-<p><b>en|Attack &amp; Damage effects of skills|ru|Бонусы умений к Атаке и Повреждению|</b>
+<p><b>`en|Attack &amp; Damage effects of skills|`ru|Бонусы умений к Атаке и Повреждению|</b>
 </p>
-en|When using dual weapons only skill of the weapon in your second (left) hand
+`en|When using dual weapons only skill of the weapon in your second (left) hand
 is used in calculation of attack and|
-ru|При использовании 2 оружий только умение оружия во второй (левой) руке влияет на атаку и повреждение.<br>
+`ru|При использовании 2 оружий только умение оружия во второй (левой) руке влияет на атаку и повреждение.<br>
 В MM6 умение оружия в первой (правой) руке влияет на повреждение, а оружие во второй (левой) - на атаку.<br>|
-en|damage|ru|Пример 1: В MM7 и MM8, если игрок использует копьё и меч, то бонусы умения Копьё  к атаке, повреждению и времени восстановления игнорируются. Умение Меч дает все свои бонусы|.<br>
-en|In MM6 the first (right) hand weapon skill is used for damage and the second (left) hand weapon skill is used for attack|ru|Пример 2: В MM6, если игрок использует копьё и меч, то умение Копьё дает только бонус к повреждению, а бонусы к атаке и времени восстановления игнорируются. Умение Меч дает все свои бонусы|.<br>
-en|Example 1: in MM7 and MM8 if you wield a Spear and a Sword, the Spear skill will only
+`en|damage|`ru|Пример 1: В MM7 и MM8, если игрок использует копьё и меч, то бонусы умения Копьё  к атаке, повреждению и времени восстановления игнорируются. Умение Меч дает все свои бонусы|.<br>
+`en|In MM6 the first (right) hand weapon skill is used for damage and the second (left) hand weapon skill is used for attack|`ru|Пример 2: В MM6, если игрок использует копьё и меч, то умение Копьё дает только бонус к повреждению, а бонусы к атаке и времени восстановления игнорируются. Умение Меч дает все свои бонусы|.<br>
+`en|Example 1: in MM7 and MM8 if you wield a Spear and a Sword, the Spear skill will only
 effect Armor Class if you are GM. Attack, Damage and recovery time
 would be taken from Sword skill.<br>
 Example 2: in MM6 if you wield a Spear and a Sword, the Spear skill will only
 effect Damage. Attack and recovery time
 would be taken from Sword skill.<br>|
 <br>
-<h2>en|Other|ru|Другое|</h2>
-<p><b>en|Dagger Specifics|ru|Особенности кинжала|<br>
+<h2>`en|Other|`ru|Другое|</h2>
+<p><b>`en|Dagger Specifics|`ru|Особенности кинжала|<br>
 </b></p>
-en|Chance to do tripple damage by dagger is 10%. It doesn't depend
+`en|Chance to do tripple damage by dagger is 10%. It doesn't depend
 on the skill. Only the damage of the dagger itself is tripled. In MM7
 and MM8 damage of a dagger in the second hand can be trippled (with the same 10% probability) even if you
 are just Expert (it's a bug).<br>
 Both problems are fixed in my patches.<br>|
-ru|Шанс нанесения тройного урона равен 10% и не зависит от умения. Утраивается только повреждение самого кинжала. Кинжалы в правой и левой руке обрабатываются раздельно. В MM7
+`ru|Шанс нанесения тройного урона равен 10% и не зависит от умения. Утраивается только повреждение самого кинжала. Кинжалы в правой и левой руке обрабатываются раздельно. В MM7
 и MM8 повреждение кинжала во второй руке утраивается (с той же 10% вороятностью) даже на Эксперте (это баг).<br>
 Оба несоответстсвия описанию исправлены в моих патчах.<br>|
 <br>
@@ -428,26 +428,26 @@ ru|Шанс нанесения тройного урона равен 10% и н�
                         
                         
                                 
-<p><b>en|'Increases rate of Recovery' enchantment|ru|Свойство 'Увеличивает скорость восстановления'</b> (в кривом переводе Буки 'Увеличивает скорость выздоровления')<b>|<br>
+<p><b>`en|'Increases rate of Recovery' enchantment|`ru|Свойство 'Увеличивает скорость восстановления'</b> (в кривом переводе Буки 'Увеличивает скорость выздоровления')<b>|<br>
 </b></p>
-en|This enchantment was supposed to make
+`en|This enchantment was supposed to make
 recovery 1.5 times (that's a huge bonus), but due to rounding
 it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>|
-ru|Это свойство предметов должно было ускорять восстановление в 1.5 раза (огромный бонус!). Но, из-за ошибок округления, оно не работает на современных компьютерах. В моем патче к MM6 оно работает и увеличивает скорость восстановления на 10%.<br>|
+`ru|Это свойство предметов должно было ускорять восстановление в 1.5 раза (огромный бонус!). Но, из-за ошибок округления, оно не работает на современных компьютерах. В моем патче к MM6 оно работает и увеличивает скорость восстановления на 10%.<br>|
 <br>
 <div>
-<p><b>en|Vampiric weapons|ru|Оружие "Вампира"|<br>
+<p><b>`en|Vampiric weapons|`ru|Оружие "Вампира"|<br>
 </b></p>
-en|Vampiric weapons add 1/5 of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP|ru|<div>Вампирское оружие добавляет к здоровью 1/5 всего нанесенного врагу физического урона (обоими руками, с учетом Героизма и бонусов умений). Если у персонажа 2 вампирских оружия, оба работают - добавляется в 2 раза больше. Здоровье не добавляется&nbsp;при убийстве монстра, а только если после удара у него осталась жизнь|.</div>
-<div>en|In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him|ru|В MM8 к здоровью добавляется <span class="math">min(повреждение/5, ОставшеесяЗдоровье/5)</span>, где&nbsp;<span class="math">ОставшеесяЗдоровье</span> - здоровье, которое осталось у монстра после удара|.<br>
+`en|Vampiric weapons add 1/5 of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP|`ru|<div>Вампирское оружие добавляет к здоровью 1/5 всего нанесенного врагу физического урона (обоими руками, с учетом Героизма и бонусов умений). Если у персонажа 2 вампирских оружия, оба работают - добавляется в 2 раза больше. Здоровье не добавляется&nbsp;при убийстве монстра, а только если после удара у него осталась жизнь|.</div>
+<div>`en|In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him|`ru|В MM8 к здоровью добавляется <span class="math">min(повреждение/5, ОставшеесяЗдоровье/5)</span>, где&nbsp;<span class="math">ОставшеесяЗдоровье</span> - здоровье, которое осталось у монстра после удара|.<br>
 <br>
-en|</div>|
+`en|</div>|
 <div>
-<p><b>en|Staff|ru|Посох|<br>
+<p><b>`en|Staff|`ru|Посох|<br>
 </b></p>
-en|In MM7 with GM Staff you gain Unarmed bonus, but lose Armsmaster bonus to damage. This is fixed in v2.1 of my patch|ru|В MM7 Магистр Посоха приобретает бонусы Рукопашного боя, но теряет бонус Оружейника к урону. В моём патче это исправлено в версии 2.1|.<br>
-ru|</div>
+`en|In MM7 with GM Staff you gain Unarmed bonus, but lose Armsmaster bonus to damage. This is fixed in v2.1 of my patch|`ru|В MM7 Магистр Посоха приобретает бонусы Рукопашного боя, но теряет бонус Оружейника к урону. В моём патче это исправлено в версии 2.1|.<br>
+`ru|</div>
 <div>В MM8 умение Посоха добавляется ещё и к урону, а не только к атаке. Бонус Оружейника добавляется корректно.</div>|
 </div>
-en|<div>In MM8 Staff skill is added to damage, not just attack. Armsmaster bonus is applied correctly.<br>|
+`en|<div>In MM8 Staff skill is added to damage, not just attack. Armsmaster bonus is applied correctly.<br>|
 </div>

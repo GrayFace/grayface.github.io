@@ -39,7 +39,7 @@ end
 function P.GetPath(s, base)
 	base = base or P.PageId
 	if s:match("img[/%^]") then
-		return "en|"..DoGetPath(s, base).."|ru|"..DoGetPath(s, 'ru^'..base).."|"
+		return "`en|"..DoGetPath(s, base).."|`ru|"..DoGetPath(s, 'ru^'..base).."|"
 	end
 	return DoGetPath(s, base)
 end
@@ -114,7 +114,7 @@ function P.LinkVer(name)
 	return "v"..LinkData(name).Version
 end
 
-local MirrorLink = [[<a href="%s" title="en|Download from|ru|Скачать с| GitHubru|'а|">%s</a><a href="%s" class="mirror" title="ru|Зеркало на |SourceForgeen| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="(en|Mirror|ru|Зеркало|)"></a>]]
+local MirrorLink = [[<a href="%s" title="`en|Download from|`ru|Скачать с| GitHub`ru|'а|">%s</a><a href="%s" class="mirror" title="`ru|Зеркало на |SourceForge`en| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="(`en|Mirror|`ru|Зеркало|)"></a>]]
 
 function P.CustomLink(lnk, title, mirrorSF)
 	lnk = ToLink(lnk)
@@ -123,7 +123,7 @@ function P.CustomLink(lnk, title, mirrorSF)
 	if mirrorSF then
 		q[#q+1] = MirrorLink:format(lnk, title, ToLink(mirrorSF))
 	else
-		q[#q+1] = ('<a href="%s" title="en|Download|ru|Скачать|">%s</a>'):format(lnk, title)
+		q[#q+1] = ('<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>'):format(lnk, title)
 	end
 end
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
--[local SiteName = 'en|Sergey "GrayFace" Rozhenko Homepage|ru|Сайт Сергея "GrayFace" Роженко|'
+-[local SiteName = '`en|Sergey "GrayFace" Rozhenko Homepage|`ru|Сайт Сергея "GrayFace" Роженко|'
 ]
-<html lang="en|en|ru|ru|">
+<html lang="`en|en|`ru|ru|">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -307,9 +307,9 @@ local MainGradDark = MainGradLight*0.1
 <body>
 	<div id="menubar">
 		<div id="menu-lang">
-			en|<span title="English">EN</span>
+			`en|<span title="English">EN</span>
 			<a title="Русский" href="-[(GetPath('ru^'..PageId, PageId))]">RU</a>|
-			ru|<a title="English" href="-[(GetPath(PageId, 'ru^'..PageId))]">EN</a>
+			`ru|<a title="English" href="-[(GetPath(PageId, 'ru^'..PageId))]">EN</a>
 			<span title="Русский">RU</span>|				
 		</div>
 		<div id="menu" class="menu">
@@ -341,7 +341,7 @@ local MainGradDark = MainGradLight*0.1
 		<div id="menu-contact" class="menu">
 			<h4>Contacts</h4>
 			<div>
-				<span title="en|Email|ru|Почта|" alt="Email">-[(Include"svg/mail.svg")]</span>
+				<span title="`en|Email|`ru|Почта|" alt="Email">-[(Include"svg/mail.svg")]</span>
 				sergroj at mail ru
 			</div>
 			<div>
@@ -349,7 +349,7 @@ local MainGradDark = MainGradLight*0.1
 				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
 			</div>
 			<div>
-				<a href="https://vk.com/grayface" tabindex="-1" title="en|VK|ru|ВКонтакте|" alt="en|VK|ru|ВКонтакте|">-[(Include"svg/vk.svg")]</a>
+				<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" alt="`en|VK|`ru|ВКонтакте|">-[(Include"svg/vk.svg")]</a>
 				<a href="https://vk.com/grayface">vk.com/grayface</a>
 			</div>
 		</div>
@@ -359,7 +359,7 @@ local MainGradDark = MainGradLight*0.1
 			<div id="content2">
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)
-				]<h3 id="toc-header">en|Contents|ru|Содержание|</h3>
+				]<h3 id="toc-header">`en|Contents|`ru|Содержание|</h3>
 				<div id="toc">-[(TOC)]</div>
 			-[end]
 			-[(Content)]

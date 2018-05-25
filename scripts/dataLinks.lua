@@ -239,7 +239,7 @@ return {
 	},
 	MM8ChooseParty = {
 		"404",
-		NameSuffix = " (en|Sorry, I need to release a bugfix first|ru|Пока недоступен, нужно собрать версию с исправленным багом|)"
+		NameSuffix = " (`en|Sorry, I need to release a bugfix first|`ru|Пока недоступен, нужно собрать версию с исправленным багом|)"
 	},
 	["MM8ChooseParty.png"] = {
 		"img/MM8ChooseParty.png"
@@ -257,14 +257,14 @@ return {
 	},
 	MMExtensionSrc = {
 		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
-		NameSuffix = " (en|of older version 2.1|ru|старой версии 2.1|)"
+		NameSuffix = " (`en|of older version 2.1|`ru|старой версии 2.1|)"
 	},
 	["Standard Frames"] = {
 		"https://www.dropbox.com/s/euyzbaoqdt4r3uo/Standard%20Frames.rar?dl=1"
 	},
 	mm6hd = {
 		"404",
-		NameSuffix = " (en|Sorry, I need to upload new version of MM6 patch first|ru|Пока недоступен, нужно залить новую версию патча для MM6|)"
+		NameSuffix = " (`en|Sorry, I need to upload new version of MM6 patch first|`ru|Пока недоступен, нужно залить новую версию патча для MM6|)"
 	},
 	["mm6hd_after.png"] = {
 		"img/mm6hd_after.png"
