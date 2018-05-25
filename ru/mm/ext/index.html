@@ -27,16 +27,15 @@
 		margin: 3px 0px;
 		padding-left: 20px;
 	}
+/* TOC */
 	#toc {
 		padding-bottom: 1.3em;
 	}
 	#toc ul {
-		/* list-style-type: none; */
 		color: #d4d7eb;
 		margin-top: 0px;
 		margin-bottom: 3px;
 		padding-left: 20px;
-		/* text-indent: -10px; */
 	}
 	#toc li ul {
 		color: #a6aedf;
@@ -47,11 +46,13 @@
 	#toc ul a:link {
 		color: #3e4a99;
 	}
+	/* Links */
 	a:link:hover, a:visited:hover {
 		background-color: #E8E8FF;
 		border-radius: 4px;
 	}
 	a:link {
+		border-radius:4px;
 		color: #4e5dbf;
 	}
 	a:link:active, a:visited:active {
@@ -60,6 +61,7 @@
 	#menu-lang a:visited {
 		color: #513ba5;
 	}
+/* Misc */
 	table {
 		border-collapse: collapse;
 		margin: 5px 0;
@@ -115,6 +117,30 @@
 		margin-right: 5px;
 		vertical-align: top;
 	}
+/* Mirrors */
+	.mirror, .mirror:link:hover, .mirror::visited:hover {
+		background-color:transparent;
+	}
+	.mirror {
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+	h3 .mirror {
+		margin-left: 0.3em;
+	}
+	.mirror img {
+		vertical-align:middle;
+		height:1em;
+		margin: -0.1em 0 0.1em;
+		border-radius:4px;
+	}
+	h3 .mirror img {
+		margin: -0.1em -7px 0.1em 0;
+	}
+	.mirror img:hover {
+	 	background-color: #E8E8FF;
+	}
+/* Menus */
 	#menubar {
 		position: absolute;
 		width: 185px;
@@ -203,6 +229,7 @@
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
+/* Resolutions */
 @media (max-width: 900px) {
 	#content2 {
 		padding: 0 15px 25px 17px;
@@ -306,23 +333,23 @@ MMExtension &ndash; это мощное расширение MM6-8 для мод
 другое. В будущем он может быть дополнен командами, нужными для моддеров. Не пугайтесь задержки при первых двух запусках &ndash; она вызвана генерацией Data\Tables.
 <br>
 <br>
-<a href="https://www.dropbox.com/s/qohxt8ijjh74mcw/MMExtensionTmp.rar?dl=1">Скачать MMExtension v2.1.1</a><br>
-<a href="https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1">Скачать исходники библиотек MMExtension (старой версии 2.1)</a><br>
+<a href="https://www.dropbox.com/s/qohxt8ijjh74mcw/MMExtensionTmp.rar?dl=1" title="Скачать">Скачать MMExtension v2.1.1</a><br>
+<a href="https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1" title="Скачать">Скачать исходники библиотек MMExtension (старой версии 2.1)</a><br>
 <br>
 <br>
 <div><img alt="Скриншот редактора карт MMEditor" title="Скриншот редактора карт MMEditor" src="../../../img/MMEditor.png"></div>
 <br>
-<a href="https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1">Скачать MMEditor v2.1</a><br>
-Полноценный редактор уровней. <a href="https://www.dropbox.com/s/johei6ngdgn7asm/MMEditorDlgSrc.rar?dl=1">(исходники MMEditorDlg.dll, Delphi 2006)</a><br>
+<a href="https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1" title="Скачать">Скачать MMEditor v2.1</a><br>
+Полноценный редактор уровней. <a href="https://www.dropbox.com/s/johei6ngdgn7asm/MMEditorDlgSrc.rar?dl=1" title="Скачать">(исходники MMEditorDlg.dll, Delphi 2006)</a><br>
 <div>
 <div>
 <br>
-<a href="https://sites.google.com/site/sergroj/mm/mmextension/SoloGame.rar?attredirects=0">Скачать скрипт для игры соло в MM6/MM7</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/mmextension/SoloGame.rar?attredirects=0" title="Скачать">Скачать скрипт для игры соло в MM6/MM7</a><br>
 
 Очень примитивный скрипт для игры одним игроком в MM6/MM7. Распакуйте в папку игры, запустите игру, нажмите Ctrl+F1, напишите "vars.PartySize = 1" и нажмите Ctrl+Enter. Это приведет к тому, что Вы будете играть одним игроком. Чтобы играть двумя или тремя, напишите "vars.PartySize = 2" или "vars.PartySize = 3" соответственно. 
 <br>
 <br>
-<a href="https://www.dropbox.com/s/kznafxub3lcbrv1/MMScripts.rar?dl=1">Скачать докомпилированные скрипты всех игр</a><br>
+<a href="https://www.dropbox.com/s/kznafxub3lcbrv1/MMScripts.rar?dl=1" title="Скачать">Скачать докомпилированные скрипты всех игр</a><br>
 
 Информацию о том, как их использовать см. в справке. В любом случае, это отличный пример использования команд Evt.
 <br>
@@ -339,7 +366,8 @@ MMExtension &ndash; это мощное расширение MM6-8 для мод
 <br>
 <h3><a href="ref">Справка</a></h3>
 
-Справка входит в архив MMExtension. Это её версия онлайн.
+Справка входит в архив MMExtension. Это её версия онлайн.<br>
+Если вы смотрите сайт с мобильного, открывайте её из FireFox'а, т.к. мобильный Chrome плохо переваривает такие большие документы.
 <br>
 
 			</div>

@@ -27,16 +27,15 @@
 		margin: 3px 0px;
 		padding-left: 20px;
 	}
+/* TOC */
 	#toc {
 		padding-bottom: 1.3em;
 	}
 	#toc ul {
-		/* list-style-type: none; */
 		color: #d4d7eb;
 		margin-top: 0px;
 		margin-bottom: 3px;
 		padding-left: 20px;
-		/* text-indent: -10px; */
 	}
 	#toc li ul {
 		color: #a6aedf;
@@ -47,11 +46,13 @@
 	#toc ul a:link {
 		color: #3e4a99;
 	}
+	/* Links */
 	a:link:hover, a:visited:hover {
 		background-color: #E8E8FF;
 		border-radius: 4px;
 	}
 	a:link {
+		border-radius:4px;
 		color: #4e5dbf;
 	}
 	a:link:active, a:visited:active {
@@ -60,6 +61,7 @@
 	#menu-lang a:visited {
 		color: #513ba5;
 	}
+/* Misc */
 	table {
 		border-collapse: collapse;
 		margin: 5px 0;
@@ -115,6 +117,30 @@
 		margin-right: 5px;
 		vertical-align: top;
 	}
+/* Mirrors */
+	.mirror, .mirror:link:hover, .mirror::visited:hover {
+		background-color:transparent;
+	}
+	.mirror {
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+	h3 .mirror {
+		margin-left: 0.3em;
+	}
+	.mirror img {
+		vertical-align:middle;
+		height:1em;
+		margin: -0.1em 0 0.1em;
+		border-radius:4px;
+	}
+	h3 .mirror img {
+		margin: -0.1em -7px 0.1em 0;
+	}
+	.mirror img:hover {
+	 	background-color: #E8E8FF;
+	}
+/* Menus */
 	#menubar {
 		position: absolute;
 		width: 185px;
@@ -203,6 +229,7 @@
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
+/* Resolutions */
 @media (max-width: 900px) {
 	#content2 {
 		padding: 0 15px 25px 17px;
@@ -298,7 +325,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 		<h1>Might and Magic Mechanics<span id="site-name" title="Sergey &quot;GrayFace&quot; Rozhenko Homepage">GrayFace</span><div style="clear:both"></div></h1>
 			<div id="content2">
 			<h3 id="toc-header">Contents</h3>
-				<div id="toc"><ul><li><a href="#Statistics">Statistics</a></li><li><a href="#Chance-To-Hit-and-Resistances">Chance To Hit and Resistances</a></li><li><a href="#Recovery-Time">Recovery Time</a></li><li><a href="#Dual-Weapons">Dual Weapons</a></li><li><a href="#Other">Other</a></li></ul></div>
+				<div id="toc"><ul><li><a href="#`Statistics`">Statistics</a></li><li><a href="#`Chance-To-Hit-and-Resistances`">Chance To Hit and Resistances</a></li><li><a href="#`Recovery-Time`">Recovery Time</a></li><li><a href="#`Dual-Weapons`">Dual Weapons</a></li><li><a href="#`Other`">Other</a></li></ul></div>
 			
 			
 <style>
@@ -308,7 +335,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 </style>
 <div>
 <div>
-<a name="Statistics" ></a><h2>Statistics</h2>
+<a name="`Statistics`" ></a><h2>Statistics</h2>
 All statistics give bonus according to the table below.<br>
 The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic.<br>
 Example: If 400 &lt;= Might &lt; 500, then you will get +25 to melee damage.
@@ -463,7 +490,7 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 </b>N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that.<br>
 Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
 <br>
-<a name="Chance-To-Hit-and-Resistances" ></a><h2>Chance To Hit and Resistances</h2>
+<a name="`Chance-To-Hit-and-Resistances`" ></a><h2>Chance To Hit and Resistances</h2>
 Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass)</span>.<br>
 Chance that monster will hit your character in a physic attack is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
 <br>
@@ -539,7 +566,7 @@ To put it simple, I've calculated average damage for some values of resistance (
 <br>
 When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage.<br>
 <br>
-<a name="Recovery-Time" ></a><h2>Recovery Time</h2>
+<a name="`Recovery-Time`" ></a><h2>Recovery Time</h2>
 Recovery time is delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 (except for blasters and bows).<br>
 
 <br>
@@ -645,7 +672,7 @@ Axe will be slower than Spear until Axe skill is more than 20. Only after that i
 <br>
 
 <br>
-<a name="Dual-Weapons" ></a><h2>Dual Weapons</h2>
+<a name="`Dual-Weapons`" ></a><h2>Dual Weapons</h2>
 <p><b>Recovery time</b></p>
 When wielding 2 weapons the one with higher base recovery time is
 used in calculations. If both weapons have the same recovery time, the one in the main (right) hand is used.
@@ -677,7 +704,7 @@ Example 2: in MM6 if you wield a Spear and a Sword, the Spear skill will only
 effect Damage. Attack and recovery time
 would be taken from Sword skill.<br>
 <br>
-<a name="Other" ></a><h2>Other</h2>
+<a name="`Other`" ></a><h2>Other</h2>
 <p><b>Dagger Specifics<br>
 </b></p>
 Chance to do tripple damage by dagger is 10%. It doesn't depend

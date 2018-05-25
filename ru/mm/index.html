@@ -27,16 +27,15 @@
 		margin: 3px 0px;
 		padding-left: 20px;
 	}
+/* TOC */
 	#toc {
 		padding-bottom: 1.3em;
 	}
 	#toc ul {
-		/* list-style-type: none; */
 		color: #d4d7eb;
 		margin-top: 0px;
 		margin-bottom: 3px;
 		padding-left: 20px;
-		/* text-indent: -10px; */
 	}
 	#toc li ul {
 		color: #a6aedf;
@@ -47,11 +46,13 @@
 	#toc ul a:link {
 		color: #3e4a99;
 	}
+	/* Links */
 	a:link:hover, a:visited:hover {
 		background-color: #E8E8FF;
 		border-radius: 4px;
 	}
 	a:link {
+		border-radius:4px;
 		color: #4e5dbf;
 	}
 	a:link:active, a:visited:active {
@@ -60,6 +61,7 @@
 	#menu-lang a:visited {
 		color: #513ba5;
 	}
+/* Misc */
 	table {
 		border-collapse: collapse;
 		margin: 5px 0;
@@ -115,6 +117,30 @@
 		margin-right: 5px;
 		vertical-align: top;
 	}
+/* Mirrors */
+	.mirror, .mirror:link:hover, .mirror::visited:hover {
+		background-color:transparent;
+	}
+	.mirror {
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+	h3 .mirror {
+		margin-left: 0.3em;
+	}
+	.mirror img {
+		vertical-align:middle;
+		height:1em;
+		margin: -0.1em 0 0.1em;
+		border-radius:4px;
+	}
+	h3 .mirror img {
+		margin: -0.1em -7px 0.1em 0;
+	}
+	.mirror img:hover {
+	 	background-color: #E8E8FF;
+	}
+/* Menus */
 	#menubar {
 		position: absolute;
 		width: 185px;
@@ -203,6 +229,7 @@
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
+/* Resolutions */
 @media (max-width: 900px) {
 	#content2 {
 		padding: 0 15px 25px 17px;
@@ -298,31 +325,31 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 		<h1>Might and Magic<span id="site-name" title="Сайт Сергея &quot;GrayFace&quot; Роженко">GrayFace</span><div style="clear:both"></div></h1>
 			<div id="content2">
 			<h3 id="toc-header">Содержание</h3>
-				<div id="toc"><ul><li><a href="#GrayFace-MM6-Patch">GrayFace MM6 Patch v2.0</a><ul><li><a href="#MM6-Controls">MM6 Controls v1.1</a></li></ul></li><li><a href="#GrayFace-MM7-Patch">GrayFace MM7 Patch v2.0</a></li><li><a href="#GrayFace-MM8-Patch">GrayFace MM8 Patch v2.0</a></li><li><a href="#Skill-Teachers-Patch-for-MM8">Список учителей умений для MM8</a></li><li><a href="#MM8-Choose-Party-(Sorry,-I-need-to-release-a-bugfix-first)">MM8 Choose Party (Пока недоступен, нужно собрать версию с исправленным багом)</a></li><li><a href="#MM6-Upscaled-Textures-(Sorry,-I-need-to-upload-new-version-of-MM6-patch-first)">Текстуры повышенного разрешения для MM6 (Пока недоступен, нужно залить новую версию патча для MM6)</a></li><li><a href="#Game-Mechanics">Игровая механика</a></li><li><a href="#MMExtension-v2.1.1-+-MMEditor">MMExtension v2.1.1 + MMEditor v2.1</a></li><li><a href="#MMArchive">MMArchive v1.2</a></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#Links">Ссылки</a><ul><li><a href="#The-Chaos-Conspiracy-mod-for-MM6">The Chaos Conspiracy mod for MM6</a></li><li><a href="#MM7Rev4Mod">MM7Rev4Mod</a></li><li><a href="#Maestro-Mod-for-MM7">Maestro Mod for MM7</a></li><li><a href="#Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine">Объединение Might and Magic 6, 7 и 8 на основе движка MM8</a></li><li><a href="#High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2">Поддержка высокого разрешения с использованием dgVoodoo 2</a></li><li><a href="#Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-and-Resolution-Mod-for-MM8">Resolution Mod for MM6, Resolution Mod for MM7 и Resolution Mod for MM8</a></li><li><a href="#Modding-Tools">Утилиты для моддинга</a></li><li><a href="#Sites">Сайты</a></li></ul></li></ul></div>
+				<div id="toc"><ul><li><a href="#GrayFace-MM6-Patch">GrayFace MM6 Patch v2.0</a><ul><li><a href="#MM6-Controls">MM6 Controls v1.1</a></li></ul></li><li><a href="#GrayFace-MM7-Patch">GrayFace MM7 Patch v2.0</a></li><li><a href="#GrayFace-MM8-Patch">GrayFace MM8 Patch v2.0</a></li><li><a href="#`Skill-Teachers-Patch-for`-MM8">Список учителей умений для MM8</a></li><li><a href="#MM8-Choose-Party-(`Sorry,-I-need-to-release-a-bugfix-first`)">MM8 Choose Party (Пока недоступен, нужно собрать версию с исправленным багом)</a></li><li><a href="#`MM6-Upscaled-Textures`-(`Sorry,-I-need-to-upload-new-version-of-MM6-patch-first`)">Текстуры повышенного разрешения для MM6 (Пока недоступен, нужно залить новую версию патча для MM6)</a></li><li><a href="#`Game-Mechanics`">Игровая механика</a></li><li><a href="#MMExtension-v2.1.1-+-MMEditor">MMExtension v2.1.1 + MMEditor v2.1</a></li><li><a href="#MMArchive">MMArchive v1.2</a></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#`Links`">Ссылки</a><ul><li><a href="#The-Chaos-Conspiracy-mod-for-MM6">The Chaos Conspiracy mod for MM6</a></li><li><a href="#MM7Rev4Mod">MM7Rev4Mod</a></li><li><a href="#Maestro-Mod-for-MM7">Maestro Mod for MM7</a></li><li><a href="#`Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine`">Объединение Might and Magic 6, 7 и 8 на основе движка MM8</a></li><li><a href="#`High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2`">Поддержка высокого разрешения с использованием dgVoodoo 2</a></li><li><a href="#Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-`and`-Resolution-Mod-for-MM8">Resolution Mod for MM6, Resolution Mod for MM7 и Resolution Mod for MM8</a></li><li><a href="#`Modding-Tools`">Утилиты для моддинга</a></li><li><a href="#`Sites`">Сайты</a></li></ul></li></ul></div>
 			
 			
 <a name="GrayFace-MM6-Patch" ></a><h3>GrayFace MM6 Patch v2.0</h3>
 GrayFace MM6 Patch 
 - это неофициальный патч для MM6. Он включает в себя патчи Мока и Ангела, правит много багов, добавляет быстрые сохранения, настройку клавишь, ускорение игры, управление мышью и т.д. В том числе исправляет проблемы, связанные с запуском игры на новых компьютерах или операционных системах. Должен запускаться на новых версиях Windows без каких-либо проблем (и без установки совместимости с Win 9x).<br>
 
-<a href="https://sites.google.com/site/sergroj/mm/MM6PatchReadMe_rus.TXT?attredirects=0">Полный список изменений</a>
+<a href="https://sites.google.com/site/sergroj/mm/MM6PatchReadMe_rus.TXT?attredirects=0" title="Скачать">Полный список изменений</a>
 <br>
-<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM6patch.rar?attredirects=0">Патч для английской версии игры</a><br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM6patch.rar?attredirects=0" title="Скачать">Патч для английской версии игры</a><br>
 Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
 </li>
 <li>
-<a href="https://sites.google.com/site/sergroj/mm/MM6patchBuka.rar?attredirects=0">Патч для русской версии от Буки</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/MM6patchBuka.rar?attredirects=0" title="Скачать">Патч для русской версии от Буки</a><br>
 Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
 </li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchLoc.rar?attredirects=0">Патч для других переводов</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchLoc.rar?attredirects=0" title="Скачать">Патч для других переводов</a><br>
 
 Не включает в себя изменения текстовых файлов из официальных патчей 1.1 и 1.2. Поэтому, для пираток в файле global.txt из icons.lod придется вручную поменять "MT" на "%s выстрелил в %s и нанес %d повреждений".<br>
 </li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0">Исходники</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0" title="Скачать">Исходники</a><br>
 Delphi 2006.</li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0">Настройки клавиш для управления мышью</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0" title="Скачать">Настройки клавиш для управления мышью</a><br>
 Установки, которые я использую для управления мышью.</li></ul>
-<a name="MM6-Controls" ></a><h4><a href="https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0">MM6 Controls v1.1</a></h4>
+<a name="MM6-Controls" ></a><h4><a href="https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0" title="Скачать">MM6 Controls v1.1</a></h4>
 MM6 Controls - это утилита для настройки клавиш в патче для MM6. Она меняет секцию [Controls] в mm6.ini. Также показывает код нажатой клавиши, который потом можно использовать для настройки клавиш, добавленных в патчах.<br>
 <br>
 <br>
@@ -330,22 +357,22 @@ MM6 Controls - это утилита для настройки клавиш в �
 GrayFace MM7 Patch 
 - это неофициальный патч для MM7. Включает патчи Мока и Black Phantom'а, правит много багов, добавляет быстрые сохранения, ускорение игры, управление мышью и т.д. Должен запускаться на новых версиях Windows без каких-либо проблем (и без установки совместимости с Win 9x).<br>
 
-<a href="https://sites.google.com/site/sergroj/mm/MM7PatchReadMe_rus.TXT?attredirects=0">Полный список изменений</a>
+<a href="https://sites.google.com/site/sergroj/mm/MM7PatchReadMe_rus.TXT?attredirects=0" title="Скачать">Полный список изменений</a>
 <br>
-<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM7patch.rar?attredirects=0">Патч для английской версии игры</a><br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM7patch.rar?attredirects=0" title="Скачать">Патч для английской версии игры</a><br>
 Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
 </li>
 <li>
-<a href="https://sites.google.com/site/sergroj/mm/MM7patchBuka.rar?attredirects=0">Патч для русской версии от Буки</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/MM7patchBuka.rar?attredirects=0" title="Скачать">Патч для русской версии от Буки</a><br>
 Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
 </li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchLoc.rar?attredirects=0">Патч для других языков</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchLoc.rar?attredirects=0" title="Скачать">Патч для других языков</a><br>
 
 Не включает в себя изменения текстовых файлов из официального патча 1.1.<br>
 </li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0">Исходники</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0" title="Скачать">Исходники</a><br>
 Delphi 2006. Для компилляции требуются <a href="http://www.clootie.ru/delphi/download_dx92.html">заголовочные файлы DirectX</a>.</li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM7MouseLook.rar?attredirects=0">Настройки клавишь для управления мышью</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM7MouseLook.rar?attredirects=0" title="Скачать">Настройки клавишь для управления мышью</a><br>
 Установки, которые я использую для управления мышью.</li></ul>
 <br>
 <br>
@@ -355,33 +382,33 @@ GrayFace MM8 Patch
 - это неофициальный патч для MM8. Включает патч Мока, правит много багов, добавляет быстрые сохранения, ускорение
 игры, управление мышью и т.д. Должен запускаться на новых версиях Windows без каких-либо проблем (и без установки совместимости с Win 9x).<br>
 
-<a href="https://sites.google.com/site/sergroj/mm/MM8PatchReadMe_rus.TXT?attredirects=0">Полный список изменений</a>
+<a href="https://sites.google.com/site/sergroj/mm/MM8PatchReadMe_rus.TXT?attredirects=0" title="Скачать">Полный список изменений</a>
 <br>
-<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM8patch.rar?attredirects=0">Патч для любой версии игры</a><br>
+<ul><li><a href="https://sites.google.com/site/sergroj/mm/MM8patch.rar?attredirects=0" title="Скачать">Патч для любой версии игры</a><br>
 Устанавливайте на любую версию. Включает в себя изменения всех патчей.<br>
 </li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0">Исходники</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0" title="Скачать">Исходники</a><br>
 Delphi 2006. Для компилляции требуются <a href="http://www.clootie.ru/delphi/download_dx92.html">заголовочные файлы DirectX</a>.</li>
-<li><a href="https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0">Настройки клавишь для управления мышью</a><br>
+<li><a href="https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0" title="Скачать">Настройки клавишь для управления мышью</a><br>
 Установки, которые я использую для управления мышью.</li></ul>
 <br>
 <br>
-<a name="Skill-Teachers-Patch-for-MM8" ></a><h3>Список учителей умений для MM8</h3>
+<a name="`Skill-Teachers-Patch-for`-MM8" ></a><h3>Список учителей умений для MM8</h3>
 Этот патч делает список учителей умений в Авто заметках удобным. Если у Вас установлен GrayFace MM8 Patch, просто распакуйте архив в папку с игрой. Если не установлен, добавьте autonotes.txt из архива в EnglishT.lod с помощью MMArchive.<br>
-<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8.rar?attredirects=0">Английская версия</a><br>
-<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_ru.rar?attredirects=0">Русская версия (автор &ndash; SVShu)</a><br>
-<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_pl.rar?attredirects=0">Польская версия (автор &ndash; majaczek)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8.rar?attredirects=0" title="Скачать">Английская версия</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_ru.rar?attredirects=0" title="Скачать">Русская версия (автор &ndash; SVShu)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_pl.rar?attredirects=0" title="Скачать">Польская версия (автор &ndash; majaczek)</a><br>
 <br>
 <br>
-<a name="MM8-Choose-Party-(Sorry,-I-need-to-release-a-bugfix-first)" ></a><h3><a href="../404">MM8 Choose Party (Пока недоступен, нужно собрать версию с исправленным багом)</a></h3>
-Эти скрипты позволяют выбирать команду при старте игры. Можно выбирать команду любого размера, а также включать в неё драконов. Включает в себя MMExtension. <a href="../../img/MM8ChooseParty.png">Скриншот</a><br>
+<a name="MM8-Choose-Party-(`Sorry,-I-need-to-release-a-bugfix-first`)" ></a><h3><a href="../404" title="Скачать">MM8 Choose Party (Пока недоступен, нужно собрать версию с исправленным багом)</a></h3>
+Эти скрипты позволяют выбирать команду при старте игры. Можно выбирать команду любого размера, а также включать в неё драконов. Включает в себя MMExtension. <a href="../../img/MM8ChooseParty.png" title="Скачать">Скриншот</a><br>
 <br>
 <br>
-<a name="MM6-Upscaled-Textures-(Sorry,-I-need-to-upload-new-version-of-MM6-patch-first)" ></a><h3><a href="../404">Текстуры повышенного разрешения для MM6 (Пока недоступен, нужно залить новую версию патча для MM6)</a></h3>
-Увеличенные в 2 раза спрайты и текстуры MM6 и скрипт, чтобы всё это работало. Требует <a href="ext">MMExtension</a>. Скиншоты: <a href="../../img/mm6hd_before.png">до</a>, <a href="../../img/mm6hd_after.png">после</a><br>
+<a name="`MM6-Upscaled-Textures`-(`Sorry,-I-need-to-upload-new-version-of-MM6-patch-first`)" ></a><h3><a href="../404" title="Скачать">Текстуры повышенного разрешения для MM6 (Пока недоступен, нужно залить новую версию патча для MM6)</a></h3>
+Увеличенные в 2 раза спрайты и текстуры MM6 и скрипт, чтобы всё это работало. Требует <a href="ext">MMExtension</a>. Скиншоты: <a href="../../img/mm6hd_before.png" title="Скачать">до</a>, <a href="../../img/mm6hd_after.png" title="Скачать">после</a><br>
 <br>
 <br>
-<a name="Game-Mechanics" ></a><h3><a href="mechanics">Игровая механика</a></h3>
+<a name="`Game-Mechanics`" ></a><h3><a href="mechanics">Игровая механика</a></h3>
 
 Здесь описаны некоторые неочевидные аспекты игровой механики Might and Magic.<br>
 <br>
@@ -395,37 +422,37 @@ MMExtension - это мощное расширение MM6-8 для моддин
 которых можно менять, например, параметры и доступные умения классов.<br>
 <br>
 <br>
-<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0">MMArchive v1.2</a></h3>
-Универсальный редактор архивов M&amp;M и Heroes 3. Поддерживает все типы архивов, кроме *.hwl. <a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0" title="Скачать">MMArchive v1.2</a></h3>
+Универсальный редактор архивов M&amp;M и Heroes 3. Поддерживает все типы архивов, кроме *.hwl. <a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1" title="Скачать">Исходники (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0">LodCompare v1.3.1</a></h3>
+<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0" title="Скачать">LodCompare v1.3.1</a></h3>
 Устарел, т.к. включён в MMArchive. Сравнивает 2 архива lod/vid/snd и показывает список измененных
 файлов.
 Позволяет создать новый архив, содержащий только эти файлы. Это более эффективный способ распространения модов: распространять только  архив с измененными файлами, как свой LOD, загружаемый моим патчем, или добавлять его к архиву пользователя с помощью LodMerge. 
-<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1" title="Скачать">Исходники (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0">LodMerge v1.1.1</a></h3>
+<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0" title="Скачать">LodMerge v1.1.1</a></h3>
 
 Позволяет соединить 2 архива  lod/vid/snd. 
-<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1" title="Скачать">Исходники (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0">Txt Edit v1.3</a></h3>
+<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0" title="Скачать">Txt Edit v1.3</a></h3>
 Редактор текстовых таблиц Heroes 3 и M&amp;M. 
-<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1">Исходники (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1" title="Скачать">Исходники (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0">RSBinkPlayer v1.2.5</a></h3>
+<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0" title="Скачать">RSBinkPlayer v1.2.5</a></h3>
 Просмотрщик файлов .bik и .smk. Умеет просматривать геройские .bik-файлы.<br>
 <br>
 <br>
-<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0">Fnt Editor</a></h3>
+<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0" title="Скачать">Fnt Editor</a></h3>
 Старая программа для редактирования шрифтов Heroes 3 и M&amp;M.<br>
 <br>
 <br>
-<a name="Links" ></a><h3>Ссылки</h3>
+<a name="`Links`" ></a><h3>Ссылки</h3>
 
 <a name="The-Chaos-Conspiracy-mod-for-MM6" ></a><h4><a href="http://www.mediafire.com/my%20files/bdjs">The Chaos Conspiracy mod for MM6</a></h4>
 The Chaos Conspiracy (TCC) - это огромный мод для MM6, состоящий из 2 частей. В нем новые история, монстры и даже внешние локации (в части 2). Авторы -
@@ -436,22 +463,22 @@ MM7Rev4Mod - это большой мод для MM7, созданный до TC
 <a name="Maestro-Mod-for-MM7" ></a><h4><a href="http://mmgames.ru/index.php?option=com_content&amp;view=article&amp;id=95&amp;Itemid=191&amp;lang=en">Maestro Mod for MM7</a></h4>
 Основан на Rev4 Mod. Изменен баланс, графика и немного квесты.<br>
 
-<a name="Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16657">Объединение Might and Magic 6, 7 и 8 на основе движка MM8</a></h4>
+<a name="`Might-and-Magic-6,-7,-8-merge-based-on-MM8-engine`" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16657">Объединение Might and Magic 6, 7 и 8 на основе движка MM8</a></h4>
 TODO: add description
 
-<a name="High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16658">Поддержка высокого разрешения с использованием dgVoodoo 2</a></h4>
+<a name="`High-Resolution-Might-and-Magic-6-7-8-with-dgVoodoo-2`" ></a><h4><a href="https://www.celestialheavens.com/forum/10/16658">Поддержка высокого разрешения с использованием dgVoodoo 2</a></h4>
 TODO: add description
 
-<a name="Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-and-Resolution-Mod-for-MM8" ></a><h4><a href="https://sites.google.com/site/angelddeath/#TOC-Might-Magic-6-resolution-mod">Resolution Mod for MM6</a>, <a href="https://www.dropbox.com/s/gkvid0g7glemv84/mm7resmod%2dGrayFace.rar?dl=1">Resolution Mod for MM7</a> и <a href="https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod%2dGrayFace.rar?dl=1">Resolution Mod for MM8</a></h4>
+<a name="Resolution-Mod-for-MM6,-Resolution-Mod-for-MM7-`and`-Resolution-Mod-for-MM8" ></a><h4><a href="https://sites.google.com/site/angelddeath/#TOC-Might-Magic-6-resolution-mod">Resolution Mod for MM6</a>, <a href="https://www.dropbox.com/s/gkvid0g7glemv84/mm7resmod%2dGrayFace.rar?dl=1" title="Скачать">Resolution Mod for MM7</a> и <a href="https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod%2dGrayFace.rar?dl=1" title="Скачать">Resolution Mod for MM8</a></h4>
 Моды Angel Death'а, которые растягивают окно игры до заданного размера в оконном режиме.<br>
 Чтобы использовать мод для MM6 вместе с моим патчем, создейте в папке игры подпапку ExeMods и положите туда файл DLL.<br>
 Я изменил мод для MM7 для лучшей работы с моим патчем и создал на его основе мод для MM8. Просто запускайте их из папки с игрой.
 
 <br>
-<a name="Modding-Tools" ></a><h4>Утилиты для моддинга</h4>
+<a name="`Modding-Tools`" ></a><h4>Утилиты для моддинга</h4>
 Классичексие редакторы для M&amp;M &ndash; это <a href="http://sourceforge.net/projects/mm8leveleditor/files/MM8LevelEditor/">mm8leveleditor</a> и <a href="http://shrines.rpgclassics.com/pc/mm7/Extras/MM7Edit.zip">MM7View</a>. С помощью <a href="../../angelddeath/#TOC-Might-Magic-6-8-Map-Viewer">MM Map Viewer</a> вы можете смотреть карты M&amp;M и свойства всех их элементов.<br>
 <br>
-<a name="Sites" ></a><h4>Сайты</h4>
+<a name="`Sites`" ></a><h4>Сайты</h4>
 Наиболее интересные английские сайты по M&amp;M &ndash; это <a href="http://www.celestialheavens.com/">Celestial Heavens</a> и <a href="http://telp.org/">telp.org</a> (учтите, что на telp не стоит постить ссылки &ndash; в половине случаев это приводит к бану от спам-фильтра). На <a href="http://www.celestialheavens.com/forums/viewforum.php?f=10">форуме</a> Celestial Heavens можно найти ссылки на множество других проектов по M&amp;M.<br>
 
 Активный русский форум &ndash; <a href="http://forum.df2.ru/index.php?showforum=70">на DF2</a>. В шапке ветки <a href="http://forums.ag.ru/?board=ti_main&amp;action=display&amp;num=1058981382">на ag.ru</a> есть некоторые интересные ссылки.<br>

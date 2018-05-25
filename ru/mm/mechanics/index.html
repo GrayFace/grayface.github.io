@@ -27,16 +27,15 @@
 		margin: 3px 0px;
 		padding-left: 20px;
 	}
+/* TOC */
 	#toc {
 		padding-bottom: 1.3em;
 	}
 	#toc ul {
-		/* list-style-type: none; */
 		color: #d4d7eb;
 		margin-top: 0px;
 		margin-bottom: 3px;
 		padding-left: 20px;
-		/* text-indent: -10px; */
 	}
 	#toc li ul {
 		color: #a6aedf;
@@ -47,11 +46,13 @@
 	#toc ul a:link {
 		color: #3e4a99;
 	}
+	/* Links */
 	a:link:hover, a:visited:hover {
 		background-color: #E8E8FF;
 		border-radius: 4px;
 	}
 	a:link {
+		border-radius:4px;
 		color: #4e5dbf;
 	}
 	a:link:active, a:visited:active {
@@ -60,6 +61,7 @@
 	#menu-lang a:visited {
 		color: #513ba5;
 	}
+/* Misc */
 	table {
 		border-collapse: collapse;
 		margin: 5px 0;
@@ -115,6 +117,30 @@
 		margin-right: 5px;
 		vertical-align: top;
 	}
+/* Mirrors */
+	.mirror, .mirror:link:hover, .mirror::visited:hover {
+		background-color:transparent;
+	}
+	.mirror {
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+	h3 .mirror {
+		margin-left: 0.3em;
+	}
+	.mirror img {
+		vertical-align:middle;
+		height:1em;
+		margin: -0.1em 0 0.1em;
+		border-radius:4px;
+	}
+	h3 .mirror img {
+		margin: -0.1em -7px 0.1em 0;
+	}
+	.mirror img:hover {
+	 	background-color: #E8E8FF;
+	}
+/* Menus */
 	#menubar {
 		position: absolute;
 		width: 185px;
@@ -203,6 +229,7 @@
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
+/* Resolutions */
 @media (max-width: 900px) {
 	#content2 {
 		padding: 0 15px 25px 17px;
@@ -298,7 +325,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 		<h1>Маханика Might and Magic<span id="site-name" title="Сайт Сергея &quot;GrayFace&quot; Роженко">GrayFace</span><div style="clear:both"></div></h1>
 			<div id="content2">
 			<h3 id="toc-header">Содержание</h3>
-				<div id="toc"><ul><li><a href="#Statistics">Показатели</a></li><li><a href="#Chance-To-Hit-and-Resistances">Шанс попадания и Устойчивости</a></li><li><a href="#Recovery-Time">Время восстановления</a></li><li><a href="#Dual-Weapons">Оружие в двух руках</a></li><li><a href="#Other">Другое</a></li></ul></div>
+				<div id="toc"><ul><li><a href="#`Statistics`">Показатели</a></li><li><a href="#`Chance-To-Hit-and-Resistances`">Шанс попадания и Устойчивости</a></li><li><a href="#`Recovery-Time`">Время восстановления</a></li><li><a href="#`Dual-Weapons`">Оружие в двух руках</a></li><li><a href="#`Other`">Другое</a></li></ul></div>
 			
 			
 <style>
@@ -308,7 +335,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 </style>
 <div>
 <div>
-<a name="Statistics" ></a><h2>Показатели</h2>
+<a name="`Statistics`" ></a><h2>Показатели</h2>
 Все показатели дают бонус в соответствии с приведенной таблицей.<br>
 Первый столбец &ndash; барьер показателя, второй &ndash; бонус, который дается, если показатель равен барьеру или выше его.<br>
 
@@ -460,7 +487,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 </b>Для достижения уровеня N требуется N*1000 очков опыта в добавок к очкам предыдущего уровня. Для уровня 1 требуется 1000 опыта, для уровня 2 нужно еще 2000 опыта, т.е. в сумме 3000. Для уровня 3 нужно еще не 3000 больше.<br>
 Таким образом, суммарный опыт для достижения уровня N определяется формулой <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
 <br>
-<a name="Chance-To-Hit-and-Resistances" ></a><h2>Шанс попадания и Устойчивости</h2>
+<a name="`Chance-To-Hit-and-Resistances`" ></a><h2>Шанс попадания и Устойчивости</h2>
 Шанс, что Ваш игрок ударит монстра равен <span class="math">(15 + АтакаИгрока*2)/(</span><span class="math">30 + АтакаИгрока*2 + КлассБрониМонстра</span><span class="math">)</span>.<br>
 Шанс, что монстр попадет в Вашего игрока равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока</span><span class="math">)</span>.<br>
 <br>
@@ -538,7 +565,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 <br>
 Когда Вы попадаете по врагу, все происходит так же, только у него нет Удачи, так что формула такая: <span class="math">1 - 30/(30 + Устойчивость)</span>. В отличие от Вас, у монстров бывает устойчивость к физическому урону.<br>
 <br>
-<a name="Recovery-Time" ></a><h2>Время восстановления</h2>
+<a name="`Recovery-Time`" ></a><h2>Время восстановления</h2>
 
 Время восстановления &ndash; это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 (за исключением бластеров и луков). <br>
 <br>
@@ -639,7 +666,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 <br>
 Топор будет медленнее копья до тех пор, пока его умение не достигнет 20. Только потом он будет быстрее.<br>
 <br>
-<a name="Dual-Weapons" ></a><h2>Оружие в двух руках</h2>
+<a name="`Dual-Weapons`" ></a><h2>Оружие в двух руках</h2>
 <p><b>Время восстановления<br>
 
 </b></p>
@@ -657,7 +684,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 Пример 2: В MM6, если игрок использует копьё и меч, то умение Копьё дает только бонус к повреждению, а бонусы к атаке и времени восстановления игнорируются. Умение Меч дает все свои бонусы.<br>
 
 <br>
-<a name="Other" ></a><h2>Другое</h2>
+<a name="`Other`" ></a><h2>Другое</h2>
 <p><b>Особенности кинжала<br>
 </b></p>
 

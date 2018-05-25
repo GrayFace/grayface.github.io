@@ -27,16 +27,15 @@
 		margin: 3px 0px;
 		padding-left: 20px;
 	}
+/* TOC */
 	#toc {
 		padding-bottom: 1.3em;
 	}
 	#toc ul {
-		/* list-style-type: none; */
 		color: #d4d7eb;
 		margin-top: 0px;
 		margin-bottom: 3px;
 		padding-left: 20px;
-		/* text-indent: -10px; */
 	}
 	#toc li ul {
 		color: #a6aedf;
@@ -47,11 +46,13 @@
 	#toc ul a:link {
 		color: #3e4a99;
 	}
+	/* Links */
 	a:link:hover, a:visited:hover {
 		background-color: #E8E8FF;
 		border-radius: 4px;
 	}
 	a:link {
+		border-radius:4px;
 		color: #4e5dbf;
 	}
 	a:link:active, a:visited:active {
@@ -60,6 +61,7 @@
 	#menu-lang a:visited {
 		color: #513ba5;
 	}
+/* Misc */
 	table {
 		border-collapse: collapse;
 		margin: 5px 0;
@@ -115,6 +117,30 @@
 		margin-right: 5px;
 		vertical-align: top;
 	}
+/* Mirrors */
+	.mirror, .mirror:link:hover, .mirror::visited:hover {
+		background-color:transparent;
+	}
+	.mirror {
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+	h3 .mirror {
+		margin-left: 0.3em;
+	}
+	.mirror img {
+		vertical-align:middle;
+		height:1em;
+		margin: -0.1em 0 0.1em;
+		border-radius:4px;
+	}
+	h3 .mirror img {
+		margin: -0.1em -7px 0.1em 0;
+	}
+	.mirror img:hover {
+	 	background-color: #E8E8FF;
+	}
+/* Menus */
 	#menubar {
 		position: absolute;
 		width: 185px;
@@ -203,6 +229,7 @@
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
 	}
+/* Resolutions */
 @media (max-width: 900px) {
 	#content2 {
 		padding: 0 15px 25px 17px;
@@ -298,13 +325,13 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 		<h1>Heroes 3.5 In the Wake of Gods<span id="site-name" title="Sergey &quot;GrayFace&quot; Rozhenko Homepage">GrayFace</span><div style="clear:both"></div></h1>
 			<div id="content2">
 			<h3 id="toc-header">Contents</h3>
-				<div id="toc"><ul><li><a href="#Map-Editor-Patch">Map Editor Patch v3.3</a></li><li><a href="#Map-Editor-Help">Map Editor Help v1.2</a></li><li><a href="#32BitPatch">32BitPatch</a></li><li><a href="#Darker-Interface-Colors">Darker Interface Colors</a></li><li><a href="#New-Battle-Grids">New Battle Grids</a></li><li><a href="#Synchronized-Creatures-Sounds">Synchronized Creatures Sounds</a></li><li><a href="#MMArchive">MMArchive v1.2</a><ul><li><a href="#Lod-Favorites">Lod Favorites</a></li></ul></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#SimpleLod">SimpleLod v1.3</a></li><li><a href="#Def-Preview">Def Preview v1.2</a></li><li><a href="#Def-Tool">Def Tool v3.4.1</a><ul><li><a href="#Def-Tool-">Def Tool v2.1.1</a></li></ul></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#Dialogs-Editor-for-!!DL-reciever">Dialogs Editor for !!DL reciever</a></li><li><a href="#Portraits-Manager">Portraits Manager</a></li><li><a href="#Mon-Power">Mon Power</a></li></ul></div>
+				<div id="toc"><ul><li><a href="#`Map-Editor-Patch`">Map Editor Patch v3.3</a></li><li><a href="#`Map-Editor-Help`">Map Editor Help v1.2</a></li><li><a href="#32BitPatch">32BitPatch</a></li><li><a href="#`Darker-Interface-Colors`">Darker Interface Colors</a></li><li><a href="#`New-Battle-Grids`">New Battle Grids</a></li><li><a href="#`Synchronized-Creatures-Sounds`">Synchronized Creatures Sounds</a></li><li><a href="#MMArchive">MMArchive v1.2</a><ul><li><a href="#`Lod-Favorites`">Lod Favorites</a></li></ul></li><li><a href="#LodCompare">LodCompare v1.3.1</a></li><li><a href="#LodMerge">LodMerge v1.1.1</a></li><li><a href="#SimpleLod">SimpleLod v1.3</a></li><li><a href="#Def-Preview">Def Preview v1.2</a></li><li><a href="#Def-Tool">Def Tool v3.4.1</a><ul><li><a href="#Def-Tool-">Def Tool v2.1.1</a></li></ul></li><li><a href="#Txt-Edit">Txt Edit v1.3</a></li><li><a href="#RSBinkPlayer">RSBinkPlayer v1.2.5</a></li><li><a href="#Fnt-Editor">Fnt Editor</a></li><li><a href="#`Dialogs-Editor-for-!!DL-reciever`">Dialogs Editor for !!DL reciever</a></li><li><a href="#`Portraits-Manager`">Portraits Manager</a></li><li><a href="#Mon-Power">Mon Power</a></li></ul></div>
 			
 			
-<a name="Map-Editor-Patch" ></a><h3>Map Editor Patch v3.3</h3>
+<a name="`Map-Editor-Patch`" ></a><h3>Map Editor Patch v3.3</h3>
 Map Editor Patch makes new features (new monsters, artifacts etc.) fully-functional in Map Editor and adds new functionality like editing objects' appearance, copying a part of map from one place to another, events binding etc.<br>
-<a href="https://sites.google.com/site/sergroj/wog/MapEdPatch.rar?attredirects=0">English version</a><br>
-<a href="https://sites.google.com/site/sergroj/wog/MapEdPatchRus.rar?attredirects=0">Russian version</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdPatch.rar?attredirects=0" title="Download">English version</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdPatchRus.rar?attredirects=0" title="Download">Russian version</a><br>
 New in version 3.3:<br>
 [+]&nbsp;&nbsp; Copy Map Area and Paste Map Area buttons added in Obstacle Tool page.<br>
 [+]&nbsp;&nbsp; Missing def files don't cause Map Editor to crash and don't display endless error dialogs.<br>
@@ -314,96 +341,96 @@ New in version 3.3:<br>
 [-]&nbsp;&nbsp; Before this version you could press Redo after painting ground with Allow Single Squares option on.<br>
 <br>
 <br>
-<a name="Map-Editor-Help" ></a><h3>Map Editor Help v1.2</h3>
+<a name="`Map-Editor-Help`" ></a><h3>Map Editor Help v1.2</h3>
 Updated Map Editor help containing information about things added in WoG.<br>
-<a href="https://sites.google.com/site/sergroj/wog/MapEdHelp.rar?attredirects=0">English version</a><br>
-<a href="https://sites.google.com/site/sergroj/wog/MapEdHelpRus.rar?attredirects=0">Russian version</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdHelp.rar?attredirects=0" title="Download">English version</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/MapEdHelpRus.rar?attredirects=0" title="Download">Russian version</a><br>
 New in version 1.2:<br>
 [-]&nbsp;&nbsp; Forgotten Shrine object wasn't described.<br>
 <br>
 <br>
-<a name="32BitPatch" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/32BitPatch.rar?attredirects=0">32BitPatch</a></h3>
+<a name="32BitPatch" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/32BitPatch.rar?attredirects=0" title="Download">32BitPatch</a></h3>
 Lets you run Heroes 3 in windowed mode under any color depth set in screen properties. It can be installed on any Heroes 3 version, including Heroes Chronicles.<br>
 (c) Bourn and me<br>
 <br>
 <br>
-<a name="Darker-Interface-Colors" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/PLAYERS.rar?attredirects=0">Darker Interface Colors</a></h3>
+<a name="`Darker-Interface-Colors`" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/PLAYERS.rar?attredirects=0" title="Download">Darker Interface Colors</a></h3>
 I never liked the way Heroes 3 interface looks due to  player colors not fitting in the interface.  Extract this little archive into your Data directory and the interface will look much better.<br>
 <br>
 <br>
-<a name="New-Battle-Grids" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/NewGrids.rar?attredirects=0">New Battle Grids</a></h3>
+<a name="`New-Battle-Grids`" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/NewGrids.rar?attredirects=0" title="Download">New Battle Grids</a></h3>
 Choose the one you like and put it into the Data directory. I recommend the third one.<br>
 <br>
 <br>
-<a name="Synchronized-Creatures-Sounds" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/SndSync.rar?attredirects=0">Synchronized Creatures Sounds</a></h3>
+<a name="`Synchronized-Creatures-Sounds`" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/SndSync.rar?attredirects=0" title="Download">Synchronized Creatures Sounds</a></h3>
 Some creatures produce sound in the wrong moment. Like, when Air Elementals are hit, first comes animation and then they produce the sound. This fixes them. Extract into the game folder.<br>
 <br>
 <br>
-<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0">MMArchive v1.2</a></h3>
+<a name="MMArchive" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0" title="Download">MMArchive v1.2</a></h3>
 Fully-featured M&amp;M and Heroes 3 archives editor. Supports all archive types except ".hwl". 
 
-<a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
-<a name="Lod-Favorites" ></a><h4>Lod Favorites</h4>
+<a href="https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
+<a name="`Lod-Favorites`" ></a><h4>Lod Favorites</h4>
 Favorites for h3sprites.lod and h3bitmaps.lod with categorized list of files, currently only available 
 
-<a href="https://sites.google.com/site/sergroj/wog/H3FavoritesRus.rar?attredirects=0&amp;d=1">in Russian</a>. 
+<a href="https://sites.google.com/site/sergroj/wog/H3FavoritesRus.rar?attredirects=0&amp;d=1" title="Download">in Russian</a>. 
 Made by Black Phantom, with my edits.<br>
 
 <br>
 <br>
-<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0">LodCompare v1.3.1</a></h3>
+<a name="LodCompare" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0" title="Download">LodCompare v1.3.1</a></h3>
 Obsolete, fully incorporated into MMArchive. Lets you compare two lod/vid/snd archives and see which files have changed. 
 
 Lets you create a new archive containing only those files. Thus you can minimize size of a mod by distributing only this archive as a custom LOD to be loaded by my patch or by merging it with user's archive using LodMerge.
-<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0">LodMerge v1.1.1</a></h3>
+<a name="LodMerge" ></a><h3><a href="https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0" title="Download">LodMerge v1.1.1</a></h3>
 Lets you merge two lod/vid/snd archives together. 
 
-<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="SimpleLod" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/SimpleLod.rar?attredirects=0">SimpleLod v1.3</a></h3>
+<a name="SimpleLod" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/SimpleLod.rar?attredirects=0" title="Download">SimpleLod v1.3</a></h3>
 A simple way to add files into .lod archives of Heroes 3. 
-<a href="https://sites.google.com/site/sergroj/wog/SimpleLodSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/SimpleLodSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="Def-Preview" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/DefPreview.rar?attredirects=0">Def Preview v1.2</a></h3>
+<a name="Def-Preview" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/DefPreview.rar?attredirects=0" title="Download">Def Preview v1.2</a></h3>
 Shows .def files, lets you extract frames and make a def-list for Def Tool. 
-<a href="https://sites.google.com/site/sergroj/wog/DefPreviewSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/DefPreviewSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="Def-Tool" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3DefTool.rar?attredirects=0">Def Tool v3.4.1</a></h3>
+<a name="Def-Tool" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3DefTool.rar?attredirects=0" title="Download">Def Tool v3.4.1</a></h3>
 Lets you create .def files. It can also help with editing interface pictures. 
 
-<a href="https://sites.google.com/site/sergroj/wog/H3DefToolSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
-<a name="Def-Tool-" ></a><h4><a href="https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0">Def Tool v2.1.1</a></h4>
+<a href="https://sites.google.com/site/sergroj/wog/H3DefToolSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
+<a name="Def-Tool-" ></a><h4><a href="https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0" title="Download">Def Tool v2.1.1</a></h4>
 Old version of Def Tool. Combine and Uncombine buttons can be useful. It can help you prepare palette for def frames with better quality.<br>
 <br>
 <br>
-<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0">Txt Edit v1.3</a></h3>
+<a name="Txt-Edit" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0" title="Download">Txt Edit v1.3</a></h3>
 Txt tables editor for Heroes 3 and M&amp;M. 
-<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1">Source code (Delphi 2006)</a><br>
+<a href="https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&amp;d=1" title="Download">Source code (Delphi 2006)</a><br>
 <br>
 <br>
-<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0">RSBinkPlayer v1.2.5</a></h3>
+<a name="RSBinkPlayer" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0" title="Download">RSBinkPlayer v1.2.5</a></h3>
 Convenient .bik and .smk player. Can show Heroes 3 videos.<br>
 <br>
 <br>
-<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0">Fnt Editor</a></h3>
+<a name="Fnt-Editor" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0" title="Download">Fnt Editor</a></h3>
 An old program for editing Heroes 3 and M&amp;M fonts.<br>
 <br>
 <br>
-<a name="Dialogs-Editor-for-!!DL-reciever" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3DialogsDL.rar?attredirects=0">Dialogs Editor for !!DL reciever</a></h3>
+<a name="`Dialogs-Editor-for-!!DL-reciever`" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3DialogsDL.rar?attredirects=0" title="Download">Dialogs Editor for !!DL reciever</a></h3>
 !!DL reciever lets you create custom dialogs for WoG TE / Era / 3.59. No help, sorry. The development has been discontinued. New version may eventually come out, but only for new dialogs system of WoG 3.59.<br>
 <br>
 <br>
-<a name="Portraits-Manager" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/PortraitsManager.rar?attredirects=0">Portraits Manager</a></h3>
+<a name="`Portraits-Manager`" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/PortraitsManager.rar?attredirects=0" title="Download">Portraits Manager</a></h3>
 Lets you change heroes portraits easily.<br>
 <br>
 <br>
-<a name="Mon-Power" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3MonPower.rar?attredirects=0">Mon Power</a></h3>
+<a name="Mon-Power" ></a><h3><a href="https://sites.google.com/site/sergroj/wog/H3MonPower.rar?attredirects=0" title="Download">Mon Power</a></h3>
 Calculates strength of monsters. The output values somewhat resemble AI Value and Fight Value. Only accounts for basic parameters (ignores Speed, shooting etc.)<br>
 
 			</div>
