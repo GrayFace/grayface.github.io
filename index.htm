@@ -67,9 +67,9 @@ function item(t)
 		]<div class="files">-[
 		for i = 1, #files do
 			local url = files[i]
-			--local name = url:match("[^?]*"):match(".*/([^/]+)/?$")
-			local en = info[i] or "Download"
-			local ru = infoRU[i] or info[i] or "Скачать"
+			local fname = url:match("[^?]*"):match(".*/([^/]+)/?$")
+			local en = info[i] or "Download "..fname
+			local ru = infoRU[i] or "Скачать "..fname
 			local desc = ("`en|%s|`ru|%s|"):format(en, ru)
 			]<div><a href=$[url]>$[desc]</a></div>-[
 		end
