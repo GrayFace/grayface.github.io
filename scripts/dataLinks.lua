@@ -72,8 +72,9 @@ return {
 		"https://www.dropbox.com/s/nkrdmaxmz5glefo/HEROES2Wnew_Ida.rar?dl=1"
 	},
 	IcnPack = {
-		"https://sites.google.com/site/sergroj/heroes/IcnPack.rar?attredirects=0",
-		Version = "1.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/IcnPack-1.3.2/IcnPack.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/IcnPack/v1.3.2/IcnPack.rar/download",
+		Version = "1.3.2"
 	},
 	IcnPackSrc = {
 		"https://sites.google.com/site/sergroj/heroes/IcnPackSrc.rar?attredirects=0"

@@ -54,5 +54,17 @@ return {
 			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPackH1Demo.rar/download"
 		},
 		Title = "AggPack v1.3.2"
+	},
+	{
+		Date = "05/28/18 03:42:02",
+		Desc = "[-] Previous version was crashing on Windows XP",
+		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/IcnPack-1.3.2/IcnPack.rar"
+		},
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/IcnPack/v1.3.2/IcnPack.rar/download"
+		},
+		Title = "IcnPack v1.3.2"
 	}
 }
