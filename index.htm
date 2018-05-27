@@ -14,8 +14,10 @@
 		min-width: 0.4em;
 	}
 	.date {
+		margin-top: 0.35em;
 		color: gray;
 		font-size: 80%;
+		padding-left: 2px;
 	}
 	article {
 		margin-top: 1em;
@@ -65,8 +67,7 @@ function item(t)
 	else
 		]<h3>$[a"Title"]</h3>-[
 	end
-	]<span class="date">$[date]</span>
-	<div class="desc">-[(desc)]</div>-[
+	]<div class="desc">-[(desc)]</div>-[
 	if not TitleURL and files[1] then
 		]<div class="files">-[
 		for i = 1, #files do
@@ -81,7 +82,7 @@ function item(t)
 		end
 		]</div>-[
 	end
-	]
+	]<div class="date">$[date]</div>
 </article>
 -[
 end
