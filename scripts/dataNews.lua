@@ -9,7 +9,7 @@ return {
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/DefPreview/v1.2.1/DefPreview.rar/download"
 		},
-		Title = "DefPreview v1.2.1"
+		Title = "Def Preview v1.2.1"
 	},
 	{
 		Date = "05/28/18",
@@ -21,7 +21,7 @@ return {
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/H3DefTool/v3.4.2/H3DefTool.rar/download"
 		},
-		Title = "H3DefTool v3.4.2"
+		Title = "Def Tool v3.4.2"
 	},
 	{
 		Date = "05/28/18",
@@ -39,6 +39,6 @@ return {
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/TxtEdit/v1.3.1/TxtEdit.rar/download"
 		},
-		Title = "TxtEdit v1.3.1"
+		Title = "Txt Edit v1.3.1"
 	}
 }
