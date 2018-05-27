@@ -12,9 +12,6 @@ return {
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPackH1Demo.rar/download",
 		Version = "1.3.2"
 	},
-	AggPackSrc = {
-		"https://sites.google.com/site/sergroj/heroes/AggPackSrc.rar?attredirects=0"
-	},
 	["CO to Template"] = {
 		"https://www.dropbox.com/s/ryk5w1pqvuvg2kq/CO%20to%20Template.rar?dl=1"
 	},
@@ -75,9 +72,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/IcnPack-1.3.2/IcnPack.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/IcnPack/v1.3.2/IcnPack.rar/download",
 		Version = "1.3.2"
-	},
-	IcnPackSrc = {
-		"https://sites.google.com/site/sergroj/heroes/IcnPackSrc.rar?attredirects=0"
 	},
 	KSEx = {
 		"https://sites.google.com/site/sergroj/ks/KSEx.rar?attredirects=0"
@@ -252,9 +246,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/TilPack-1.3.2/TilPack.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/TilPack/v1.3.2/TilPack.rar/download",
 		Version = "1.3.2"
-	},
-	TilPackSrc = {
-		"https://sites.google.com/site/sergroj/heroes/TilPackSrc.rar?attredirects=0"
 	},
 	TxtEdit = {
 		"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.3.1/TxtEdit.rar",
