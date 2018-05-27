@@ -45,6 +45,14 @@ return {
 		Date = "05/28/18 03:39:24",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
+		FileInfo = {
+			nil,
+			"A special version for an early demo of Heroes 1"
+		},
+		FileInfoRU = {
+			nil,
+			"Особая версия для ранней демки Heroes 1"
+		},
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPack.rar",
 			"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPackH1Demo.rar"
@@ -52,12 +60,6 @@ return {
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPack.rar/download",
 			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPackH1Demo.rar/download"
-		},
-		FileInfo = {
-			[2] = "A special version for an early demo of Heroes 1"
-		},
-		FileInfoRU = {
-			[2] = "Особая версия для ранней демки Heroes 1"
 		},
 		Title = "AggPack v1.3.2",
 		TitleURL = true
@@ -85,5 +87,23 @@ return {
 			"https://sourceforge.net/projects/grayface/files/TilPack/v1.3.2/TilPack.rar/download"
 		},
 		Title = "TilPack v1.3.2"
+	},
+	{
+		Date = "05/28/18 04:24:09",
+		Desc = "[-] Previous version was crashing on Windows XP\
+[-] Clipboard-related crash on exit\
+[-] Crash when loading another archive while in Compare To mode\
+[-] After drag-drop of the same archive, files list wasn't updated after operations",
+		DescRU = "[-] Предыдущая версия вылетала на Windows XP\
+[-] Вылет при выходе, связанный с буфером обмена\
+[-] Вылет при загрузке другого архива, когда включён режим \"Сравнить с...\"\
+[-] После перетаскивания на окно MMArchive открытого в данный момент архива, список файлов переставал обновляться при произведении операций",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.2.1/MMArchive.rar"
+		},
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MMArchive/v1.2.1/MMArchive.rar/download"
+		},
+		Title = "MMArchive v1.2.1"
 	}
 }

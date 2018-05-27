@@ -165,8 +165,9 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0"
 	},
 	MMArchive = {
-		"https://sites.google.com/site/sergroj/mm/MMArchive.rar?attredirects=0",
-		Version = "1.2"
+		"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.2.1/MMArchive.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MMArchive/v1.2.1/MMArchive.rar/download",
+		Version = "1.2.1"
 	},
 	MMArchiveSrc = {
 		"https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&d=1"
