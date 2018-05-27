@@ -3,11 +3,14 @@ return {
 		"https://sites.google.com/site/sergroj/wog/32BitPatch.rar?attredirects=0"
 	},
 	AggPack = {
-		"https://sites.google.com/site/sergroj/heroes/AggPack.rar?attredirects=0",
-		Version = "1.3"
+		"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPack.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPack.rar/download",
+		Version = "1.3.2"
 	},
 	AggPackH1Demo = {
-		"https://sites.google.com/site/sergroj/heroes/AggPackH1Demo.rar?attredirects=0"
+		"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPackH1Demo.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPackH1Demo.rar/download",
+		Version = "1.3.2"
 	},
 	AggPackSrc = {
 		"https://sites.google.com/site/sergroj/heroes/AggPackSrc.rar?attredirects=0"

@@ -40,5 +40,19 @@ return {
 			"https://sourceforge.net/projects/grayface/files/TxtEdit/v1.3.1/TxtEdit.rar/download"
 		},
 		Title = "Txt Edit v1.3.1"
+	},
+	{
+		Date = "05/28/18 03:39:24",
+		Desc = "[-] Previous version was crashing on Windows XP",
+		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPack.rar",
+			"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPackH1Demo.rar"
+		},
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPack.rar/download",
+			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPackH1Demo.rar/download"
+		},
+		Title = "AggPack v1.3.2"
 	}
 }
