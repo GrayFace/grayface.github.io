@@ -12,9 +12,13 @@ return {
 	AggPackSrc = {
 		"https://sites.google.com/site/sergroj/heroes/AggPackSrc.rar?attredirects=0"
 	},
+	["CO to Template"] = {
+		"https://www.dropbox.com/s/ryk5w1pqvuvg2kq/CO%20to%20Template.rar?dl=1"
+	},
 	DefPreview = {
-		"https://sites.google.com/site/sergroj/wog/DefPreview.rar?attredirects=0",
-		Version = "1.2"
+		"https://github.com/GrayFace/Misc/releases/download/DefPreview-1.2.1/DefPreview.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/DefPreview/v1.2.1/DefPreview.rar/download",
+		Version = "1.2.1"
 	},
 	DefPreviewSrc = {
 		"https://sites.google.com/site/sergroj/wog/DefPreviewSrc.rar?attredirects=0&d=1"
@@ -22,9 +26,6 @@ return {
 	DefTool2 = {
 		"https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0",
 		Version = "2.1.1"
-	},
-	["GrayFaceLgr.png"] = {
-		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr.png"
 	},
 	GrayFacHLgr = {
 		"https://sites.google.com/site/sergroj/elma/GrayFacHLgr.rar?attredirects=0"
@@ -43,6 +44,9 @@ return {
 	},
 	GrayFaceLgr = {
 		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr.rar?attredirects=0"
+	},
+	["GrayFaceLgr.png"] = {
+		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr.png"
 	},
 	GrayFaceLgr175 = {
 		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr175.rar?attredirects=0"
@@ -63,6 +67,12 @@ return {
 	H3MonPower = {
 		"https://sites.google.com/site/sergroj/wog/H3MonPower.rar?attredirects=0"
 	},
+	HEROES2W_Ida = {
+		"https://www.dropbox.com/s/znrrq6mowgtlklx/HEROES2W_Ida.rar?dl=1"
+	},
+	HEROES2Wnew_Ida = {
+		"https://www.dropbox.com/s/nkrdmaxmz5glefo/HEROES2Wnew_Ida.rar?dl=1"
+	},
 	IcnPack = {
 		"https://sites.google.com/site/sergroj/heroes/IcnPack.rar?attredirects=0",
 		Version = "1.3.1"
@@ -72,6 +82,9 @@ return {
 	},
 	KSEx = {
 		"https://sites.google.com/site/sergroj/ks/KSEx.rar?attredirects=0"
+	},
+	KSExFull = {
+		"https://www.dropbox.com/s/xxfob4am8epxjxh/KSExFull.rar?dl=1"
 	},
 	KSExSrc = {
 		"https://sites.google.com/site/sergroj/ks/KSExSrc.rar?attredirects=0"
@@ -136,6 +149,13 @@ return {
 	MM7patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0"
 	},
+	MM8ChooseParty = {
+		"404",
+		NameSuffix = " (`en|Sorry, I need to release a bugfix first|`ru|Пока недоступен, нужно собрать версию с исправленным багом|)"
+	},
+	["MM8ChooseParty.png"] = {
+		"img/MM8ChooseParty.png"
+	},
 	MM8MouseLook = {
 		"https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0"
 	},
@@ -157,6 +177,24 @@ return {
 	},
 	MMArchiveSrc = {
 		"https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&d=1"
+	},
+	MMEditor = {
+		"https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1",
+		Version = "2.1"
+	},
+	MMEditorDlgSrc = {
+		"https://www.dropbox.com/s/johei6ngdgn7asm/MMEditorDlgSrc.rar?dl=1"
+	},
+	MMExtension = {
+		"https://www.dropbox.com/s/qohxt8ijjh74mcw/MMExtensionTmp.rar?dl=1",
+		Version = "2.1.1"
+	},
+	MMExtensionSrc = {
+		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
+		NameSuffix = " (`en|of older version 2.1|`ru|старой версии 2.1|)"
+	},
+	MMScripts = {
+		"https://www.dropbox.com/s/kznafxub3lcbrv1/MMScripts.rar?dl=1"
 	},
 	MapEdHelp = {
 		"https://sites.google.com/site/sergroj/wog/MapEdHelp.rar?attredirects=0"
@@ -208,6 +246,9 @@ return {
 	SoloGame = {
 		"https://sites.google.com/site/sergroj/mm/mmextension/SoloGame.rar?attredirects=0"
 	},
+	["Standard Frames"] = {
+		"https://www.dropbox.com/s/euyzbaoqdt4r3uo/Standard%20Frames.rar?dl=1"
+	},
 	TilPack = {
 		"https://sites.google.com/site/sergroj/heroes/TilPack.rar?attredirects=0",
 		Version = "1.3"
@@ -228,40 +269,6 @@ return {
 	heroes2w = {
 		"https://sites.google.com/site/sergroj/heroes/heroes2w.rar?attredirects=0"
 	},
-	["CO to Template"] = {
-		"https://www.dropbox.com/s/ryk5w1pqvuvg2kq/CO%20to%20Template.rar?dl=1"
-	},
-	KSExFull = {
-		"https://www.dropbox.com/s/xxfob4am8epxjxh/KSExFull.rar?dl=1"
-	},
-	MMScripts = {
-		"https://www.dropbox.com/s/kznafxub3lcbrv1/MMScripts.rar?dl=1"
-	},
-	MM8ChooseParty = {
-		"404",
-		NameSuffix = " (`en|Sorry, I need to release a bugfix first|`ru|Пока недоступен, нужно собрать версию с исправленным багом|)"
-	},
-	["MM8ChooseParty.png"] = {
-		"img/MM8ChooseParty.png"
-	},
-	MMEditor = {
-		"https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1",
-		Version = "2.1"
-	},
-	MMEditorDlgSrc = {
-		"https://www.dropbox.com/s/johei6ngdgn7asm/MMEditorDlgSrc.rar?dl=1"
-	},
-	MMExtension = {
-		"https://www.dropbox.com/s/qohxt8ijjh74mcw/MMExtensionTmp.rar?dl=1",
-		Version = "2.1.1"
-	},
-	MMExtensionSrc = {
-		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
-		NameSuffix = " (`en|of older version 2.1|`ru|старой версии 2.1|)"
-	},
-	["Standard Frames"] = {
-		"https://www.dropbox.com/s/euyzbaoqdt4r3uo/Standard%20Frames.rar?dl=1"
-	},
 	mm6hd = {
 		"404",
 		NameSuffix = " (`en|Sorry, I need to upload new version of MM6 patch first|`ru|Пока недоступен, нужно залить новую версию патча для MM6|)"
@@ -272,16 +279,10 @@ return {
 	["mm6hd_before.png"] = {
 		"img/mm6hd_before.png"
 	},
-	HEROES2W_Ida = {
-		"https://www.dropbox.com/s/znrrq6mowgtlklx/HEROES2W_Ida.rar?dl=1"
-	},
-	HEROES2Wnew_Ida = {
-		"https://www.dropbox.com/s/nkrdmaxmz5glefo/HEROES2Wnew_Ida.rar?dl=1"
-	},
 	mm7resmod = {
 		"https://www.dropbox.com/s/gkvid0g7glemv84/mm7resmod-GrayFace.rar?dl=1"
 	},
 	mm8resmod = {
 		"https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod-GrayFace.rar?dl=1"
-	},
+	}
 }
