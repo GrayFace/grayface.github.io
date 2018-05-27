@@ -258,8 +258,9 @@ return {
 		"https://sites.google.com/site/sergroj/heroes/TilPackSrc.rar?attredirects=0"
 	},
 	TxtEdit = {
-		"https://sites.google.com/site/sergroj/wog/TxtEdit.rar?attredirects=0",
-		Version = "1.3"
+		"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.3.1/TxtEdit.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/TxtEdit/v1.3.1/TxtEdit.rar/download",
+		Version = "1.3.1"
 	},
 	TxtEditSrc = {
 		"https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&d=1"
