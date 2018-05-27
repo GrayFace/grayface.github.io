@@ -20,9 +20,6 @@ return {
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/DefPreview/v1.2.1/DefPreview.rar/download",
 		Version = "1.2.1"
 	},
-	DefPreviewSrc = {
-		"https://sites.google.com/site/sergroj/wog/DefPreviewSrc.rar?attredirects=0&d=1"
-	},
 	DefTool2 = {
 		"https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0",
 		Version = "2.1.1"
@@ -55,9 +52,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/H3DefTool-3.4.2/H3DefTool.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/H3DefTool/v3.4.2/H3DefTool.rar/download",
 		Version = "3.4.2"
-	},
-	H3DefToolSrc = {
-		"https://sites.google.com/site/sergroj/wog/H3DefToolSrc.rar?attredirects=0&d=1"
 	},
 	H3DialogsDL = {
 		"https://sites.google.com/site/sergroj/wog/H3DialogsDL.rar?attredirects=0"
@@ -261,9 +255,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.3.1/TxtEdit.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/TxtEdit/v1.3.1/TxtEdit.rar/download",
 		Version = "1.3.1"
-	},
-	TxtEditSrc = {
-		"https://sites.google.com/site/sergroj/wog/TxtEditSrc.rar?attredirects=0&d=1"
 	},
 	fntedit = {
 		"https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0"
