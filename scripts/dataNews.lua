@@ -8,7 +8,7 @@ return {
 			"https://github.com/GrayFace/Misc/releases/download/DefPreview-1.2.1/DefPreview.rar"
 		},
 		MirrorSF = {
-			"https://sourceforge.net/projects/grayface/DefPreview/v1.2.1/DefPreview.rar/download"
+			"https://sourceforge.net/projects/grayface/files/DefPreview/v1.2.1/DefPreview.rar/download"
 		},
 		Title = "DefPreview v1.2.1"
 	}

@@ -59,7 +59,9 @@ function item(t)
 ]
 <article>-[
 	if TitleURL then
-		]<h3><a href=$[files[1]]>$[a"Title"]</a></h3>-[
+		]<h3>-[
+			CustomLink(files[1], a"Title", mirrors[1])
+		]</h3>-[
 	else
 		]<h3>$[a"Title"]</h3>-[
 	end
