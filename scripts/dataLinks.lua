@@ -249,8 +249,9 @@ return {
 		"https://www.dropbox.com/s/euyzbaoqdt4r3uo/Standard%20Frames.rar?dl=1"
 	},
 	TilPack = {
-		"https://sites.google.com/site/sergroj/heroes/TilPack.rar?attredirects=0",
-		Version = "1.3"
+		"https://github.com/GrayFace/Misc/releases/download/TilPack-1.3.2/TilPack.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/TilPack/v1.3.2/TilPack.rar/download",
+		Version = "1.3.2"
 	},
 	TilPackSrc = {
 		"https://sites.google.com/site/sergroj/heroes/TilPackSrc.rar?attredirects=0"

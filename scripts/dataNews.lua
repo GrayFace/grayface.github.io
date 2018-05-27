@@ -66,5 +66,17 @@ return {
 			"https://sourceforge.net/projects/grayface/files/IcnPack/v1.3.2/IcnPack.rar/download"
 		},
 		Title = "IcnPack v1.3.2"
+	},
+	{
+		Date = "05/28/18 03:45:33",
+		Desc = "[-] Previous version was crashing on Windows XP",
+		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/TilPack-1.3.2/TilPack.rar"
+		},
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/TilPack/v1.3.2/TilPack.rar/download"
+		},
+		Title = "TilPack v1.3.2"
 	}
 }
