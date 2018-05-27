@@ -92,7 +92,7 @@ end
 
 -- incomplete on purpose, so that ecs(esc(s)) = esc(s) if it's an URL with %20 etc.
 function P.EscapeURL(s, cont)
-	return P.Escape(s, cont):gsub('[%z- ]', |s| ('%%%x'):format(s:byte()))
+	return P.Escape(s, cont):gsub('[%z\001- ]', |s| ('%%%x'):format(s:byte()))
 end
 
 local function LinkData(name)
