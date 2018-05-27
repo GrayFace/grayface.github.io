@@ -57,7 +57,8 @@ return {
 		"https://sites.google.com/site/sergroj/wog/H3DialogsDL.rar?attredirects=0"
 	},
 	H3FavoritesRus = {
-		"https://sites.google.com/site/sergroj/wog/H3FavoritesRus.rar?attredirects=0&d=1"
+		"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.2.1/H3FavoritesRus.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MMArchive/v1.2.1/H3FavoritesRus.rar/download",
 	},
 	H3MonPower = {
 		"https://sites.google.com/site/sergroj/wog/H3MonPower.rar?attredirects=0"
@@ -168,9 +169,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.2.1/MMArchive.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/MMArchive/v1.2.1/MMArchive.rar/download",
 		Version = "1.2.1"
-	},
-	MMArchiveSrc = {
-		"https://sites.google.com/site/sergroj/mm/MMArchiveSrc.rar?attredirects=0&d=1"
 	},
 	MMEditor = {
 		"https://www.dropbox.com/s/dd7as9etjutjvum/MMEditor.rar?dl=1",
