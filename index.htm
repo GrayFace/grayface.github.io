@@ -2,8 +2,8 @@
 <style>
 	h3:not(#toc-header) {
 		display: inline-block;
-		margin-right: 20px;
-		margin-bottom: 0.7em;
+		margin-right: 0.7em;
+		margin-bottom: 0.6em;
 	}
 	.desc span {
 		display: inline-block;
@@ -14,10 +14,8 @@
 		min-width: 0.4em;
 	}
 	.date {
-		margin-top: 0.3em;
 		color: gray;
 		font-size: 80%;
-		padding-left: 2px;
 	}
 	article {
 		margin-top: 1em;
@@ -25,9 +23,6 @@
 	.files {
 		margin-top: 0.5em;
 		padding-left: 1px;
-		/* margin-bottom: 0.5em; */
-		/* padding-left: 5px;
-		border-left: 1px dotted gray; */
 	}
 	#welcome {
 		margin-top: 1.5em;
@@ -46,6 +41,9 @@
 package.loaded.dataNews = nil
 local releases = require"dataNews"
 
+local month = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"}
+local monthRU = {"января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"}
+
 function item(t)
 	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
 	local desc = Escape(a"Desc", 'main')
@@ -55,6 +53,9 @@ function item(t)
 	local files = t.Files or {}
 	local mirrors = t.MirrorSF or {}
 	local TitleURL = files[1] and not files[2] and not info[1]
+	local m,d,y = t.Date:match("(%d+)/(%d+)/(%d+)")
+	m = tonumber(m)
+	local date = ("`en|%s %s, %s|`ru|%s %s %s|"):format(month[m], d, "20"..y, d, monthRU[m], "20"..y)
 ]
 <article>-[
 	if TitleURL then
@@ -64,7 +65,8 @@ function item(t)
 	else
 		]<h3>$[a"Title"]</h3>-[
 	end
-	]<div class="desc">-[(desc)]</div>-[
+	]<span class="date">$[date]</span>
+	<div class="desc">-[(desc)]</div>-[
 	if not TitleURL and files[1] then
 		]<div class="files">-[
 		for i = 1, #files do
@@ -79,7 +81,7 @@ function item(t)
 		end
 		]</div>-[
 	end
-	]<div class="date">$[a"Date"]</div>
+	]
 </article>
 -[
 end

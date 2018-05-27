@@ -1,7 +1,6 @@
 return {
 	{
 		Date = "05/28/18",
-		DateRU = "28.05.18",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		Files = {
@@ -14,7 +13,6 @@ return {
 	},
 	{
 		Date = "05/28/18",
-		DateRU = "28.05.18",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		Files = {
@@ -27,7 +25,6 @@ return {
 	},
 	{
 		Date = "05/28/18",
-		DateRU = "28.05.18",
 		Desc = "[-] Previous version was crashing on Windows XP\
 [-] Copy-Paste didn't warrant close warning\
 [-] Undo bugs\
