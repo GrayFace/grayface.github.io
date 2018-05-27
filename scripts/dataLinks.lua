@@ -52,8 +52,9 @@ return {
 		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr175.rar?attredirects=0"
 	},
 	H3DefTool = {
-		"https://sites.google.com/site/sergroj/wog/H3DefTool.rar?attredirects=0",
-		Version = "3.4.1"
+		"https://github.com/GrayFace/Misc/releases/download/H3DefTool-3.4.2/H3DefTool.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/H3DefTool/v3.4.2/H3DefTool.rar/download",
+		Version = "3.4.2"
 	},
 	H3DefToolSrc = {
 		"https://sites.google.com/site/sergroj/wog/H3DefToolSrc.rar?attredirects=0&d=1"
