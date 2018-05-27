@@ -53,7 +53,14 @@ return {
 			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPack.rar/download",
 			"https://sourceforge.net/projects/grayface/files/AggPack/v1.3.2/AggPackH1Demo.rar/download"
 		},
-		Title = "AggPack v1.3.2"
+		FileInfo = {
+			[2] = "A special version for an early demo of Heroes 1"
+		},
+		FileInfoRU = {
+			[2] = "Особая версия для ранней демки Heroes 1"
+		},
+		Title = "AggPack v1.3.2",
+		TitleURL = true
 	},
 	{
 		Date = "05/28/18 03:42:02",

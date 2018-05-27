@@ -54,7 +54,7 @@ function item(t)
 	local infoRU = t.FileInfoRU or {}
 	local files = t.Files or {}
 	local mirrors = t.MirrorSF or {}
-	local TitleURL = files[1] and not files[2] and not info[1]
+	local TitleURL = files[1] and not files[2] and not info[1] or t.TitleURL
 	local m,d,y = t.Date:match("(%d+)/(%d+)/(%d+)")
 	m = tonumber(m)
 	local date = ("`en|%s %s, %s|`ru|%s %s %s|"):format(month[m], d, "20"..y, d, monthRU[m], "20"..y)
@@ -68,9 +68,9 @@ function item(t)
 		]<h3>$[a"Title"]</h3>-[
 	end
 	]<div class="desc">-[(desc)]</div>-[
-	if not TitleURL and files[1] then
+	if not TitleURL and files[1] or files[2] then
 		]<div class="files">-[
-		for i = 1, #files do
+		for i = TitleURL and 2 or 1, #files do
 			local url = files[i]
 			local fname = url:match("[^?]*"):match(".*/([^/]+)/?$")
 			local en = info[i] or "Download "..fname
