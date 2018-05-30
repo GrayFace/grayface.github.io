@@ -236,16 +236,17 @@ local MainGradDark = MainGradLight*0.1
 	.submenu {
 		padding-left: 11px;
 	}
-	.menu-icon svg {
-		height: 18px;
-		vertical-align:middle;
-		margin: 1px 0 3px 0;
-	}
 	#menu-contact div {
 		margin: 0 10px 0 8px;
 	}
 	#menu-contact a:visited:not(:hover):not(:active) {
 		border-bottom: 1px solid rgba(85, 26, 139, 0.5);
+	}
+	#menu-contact svg {
+		height: 18px;
+		vertical-align:middle;
+		margin: 1px 0 3px 0;
+		opacity: 0.8;
 	}
 /* Resolutions */
 @media (max-width: 900px) {
@@ -365,19 +366,19 @@ local MainGradDark = MainGradLight*0.1
 			<div id="menu-contact" class="menu">
 				<h4>`en|Contacts|`ru|Контакты|</h4>
 				<div>
-					<span title="`en|Email|`ru|Почта|" aria-label="Email: " class="menu-icon">-[(Include"svg/mail.svg")]</span>
+					<span title="`en|Email|`ru|Почта|" aria-label="Email: ">-[(Include"svg/mail.svg")]</span>
 					sergroj at mail ru
 				</div>
 				<div>
-					<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" aria-label="Twitter: " class="menu-icon">-[(Include"svg/twitter.svg")]</a>
+					<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" aria-label="Twitter: ">-[(Include"svg/twitter.svg")]</a>
 					<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
 				</div>
 				<div>
-					<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" aria-label="`en|VK|`ru|ВКонтакте|: " class="menu-icon">-[(Include"svg/vk.svg")]</a>
+					<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" aria-label="`en|VK|`ru|ВКонтакте|: ">-[(Include"svg/vk.svg")]</a>
 					<a href="https://vk.com/grayface">grayface</a>
 				</div>
 				<div>
-					<a href="https://www.instagram.com/sergroz/" tabindex="-1" title="Instagram" aria-label="Instagram: " class="menu-icon">-[(Include"svg/instagram.svg")]</a>
+					<a href="https://www.instagram.com/sergroz/" tabindex="-1" title="Instagram" aria-label="Instagram: ">-[(Include"svg/instagram.svg")]</a>
 					<a href="https://www.instagram.com/sergroz/">sergroz</a>
 				</div>
 			</div>
