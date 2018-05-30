@@ -5,13 +5,17 @@
 		margin-right: 0.7em;
 		margin-bottom: 0.6em;
 	}
-	.desc span {
+	.change {
+		white-space: nowrap;
+	}
+	.change span {
 		display: inline-block;
 		min-width: 0.8em;
 		text-align: center;
 	}
-	span.sp {
-		min-width: 0.4em;
+	.desc .change {
+		display: inline-block;
+		margin-right: 0.12em;
 	}
 	.date {
 		margin-top: 0.35em;
@@ -37,8 +41,8 @@
 	<br>
 	`en|Source code for all new releases can be found on Github|`ru|Исходники всех свежих релизов можно найти на Github'е| <a href="https://github.com/GrayFace/Misc">`en|here|`ru|здесь|</a> `en|or|`ru|или| <a href="https://github.com/GrayFace/MMExtension">`en|here|`ru|здесь|</a>. `en|New releases are easily distinguishable by the red icon of SourceForge mirrors.|`ru|Такие релизы легко отличить по красной иконке зеркала на SourceForge.|<br>
 	<br>
-	<span class="desc">`en|Below you can find all new releases (newest first).<br> [<span>+</span>] means added feature, [<span>&ndash;</span>] means fixed bug, [<span>*</span>] means other changes.|
-	`ru|Ниже идёт список всех новых релизов, отсортированный по дате.<br> [<span>+</span>] означает новую фичу, [<span>&ndash;</span>] означает исправленный баг, [<span>*</span>] означает другое изменение.|</span>
+	`en|Below you can find all new releases (newest first).<br> <span class="change">[<span>+</span>]</span> means added feature, <span class="change">[<span>&ndash;</span>]</span> means fixed bug, <span class="change">[<span>*</span>]</span> means other changes.|
+	`ru|Ниже идёт список всех новых релизов, отсортированный по дате.<br> <span class="change">[<span>+</span>]</span> означает новую фичу, <span class="change">[<span>&ndash;</span>]</span> означает исправленный баг, <span class="change">[<span>*</span>]</span> означает другое изменение.|</span>
 </div>
 <div>
 -[
@@ -51,7 +55,7 @@ local monthRU = {"января","февраля","марта","апреля","м
 function item(t)
 	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
 	local desc = Escape(a"Desc", 'main')
-	desc = desc:gsub("%[([%+%-%*])%] ", '[<span>%1</span>]<span class="sp"> </span>'):gsub("<span>%-</span>", "<span>&ndash;</span>")
+	desc = desc:gsub("%[([%+%-%*])%] ", '<span class="change">[<span>%1</span>]</span> '):gsub("<span>%-</span>", "<span>&ndash;</span>")
 	local info = t.FileInfo or {}
 	local infoRU = t.FileInfoRU or {}
 	local files = t.Files or {}
