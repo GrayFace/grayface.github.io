@@ -105,7 +105,6 @@ local MainGradDark = MainGradLight*0.1
 		border-bottom: 3px double $clH1border;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		/* background: linear-gradient(110deg, #ffffff 65%, rgba(-[(clH4grad)], 0.5) 75%, #ffffff 85%); */
 	}
 	h2, h3:not(#toc-header) {
 		display: table;
@@ -164,11 +163,16 @@ local MainGradDark = MainGradLight*0.1
 		top: 0;
 		left: 0;
 		bottom: 0;
+		padding-top: 47.2px;
+		padding-top: calc(2em + 20px);
 	}
 	#menu-lang {
 		text-align: center;
-		margin: 13.08px 10px 11.72px;
-		margin: calc(0.3em + 9px) 10px calc(0.2em + 9px);
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 13.08px;
+		top: calc(0.3em + 9px);
 	}
 	#menu-lang * {
 		display: inline-block;
@@ -220,22 +224,19 @@ local MainGradDark = MainGradLight*0.1
 		margin: 2px 2px 5px 2px;
 		padding: 4px 8px;
 		border-bottom: 1px solid $clH1border;
-		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, rgba(-[(clH4grad)], 0.0) 75%, #ffffff 90%); */
-		/* background: linear-gradient(110deg, rgba(-[(clH4grad)], 0.5) 0%, #ffffff 60%, #ffffff 70%, rgba(-[(clH4grad)], 0.4) 100%); */
 	}
 	#menu-contact h4 {
 		margin-bottom: 7px;
 	}
 	.menu-sel {
 		background-color: $clSel;
-		/* border: 1px solid ; */
 		color: white;
 		font-weight: bold;
 	}
 	.submenu {
 		padding-left: 11px;
 	}
-	.menu-icon {
+	.menu-icon svg {
 		height: 18px;
 		vertical-align:middle;
 		margin: 1px 0 3px 0;
@@ -255,22 +256,33 @@ local MainGradDark = MainGradLight*0.1
 @media (max-width: 700px) {
 	#menubar {
 		position: relative;
-		top: 0;
-		left: 0;
-		left: calc(50% - $[menuW]px + 3px);
+		margin: 0;
+		left: calc(50% - $[menuW]px);
+		width: calc(50% + $[menuW]px);
+		padding-top: 0;
 	}
-	#menu-lang, #menu-contact {
-		position: absolute;
+	#menu, #menu-right {
+		position: static;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	#menu-right {
+		margin: 10px 0;
+	}
+	#menu, #menu-lang, #menu-contact {
 		width: -[(menuW-20)]px;
-		left: -[(menuW-10)]px;
 	}
 	#menu-lang {
-		top: 1px;
-		margin-top: 0;
+		position: static;
+		margin-bottom: 6px;
+	}
+	#menu-lang * {
+		font-size: 1.2em;
 	}
 	#menu-contact {
-		top: 35.2px;
-		top: calc(2em + 8px);
+		margin: 0;
+		top: 30.2px;
+		top: calc(1.2em + 8px);
 	}
 	h2, h3:not(#toc-header) {
 		margin-left: -2px;
@@ -289,9 +301,19 @@ local MainGradDark = MainGradLight*0.1
 @media (max-width: -[(menuW*2)]px) {
 	#menubar {
 		left: calc(50% - $[menuW]px/2 + 1px);
+		width: $[menuW]px;
 	}
-	#menu-lang, #menu-contact {
-		position: static;
+	#menu {
+		margin: calc(1.2em + 32px) 10px 0;
+	}
+	#menu-right {
+		margin: 10px;
+	}
+	#menu-lang {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		margin: 0;
 	}	
 	#menu-lang {
 		margin-top: 11px;
@@ -306,12 +328,6 @@ local MainGradDark = MainGradLight*0.1
 </head>
 <body>
 	<div id="menubar">
-		<div id="menu-lang">
-			`en|<span title="English">EN</span>
-			<a title="Русский" href="-[(GetPath('ru^'..PageId, PageId))]">RU</a>|
-			`ru|<a title="English" href="-[(GetPath(PageId, 'ru^'..PageId))]">EN</a>
-			<span title="Русский">RU</span>|				
-		</div>
 		<div id="menu" class="menu">
 			<h4>Menu</h4>
 -[
@@ -338,19 +354,31 @@ local MainGradDark = MainGradLight*0.1
 			end
 ]
 		</div>
-		<div id="menu-contact" class="menu">
-			<h4>Contacts</h4>
-			<div>
-				<span title="`en|Email|`ru|Почта|" alt="Email">-[(Include"svg/mail.svg")]</span>
-				sergroj at mail ru
+		<div id="menu-right">
+			<div id="menu-lang">
+				`en|<span title="English">EN</span>
+				<a title="Русский" tabindex="1" href="-[(GetPath('ru^'..PageId, PageId))]">RU</a>|
+				`ru|<a title="English" tabindex="1" href="-[(GetPath(PageId, 'ru^'..PageId))]">EN</a>
+				<span title="Русский">RU</span>|				
 			</div>
-			<div>
-				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" alt="Twitter">-[(Include"svg/twitter.svg")]</a>
-				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
-			</div>
-			<div>
-				<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" alt="`en|VK|`ru|ВКонтакте|">-[(Include"svg/vk.svg")]</a>
-				<a href="https://vk.com/grayface">vk.com/grayface</a>
+			<div id="menu-contact" class="menu">
+				<h4>Contacts</h4>
+				<div>
+					<span title="`en|Email|`ru|Почта|" alt="Email: " class="menu-icon">-[(Include"svg/mail.svg")]</span>
+					sergroj at mail ru
+				</div>
+				<div>
+					<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" alt="Twitter: " class="menu-icon">-[(Include"svg/twitter.svg")]</a>
+					<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/sergroz/" tabindex="-1" title="Instagram" alt="Instagram: " class="menu-icon">-[(Include"svg/instagram.svg")]</a>
+					<a href="https://www.instagram.com/sergroz/">sergroz</a>
+				</div>
+				<div>
+					<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" alt="`en|VK|`ru|ВКонтакте|: " class="menu-icon">-[(Include"svg/vk.svg")]</a>
+					<a href="https://vk.com/grayface">grayface</a>
+				</div>
 			</div>
 		</div>
 	</div>
