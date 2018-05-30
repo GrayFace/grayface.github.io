@@ -329,19 +329,20 @@ local MainGradDark = MainGradLight*0.1
 <body>
 	<div id="menubar">
 		<div id="menu" class="menu">
-			<h4>Menu</h4>
+			<h4>`en|Menu|`ru|Меню|</h4>
 -[
 			local menu = {"", "mm", "wog", "heroes", "ks", "elma"}
 
 			local function MenuItem(id)
 				local _, t = Include(id..".htm")
 				local href = GetPath(id, PageId)
+				]<div>-[
 				if id ~= PageId then
-					]<a href="$[href]">-[
+					]<a href="$[href]">$[t.MenuTitle]</a>-[
 				else
-					]<span class="menu-sel">-[
-				end]-[(t.MenuTitle)
-				CloseTag(id ~= PageId and "a" or "span")
+					]<span class="menu-sel">$[t.MenuTitle]</span>-[
+				end
+				]</div>-[
 				local id2 = PageId:match("^"..id.."%^[^%^]+")
 				if id2 then
 					]<div class="submenu">-[
@@ -356,13 +357,13 @@ local MainGradDark = MainGradLight*0.1
 		</div>
 		<div id="menu-right">
 			<div id="menu-lang">
-				`en|<span title="English">EN</span>
-				<a title="Русский" tabindex="1" href="-[(GetPath('ru^'..PageId, PageId))]">RU</a>|
-				`ru|<a title="English" tabindex="1" href="-[(GetPath(PageId, 'ru^'..PageId))]">EN</a>
-				<span title="Русский">RU</span>|				
+				`en|<span title="English" aria-label="Current language is English">EN</span>
+				<a title="Русский" tabindex="1" href="-[(GetPath('ru^'..PageId, PageId))]" aria-label="Switch to Russian">RU</a>|
+				`ru|<a title="English" tabindex="1" href="-[(GetPath(PageId, 'ru^'..PageId))]" aria-label="Переключиться на Английский">EN</a>
+				<span title="Русский" aria-label="Текущий язык - Русский">RU</span>|				
 			</div>
 			<div id="menu-contact" class="menu">
-				<h4>Contacts</h4>
+				<h4>`en|Contacts|`ru|Контакты|</h4>
 				<div>
 					<span title="`en|Email|`ru|Почта|" aria-label="Email: " class="menu-icon">-[(Include"svg/mail.svg")]</span>
 					sergroj at mail ru
@@ -383,7 +384,7 @@ local MainGradDark = MainGradLight*0.1
 		</div>
 	</div>
 	<div id="content">
-		<h1>$[Title]<span id="site-name" title=$[SiteName]>GrayFace</span><div style="clear:both"></div></h1>
+		<h1>$[Title] <span id="site-name" title=$[SiteName]>GrayFace</span><div style="clear:both"></div></h1>
 			<div id="content2">
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)
