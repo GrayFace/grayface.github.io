@@ -272,5 +272,11 @@ return {
 	},
 	mm8resmod = {
 		"https://www.dropbox.com/s/s3303i6kc4frdjx/mm8resmod-GrayFace.rar?dl=1"
-	}
+	},
+	Rev4_for_GrayFace_Patch = {
+		"https://www.dropbox.com/s/71u2rwgubv3ofsg/Rev4_for_GrayFace_Patch.rar?dl=1"
+	},
+	BDJ = {
+		"https://www.dropbox.com/sh/5y4cn5i6q0yvqzy/AABeo3dsjvS0_b_eX8Ux78aoa?dl=0"
+	},
 }
