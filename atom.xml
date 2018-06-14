@@ -1,12 +1,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title>Sergey "GrayFace" Rozhenko Homepage</title>
 <link href="https://grayface.github.io/"/>
-<link rel="self" href="$https://grayface.github.io/atom.xml"/>
+<link rel="self" href="https://grayface.github.io/atom.xml"/>
 <icon>https://grayface.github.io/favicon.ico</icon>
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2018-06-14T02:37:41Z</updated>
+<updated>2018-06-14T02:45:02Z</updated>
 
 <entry>
 <title>MMArchive v1.2.1</title>
