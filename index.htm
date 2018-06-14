@@ -52,7 +52,7 @@ local releases = require"dataNews"
 local month = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"}
 local monthRU = {"января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"}
 
-function item(t)
+local function item(t)
 	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
 	local desc = Escape(a"Desc", 'main')
 	desc = desc:gsub("%[([%+%-%*])%] ", '<span class="change">[<span>%1</span>]</span> '):gsub("<span>%-</span>", "<span>&ndash;</span>")
@@ -61,11 +61,11 @@ function item(t)
 	local files = t.Files or {}
 	local mirrors = t.MirrorSF or {}
 	local TitleURL = files[1] and not files[2] and not info[1] or t.TitleURL
-	local m,d,y = t.Date:match("(%d+)/(%d+)/(%d+)")
+	local y,m,d = t.Date:match("(%d+)-(%d+)-(%d+)")
 	m = tonumber(m)
-	local date = ("`en|%s %s, %s|`ru|%s %s %s|"):format(month[m], d, "20"..y, d, monthRU[m], "20"..y)
+	local date = ("`en|%s %s, %s|`ru|%s %s %s|"):format(month[m], d, y, d, monthRU[m], y)
 ]
-<article>-[
+<article id="$[t.Id]">-[
 	if TitleURL then
 		]<h3>-[
 			CustomLink(files[1], a"Title", mirrors[1])

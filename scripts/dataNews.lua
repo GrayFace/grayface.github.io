@@ -1,6 +1,7 @@
 return {
 	{
-		Date = "05/28/18",
+		Date = "2018-05-27T17:14:00Z",
+		Id = "DefPreview-1.2.1",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		Files = {
@@ -12,7 +13,8 @@ return {
 		Title = "Def Preview v1.2.1"
 	},
 	{
-		Date = "05/28/18",
+		Date = "2018-05-27T17:38:00Z",
+		Id = "H3DefTool-3.4.2",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		Files = {
@@ -24,7 +26,8 @@ return {
 		Title = "Def Tool v3.4.2"
 	},
 	{
-		Date = "05/28/18",
+		Date = "2018-05-27T17:44:00Z",
+		Id = "TxtEdit-1.3.1",
 		Desc = "[-] Previous version was crashing on Windows XP\
 [-] Copy-Paste didn't warrant close warning\
 [-] Undo bugs\
@@ -42,7 +45,8 @@ return {
 		Title = "Txt Edit v1.3.1"
 	},
 	{
-		Date = "05/28/18 03:39:24",
+		Date = "2018-05-27T20:39:24Z",
+		Id = "AggPack-1.3.2",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		FileInfo = {
@@ -65,7 +69,8 @@ return {
 		TitleURL = true
 	},
 	{
-		Date = "05/28/18 03:42:02",
+		Date = "2018-05-27T20:42:02Z",
+		Id = "IcnPack-1.3.2",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		Files = {
@@ -77,7 +82,8 @@ return {
 		Title = "IcnPack v1.3.2"
 	},
 	{
-		Date = "05/28/18 03:45:33",
+		Date = "2018-05-27T20:45:33Z",
+		Id = "TilPack-1.3.2",
 		Desc = "[-] Previous version was crashing on Windows XP",
 		DescRU = "[-] Предыдущая версия вылетала на Windows XP",
 		Files = {
@@ -89,7 +95,8 @@ return {
 		Title = "TilPack v1.3.2"
 	},
 	{
-		Date = "05/28/18 04:24:09",
+		Date = "2018-05-27T21:24:09Z",
+		Id = "MMArchive-1.2.1",
 		Desc = "[-] Previous version was crashing on Windows XP\
 [-] Clipboard-related crash on exit\
 [-] Crash when loading another archive while in Compare To mode\

@@ -358,8 +358,8 @@ local MainGradDark = MainGradLight*0.1
 		<div id="menu-right">
 			<div id="menu-lang">
 				`en|<span title="English" aria-label="Current language is English">EN</span>
-				<a title="Русский" tabindex="1" href="-[(GetPath('ru^'..PageId, PageId))]" aria-label="Switch to Russian">RU</a>|
-				`ru|<a title="English" tabindex="1" href="-[(GetPath(PageId, 'ru^'..PageId))]" aria-label="Переключиться на Английский">EN</a>
+				<a title="Русский" rel="alternate" hreflang="ru" tabindex="1" href="-[(GetPath('ru^'..PageId, PageId))]" aria-label="Switch to Russian">RU</a>|
+				`ru|<a title="English" rel="alternate" hreflang="en" tabindex="1" href="-[(GetPath(PageId, 'ru^'..PageId))]" aria-label="Переключиться на Английский">EN</a>
 				<span title="Русский" aria-label="Текущий язык - Русский">RU</span>|				
 			</div>
 			<div id="menu-contact" class="menu">
