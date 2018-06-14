@@ -3,18 +3,33 @@ local include = require"utils".include
 local P = {
 	new = debug.getinfo(1, "f").func,
 	NeedTOC = false,
+	events = events.new(),
 }
+
+local function _WRITE(s)
+	local q = ResTable
+	q[#q+1] = s
+end
+
+local meta = {__newindex = |_, __, s| _WRITE(s)}
 
 function P.Include(fname, t)
 	t = t or P.new()
 	local id = path.setext(fname, '')
 	t.PageId = t.PageId or id == "index" and "" or id
-	return include(fname == ".htm" and "index.htm" or fname, t), t
+	local old = ResTable
+	ResTable = {}
+	local s = include(fname == ".htm" and "index.htm" or fname, t, nil, ResTable)
+	setmetatable(ResTable, meta)
+	ResTable = old
+	return s, t
 end
 
 function P.SetTitle(short, long)
+	function P.events.OnTitle(menu)
+		_WRITE(P.Escape(not menu and long or short, 'main'))
+	end
 	P.Title = long or short
-	P.MenuTitle = short
 end
 
 function P.TOC()
@@ -42,11 +57,6 @@ function P.GetPath(s, base)
 		return "`en|"..DoGetPath(s, base).."|`ru|"..DoGetPath(s, 'ru^'..base).."|"
 	end
 	return DoGetPath(s, base)
-end
-
-function P.CloseTag(s)
-	local t = P.ResTable
-	t[#t+1] = "</"..s..">"
 end
 
 local function conv(s)
@@ -119,11 +129,10 @@ local MirrorLink = [[<a href="%s" title="`en|Download from|`ru|Скачать с
 function P.CustomLink(lnk, title, mirrorSF)
 	lnk = ToLink(lnk)
 	title = P.Escape(title, 'main')
-	local q = P.ResTable
 	if mirrorSF then
-		q[#q+1] = MirrorLink:format(lnk, title, ToLink(mirrorSF))
+		_WRITE(MirrorLink:format(lnk, title, ToLink(mirrorSF)))
 	else
-		q[#q+1] = ('<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>'):format(lnk, title)
+		_WRITE(('<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>'):format(lnk, title))
 	end
 end
 
@@ -136,10 +145,9 @@ end
 
 function P.HeaderLink(name, title, tag)
 	tag = tag or 'h3'
-	local q = P.ResTable
-	q[#q+1] = '<'..tag..'>'
+	_WRITE('<'..tag..'>')
 	P.Link(name, title)
-	q[#q+1] = '</'..tag..'>'
+	_WRITE('</'..tag..'>')
 end
 
 return P

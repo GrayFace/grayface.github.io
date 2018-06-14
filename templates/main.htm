@@ -243,7 +243,7 @@ local MainGradDark = MainGradLight*0.1
 	}
 	#menu-contact svg {
 		height: 18px;
-		vertical-align:middle;
+		vertical-align: middle;
 		margin: 1px 0 3px 0;
 		opacity: 0.8;
 	}
@@ -338,9 +338,9 @@ local MainGradDark = MainGradLight*0.1
 				local href = GetPath(id, PageId)
 				]<div>-[
 				if id ~= PageId then
-					]<a href="$[href]">$[t.MenuTitle]</a>-[
+					]<a href="$[href]">-[t.events.OnTitle(true)]</a>-[
 				else
-					]<span class="menu-sel">$[t.MenuTitle]</span>-[
+					]<span class="menu-sel">-[t.events.OnTitle(true)]</span>-[
 				end
 				]</div>-[
 				local id2 = PageId:match("^"..id.."%^[^%^]+")
@@ -384,7 +384,7 @@ local MainGradDark = MainGradLight*0.1
 		</div>
 	</div>
 	<div id="content">
-		<h1>$[Title] <span id="site-name" title=$[SiteName]>GrayFace</span><div style="clear:both"></div></h1>
+		<h1>-[events.OnTitle(false)] <span id="site-name" title=$[SiteName]>GrayFace</span><div style="clear:both"></div></h1>
 			<div id="content2">
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)

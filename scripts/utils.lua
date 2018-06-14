@@ -83,13 +83,11 @@ r.attribVal = {
 	{import = "checkmain"},
 	ret = " ",
 }
-tpl.code0 = tpl.code0..";(...).ResTable=({...})[2]"
 
-function P.include(fname, t)
-	t.ResTable = nil
+function P.include(fname, ...)
 	local q = tpl.prepare(io.load(fname))
 	local code = q.code0.." "..q.code
-	local s, err = tpl.run(q, t)
+	local s, err = tpl.run(q, ...)
 	return s or error(err.."\n\n"..code)
 end
 

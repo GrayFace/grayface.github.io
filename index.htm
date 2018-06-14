@@ -1,4 +1,20 @@
--[SetTitle"`en|News|`ru|Новости|"]
+-[SetTitle"`en|News|`ru|Новости|"
+
+function events.OnTitle(InMenu)
+	if not InMenu then
+]<style>
+	.rss svg {
+		height: 0.85em;
+		margin: 0 0.15em 0.15em;
+		vertical-align: bottom;
+	}
+	.rss {
+		margin-left: 0.24em;
+	}
+</style><a class="rss" href="$[GetPath('atom.xml', PageId)]" title="`en|RSS Feed|`ru|Подписаться на RSS|" aria-label="`en|RSS Feed|`ru|Подписаться на RSS|">-[(Include"svg/rss.svg")]</a>-[
+	end
+end
+]
 <style>
 	h3:not(#toc-header) {
 		display: inline-block;
