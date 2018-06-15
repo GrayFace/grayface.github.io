@@ -388,6 +388,7 @@ local MainGradDark = MainGradLight*0.1
 			<div id="content2">
 			-[if NeedTOC then
 				Content, TOC = require"HelpTOC".TOC(Content, true)
+				Content = Content:gsub("<a name=", "<a id=")
 				]<h3 id="toc-header">`en|Contents|`ru|Содержание|</h3>
 				<div id="toc">-[(TOC)]</div>
 			-[end]
