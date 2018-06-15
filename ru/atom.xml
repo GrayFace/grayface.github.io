@@ -1,5 +1,6 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ru">
 <title>Сайт Сергея "GrayFace" Роженко</title>
+<subtitle>Новостная лента моего сайта.</subtitle>
 <link href="https://grayface.github.io/ru/"/>
 <link rel="self" href="https://grayface.github.io/ru/atom.xml"/>
 <icon>https://grayface.github.io/favicon.ico</icon>
