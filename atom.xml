@@ -19,6 +19,7 @@ return GetDate()
 
 ]<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="`en|en|`ru|ru|">
 <title>`en|Sergey "GrayFace" Rozhenko Homepage|`ru|Сайт Сергея "GrayFace" Роженко|</title>
+<subtitle>`en|News feed of my site.|`ru|Новостная лента моего сайта.|</subtitle>
 <link href="$[URL]"/>
 <link rel="self" href="$[URL]atom.xml"/>
 <icon>$[SiteURL]favicon.ico</icon>
@@ -61,7 +62,7 @@ local function item(t)
 	end
 	-- escape it all
 	for i = n, #q do
-		q[i] = Escape(q[i], 'main')
+		q[i] = Escape(q[i]:gsub(" %- ([^%d])", " &ndash; %1"), 'main')
 	end
 ]
 </summary>

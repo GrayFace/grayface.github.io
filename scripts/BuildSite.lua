@@ -19,7 +19,6 @@ end
 for fname in path.find("*.xml") do
 	fname = path.name(fname)
 	local s, t = page.Include(fname)
-	s = s:gsub(" %- ([^%d])", " &#8211; %1"):gsub("&ndash;", "&#8211;")
 	local en, ru = utils.enru(s)
 	io.save(ReadyPath..fname, en)
 	io.save(ReadyPath.."ru/"..fname, ru)

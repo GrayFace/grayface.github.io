@@ -11,7 +11,10 @@ function events.OnTitle(InMenu)
 	.rss {
 		margin-left: 0.24em;
 	}
-</style><a class="rss" href="$[GetPath('atom.xml', PageId)]" title="`en|RSS Feed|`ru|Подписаться на RSS|" aria-label="`en|RSS Feed|`ru|Подписаться на RSS|">-[(Include"svg/rss.svg")]</a>-[
+	.rss svg + span {
+		display: none;
+	}
+</style><a class="rss" href="$[GetPath('atom.xml', PageId)]" title="`en|RSS Feed|`ru|Подписаться на RSS|" aria-label="`en|RSS Feed|`ru|Подписаться на RSS|">-[(Include"svg/rss.svg")]<span>`en|RSS Feed|`ru|Подписаться на RSS|</span></a>-[
 	end
 end
 ]
