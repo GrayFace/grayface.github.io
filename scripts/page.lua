@@ -26,7 +26,7 @@ function P.Include(fname, t)
 end
 
 function P.SetTitle(short, long)
-	function P.events.OnTitle(menu)
+	function P.events.PageTitle(menu)
 		_WRITE(P.Escape(not menu and long or short, 'main'))
 	end
 	P.Title = long or short
