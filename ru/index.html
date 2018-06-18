@@ -75,7 +75,7 @@
 	}
 	#content {
 		padding: 0;
-		margin: 5px 5px 20px 185px;
+		margin: 5px 5px 20px 182px;
 		border: 1px solid #ccc;
 		background-color: white;
 	}
@@ -147,7 +147,7 @@
 /* Menus */
 	#menubar {
 		position: absolute;
-		width: 185px;
+		width: 182px;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -194,7 +194,7 @@
 	}
 	.menu {
 		background-color: white;
-		margin: 10px 10px;
+		margin: 11px 11px 11px 4px;
 		padding-bottom: 5px;
 		border: 1px solid #ccc;
 	}
@@ -244,10 +244,12 @@
 @media (max-width: 700px) {
 	#menubar {
 		position: relative;
-		margin: 0;
 		left: calc(50% - 185px);
 		width: calc(50% + 185px);
 		padding-top: 0;
+	}
+	.menu {
+		margin: 10px;
 	}
 	#menu, #menu-right {
 		position: static;
