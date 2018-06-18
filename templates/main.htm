@@ -12,6 +12,8 @@
 -[
 events.PageHead()
 local menuW = 185
+local menuLPad = 4
+local menuW0 = menuW - 20 + 13 + menuLPad
 local clH1border = '#dadade'
 local clBorder = '#ccc'
 local clSel = '#77a7e3'
@@ -93,7 +95,7 @@ local MainGradDark = MainGradLight*0.1
 	}
 	#content {
 		padding: 0;
-		margin: 5px 5px 20px $[menuW]px;
+		margin: 5px 5px 20px $[menuW0]px;
 		border: 1px solid $clBorder;
 		background-color: white;
 	}
@@ -165,7 +167,7 @@ local MainGradDark = MainGradLight*0.1
 /* Menus */
 	#menubar {
 		position: absolute;
-		width: $[menuW]px;
+		width: $[menuW0]px;
 		top: 0;
 		left: 0;
 		bottom: 0;
@@ -212,7 +214,7 @@ local MainGradDark = MainGradLight*0.1
 	}
 	.menu {
 		background-color: white;
-		margin: 10px 10px;
+		margin: 11px 11px 11px $[menuLPad]px;
 		padding-bottom: 5px;
 		border: 1px solid $clBorder;
 	}
@@ -262,10 +264,12 @@ local MainGradDark = MainGradLight*0.1
 @media (max-width: 700px) {
 	#menubar {
 		position: relative;
-		margin: 0;
 		left: calc(50% - $[menuW]px);
 		width: calc(50% + $[menuW]px);
 		padding-top: 0;
+	}
+	.menu {
+		margin: 10px;
 	}
 	#menu, #menu-right {
 		position: static;
