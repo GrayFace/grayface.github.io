@@ -165,16 +165,12 @@ local MainGradDark = MainGradLight*0.1
 		top: 0;
 		left: 0;
 		bottom: 0;
-		padding-top: 47.2px;
-		padding-top: calc(2em + 20px);
 	}
 	#menu-lang {
 		text-align: center;
-		position: absolute;
-		left: 0;
-		width: 100%;
-		top: 13.08px;
-		top: calc(0.3em + 9px);
+		margin-top: 13.08px;
+		margin-top: calc(0.3em + 9px);
+		margin-bottom: 11px;
 	}
 	#menu-lang * {
 		display: inline-block;
@@ -263,28 +259,24 @@ local MainGradDark = MainGradLight*0.1
 		width: calc(50% + $[menuW]px);
 		padding-top: 0;
 	}
-	#menu, #menu-right {
+	#menu, #menu-contact {
 		position: static;
 		display: inline-block;
 		vertical-align: bottom;
 	}
-	#menu-right {
-		margin: 10px 0;
+	#menu-contact {
+		margin: calc(1.2em + 30px) 0 10px;
 	}
 	#menu, #menu-lang, #menu-contact {
 		width: -[(menuW-20)]px;
 	}
 	#menu-lang {
-		position: static;
-		margin-bottom: 8px;
+		position: absolute;
+		left: -[(menuW+6)]px;
+		margin-top: 10px;
 	}
 	#menu-lang * {
 		font-size: 1.2em;
-	}
-	#menu-contact {
-		margin: 0;
-		top: 30.2px;
-		top: calc(1.2em + 8px);
 	}
 	h2, h3:not(#toc-header) {
 		margin-left: -2px;
@@ -306,13 +298,13 @@ local MainGradDark = MainGradLight*0.1
 		width: $[menuW]px;
 	}
 	#menu {
-		margin: calc(1.2em + 32px) 10px 0;
+		margin: 9.5px 10px 0;
 	}
-	#menu-right {
+	#menu-contact {
 		margin: 10px;
 	}
 	#menu-lang {
-		position: absolute;
+		position: static;
 		top: 0;
 		width: 100%;
 		margin: 0;
@@ -330,6 +322,12 @@ local MainGradDark = MainGradLight*0.1
 </head>
 <body>
 	<div id="menubar">
+		<div id="menu-lang">
+			`en|<span title="English" aria-label="Current language is English">EN</span>
+			<a title="Русский" rel="alternate" hreflang="ru" href="-[(GetPath('ru^'..PageId, PageId))]" aria-label="Switch to Russian">RU</a>|
+			`ru|<a title="English" rel="alternate" hreflang="en" href="-[(GetPath(PageId, 'ru^'..PageId))]" aria-label="Переключиться на Английский">EN</a>
+			<span title="Русский" aria-label="Текущий язык - Русский">RU</span>|				
+		</div>
 		<div id="menu" class="menu">
 			<h4>`en|Menu|`ru|Меню|</h4>
 -[
@@ -357,31 +355,23 @@ local MainGradDark = MainGradLight*0.1
 			end
 ]
 		</div>
-		<div id="menu-right">
-			<div id="menu-lang">
-				`en|<span title="English" aria-label="Current language is English">EN</span>
-				<a title="Русский" rel="alternate" hreflang="ru" tabindex="1" href="-[(GetPath('ru^'..PageId, PageId))]" aria-label="Switch to Russian">RU</a>|
-				`ru|<a title="English" rel="alternate" hreflang="en" tabindex="1" href="-[(GetPath(PageId, 'ru^'..PageId))]" aria-label="Переключиться на Английский">EN</a>
-				<span title="Русский" aria-label="Текущий язык - Русский">RU</span>|				
+		<div id="menu-contact" class="menu">
+			<h4>`en|Contacts|`ru|Контакты|</h4>
+			<div>
+				<span title="`en|Email|`ru|Почта|" aria-label="Email: ">-[(Include"svg/mail.svg")]</span>
+				sergroj at mail ru
 			</div>
-			<div id="menu-contact" class="menu">
-				<h4>`en|Contacts|`ru|Контакты|</h4>
-				<div>
-					<span title="`en|Email|`ru|Почта|" aria-label="Email: ">-[(Include"svg/mail.svg")]</span>
-					sergroj at mail ru
-				</div>
-				<div>
-					<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" aria-label="Twitter: ">-[(Include"svg/twitter.svg")]</a>
-					<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
-				</div>
-				<div>
-					<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" aria-label="`en|VK|`ru|ВКонтакте|: ">-[(Include"svg/vk.svg")]</a>
-					<a href="https://vk.com/grayface">grayface</a>
-				</div>
-				<div>
-					<a href="https://www.instagram.com/sergroz/" tabindex="-1" title="Instagram" aria-label="Instagram: ">-[(Include"svg/instagram.svg")]</a>
-					<a href="https://www.instagram.com/sergroz/">sergroz</a>
-				</div>
+			<div>
+				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" aria-label="Twitter: ">-[(Include"svg/twitter.svg")]</a>
+				<a href="https://twitter.com/sergrojGrayFace">sergrojGrayFace</a>
+			</div>
+			<div>
+				<a href="https://vk.com/grayface" tabindex="-1" title="`en|VK|`ru|ВКонтакте|" aria-label="`en|VK|`ru|ВКонтакте|: ">-[(Include"svg/vk.svg")]</a>
+				<a href="https://vk.com/grayface">grayface</a>
+			</div>
+			<div>
+				<a href="https://www.instagram.com/sergroz/" tabindex="-1" title="Instagram" aria-label="Instagram: ">-[(Include"svg/instagram.svg")]</a>
+				<a href="https://www.instagram.com/sergroz/">sergroz</a>
 			</div>
 		</div>
 	</div>
