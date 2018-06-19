@@ -32,6 +32,10 @@ function P.SetTitle(short, long)
 	P.Title = long or short
 end
 
+function P.SetDescription(s)
+	P.PageDescription = s
+end
+
 function P.TOC()
 	P.NeedTOC = true
 end

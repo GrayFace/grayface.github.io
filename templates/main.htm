@@ -341,7 +341,10 @@ local MainGradDark = MainGradLight*0.1
 		<div id="menu" class="menu">
 			<h4>`en|Menu|`ru|Меню|</h4>
 -[
-			local menu = {"", "mm", "wog", "heroes", "ks", "elma"}
+			local menu = {"", "mm", "wog", "heroes", "ks", "elma",
+				mm = {"mm^ext", "mm^mechanics"},
+				["mm^ext"] = {"mm^ext^ref"},
+			}
 
 			local function MenuItem(id)
 				local _, t = Include(id..".htm")
@@ -353,10 +356,25 @@ local MainGradDark = MainGradLight*0.1
 					]<span class="menu-sel">-[t.events.PageTitle(true)]</span>-[
 				end
 				]</div>-[
-				local id2 = PageId:match("^"..id.."%^[^%^]+")
-				if id2 then
-					]<div class="submenu">-[
+				local SubDone = {}
+				local function SubItem(id2)
+					if SubDone[id2] then
+						return
+					end
+					if not next(SubDone) then
+						]<div class="submenu">-[
+					end
+					SubDone[id2] = true
 					MenuItem(id2)
+				end
+				local id2 = PageId:match("^"..id.."%^[^%^]+")
+				if id2 or PageId == id then
+					local t = menu[id] or {}
+					for i = 1, #t + (id2 and 1 or 0) do
+						SubItem(t[i] or id2)
+					end
+				end
+				if next(SubDone) then
 					]</div>-[
 				end
 			end
