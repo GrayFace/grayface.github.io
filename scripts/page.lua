@@ -154,4 +154,31 @@ function P.HeaderLink(name, title, tag)
 	_WRITE('</'..tag..'>')
 end
 
+function P.ProcessNewsItem(t)
+	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
+	local files = t.Files or {}
+	local info = t.FileInfo or {}
+	local infoRU = t.FileInfoRU or {}
+	local mirrors = t.MirrorSF or {}
+	local q = {
+		Title = a"Title",
+		Desc = P.Escape(a"Desc", 'main'):gsub("%[([%+%-%*])%] ", '<span class="change">[<span>%1</span>]</span> '):gsub("<span>%-</span>", "<span>&ndash;</span>"),
+		Files = {},
+		TitleURL = files[1] and not files[2] and not info[1] or t.TitleURL,
+		Date = t.Date,
+		Id = t.Id,
+	}
+	for i, url in ipairs(files) do
+		local fname = url:match("[^?]*"):match(".*/([^/]+)/?$")
+		local en = info[i] or "Download "..fname
+		local ru = infoRU[i] or "Скачать "..fname
+		q.Files[i] = {
+			URL = url,
+			Info = ("`en|%s|`ru|%s|"):format(en, ru),
+			MirrorSF = mirrors[i],
+		}
+	end
+	return q
+end
+
 return P

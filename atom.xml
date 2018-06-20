@@ -29,32 +29,21 @@ return GetDate()
 <updated>$[CurDate]</updated>
 -[
 local function item(t)
-	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
-	local desc = Escape(a"Desc", 'main')
-	desc = desc:gsub("%[([%+%-%*])%] ", '<span style="white-space:nowrap;display:inline-block;margin-right:0.12em;">[<span !>%1</span>]</span> '):gsub("<span !>%-</span>", "<span !>&ndash;</span>"):gsub("<span !>", '<span style="display:inline-block;min-width:0.8em;text-align:center;">')
-	local info = t.FileInfo or {}
-	local infoRU = t.FileInfoRU or {}
-	local files = t.Files or {}
-	local mirrors = t.MirrorSF or {}
+	t.Desc = t.Desc:gsub('<span class="change">', '<span style="white-space:nowrap;display:inline-block;margin-right:0.12em;">'):gsub('<span>', '<span style="display:inline-block;min-width:0.8em;text-align:center;">')
 ]
 <entry>
-<title>$[a"Title"]</title>
+<title>$[t.Title]</title>
 <link href="$[URL]#$[t.Id]"/>
 <updated>$[t.Date]</updated>
 <id>$[URL]#$[t.Id]</id>
 <summary type="html">
--[(desc)
+-[(t.Desc)
 	local n = #q
-	if not TitleURL and files[1] or files[2] then
+	if t.Files[1] then
 		]<div style="margin-top:0.5em;">-[
-		for i = 1, #files do
-			local url = files[i]
-			local fname = url:match("[^?]*"):match(".*/([^/]+)/?$")
-			local en = info[i] or "Download "..fname
-			local ru = infoRU[i] or "Скачать "..fname
-			local desc = ("`en|%s|`ru|%s|"):format(en, ru)
+		for i, f in ipairs(t.Files) do
 			]<div>-[
-				CustomLink(url, desc, mirrors[i])
+				CustomLink(f.URL, f.Info, f.MirrorSF)
 				q[#q] = q[#q]:gsub('class="mirror"', 'style="margin-left:0.2em;margin-right:0.2em;"'):gsub('></a>', ' style="vertical-align:middle;height:1em;margin:-0.1em 0 0.1em;" height="13.6" width="13.6"></a>')
 			]</div>-[
 		end
@@ -71,7 +60,7 @@ local function item(t)
 end
 
 for i = #news, math.max(1, #news - 10), -1 do
-	item(news[i])
+	item(ProcessNewsItem(news[i]))
 end
 ]
 </feed>

@@ -57,43 +57,31 @@ SetDescription"`en|Collection of my tools and patches for various games:|`ru|М�
 <div>
 -[
 package.loaded.dataNews = nil
-local releases = require"dataNews"
+local news = require"dataNews"
 
 local month = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"}
 local monthRU = {"января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"}
 
 local function item(t)
-	local a = |s| ("`en|%s|`ru|%s|"):format(t[s], t[s.."RU"] or t[s])
-	local desc = Escape(a"Desc", 'main')
-	desc = desc:gsub("%[([%+%-%*])%] ", '<span class="change">[<span>%1</span>]</span> '):gsub("<span>%-</span>", "<span>&ndash;</span>")
-	local info = t.FileInfo or {}
-	local infoRU = t.FileInfoRU or {}
-	local files = t.Files or {}
-	local mirrors = t.MirrorSF or {}
-	local TitleURL = files[1] and not files[2] and not info[1] or t.TitleURL
 	local y,m,d = t.Date:match("(%d+)-(%d+)-(%d+)")
 	m = tonumber(m)
 	local date = ("`en|%s %s, %s|`ru|%s %s %s|"):format(month[m], d, y, d, monthRU[m], y)
 ]
 <article id="$[t.Id]">-[
-	if TitleURL then
+	if t.TitleURL then
 		]<h3>-[
-			CustomLink(files[1], a"Title", mirrors[1])
+			CustomLink(t.Files[1].URL, t.Title, t.Files[1].MirrorSF)
 		]</h3>-[
 	else
-		]<h3>$[a"Title"]</h3>-[
+		]<h3>$[t.Title]</h3>-[
 	end
-	]<div class="desc">-[(desc)]</div>-[
-	if not TitleURL and files[1] or files[2] then
+	]<div class="desc">-[(t.Desc)]</div>-[
+	if not t.TitleURL and t.Files[1] or t.Files[2] then
 		]<div class="files">-[
-		for i = TitleURL and 2 or 1, #files do
-			local url = files[i]
-			local fname = url:match("[^?]*"):match(".*/([^/]+)/?$")
-			local en = info[i] or "Download "..fname
-			local ru = infoRU[i] or "Скачать "..fname
-			local desc = ("`en|%s|`ru|%s|"):format(en, ru)
+		for i = t.TitleURL and 2 or 1, #t.Files do
+			local f = t.Files[i]
 			]<div>-[
-				CustomLink(url, desc, mirrors[i])
+				CustomLink(f.URL, f.Info, f.MirrorSF)
 			]</div>-[
 		end
 		]</div>-[
@@ -103,8 +91,8 @@ local function item(t)
 -[
 end
 
-for i = #releases, 1, -1 do
-	item(releases[i])
+for i = #news, 1, -1 do
+	item(ProcessNewsItem(news[i]))
 end
 ]
 </div>
