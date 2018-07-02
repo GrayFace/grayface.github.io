@@ -179,7 +179,7 @@ return {
 	},
 	MMExtension = {
 		"https://www.dropbox.com/s/qohxt8ijjh74mcw/MMExtensionTmp.rar?dl=1",
-		Version = "2.1.1"
+		Version = "2.2"
 	},
 	MMExtensionSrc = {
 		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
