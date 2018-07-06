@@ -290,8 +290,7 @@ return {
 		"https://sites.google.com/site/sergroj/heroes/heroes2w.rar?attredirects=0"
 	},
 	mm6hd = {
-		"404",
-		NameSuffix = " (`en|Sorry, I need to upload new version of MM6 patch first|`ru|Пока недоступен, нужно залить новую версию патча для MM6|)"
+		"https://www.dropbox.com/s/313uxife6akzrav/mm6hd.rar?dl=0"
 	},
 	["mm6hd_after.png"] = {
 		"img/mm6hd_after.png"

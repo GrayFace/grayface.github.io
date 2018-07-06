@@ -114,44 +114,6 @@ return {
 		Title = "MMArchive v1.2.1"
 	},
 	{
-		Date = "2018-07-06T23:24:22Z",
-		Desc = "1",
-		DescRU = "2",
-		Files = {
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch Buka v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch Loc v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch ReadMe.TXT",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch ReadMe_rus.TXT"
-		},
-		Id = "MM7Patch-2.1",
-		MirrorSF = {
-			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch v2.1.exe/download",
-			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch Buka v2.1.exe/download",
-			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch Loc v2.1.exe/download",
-			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7Patch ReadMe.TXT/download",
-			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7Patch ReadMe_rus.TXT/download"
-		},
-		Title = "MM7Patch v2.1"
-	},
-	{
-		Date = "2018-07-06T23:24:32Z",
-		Desc = "q",
-		DescRU = "w",
-		Files = {
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8 Patch v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch ReadMe.TXT",
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch ReadMe_rus.TXT"
-		},
-		Id = "MM8Patch-2.1",
-		MirrorSF = {
-			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8 Patch v2.1.exe/download",
-			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch ReadMe.TXT/download",
-			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch ReadMe_rus.TXT/download"
-		},
-		Title = "MM8Patch v2.1"
-	},
-	{
 		Date = "2018-07-06T23:35:46Z",
 		Desc = "[+] Borderless full screen mode (the game runs in your standard resolution, stretched to full screen with black borders as needed).\
 [+] WindowWidth and WindowHeight options control window size in windowed mode.\
@@ -187,5 +149,40 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6Patch ReadMe_rus.TXT/download"
 		},
 		Title = "MM6Patch v2.1"
+	},
+	{
+		Date = "2018-07-06T23:48:49Z",
+		Desc = "[+] High resolution rendering in Hardware 3D, 32 bit color mode.\
+[+] Borderless full screen mode (the game runs in your standard resolution, stretched to full screen with black borders as needed).\
+[+] WindowWidth and WindowHeight options control window size in windowed mode.\
+[+] Custom SND and VID archives that work just like custom LOD archives.\
+[+] TurnBasedSpeed (for monsters' turn) and TurnBasedPartySpeed (for party turn) can help you speed up the combat.\
+[+] PlayMP3 option now supports WAV files in Music folder. WAV always loop properly.\
+[+] And more...\
+[-] Many fixes in game code and on maps. I finally went through all maps and fixed all bugs I could find.",
+		DescRU = "[+] Рендеринг в высоком разрешении в аппаратном режиме, поддержка полноцветного (32 бита) режима.\
+[+] Оконно-полноэкранный режим - вместо смены разрешения игра растягивается на полный экран, с чёрными полосами, если они нужны.\
+[+] Опции \"WindowWidth\" и \"WindowHeight\" устанавливают размер окна в оконном режиме.\
+[+] Свои архивы SND и VID. Работают точно так же, как архивы LOD.\
+[+] Опции \"TurnBasedSpeed\" (для хода монстров) и \"TurnBasedPartySpeed\" (для хода игрока) ускоряют пошаговую битву.\
+[+] Опция PlayMP3 теперь поддерживает файлы WAV в папке Music. Музыка в формате WAV исключает проблемы с зацикливанием воспроизведения.\
+[+] И другие...\
+[-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch Buka v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch Loc v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch ReadMe.TXT",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch ReadMe_rus.TXT"
+		},
+		Id = "MM7Patch-2.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch v2.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch Buka v2.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch Loc v2.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7Patch ReadMe.TXT/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7Patch ReadMe_rus.TXT/download"
+		},
+		Title = "MM7Patch v2.1"
 	}
 }
