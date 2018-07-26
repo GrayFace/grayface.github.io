@@ -169,7 +169,7 @@ function P.ProcessNewsItem(t)
 		Id = t.Id,
 	}
 	for i, url in ipairs(files) do
-		local fname = url:match("[^?]*"):match(".*/([^/]+)/?$")
+		local fname = mirrors[i] and mirrors[i]:match("([^/]+)/download$") or url:match("[^?]*"):match(".*/([^/]+)/?$")
 		local en = info[i] or "Download "..fname
 		local ru = infoRU[i] or "Скачать "..fname
 		q.Files[i] = {

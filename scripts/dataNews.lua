@@ -134,11 +134,11 @@ return {
 [+] И другие...\
 [-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
 		Files = {
-			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6 Patch v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6 Patch Buka v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6 Patch Loc v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch ReadMe.TXT",
-			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch ReadMe_rus.TXT"
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.Buka.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.Loc.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe.TXT",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe_rus.TXT"
 		},
 		Id = "MM6Patch-2.1",
 		MirrorSF = {
@@ -169,11 +169,11 @@ return {
 [+] И другие...\
 [-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
 		Files = {
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch Buka v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7 Patch Loc v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch ReadMe.TXT",
-			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch ReadMe_rus.TXT"
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7.Patch.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7.Patch.Buka.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7.Patch.Loc.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe.TXT",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe_rus.TXT"
 		},
 		Id = "MM7Patch-2.1",
 		MirrorSF = {
@@ -204,9 +204,9 @@ return {
 [+] И другие...\
 [-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
 		Files = {
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8 Patch v2.1.exe",
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch ReadMe.TXT",
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch ReadMe_rus.TXT"
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8.Patch.v2.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe.TXT",
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe_rus.TXT"
 		},
 		Id = "MM8Patch-2.1",
 		MirrorSF = {
