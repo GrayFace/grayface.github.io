@@ -42,10 +42,9 @@ local function item(t)
 	if t.Files[1] then
 		]<div style="margin-top:0.5em;">-[
 		for i, f in ipairs(t.Files) do
-			]<div>-[
-				CustomLink(f.URL, f.Info, f.MirrorSF)
-				q[#q] = q[#q]:gsub('class="mirror"', 'style="margin-left:0.2em;margin-right:0.2em;"'):gsub('></a>', ' style="vertical-align:middle;height:1em;margin:-0.1em 0 0.1em;" height="13.6" width="13.6"></a>')
-			]</div>-[
+			Write(f.DivStart)
+			TextLink(f.URL, f.Info, f.MirrorSF)
+			Write(f.DivEnd)
 		end
 		]</div>-[
 	end

@@ -11,6 +11,8 @@ local function _WRITE(s)
 	q[#q+1] = s
 end
 
+P.Write = _WRITE
+
 local meta = {__newindex = |_, __, s| _WRITE(s)}
 
 function P.Include(fname, t)
@@ -128,7 +130,9 @@ function P.LinkVer(name)
 	return "v"..LinkData(name).Version
 end
 
-local MirrorLink = [[<a href="%s" title="`en|Download from|`ru|Скачать с| GitHub`ru|'а|">%s</a><a href="%s" class="mirror" title="`ru|Зеркало на |SourceForge`en| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="(`en|Mirror|`ru|Зеркало|)"></a>]]
+local NoMirrorLink = '<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>'
+local MirrorLink = [[<a href="%s" title="`en|Download from GitHub|`ru|Скачать с GitHub'а|">%s</a><a href="%s" class="mirror" title="`ru|Зеркало на |SourceForge`en| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="(`en|Mirror|`ru|Зеркало|)"></a>]]
+local TextMirrorLink = [[<a href="%s" title="`en|Download from GitHub|`ru|Скачать с GitHub'а|">%s</a> &nbsp;<i><a href="%s" title="`ru|Зеркало на |SourceForge`en| Mirror|">(`en|Mirror|`ru|Зеркало|)</a></i>]]
 
 function P.CustomLink(lnk, title, mirrorSF)
 	lnk = ToLink(lnk)
@@ -136,7 +140,17 @@ function P.CustomLink(lnk, title, mirrorSF)
 	if mirrorSF then
 		_WRITE(MirrorLink:format(lnk, title, ToLink(mirrorSF)))
 	else
-		_WRITE(('<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>'):format(lnk, title))
+		_WRITE(NoMirrorLink:format(lnk, title))
+	end
+end
+
+function P.TextLink(lnk, title, mirrorSF)
+	lnk = ToLink(lnk)
+	title = P.Escape(title, 'main')
+	if mirrorSF then
+		_WRITE(TextMirrorLink:format(lnk, title, ToLink(mirrorSF)))
+	else
+		_WRITE(NoMirrorLink:format(lnk, title))
 	end
 end
 
@@ -172,10 +186,14 @@ function P.ProcessNewsItem(t)
 		local fname = mirrors[i] and mirrors[i]:match("([^/]+)/download$") or url:match("[^?]*"):match(".*/([^/]+)/?$")
 		local en = info[i] or "Download "..fname
 		local ru = infoRU[i] or "Скачать "..fname
+		local lang = (en == "" and "ru" or ru == "" and "en")
 		q.Files[i] = {
 			URL = url,
-			Info = ("`en|%s|`ru|%s|"):format(en, ru),
+			Info = (lang and "%s%s" or "`en|%s|`ru|%s|"):format(en, ru),
 			MirrorSF = mirrors[i],
+			Lang = lang,
+			DivStart = (lang and "`"..lang.."|" or "").."<div>",
+			DivEnd = "</div>"..(lang and "|" or ""),
 		}
 	end
 	return q

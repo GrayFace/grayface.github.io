@@ -121,7 +121,7 @@ return {
 [+] Custom SND and VID archives that work just like custom LOD archives.\
 [+] Items stack vertically, like in MM7 and MM8 (add PlaceItemsVertically=0 to INI to disable).\
 [+] TurnBasedSpeed (for monsters' turn) and TurnBasedPartySpeed (for party turn) can help you speed up the combat.\
-[+] PlayMP3 option now supports WAV files in Music folder. WAV always loop properly.\
+[+] PlayMP3 option now supports WAV files in Music folder. WAVs always loop properly.\
 [+] And more...\
 [-] Many fixes in game code and on maps. I finally went through all maps and fixed all bugs I could find.",
 		DescRU = "[+] Оконно-полноэкранный режим - вместо смены разрешения игра растягивается на полный экран, с чёрными полосами, если они нужны.\
@@ -140,6 +140,8 @@ return {
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe.TXT",
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe_rus.TXT"
 		},
+		FileInfo = {[5] = ""},
+		FileInfoRU = {[4] = ""},
 		Id = "MM6Patch-2.1",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6 Patch v2.1.exe/download",
@@ -157,7 +159,7 @@ return {
 [+] WindowWidth and WindowHeight options control window size in windowed mode.\
 [+] Custom SND and VID archives that work just like custom LOD archives.\
 [+] TurnBasedSpeed (for monsters' turn) and TurnBasedPartySpeed (for party turn) can help you speed up the combat.\
-[+] PlayMP3 option now supports WAV files in Music folder. WAV always loop properly.\
+[+] PlayMP3 option now supports WAV files in Music folder. WAVs always loop properly.\
 [+] And more...\
 [-] Many fixes in game code and on maps. I finally went through all maps and fixed all bugs I could find.",
 		DescRU = "[+] Рендеринг в высоком разрешении в аппаратном режиме, поддержка полноцветного (32 бита) режима.\
@@ -175,6 +177,8 @@ return {
 			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe.TXT",
 			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe_rus.TXT"
 		},
+		FileInfo = {[5] = ""},
+		FileInfoRU = {[4] = ""},
 		Id = "MM7Patch-2.1",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch v2.1.exe/download",
@@ -192,7 +196,7 @@ return {
 [+] WindowWidth and WindowHeight options control window size in windowed mode.\
 [+] Custom SND and VID archives that work just like custom LOD archives.\
 [+] TurnBasedSpeed (for monsters' turn) and TurnBasedPartySpeed (for party turn) can help you speed up the combat.\
-[+] PlayMP3 option now supports WAV files in Music folder. WAV always loop properly.\
+[+] PlayMP3 option now supports WAV files in Music folder. WAVs always loop properly.\
 [+] And more...\
 [-] Many fixes in game code and on maps. I finally went through all maps and fixed all bugs I could find.",
 		DescRU = "[+] Рендеринг в высоком разрешении в аппаратном режиме, поддержка полноцветного (32 бита) режима.\
@@ -208,6 +212,8 @@ return {
 			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe.TXT",
 			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe_rus.TXT"
 		},
+		FileInfo = {[3] = ""},
+		FileInfoRU = {[2] = ""},
 		Id = "MM8Patch-2.1",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8 Patch v2.1.exe/download",

@@ -80,9 +80,9 @@ local function item(t)
 		]<div class="files">-[
 		for i = t.TitleURL and 2 or 1, #t.Files do
 			local f = t.Files[i]
-			]<div>-[
-				CustomLink(f.URL, f.Info, f.MirrorSF)
-			]</div>-[
+			Write(f.DivStart)
+			CustomLink(f.URL, f.Info, f.MirrorSF)
+			Write(f.DivEnd)
 		end
 		]</div>-[
 	end
