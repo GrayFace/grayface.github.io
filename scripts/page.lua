@@ -130,7 +130,7 @@ function P.LinkVer(name)
 	return "v"..LinkData(name).Version
 end
 
-local NoMirrorLink = '<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>'
+local NoMirrorLink = {[true] = '<a href="%s" title="`en|Download|`ru|Скачать|">%s</a>', [false] = '<a href="%s">%s</a>'}
 local MirrorLink = [[<a href="%s" title="`en|Download from GitHub|`ru|Скачать с GitHub'а|">%s</a><a href="%s" class="mirror" title="`ru|Зеркало на |SourceForge`en| Mirror|"><img src="https://sourceforge.net/favicon.ico" alt="(`en|Mirror|`ru|Зеркало|)"></a>]]
 local TextMirrorLink = [[<a href="%s" title="`en|Download from GitHub|`ru|Скачать с GitHub'а|">%s</a> &nbsp;<i><a href="%s" title="`ru|Зеркало на |SourceForge`en| Mirror|">(`en|Mirror|`ru|Зеркало|)</a></i>]]
 
@@ -140,7 +140,7 @@ function P.CustomLink(lnk, title, mirrorSF)
 	if mirrorSF then
 		_WRITE(MirrorLink:format(lnk, title, ToLink(mirrorSF)))
 	else
-		_WRITE(NoMirrorLink:format(lnk, title))
+		_WRITE(NoMirrorLink[mirrorSF == nil]:format(lnk, title))
 	end
 end
 

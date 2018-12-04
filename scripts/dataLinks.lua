@@ -108,14 +108,12 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0"
 	},
 	["MM6PatchReadMe.TXT"] = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe.TXT",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6Patch ReadMe.TXT/download",
-		Version = "2.1"
+		"https://www.dropbox.com/s/l4pdz00ipn7hmwr/MM6Patch%20ReadMe.TXT?dl=0",
+		MirrorSF = false
 	},
 	["MM6PatchReadMe_rus.TXT"] = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe_rus.TXT",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6Patch ReadMe_rus.TXT/download",
-		Version = "2.1"
+		"https://www.dropbox.com/s/xuuw6gv33ecfehi/MM6Patch%20ReadMe_rus.TXT?dl=0",
+		MirrorSF = false
 	},
 	MM6patch = {
 		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.v2.1.exe",
@@ -139,14 +137,12 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM7MouseLook.rar?attredirects=0"
 	},
 	["MM7PatchReadMe.TXT"] = {
-		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe.TXT",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7Patch ReadMe.TXT/download",
-		Version = "2.1"
+		"https://www.dropbox.com/s/9njf1z8b0l8s61y/MM7Patch%20ReadMe.TXT?dl=0",
+		MirrorSF = false
 	},
 	["MM7PatchReadMe_rus.TXT"] = {
-		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe_rus.TXT",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7Patch ReadMe_rus.TXT/download",
-		Version = "2.1"
+		"https://www.dropbox.com/s/z60ltmlwh8fw6le/MM7Patch%20ReadMe_rus.TXT?dl=0",
+		MirrorSF = false
 	},
 	MM7patch = {
 		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7.Patch.v2.1.exe",
@@ -177,14 +173,12 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0"
 	},
 	["MM8PatchReadMe.TXT"] = {
-		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe.TXT",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch ReadMe.TXT/download",
-		Version = "2.1"
+		"https://www.dropbox.com/s/6ddjn711anxm0vw/MM8Patch%20ReadMe.TXT?dl=0",
+		MirrorSF = false
 	},
 	["MM8PatchReadMe_rus.TXT"] = {
-		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe_rus.TXT",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch ReadMe_rus.TXT/download",
-		Version = "2.1"
+		"https://www.dropbox.com/s/q8ijvy5uvt554wb/MM8Patch%20ReadMe_rus.TXT?dl=0",
+		MirrorSF = false
 	},
 	MM8patch = {
 		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8.Patch.v2.1.exe",
