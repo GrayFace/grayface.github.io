@@ -150,7 +150,7 @@ function P.TextLink(lnk, title, mirrorSF)
 	if mirrorSF then
 		_WRITE(TextMirrorLink:format(lnk, title, ToLink(mirrorSF)))
 	else
-		_WRITE(NoMirrorLink:format(lnk, title))
+		_WRITE(NoMirrorLink[mirrorSF == nil]:format(lnk, title))
 	end
 end
 
