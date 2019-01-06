@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2018-07-06T23:53:05Z</updated>
+<updated>2019-01-06T15:32:02Z</updated>
+
+<entry>
+<title>Файл H1Palette.bmp для версии Heroes 1 с сайта GoG</title>
+<link href="https://grayface.github.io/ru/#H1GogPal"/>
+<updated>2019-01-06T15:32:02Z</updated>
+<id>https://grayface.github.io/ru/#H1GogPal</id>
+<summary type="html">
+Замените H1Palette.bmp в моих утилитах на этот, чтобы работать версией Heroes 1 сайта GoG.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1" title="Скачать"&gt;Скачать H1GogPal.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM8Patch v2.1</title>
