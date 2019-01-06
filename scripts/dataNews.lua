@@ -221,5 +221,16 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch ReadMe_rus.TXT/download"
 		},
 		Title = "MM8Patch v2.1"
+	},
+	{
+		Date = "2019-01-06T15:32:02Z",
+		Desc = "Replace H1Palette.bmp of my tools with it to work with GoG version of Heroes 1.",
+		DescRU = "Замените H1Palette.bmp в моих утилитах на этот, чтобы работать версией Heroes 1 сайта GoG.",
+		Files = {
+			"https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1"
+		},
+		Id = "H1GogPal",
+		Title = "H1Palette.bmp for GoG version of Heroes 1",
+		TitleRU = "Файл H1Palette.bmp для версии Heroes 1 с сайта GoG",
 	}
 }

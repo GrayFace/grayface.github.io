@@ -51,6 +51,9 @@ return {
 	GrayFaceLgr175 = {
 		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr175.rar?attredirects=0"
 	},
+	H1GogPal = {
+		"https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1",
+	},
 	H3DefTool = {
 		"https://github.com/GrayFace/Misc/releases/download/H3DefTool-3.4.2/H3DefTool.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/H3DefTool/v3.4.2/H3DefTool.rar/download",
