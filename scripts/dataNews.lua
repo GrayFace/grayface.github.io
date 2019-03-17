@@ -133,6 +133,12 @@ return {
 [+] Опция PlayMP3 теперь поддерживает файлы WAV в папке Music. Музыка в формате WAV исключает проблемы с зацикливанием воспроизведения.\
 [+] И другие...\
 [-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
+		FileInfo = {
+			[5] = ""
+		},
+		FileInfoRU = {
+			[4] = ""
+		},
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.v2.1.exe",
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.Buka.v2.1.exe",
@@ -140,8 +146,6 @@ return {
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe.TXT",
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6Patch.ReadMe_rus.TXT"
 		},
-		FileInfo = {[5] = ""},
-		FileInfoRU = {[4] = ""},
 		Id = "MM6Patch-2.1",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6 Patch v2.1.exe/download",
@@ -170,6 +174,12 @@ return {
 [+] Опция PlayMP3 теперь поддерживает файлы WAV в папке Music. Музыка в формате WAV исключает проблемы с зацикливанием воспроизведения.\
 [+] И другие...\
 [-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
+		FileInfo = {
+			[5] = ""
+		},
+		FileInfoRU = {
+			[4] = ""
+		},
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7.Patch.v2.1.exe",
 			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7.Patch.Buka.v2.1.exe",
@@ -177,8 +187,6 @@ return {
 			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe.TXT",
 			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.1/MM7Patch.ReadMe_rus.TXT"
 		},
-		FileInfo = {[5] = ""},
-		FileInfoRU = {[4] = ""},
 		Id = "MM7Patch-2.1",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.1/MM7 Patch v2.1.exe/download",
@@ -207,13 +215,20 @@ return {
 [+] Опция PlayMP3 теперь поддерживает файлы WAV в папке Music. Музыка в формате WAV исключает проблемы с зацикливанием воспроизведения.\
 [+] И другие...\
 [-] Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.",
+		FileInfo = {
+			nil,
+			nil,
+			""
+		},
+		FileInfoRU = {
+			nil,
+			""
+		},
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8.Patch.v2.1.exe",
 			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe.TXT",
 			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe_rus.TXT"
 		},
-		FileInfo = {[3] = ""},
-		FileInfoRU = {[2] = ""},
 		Id = "MM8Patch-2.1",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8 Patch v2.1.exe/download",
@@ -231,6 +246,41 @@ return {
 		},
 		Id = "H1GogPal",
 		Title = "H1Palette.bmp for GoG version of Heroes 1",
-		TitleRU = "Файл H1Palette.bmp для версии Heroes 1 с сайта GoG",
+		TitleRU = "Файл H1Palette.bmp для версии Heroes 1 с сайта GoG"
+	},
+	{
+		Date = "2019-03-17T08:32:51Z",
+		Desc = "[+] Quick load key now works during the death movie.\
+[+] Game window is resizeable.\
+[+] Game can be stretched to get rid of black bars in Borderless Fullscreen mode.\
+[+] Now in Software rendering mode the view is always scaled linearly, which makes it less flickery.\
+[+] Mouse look cursor for HD mode, customizable mouse cursors.\
+[+] Minimaps zoom level is remembered always, not just outdoors as before.\
+[-] Inactive characters couldn't interact with chests.\
+[*] Now you can select inactive characters, but they can't act.\
+[*] And smaller changes...\
+",
+		DescRU = "[+] Клавиша быстрой загрузки теперь работает во время видео смерти.\
+[+] Можно менять размер окна игры.\
+[+] Игра может растягиваться, чтобы избавиться от чёрные полос по краям экрана в оконно-полноэкранном режиме.\
+[+] Теперь при программной отрисовке 3D-вид всегда растягивается линейно - это уменьшает мерцание.\
+[+] Курсор управления мышью для HD-режима, настраиваемые курсоры мыши.\
+[+] Уровень приближения миникарты теперь запоминается всегда, а не только на внешних картах, как раньше.\
+[-] Неактивные персонажи не могли пользоваться сундуками.\
+[*] Теперь можно выбирать неактивных персонажей, но нельзя использовать.\
+[*] И более мелкие изменения...\
+",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.v2.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Buka.v2.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Loc.v2.2.exe"
+		},
+		Id = "MM6Patch-2.2",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch v2.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Buka v2.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Loc v2.2.exe/download"
+		},
+		Title = "MM6Patch v2.2"
 	}
 }

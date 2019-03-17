@@ -52,7 +52,7 @@ return {
 		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr175.rar?attredirects=0"
 	},
 	H1GogPal = {
-		"https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1",
+		"https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1"
 	},
 	H3DefTool = {
 		"https://github.com/GrayFace/Misc/releases/download/H3DefTool-3.4.2/H3DefTool.rar",
@@ -119,19 +119,19 @@ return {
 		MirrorSF = false
 	},
 	MM6patch = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.v2.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6 Patch v2.1.exe/download",
-		Version = "2.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.v2.2.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch v2.2.exe/download",
+		Version = "2.2"
 	},
 	MM6patchBuka = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.Buka.v2.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6 Patch Buka v2.1.exe/download",
-		Version = "2.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Buka.v2.2.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Buka v2.2.exe/download",
+		Version = "2.2"
 	},
 	MM6patchLoc = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.1/MM6.Patch.Loc.v2.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.1/MM6 Patch Loc v2.1.exe/download",
-		Version = "2.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Loc.v2.2.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Loc v2.2.exe/download",
+		Version = "2.2"
 	},
 	MM6patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0"
@@ -294,5 +294,5 @@ return {
 	},
 	["mm6hd_before.png"] = {
 		"img/mm6hd_before.png"
-	},
+	}
 }
