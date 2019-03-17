@@ -282,5 +282,40 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Loc v2.2.exe/download"
 		},
 		Title = "MM6Patch v2.2"
+	},
+	{
+		Date = "2019-03-17T08:56:58Z",
+		Desc = "[+] Quick load key now works during the death movie.\
+[+] Game window is resizeable.\
+[+] Game can be stretched to get rid of black bars in Borderless Fullscreen mode.\
+[+] Now in Software rendering mode the view is always scaled linearly, which makes it less flickery.\
+[+] Mouse look cursor for HD mode, customizable mouse cursors.\
+[+] Minimaps zoom level is remembered always, not just outdoors as before.\
+[+] Now you can select inactive characters, but they can't act.\
+[-] Inactive characters couldn't interact with chests.\
+[+] And smaller changes...\
+",
+		DescRU = "[+] Клавиша быстрой загрузки теперь работает во время видео смерти.\
+[+] Можно менять размер окна игры.\
+[+] Игра может растягиваться, чтобы избавиться от чёрные полос по краям экрана в оконно-полноэкранном режиме.\
+[+] Теперь при программной отрисовке 3D-вид всегда растягивается линейно - это уменьшает мерцание.\
+[+] Курсор управления мышью для HD-режима, настраиваемые курсоры мыши.\
+[+] Уровень приближения миникарты теперь запоминается всегда, а не только на внешних картах, как раньше.\
+[+] Теперь можно выбирать неактивных персонажей, но нельзя использовать.\
+[-] Неактивные персонажи не могли пользоваться сундуками.\
+[+] И более мелкие изменения...\
+",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.v2.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Buka.v2.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Loc.v2.2.exe"
+		},
+		Id = "MM6Patch-2.2",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch v2.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Buka v2.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Loc v2.2.exe/download"
+		},
+		Title = "MM6Patch v2.2"
 	}
 }
