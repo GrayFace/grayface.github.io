@@ -362,5 +362,15 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.2/MM8 Patch v2.2.exe/download"
 		},
 		Title = "MM8Patch v2.2"
+	},
+	{
+		Date = "2019-06-03T21:56:05Z",
+		Desc = "These scripts let you choose your party on game start. You can choose party of any size and it can include dragons, too. Requires MMExtension and my patch for MM8.",
+		DescRU = "Эти скрипты позволяют выбирать команду при старте игры. Можно выбирать команду любого размера, а также включать в неё драконов. Для работы требует MMExtension и мой патч для MM8.",
+		Files = {
+			"https://www.dropbox.com/s/vz1maphmgkhcxl5/MM8ChooseParty.rar?dl=1"
+		},
+		Id = "MM8ChooseParty",
+		Title = "MM8 Choose Party"
 	}
 }

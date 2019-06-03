@@ -166,8 +166,7 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0"
 	},
 	MM8ChooseParty = {
-		"404",
-		NameSuffix = " (`en|Sorry, I need to release a bugfix first|`ru|Пока недоступен, нужно собрать версию с исправленным багом|)"
+		"https://www.dropbox.com/s/vz1maphmgkhcxl5/MM8ChooseParty.rar?dl=1",
 	},
 	["MM8ChooseParty.png"] = {
 		"img/MM8ChooseParty.png"
