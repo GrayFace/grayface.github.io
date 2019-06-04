@@ -119,19 +119,19 @@ return {
 		MirrorSF = false
 	},
 	MM6patch = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.v2.2.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch v2.2.exe/download",
-		Version = "2.2"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3/MM6.Patch.v2.3.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch v2.3.exe/download",
+		Version = "2.3"
 	},
 	MM6patchBuka = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Buka.v2.2.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Buka v2.2.exe/download",
-		Version = "2.2"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3/MM6.Patch.Buka.v2.3.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch Buka v2.3.exe/download",
+		Version = "2.3"
 	},
 	MM6patchLoc = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.2/MM6.Patch.Loc.v2.2.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.2/MM6 Patch Loc v2.2.exe/download",
-		Version = "2.2"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3/MM6.Patch.Loc.v2.3.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch Loc v2.3.exe/download",
+		Version = "2.3"
 	},
 	MM6patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0"
@@ -166,7 +166,7 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0"
 	},
 	MM8ChooseParty = {
-		"https://www.dropbox.com/s/vz1maphmgkhcxl5/MM8ChooseParty.rar?dl=1",
+		"https://www.dropbox.com/s/vz1maphmgkhcxl5/MM8ChooseParty.rar?dl=1"
 	},
 	["MM8ChooseParty.png"] = {
 		"img/MM8ChooseParty.png"

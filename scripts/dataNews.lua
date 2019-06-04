@@ -372,5 +372,28 @@ return {
 		},
 		Id = "MM8ChooseParty",
 		Title = "MM8 Choose Party"
+	},
+	{
+		Date = "2019-06-04T13:31:17Z",
+		Desc = "[+] PaperDollInChests option shows paper doll in chest dialog.\
+[+] Keyboard control: some dialogs can now be controlled by pressing Up/Down and Enter. E.g. NPC conversations.\
+[+] Save/load dialogs now react to Enter key.\
+[-] Some bugs fixed...",
+		DescRU = "[+] Опция PaperDollInChests показывает куклу персонажа в диалоге сундука.\
+[+] Клавиатурное управление: в некоторых диалогах можно использовать клавиши Вверх/Вниз и Enter. Например, в диалогах с NPC.\
+[+] Диалоги сохранения и загрузки теперь реагируют на нажатие Enter.\
+[-] Исправлены некоторые баги...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3/MM6.Patch.v2.3.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3/MM6.Patch.Buka.v2.3.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3/MM6.Patch.Loc.v2.3.exe"
+		},
+		Id = "MM6Patch-2.3",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch v2.3.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch Buka v2.3.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch Loc v2.3.exe/download"
+		},
+		Title = "MM6Patch v2.3"
 	}
 }
