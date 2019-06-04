@@ -395,5 +395,32 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3/MM6 Patch Loc v2.3.exe/download"
 		},
 		Title = "MM6Patch v2.3"
+	},
+	{
+		Date = "2019-06-04T13:54:45Z",
+		Desc = "[+] Widescreen-friendly flexible UI in Hardware 3D mode.\
+[+] PaperDollInChests option shows paper doll in chest dialog.\
+[+] Keyboard control: some dialogs can now be controlled by pressing Up/Down and Enter. E.g. NPC conversations.\
+[+] Save/load dialogs now react to Enter key.\
+[-] Bracada Desert (out06): Shops didn't have a teleporter leading to them, instead there were two Temple teleporters.\
+[-] And other fixes...",
+		DescRU = "[+] Гибкий интерфейс, поддерживающий широкоэкранные мониторы, в режиме аппаратного ускорения.\
+[+] Опция PaperDollInChests показывает куклу персонажа в диалоге сундука.\
+[+] Клавиатурное управление: в некоторых диалогах можно использовать клавиши Вверх/Вниз и Enter. Например, в диалогах с NPC.\
+[+] Диалоги сохранения и загрузки теперь реагируют на нажатие Enter.\
+[-] Пустыня Бракада (out06): Магазины не имели ведущего к ним телепорта, вместо этого было 2 телепорта к храму.\
+[-] И другие исправнения...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3/MM7.Patch.v2.3.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3/MM7.Patch.Buka.v2.3.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3/MM7.Patch.Loc.v2.3.exe"
+		},
+		Id = "MM7Patch-2.3",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3/MM7 Patch v2.3.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3/MM7 Patch Buka v2.3.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3/MM7 Patch Loc v2.3.exe/download"
+		},
+		Title = "MM7Patch v2.3"
 	}
 }
