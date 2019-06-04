@@ -422,5 +422,26 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3/MM7 Patch Loc v2.3.exe/download"
 		},
 		Title = "MM7Patch v2.3"
+	},
+	{
+		Date = "2019-06-04T14:10:35Z",
+		Desc = "[+] Widescreen-friendly flexible UI in Hardware 3D mode.\
+[+] PaperDollInChests option shows paper doll in chest dialog.\
+[+] Keyboard control: some dialogs can now be controlled by pressing Up/Down and Enter. E.g. NPC conversations.\
+[+] Save/load dialogs now react to Enter key.\
+[-] And other fixes...",
+		DescRU = "[+] Гибкий интерфейс, поддерживающий широкоэкранные мониторы, в режиме аппаратного ускорения.\
+[+] Опция PaperDollInChests показывает куклу персонажа в диалоге сундука.\
+[+] Клавиатурное управление: в некоторых диалогах можно использовать клавиши Вверх/Вниз и Enter. Например, в диалогах с NPC.\
+[+] Диалоги сохранения и загрузки теперь реагируют на нажатие Enter.\
+[-] И другие исправнения...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe"
+		},
+		Id = "MM8Patch-2.3",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8 Patch v2.3.exe/download"
+		},
+		Title = "MM8Patch v2.3"
 	}
 }
