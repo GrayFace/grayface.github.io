@@ -443,5 +443,17 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8 Patch v2.3.exe/download"
 		},
 		Title = "MM8Patch v2.3"
-	}
-}
+	},
+	{
+		Date = "2019-06-05T14:22:52Z",
+		Desc = "I accidentally included a broken UI.txt in the previous upload.",
+		DescRU = "Случайно загрузил инсталятор с кривым UI.txt в прошлый раз.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe"
+		},
+		Id = "MM8Patch-2.3-fix",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8 Patch v2.3.exe/download"
+		},
+		Title = "MM8Patch v2.3 (fixed)"
+	}}
