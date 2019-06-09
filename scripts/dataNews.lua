@@ -456,4 +456,24 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8 Patch v2.3.exe/download"
 		},
 		Title = "MM8Patch v2.3 (fixed)"
-	}}
+	},
+	{
+		Date = "2019-06-09T23:27:45Z",
+		Desc = "[+] Right click menu works in item selection dialog of Enchant Item and similar spells. In MM7 it already works by default.\
+[-] My bug: Enchant Item and Golden Touch spells were bugged, effected by PaperDollInChests option.",
+		DescRU = "[+] В диалоге выбора предмета для таких заклинаний, как Талисман (Enchant Item), теперь работает меню правой кнопки мыши. В MM7 оно работает по умолчанию.\
+[-] Мой баг: Заклинания Талисман (Enchant Item) и Дар Мидаса (Golden Touch) работали криво из-за того, что на них влияла опция  PaperDollInChests.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.v2.3.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Buka.v2.3.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Loc.v2.3.1.exe"
+		},
+		Id = "MM6Patch-2.3.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch v2.3.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch Buka v2.3.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch Loc v2.3.1.exe/download"
+		},
+		Title = "MM6Patch v2.3.1"
+	}
+}
