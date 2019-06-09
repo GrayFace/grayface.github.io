@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2019-06-09T23:27:45Z</updated>
+<updated>2019-06-09T23:38:01Z</updated>
+
+<entry>
+<title>MM7Patch v2.3.1</title>
+<link href="https://grayface.github.io/#MM7Patch-2.3.1"/>
+<updated>2019-06-09T23:38:01Z</updated>
+<id>https://grayface.github.io/#MM7Patch-2.3.1</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: ScalingParam1 and ScalingParam2 options were ignored in flexible UI mode.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.v2.3.1.exe" title="Download from GitHub"&gt;Download MM7 Patch v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20v2.3.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Buka.v2.3.1.exe" title="Download from GitHub"&gt;Download MM7 Patch Buka v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20Buka%20v2.3.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Loc.v2.3.1.exe" title="Download from GitHub"&gt;Download MM7 Patch Loc v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20Loc%20v2.3.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM6Patch v2.3.1</title>
@@ -106,16 +116,6 @@ These scripts let you choose your party on game start. You can choose party of a
 <id>https://grayface.github.io/#H1GogPal</id>
 <summary type="html">
 Replace H1Palette.bmp of my tools with it to work with GoG version of Heroes 1.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1" title="Download"&gt;Download H1GogPal.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8Patch v2.1</title>
-<link href="https://grayface.github.io/#MM8Patch-2.1"/>
-<updated>2018-07-06T23:53:05Z</updated>
-<id>https://grayface.github.io/#MM8Patch-2.1</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; High resolution rendering in Hardware 3D, 32 bit color mode.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Borderless full screen mode (the game runs in your standard resolution, stretched to full screen with black borders as needed).&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; WindowWidth and WindowHeight options control window size in windowed mode.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Custom SND and VID archives that work just like custom LOD archives.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; TurnBasedSpeed (for monsters' turn) and TurnBasedPartySpeed (for party turn) can help you speed up the combat.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; PlayMP3 option now supports WAV files in Music folder. WAVs always loop properly.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; And more...&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Many fixes in game code and on maps. I finally went through all maps and fixed all bugs I could find.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8.Patch.v2.1.exe" title="Download from GitHub"&gt;Download MM8 Patch v2.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8%20Patch%20v2.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe.TXT" title="Download from GitHub"&gt;Download MM8Patch ReadMe.TXT&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch%20ReadMe.TXT/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 

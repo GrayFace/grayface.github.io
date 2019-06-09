@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2019-06-09T23:27:45Z</updated>
+<updated>2019-06-09T23:38:01Z</updated>
+
+<entry>
+<title>MM7Patch v2.3.1</title>
+<link href="https://grayface.github.io/ru/#MM7Patch-2.3.1"/>
+<updated>2019-06-09T23:38:01Z</updated>
+<id>https://grayface.github.io/ru/#MM7Patch-2.3.1</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: опции ScalingParam1 и ScalingParam2 игнорировались в режиме гибкого интерфейса.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM7 Patch v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Buka.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM7 Patch Buka v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20Buka%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Loc.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM7 Patch Loc v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20Loc%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM6Patch v2.3.1</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#H1GogPal</id>
 <summary type="html">
 Замените H1Palette.bmp в моих утилитах на этот, чтобы работать версией Heroes 1 сайта GoG.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1" title="Скачать"&gt;Скачать H1GogPal.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8Patch v2.1</title>
-<link href="https://grayface.github.io/ru/#MM8Patch-2.1"/>
-<updated>2018-07-06T23:53:05Z</updated>
-<id>https://grayface.github.io/ru/#MM8Patch-2.1</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Рендеринг в высоком разрешении в аппаратном режиме, поддержка полноцветного (32 бита) режима.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Оконно-полноэкранный режим &amp;ndash; вместо смены разрешения игра растягивается на полный экран, с чёрными полосами, если они нужны.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Опции "WindowWidth" и "WindowHeight" устанавливают размер окна в оконном режиме.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Свои архивы SND и VID. Работают точно так же, как архивы LOD.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Опции "TurnBasedSpeed" (для хода монстров) и "TurnBasedPartySpeed" (для хода игрока) ускоряют пошаговую битву.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Опция PlayMP3 теперь поддерживает файлы WAV в папке Music. Музыка в формате WAV исключает проблемы с зацикливанием воспроизведения.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; И другие...&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Множество исправлений в коде игры и на картах. Я, наконец-то, занялся картами и исправил все ошибки, которые нашёл.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8.Patch.v2.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8%20Patch%20v2.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.1/MM8Patch.ReadMe_rus.TXT" title="Скачать с GitHub'а"&gt;Скачать MM8Patch ReadMe_rus.TXT&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.1/MM8Patch%20ReadMe_rus.TXT/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
