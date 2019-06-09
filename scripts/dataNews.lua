@@ -475,5 +475,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch Loc v2.3.1.exe/download"
 		},
 		Title = "MM6Patch v2.3.1"
+	},
+	{
+		Date = "2019-06-09T23:38:01Z",
+		Desc = "[-] My bug: ScalingParam1 and ScalingParam2 options were ignored in flexible UI mode.",
+		DescRU = "[-] Мой баг: опции ScalingParam1 и ScalingParam2 игнорировались в режиме гибкого интерфейса.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.v2.3.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Buka.v2.3.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Loc.v2.3.1.exe"
+		},
+		Id = "MM7Patch-2.3.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7 Patch v2.3.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7 Patch Buka v2.3.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7 Patch Loc v2.3.1.exe/download"
+		},
+		Title = "MM7Patch v2.3.1"
 	}
 }
