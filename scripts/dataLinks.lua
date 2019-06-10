@@ -183,9 +183,9 @@ return {
 		MirrorSF = false
 	},
 	MM8patch = {
-		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8 Patch v2.3.exe/download",
-		Version = "2.3"
+		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3.1/MM8.Patch.v2.3.1.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3.1/MM8 Patch v2.3.1.exe/download",
+		Version = "2.3.1"
 	},
 	MM8patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0"
