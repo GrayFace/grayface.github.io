@@ -496,11 +496,11 @@ return {
 	{
 		Date = "2019-06-10T00:10:37Z",
 		Desc = "[+] Right click menu works in item selection dialog of Enchant Item and similar spells. In MM7 it already works by default.\
-[-] My bug: ScalingParam1 and ScalingParam2 options were ignored in flexible UI mode.\
-[+] UI.txt: Clicking on the man that symbolizes party buffs now brings up the quest log. Turns out that's what happens if you click the top-left pixel of it in regular UI mode.",
+[+] UI.txt: Clicking on the man that symbolizes party buffs now brings up the quest log. Turns out that's what happens if you click the top-left pixel of it in regular UI mode.\
+[-] My bug: ScalingParam1 and ScalingParam2 options were ignored in flexible UI mode.",
 		DescRU = "[+] В диалоге выбора предмета для таких заклинаний, как Талисман (Enchant Item), теперь работает меню правой кнопки мыши. В MM7 оно работает по умолчанию.\
-[-] Мой баг: опции ScalingParam1 и ScalingParam2 игнорировались в режиме гибкого интерфейса.\
-[+] UI.txt: Клик по человечку со значками эффектов заклинаний теперь показывает журнал заданий. Оказывается, в оригинале так происходило, если нажать по его верхнему-левому углу.",
+[+] UI.txt: Клик по человечку со значками эффектов заклинаний теперь показывает журнал заданий. Оказывается, в оригинале так происходило, если нажать по его верхнему-левому углу.\
+[-] Мой баг: опции ScalingParam1 и ScalingParam2 игнорировались в режиме гибкого интерфейса.",
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3.1/MM8.Patch.v2.3.1.exe"
 		},
