@@ -264,7 +264,7 @@ return {
 		"https://sites.google.com/site/sergroj/wog/SndSync.rar?attredirects=0"
 	},
 	SoloGame = {
-		"https://sites.google.com/site/sergroj/mm/mmextension/SoloGame.rar?attredirects=0"
+		"https://www.dropbox.com/s/b3l3mk66vxyfh47/SoloGame.rar?dl=1"
 	},
 	["Standard Frames"] = {
 		"https://www.dropbox.com/s/euyzbaoqdt4r3uo/Standard%20Frames.rar?dl=1"
@@ -286,12 +286,15 @@ return {
 		"https://sites.google.com/site/sergroj/heroes/heroes2w.rar?attredirects=0"
 	},
 	mm6hd = {
-		"https://www.dropbox.com/s/313uxife6akzrav/mm6hd.rar?dl=0"
+		"https://www.dropbox.com/s/313uxife6akzrav/mm6hd.rar?dl=1"
 	},
 	["mm6hd_after.png"] = {
 		"img/mm6hd_after.png"
 	},
 	["mm6hd_before.png"] = {
 		"img/mm6hd_before.png"
-	}
+	},
+	["Fixed Monster Treasure"] = {
+		"https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1"
+	},
 }

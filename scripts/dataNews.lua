@@ -509,5 +509,27 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3.1/MM8 Patch v2.3.1.exe/download"
 		},
 		Title = "MM8Patch v2.3.1"
+	},
+	{
+		Date = "2019-08-02T02:29:42Z",
+		Desc = "Updated solo game MMExtension script for MM6 and MM7. Previous version didn't account for Weak condition.",
+		DescRU = "Обновлённый скрипт MMExtension для соло игры в MM6 и MM7. Прошлая версия не учитывала состояние Слабость.",
+		Files = {
+			"https://www.dropbox.com/s/b3l3mk66vxyfh47/SoloGame.rar?dl=1"
+		},
+		Id = "SoloGame",
+		Title = "Solo game script for MM6 and MM7",
+		TitleRU = "Скрипт для игры соло в MM6 и MM7"
+	},
+	{
+		Date = "2019-08-02T02:45:34Z",
+		Desc = "This script makes it so that moster treasure is generated when you enter a map and then doesn't change upon reloading the game.",
+		DescRU = "С этим скриптом сокровища монстров генерируются при входе на карту и потом уже не меняются при перезагрузке игры.",
+		Files = {
+			"https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1"
+		},
+		Id = "FixedMonsterTreasure",
+		Title = "Fixed Monster Treasure script for MMExtension",
+		TitleRU = "Скрипт фиксированных сокровищ монстров для MMExtension"
 	}
 }
