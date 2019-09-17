@@ -558,5 +558,44 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch Loc v2.4.exe/download"
 		},
 		Title = "MM6Patch v2.4"
+	},
+	{
+		Date = "2019-09-17T09:26:03Z",
+		Desc = "[+] HD textures support in Hardware 3D mode with bitmaps.lwd archives.\
+[+] Better quality water in Hardware 3D mode.\
+[+] Chests are populated with compact non-random stacking if more items fit this way.\
+[+] Items are stacked vertically when you place them into chests.\
+[+] Sprites dimensions are tweaked based on vertical view angle. This makes them behave more realistically, especially when looking up at big monsters.\
+[+] Explosions won't cause mistargeting in software rendering mode anymore.\
+[+] UI.txt: ShrinkStatusbar option makes statusbar size depend on text size.\
+[+] TreeHints option controls whether to show hints for trees, flowers etc.\
+[-] GrandMaster of Axe didn't halve armor class.\
+[-] My/DirectX bug: Game was failing to start in resolutions over 1080p, because Direct3D 7 doesn't support them.\
+[-] Glory Shield and Lady's Escort artifacts fixed.\
+[+] And smaller changes...",
+		DescRU = "[+] Поддержка архивов bitmaps.lwd с текстурами повышенного разрешения в режиме аппаратного ускорения.\
+[+] Улучшенное качество воды в режиме аппаратного ускорения.\
+[+] Сундуки заполняются компактно и не случайно, если так вмещается больше вещей.\
+[+] Вещи помещаются в сундуки вертикальными рядами, когда Вы их туда бросаете.\
+[+] Размер спрайтов корректируется в зависимости от угла наклона. Так они ведут себя реалистичнее, особенно при взгляде вверх на высоких монстров.\
+[+] Теперь в режиме программной отрисовки взрывы не мешают выбору цели.\
+[+] UI.txt: Опция ShrinkStatusbar - размер строки состояния подстраивается под размер текста в ней.\
+[+] Опция TreeHints управляет показом подсказок для деревьев, цветов и т.п.\
+[-] Гранд топора не уменьшал браню врагов вдвое.\
+[-] Мой/DirectX баг: Игра не могла стартовать в разрешениях более 1080p, т.к. Direct3D 7 их не поддерживает.\
+[-] Исправлены артефакты Щит Славы и Эскорт Леди.\
+[+] И изменения поменьше...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.4/MM7.Patch.v2.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.4/MM7.Patch.Buka.v2.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.4/MM7.Patch.Loc.v2.4.exe"
+		},
+		Id = "MM7Patch-2.4",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.4/MM7 Patch v2.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.4/MM7 Patch Buka v2.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.4/MM7 Patch Loc v2.4.exe/download"
+		},
+		Title = "MM7Patch v2.4"
 	}
 }

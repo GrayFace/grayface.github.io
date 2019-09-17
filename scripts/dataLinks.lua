@@ -151,19 +151,19 @@ return {
 		MirrorSF = false
 	},
 	MM7patch = {
-		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.v2.3.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7 Patch v2.3.1.exe/download",
-		Version = "2.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.4/MM7.Patch.v2.4.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.4/MM7 Patch v2.4.exe/download",
+		Version = "2.4"
 	},
 	MM7patchBuka = {
-		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Buka.v2.3.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7 Patch Buka v2.3.1.exe/download",
-		Version = "2.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.4/MM7.Patch.Buka.v2.4.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.4/MM7 Patch Buka v2.4.exe/download",
+		Version = "2.4"
 	},
 	MM7patchLoc = {
-		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Loc.v2.3.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7 Patch Loc v2.3.1.exe/download",
-		Version = "2.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.4/MM7.Patch.Loc.v2.4.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.4/MM7 Patch Loc v2.4.exe/download",
+		Version = "2.4"
 	},
 	MM7patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0"
