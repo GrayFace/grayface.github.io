@@ -531,5 +531,32 @@ return {
 		Id = "FixedMonsterTreasure",
 		Title = "Fixed Monster Treasure script for MMExtension",
 		TitleRU = "Скрипт фиксированных сокровищ монстров для MMExtension"
+	},
+	{
+		Date = "2019-09-17T09:09:27Z",
+		Desc = "[+] Chests are populated with compact non-random stacking if more items fit this way.\
+[+] Items are stacked vertically when you place them into chests.\
+[+] Sprites dimensions are tweaked based on vertical view angle. This makes them behave more realistically, especially when looking up at big monsters.\
+[+] Explosions won't cause mistargeting in software rendering mode anymore.\
+[+] If NoIntro=1 the intro is shown when you click the New Game button.\
+[+] And smaller changes...",
+		DescRU = "[+] Сундуки заполняются компактно и не случайно, если так вмещается больше вещей.\
+[+] Вещи помещаются в сундуки вертикальными рядами, когда Вы их туда бросаете.\
+[+] Размер спрайтов корректируется в зависимости от угла наклона. Так они ведут себя реалистичнее, особенно при взгляде вверх на высоких монстров.\
+[+] Теперь в режиме программной отрисовки взрывы не мешают выбиру цели.\
+[+] Когда NoIntro=1, вступительный видеоролик показывается при нажатии кнопки \"Новая игра\".\
+[+] И изменения поменьше...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.v2.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.Buka.v2.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.Loc.v2.4.exe"
+		},
+		Id = "MM6Patch-2.4",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch v2.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch Buka v2.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch Loc v2.4.exe/download"
+		},
+		Title = "MM6Patch v2.4"
 	}
 }

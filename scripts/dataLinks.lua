@@ -27,6 +27,9 @@ return {
 		"https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0",
 		Version = "2.1.1"
 	},
+	["Fixed Monster Treasure"] = {
+		"https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1"
+	},
 	GrayFacHLgr = {
 		"https://sites.google.com/site/sergroj/elma/GrayFacHLgr.rar?attredirects=0"
 	},
@@ -119,19 +122,19 @@ return {
 		MirrorSF = false
 	},
 	MM6patch = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.v2.3.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch v2.3.1.exe/download",
-		Version = "2.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.v2.4.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch v2.4.exe/download",
+		Version = "2.4"
 	},
 	MM6patchBuka = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Buka.v2.3.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch Buka v2.3.1.exe/download",
-		Version = "2.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.Buka.v2.4.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch Buka v2.4.exe/download",
+		Version = "2.4"
 	},
 	MM6patchLoc = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Loc.v2.3.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6 Patch Loc v2.3.1.exe/download",
-		Version = "2.3.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.Loc.v2.4.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6 Patch Loc v2.4.exe/download",
+		Version = "2.4"
 	},
 	MM6patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0"
@@ -293,8 +296,5 @@ return {
 	},
 	["mm6hd_before.png"] = {
 		"img/mm6hd_before.png"
-	},
-	["Fixed Monster Treasure"] = {
-		"https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1"
-	},
+	}
 }
