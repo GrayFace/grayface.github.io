@@ -2536,7 +2536,7 @@ Id
 <td class="def-left">
 <a id="XYZ" class="abs"></a><h5 class="def-h5">XYZ</h5><b class="def-largs">(</b>t, x, y, z<b class="def-rargs">)</b>
 </td><td class="def-right">
- Get X,Y,Z, fields:<div class="def-codeblock"><span class="lua5-note">local</span> x, y, z <span class="lua5-note">=</span> XYZ(Party)</div><br>Set X,Y,Z, fields:<div class="def-codeblock">XYZ(Party, x, y, z)</div><br>Enumerate "X", "Y", "Z" strings:<div class="def-codeblock"><span class="lua5-ctrl">for</span> X <span class="lua5-ctrl">in</span> XYZ <span class="lua5-ctrl">do</span><br><span> </span><span> </span><span class="lua5-std">print</span>(Party[X])<br><span class="lua5-ctrl">end</span></div><br>
+ Get X,Y,Z fields:<div class="def-codeblock"><span class="lua5-note">local</span> x, y, z <span class="lua5-note">=</span> XYZ(Party)</div><br>Set X,Y,Z fields:<div class="def-codeblock">XYZ(Party, x, y, z)</div><br>Enumerate "X", "Y", "Z" strings:<div class="def-codeblock"><span class="lua5-ctrl">for</span> X <span class="lua5-ctrl">in</span> XYZ <span class="lua5-ctrl">do</span><br><span> </span><span> </span><span class="lua5-std">print</span>(Party[X])<br><span class="lua5-ctrl">end</span></div><br>
 </td>
 </tr><tr>
 <td class="def-left">
@@ -3342,6 +3342,12 @@ Id
 <a id="mem.hookcall" class="abs"></a>mem.hookcall<b class="def-largs">(</b>p, nreg, nstack, f<b class="def-rargs">)</b>
 </td><td class="def-right">
  Replaces an existing CALL instruction and uses the same protocol as <a href="#mem.hookfunction">hookfunction</a>
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="mem.luaproc" class="abs"></a>mem.luaproc<b class="def-largs">(</b>f, nreg, nstack<b class="def-rargs">)</b>
+</td><td class="def-right">
+ Creates a Lua callback (because any use of FFI for function calls leads to random bugs)
 </td>
 </tr><tr>
 <td class="def-left">
@@ -5569,7 +5575,13 @@ Id
 <td class="def-left">
 <a id="structs.GameMouse.GetTarget" class="abs"></a>GetTarget<b class="def-largs">(</b><b class="def-rargs">)</b>
 </td><td class="def-right">
- 
+ Returns <a href="#structs.ObjectRef">ObjectRef</a> of current mouse target
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.GameMouse.GetPos" class="abs"></a>GetPos<b class="def-largs">(</b><b class="def-rargs">)</b>
+</td><td class="def-right">
+ Returns floating-point mouse position that includes sub-pixel difference caused by upscaling.<br>In UILayout mode this is the only way to find mouse coordinates when it's over 3D view. <a href="#structs.GameMouse.X">Mouse.X</a> and <a href="#structs.GameMouse.Y">Mouse.Y</a> would just return the middle of the view. When mouse is over interface items, both this function and <a href="#structs.GameMouse.X">Mouse.X</a>, <a href="#structs.GameMouse.Y">Mouse.Y</a> get coordinates within traditional interface to which UI layout is mapped.
 </td>
 </tr><tr>
 <td colspan="2" class="def-functions"><br>
@@ -12397,7 +12409,7 @@ Id
 <td class="def-left">
 <a id="structs.PatchOptions.BorderlessWindowed" class="abs"></a>BorderlessWindowed
 </td><td class="def-right">
- It's set to false only when the game is in Borderless Fullscreen mode
+ Actually, it should be read as "not borderless fulscreen". It's set to false only when the game is in Borderless Fullscreen mode
 </td>
 </tr><tr>
 <td class="def-left">
@@ -12492,6 +12504,42 @@ Id
 </tr><tr>
 <td class="def-left">
 <a id="structs.PatchOptions.RenderBottomPixel" class="abs"></a>RenderBottomPixel
+</td><td class="def-right">
+ 
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.PatchOptions.TrueColorTextures" class="abs"></a>TrueColorTextures
+</td><td class="def-right">
+ <span class="def-ver">[MM7+]</span>
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.PatchOptions.ResetPalettes" class="abs"></a>ResetPalettes
+</td><td class="def-right">
+ <span class="def-ver">[MM7+]</span>
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.PatchOptions.FixSFT" class="abs"></a>FixSFT
+</td><td class="def-right">
+ 
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.PatchOptions.AxeGMFullProbabilityAt" class="abs"></a>AxeGMFullProbabilityAt
+</td><td class="def-right">
+ <span class="def-ver">[MM7+]</span>
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.PatchOptions.MouseDX" class="abs"></a>MouseDX
+</td><td class="def-right">
+ 
+</td>
+</tr><tr>
+<td class="def-left">
+<a id="structs.PatchOptions.MouseDY" class="abs"></a>MouseDY
 </td><td class="def-right">
  
 </td>
