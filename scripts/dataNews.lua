@@ -632,5 +632,18 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.4/MM8 Patch v2.4.exe/download"
 		},
 		Title = "MM8Patch v2.4"
+	},
+	{
+		Date = "2019-09-20T03:28:29Z",
+		Desc = "[-] My bug: Random items weren't appearing in chests with quest items.",
+		DescRU = "[-] Мой баг: В сундуках с предметами заданий не появлялись случайные предметы.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.4.1/MM8.Patch.v2.4.1.exe"
+		},
+		Id = "MM8Patch-2.4.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.4.1/MM8 Patch v2.4.1.exe/download"
+		},
+		Title = "MM8Patch v2.4.1"
 	}
 }
