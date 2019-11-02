@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2019-09-20T03:28:29Z</updated>
+<updated>2019-11-02T06:27:48Z</updated>
+
+<entry>
+<title>Scaler v1.0</title>
+<link href="https://grayface.github.io/ru/#Scaler-1.0"/>
+<updated>2019-11-02T06:27:48Z</updated>
+<id>https://grayface.github.io/ru/#Scaler-1.0</id>
+<summary type="html">
+Может быть использован с любой игрой, сделанной с помощью ClickTeam Multimedia Fusion 2 или её предшественников, которая не использует DirectX для отрисовки графики. Растягивает игру на весь экран без смены разрешения. Также позволяет настраивать управление. Очень полезна для редактора уровней Knytt Stories и для старых игр Nifflas'а, особенно таких, как Riddle.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/Scaler-1.0/Scaler.rar" title="Скачать с GitHub'а"&gt;Скачать Scaler.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/Scaler/v1.0/Scaler.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM8Patch v2.4.1</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#MM8Patch-2.3-fix</id>
 <summary type="html">
 Случайно загрузил инсталятор с кривым UI.txt в прошлый раз.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8%20Patch%20v2.3.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8Patch v2.3</title>
-<link href="https://grayface.github.io/ru/#MM8Patch-2.3"/>
-<updated>2019-06-04T14:10:35Z</updated>
-<id>https://grayface.github.io/ru/#MM8Patch-2.3</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Гибкий интерфейс, поддерживающий широкоэкранные мониторы, в режиме аппаратного ускорения.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Опция PaperDollInChests показывает куклу персонажа в диалоге сундука.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Клавиатурное управление: в некоторых диалогах можно использовать клавиши Вверх/Вниз и Enter. Например, в диалогах с NPC.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Диалоги сохранения и загрузки теперь реагируют на нажатие Enter.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; И другие исправнения...&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8%20Patch%20v2.3.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
