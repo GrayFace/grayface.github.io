@@ -38,8 +38,8 @@ function P.SetDescription(s)
 	P.PageDescription = s
 end
 
-function P.TOC()
-	P.NeedTOC = true
+function P.TOC(v)
+	P.NeedTOC = v or true
 end
 
 local function DoGetPath(s, base)
