@@ -247,6 +247,11 @@ return {
 	Rev4_for_GrayFace_Patch = {
 		"https://www.dropbox.com/s/71u2rwgubv3ofsg/Rev4_for_GrayFace_Patch.rar?dl=1"
 	},
+	Scaler = {
+		"https://github.com/GrayFace/Misc/releases/download/Scaler-1.0/Scaler.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/Scaler/v1.0/Scaler.rar/download",
+		Version = "1.0"
+	},
 	SimpleLod = {
 		"https://sites.google.com/site/sergroj/wog/SimpleLod.rar?attredirects=0",
 		Version = "1.3"

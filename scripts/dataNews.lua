@@ -645,5 +645,18 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.4.1/MM8 Patch v2.4.1.exe/download"
 		},
 		Title = "MM8Patch v2.4.1"
+	},
+	{
+		Date = "2019-11-02T06:27:48Z",
+		Desc = "Can be applied to any game made with ClickTeam Multimedia Fusion 2 or its predecessors that doesn't use DirectX for graphics output. Makes the game scale to whole screen without the need for resolution change. Also lets you remap keys. Very useful for Knytt Stories Level Editor and older Nifflas' games, especially Riddle and such.",
+		DescRU = "Может быть использован с любой игрой, сделанной с помощью ClickTeam Multimedia Fusion 2 или её предшественников, которая не использует DirectX для отрисовки графики. Растягивает игру на весь экран без смены разрешения. Также позволяет настраивать управление. Очень полезна для редактора уровней Knytt Stories и для старых игр Nifflas'а, особенно таких, как Riddle.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/Scaler-1.0/Scaler.rar"
+		},
+		Id = "Scaler-1.0",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/Scaler/v1.0/Scaler.rar/download"
+		},
+		Title = "Scaler v1.0"
 	}
 }
