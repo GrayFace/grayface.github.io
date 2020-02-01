@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2020-02-01T10:07:43Z</updated>
+<updated>2020-02-01T10:23:24Z</updated>
+
+<entry>
+<title>Txt Edit v1.4</title>
+<link href="https://grayface.github.io/ru/#TxtEdit-1.4"/>
+<updated>2020-02-01T10:23:24Z</updated>
+<id>https://grayface.github.io/ru/#TxtEdit-1.4</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Команда меню "Заполнить ячейки", которая работает, как "Вставить", но заполняет всю область выделения данными буфера обмена.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Улучшенное определение необходимой ширины столбцов.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Опции INI "Font Height" и "Font Name" позволяют выбрать основной шрифт.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Чешский язык за авторством Templayer'а.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Иногда всплывающая подсказка показывалась для полностью видимых ячеек.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Нажатие правой кнопки мыши сбрасывало содержащее более одной клетки выделение.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4/TxtEdit.rar" title="Скачать с GitHub'а"&gt;Скачать TxtEdit.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4/TxtEdit.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MMArchive v1.3</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#MM7Patch-2.3.1</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: опции ScalingParam1 и ScalingParam2 игнорировались в режиме гибкого интерфейса.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM7 Patch v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Buka.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM7 Patch Buka v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20Buka%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.3.1/MM7.Patch.Loc.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM7 Patch Loc v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.3.1/MM7%20Patch%20Loc%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM6Patch v2.3.1</title>
-<link href="https://grayface.github.io/ru/#MM6Patch-2.3.1"/>
-<updated>2019-06-09T23:27:45Z</updated>
-<id>https://grayface.github.io/ru/#MM6Patch-2.3.1</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; В диалоге выбора предмета для таких заклинаний, как Талисман (Enchant Item), теперь работает меню правой кнопки мыши. В MM7 оно работает по умолчанию.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Заклинания Талисман (Enchant Item) и Дар Мидаса (Golden Touch) работали криво из-за того, что на них влияла опция  PaperDollInChests.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Buka.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Buka v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20Buka%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Loc.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Loc v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20Loc%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
