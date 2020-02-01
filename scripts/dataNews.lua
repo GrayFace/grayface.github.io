@@ -658,5 +658,30 @@ return {
 			"https://sourceforge.net/projects/grayface/files/Scaler/v1.0/Scaler.rar/download"
 		},
 		Title = "Scaler v1.0"
+	},
+	{
+		Date = "2020-02-01T10:07:43Z",
+		Desc = "[+] Support for bitmaps.lwd, an archive format made for full color HD bitmaps loaded by MM7 and MM8 patches exclusively for hardware-accelerated rendering mode.\
+[+] Better transparent color detection during import.\
+[+] Palettes preview.\
+[+] After you create an archive from a selection of files, it's added to recent files list.\
+[-] Unpacking errors while dragging files onto other apps were leading to MMArchive hanging.\
+[-] \"Ignore Unpacking Errors\" option state wasn't preserved on program restart.\
+[-] Misleading default file type when creating new archive.",
+		DescRU = "[+] Поддержка bitmaps.lwd - формата архива для полноцветных текстур повышенного разрешения, загружаемого патчами MM7 и MM8 только в режиме аппаратной отрисовки.\
+[+] Улучшенное определение прозрачного цвета при импорте.\
+[+] Показ палитр.\
+[+] После создания архива из набора файлов, он добавляется в список недавних файлов.\
+[-] Ошибки распаковки при перетаскивании файлов в другие приложения приводили к зависанию MMArchive.\
+[-] Не сохранялось состояние опции \"Игнорировать ошибки распаковки\" при перезапуске MMArchive.\
+[-] Вводящий в заблуждение тип файла по умолчанию при создании нового архива.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3/MMArchive.rar"
+		},
+		Id = "MMArchive-1.3",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MMArchive/v1.3/MMArchive.rar/download"
+		},
+		Title = "MMArchive v1.3"
 	}
 }
