@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2019-11-02T06:27:48Z</updated>
+<updated>2020-02-01T10:07:43Z</updated>
+
+<entry>
+<title>MMArchive v1.3</title>
+<link href="https://grayface.github.io/ru/#MMArchive-1.3"/>
+<updated>2020-02-01T10:07:43Z</updated>
+<id>https://grayface.github.io/ru/#MMArchive-1.3</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Поддержка bitmaps.lwd &amp;ndash; формата архива для полноцветных текстур повышенного разрешения, загружаемого патчами MM7 и MM8 только в режиме аппаратной отрисовки.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Улучшенное определение прозрачного цвета при импорте.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Показ палитр.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; После создания архива из набора файлов, он добавляется в список недавних файлов.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Ошибки распаковки при перетаскивании файлов в другие приложения приводили к зависанию MMArchive.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Не сохранялось состояние опции "Игнорировать ошибки распаковки" при перезапуске MMArchive.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Вводящий в заблуждение тип файла по умолчанию при создании нового архива.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3/MMArchive.rar" title="Скачать с GitHub'а"&gt;Скачать MMArchive.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MMArchive/v1.3/MMArchive.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>Scaler v1.0</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#MM6Patch-2.3.1</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; В диалоге выбора предмета для таких заклинаний, как Талисман (Enchant Item), теперь работает меню правой кнопки мыши. В MM7 оно работает по умолчанию.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Заклинания Талисман (Enchant Item) и Дар Мидаса (Golden Touch) работали криво из-за того, что на них влияла опция  PaperDollInChests.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Buka.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Buka v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20Buka%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Loc.v2.3.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Loc v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20Loc%20v2.3.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8Patch v2.3 (fixed)</title>
-<link href="https://grayface.github.io/ru/#MM8Patch-2.3-fix"/>
-<updated>2019-06-05T14:22:52Z</updated>
-<id>https://grayface.github.io/ru/#MM8Patch-2.3-fix</id>
-<summary type="html">
-Случайно загрузил инсталятор с кривым UI.txt в прошлый раз.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8%20Patch%20v2.3.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 

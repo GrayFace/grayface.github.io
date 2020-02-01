@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2019-11-02T06:27:48Z</updated>
+<updated>2020-02-01T10:07:43Z</updated>
+
+<entry>
+<title>MMArchive v1.3</title>
+<link href="https://grayface.github.io/#MMArchive-1.3"/>
+<updated>2020-02-01T10:07:43Z</updated>
+<id>https://grayface.github.io/#MMArchive-1.3</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Support for bitmaps.lwd, an archive format made for full color HD bitmaps loaded by MM7 and MM8 patches exclusively for hardware-accelerated rendering mode.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Better transparent color detection during import.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Palettes preview.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; After you create an archive from a selection of files, it's added to recent files list.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Unpacking errors while dragging files onto other apps were leading to MMArchive hanging.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; "Ignore Unpacking Errors" option state wasn't preserved on program restart.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Misleading default file type when creating new archive.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3/MMArchive.rar" title="Download from GitHub"&gt;Download MMArchive.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MMArchive/v1.3/MMArchive.rar/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>Scaler v1.0</title>
@@ -106,16 +116,6 @@ Updated solo game MMExtension script for MM6 and MM7. Previous version didn't ac
 <id>https://grayface.github.io/#MM6Patch-2.3.1</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Right click menu works in item selection dialog of Enchant Item and similar spells. In MM7 it already works by default.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: Enchant Item and Golden Touch spells were bugged, effected by PaperDollInChests option.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.v2.3.1.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20v2.3.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Buka.v2.3.1.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20Buka%20v2.3.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.3.1/MM6.Patch.Loc.v2.3.1.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.3.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.3.1/MM6%20Patch%20Loc%20v2.3.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8Patch v2.3 (fixed)</title>
-<link href="https://grayface.github.io/#MM8Patch-2.3-fix"/>
-<updated>2019-06-05T14:22:52Z</updated>
-<id>https://grayface.github.io/#MM8Patch-2.3-fix</id>
-<summary type="html">
-I accidentally included a broken UI.txt in the previous upload.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe" title="Download from GitHub"&gt;Download MM8 Patch v2.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8%20Patch%20v2.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
