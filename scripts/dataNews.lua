@@ -683,5 +683,28 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MMArchive/v1.3/MMArchive.rar/download"
 		},
 		Title = "MMArchive v1.3"
+	},
+	{
+		Date = "2020-02-01T10:23:24Z",
+		Desc = "[+] \"Fill Cells\" menu command that is similar to Paste, but fill all selected cells with the clipboard data.\
+[+] Better column width calculation.\
+[+] \"Font Height\" and \"Font Name\" INI options let you change the main font.\
+[+] Czech language by Templayer.\
+[-] Sometimes hint was shown even for fully visible cells.\
+[-] Pressing right mouse button was resetting multi-cell selection.",
+		DescRU = "[+] Команда меню \"Заполнить ячейки\", которая работает, как \"Вставить\", но заполняет всю область выделения данными буфера обмена.\
+[+] Улучшенное определение необходимой ширины столбцов.\
+[+] Опции INI \"Font Height\" и \"Font Name\" позволяют выбрать основной шрифт.\
+[+] Чешский язык за авторством Templayer'а.\
+[-] Иногда всплывающая подсказка показывалась для полностью видимых ячеек.\
+[-] Нажатие правой кнопки мыши сбрасывало содержащее более одной клетки выделение.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4/TxtEdit.rar"
+		},
+		Id = "TxtEdit-1.4",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4/TxtEdit.rar/download"
+		},
+		Title = "Txt Edit v1.4"
 	}
 }
