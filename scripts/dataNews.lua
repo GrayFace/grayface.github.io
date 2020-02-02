@@ -706,5 +706,18 @@ return {
 			"https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4/TxtEdit.rar/download"
 		},
 		Title = "Txt Edit v1.4"
+	},
+	{
+		Date = "2020-02-02T05:22:03Z",
+		Desc = "[-] Copy command was broken in some circumstances.",
+		DescRU = "[-] Команда \"Копировать\" иногда работала неверно.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4.1/TxtEdit.rar"
+		},
+		Id = "TxtEdit-1.4.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4.1/TxtEdit.rar/download"
+		},
+		Title = "Txt Edit v1.4.1"
 	}
 }

@@ -283,9 +283,9 @@ return {
 		Version = "1.3.2"
 	},
 	TxtEdit = {
-		"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4/TxtEdit.rar",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4/TxtEdit.rar/download",
-		Version = "1.4"
+		"https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4.1/TxtEdit.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4.1/TxtEdit.rar/download",
+		Version = "1.4.1"
 	},
 	fntedit = {
 		"https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0"
