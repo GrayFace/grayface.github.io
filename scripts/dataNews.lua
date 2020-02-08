@@ -719,5 +719,20 @@ return {
 			"https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4.1/TxtEdit.rar/download"
 		},
 		Title = "Txt Edit v1.4.1"
+	},
+	{
+		Date = "2020-02-08T23:49:01Z",
+		Desc = "[+] When importing a texture or a sprite that isn't 8 bit, previous palette is used if the file exists in the archive.\
+[-] Mipmaps for transparent textures were generated with a blue border.",
+		DescRU = "[+] При импорте текстур или спрайтов без палитры используется предыдущая палитра, если файл с таким именем есть в архиве.\
+[-] При генерации мипмэпок для прозрачных текстур у них появлялся голубой край.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3.1/MMArchive.rar"
+		},
+		Id = "MMArchive-1.3.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MMArchive/v1.3.1/MMArchive.rar/download"
+		},
+		Title = "MMArchive v1.3.1"
 	}
 }
