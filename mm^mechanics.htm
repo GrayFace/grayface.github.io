@@ -170,7 +170,8 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 <br>
 <h2>`en|Chance To Hit and Resistances|`ru|Шанс попадания и Устойчивости|</h2>
 `en|Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass|`ru|Шанс, что Ваш игрок ударит монстра равен <span class="math">(15 + АтакаИгрока*2)/(</span><span class="math">30 + АтакаИгрока*2 + КлассБрониМонстра</span><span class="math">|)</span>.<br>
-`en|Chance that monster will hit your character in a physic attack is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass|`ru|Шанс, что монстр попадет в Вашего игрока равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока|</span><span class="math">)</span>.<br>
+`en|Chance that monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass|`ru|Шанс, что монстр попадет в Вашего игрока, равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока|</span><span class="math">)</span>.<br>
+`en|This includes elemental ranged attacks. Only spells always hit. You can distinguish between them with Identify Monster.|`ru|Это относится и к выстрелам магическими стихиями. Только заклинания всегда попадают. Чтобы отличить одно от другого, можно использовать умение Идентификации монстра.|<br>
 <br>
 `en|Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6|`ru|В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>. В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>|.<br>
  <br>
@@ -195,8 +196,9 @@ Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
 <div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span class="math">MagicResistance</span></div>
 <div style="margin-left:40px">Break or Steal Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>|
 <div><br>
+
 `en|<p><b>Resistances</b></p>
-When your character gets hit by magic, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
+When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
 Dice is dropped. If you are unlucky, you get full 100% damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
@@ -213,8 +215,9 @@ If you are lucky, you get 1/16 (6.25%) damage.<br>|
 <div style="margin-left:40px">Поломка или Кража предмета:&nbsp;&nbsp;<span class="math">Сила предмета</span></div>
 <div><br></div>
 </div>
+
 <p><b>Устойчивости</b></p>
-Когда в Вашего героя ударили магией, у него есть шанс уменьшить полученные поврждения. При каждом "броске кубика" шанс, что повезет, равен <span class="math">1 - 30/(30 + Устойчивость + ЭффектУдачи)</span>.<br>
+Когда в Вашего героя ударили магической атакой, у него есть шанс уменьшить полученные поврждения. При каждом "броске кубика" шанс, что повезет, равен <span class="math">1 - 30/(30 + Устойчивость + ЭффектУдачи)</span>.<br>
 Первый бросок. Если не повезло, герой получает 100% повреждений.<br>
 Если повезло, кубик бросается во второй раз. Если не повезло, герой получает 1/2 (50%) повреждений.<br>
 Если повезло, кубик бросается в третий раз. Если не повезло, герой получает 1/4 (25%) повреждений.<br>
@@ -296,7 +299,7 @@ the same as that of Dagger = 60. If you don't, recovery time will be
 the same as that of Staff = 100.|
 `ru|Булава: 80|
 <br>
-`en|Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got recovery time 0 and 6 respectively. So, with a club you will always have recovery time of 30.<br>|
+`en|Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30.<br>|
 `ru|Бластер: 30|
 <br>
 `en|<p><b>Recovery times of armor and shield</b></p>
@@ -304,7 +307,7 @@ Shield: 10|
 <br>
 `en|Leather: 10|
 `ru|Без оружия: Если герой имеет умение "Рукопашный бой", то время восстановления равно 60, как у Кинжала. Если умения нет, то 100, как у Посоха.<br>
-У дубинок в MM6 время восстановления 100 (как у посоха). В MM7 и MM8 разработчики недосмотрели и у дубинок получилось время восстановления 6 и 0 соответственно. Так что, с дубинкой в руках, игрок всегда будет иметь время восстановления 30.<br>|
+У дубинок в MM6 время восстановления 100 (как у посоха). В MM7 и MM8 разработчики недосмотрели и у дубинок получилось время восстановления 6 и 0 соответственно. Так что, с дубинкой в руках игрок всегда будет иметь время восстановления 30.<br>|
 <br>
 `en|Chain: 20|
 `ru|<p><b>Время восстановления брони и щита<br>
