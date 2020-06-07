@@ -547,7 +547,8 @@ Here's the formula for total experience for N'th level: <span class="math">Total
 <br>
 <a id="Chance-To-Hit-and-Resistances" ></a><h2>Chance To Hit and Resistances</h2>
 Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass)</span>.<br>
-Chance that monster will hit your character in a physic attack is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
+Chance that monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
+This includes elemental ranged attacks. Only spells always hit. You can distinguish between them with Identify Monster.<br>
 <br>
 Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6.<br>
  <br>
@@ -572,8 +573,9 @@ Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
 <div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span class="math">MagicResistance</span></div>
 <div style="margin-left:40px">Break or Steal Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>
 <div><br>
+
 <p><b>Resistances</b></p>
-When your character gets hit by magic, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
+When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
 Dice is dropped. If you are unlucky, you get full 100% damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
@@ -655,7 +657,7 @@ the same as that of Dagger = 60. If you don't, recovery time will be
 the same as that of Staff = 100.
 
 <br>
-Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got recovery time 0 and 6 respectively. So, with a club you will always have recovery time of 30.<br>
+Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30.<br>
 
 <br>
 <p><b>Recovery times of armor and shield</b></p>
