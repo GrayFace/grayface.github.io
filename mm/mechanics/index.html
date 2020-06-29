@@ -552,7 +552,7 @@ This includes elemental ranged attacks. Only spells always hit. You can distingu
 <br>
 Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6.<br>
  <br>
-Chance that enemy will to do some bad thing to you (poison, break item and so on) is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing:<br>
+Chance that an enemy will to do some bad thing to you (poison, break item and so on) is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing:<br>
 <div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect</span><br>
 </div>
 <div style="margin-left:40px">Curse:&nbsp; <span class="math">PersonalityEffect</span><br>
@@ -560,7 +560,8 @@ DrainSP, Dispel Magic:&nbsp; <span class="math">(PersonalityEffect + IntellectEf
 Insane, Paralyze, Afraid:&nbsp; <span class="math">MindResistance</span><br>
 Stone:&nbsp; <span class="math">EarthResistance</span><br>
 Poison, Dead, Eradicated:&nbsp; <span class="math">BodyResistance</span><br>
-Break or Steal Item:&nbsp; <span class="math">Item strength</span><br>
+Break Item:&nbsp; <span class="math">Item strength</span><br>
+Steal Item:&nbsp; <span class="math">AccuracyEffect</span><br>
 </div>
 <div style="margin-left:40px"><span class="math"><br>
 </span></div>
@@ -571,7 +572,8 @@ In MM6 it's different:</div>
 Insane:&nbsp;&nbsp;<span class="math">IntellectEffect</span><br>
 Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
 <div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span class="math">MagicResistance</span></div>
-<div style="margin-left:40px">Break or Steal Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>
+<div style="margin-left:40px">Break Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>
+<div style="margin-left:40px">Steal Item:&nbsp;&nbsp;<span class="math">AccuracyEffect</span></div>
 <div><br>
 
 <p><b>Resistances</b></p>
