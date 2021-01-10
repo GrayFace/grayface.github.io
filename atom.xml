@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2020-02-08T23:49:01Z</updated>
+<updated>2021-01-10T15:34:33Z</updated>
+
+<entry>
+<title>MM8 Choose Party (fixed)</title>
+<link href="https://grayface.github.io/#MM8ChoosePartyFixed"/>
+<updated>2021-01-10T15:34:33Z</updated>
+<id>https://grayface.github.io/#MM8ChoosePartyFixed</id>
+<summary type="html">
+These scripts let you choose your party on game start. You can choose party of any size and it can include dragons, too. Requires MMExtension and my patch for MM8.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party" title="Download"&gt;Download MM8%20Choose%20Party&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MMArchive v1.3.1</title>
@@ -106,16 +116,6 @@ Can be applied to any game made with ClickTeam Multimedia Fusion 2 or its predec
 <id>https://grayface.github.io/#FixedMonsterTreasure</id>
 <summary type="html">
 This script makes it so that moster treasure is generated when you enter a map and then doesn't change upon reloading the game.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1" title="Download"&gt;Download Fixed%20Monster%20Treasure.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>Solo game script for MM6 and MM7</title>
-<link href="https://grayface.github.io/#SoloGame"/>
-<updated>2019-08-02T02:29:42Z</updated>
-<id>https://grayface.github.io/#SoloGame</id>
-<summary type="html">
-Updated solo game MMExtension script for MM6 and MM7. Previous version didn't account for Weak condition.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/b3l3mk66vxyfh47/SoloGame.rar?dl=1" title="Download"&gt;Download SoloGame.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 

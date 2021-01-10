@@ -381,7 +381,7 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 		<h1>Might and Magic Mechanics <span id="site-name" title="Sergey &quot;GrayFace&quot; Rozhenko Homepage">GrayFace</span><span style="clear:both"></span></h1>
 			<div id="content2">
 			<h3 id="toc-header">Contents</h3>
-					<div id="toc"><ul><li><a href="#Statistics">Statistics</a></li><li><a href="#Chance-To-Hit-and-Resistances">Chance To Hit and Resistances</a></li><li><a href="#Recovery-Time">Recovery Time</a></li><li><a href="#Dual-Weapons">Dual Weapons</a></li><li><a href="#Other">Other</a></li></ul></div>
+					<div id="toc"><ul><li><a href="#Statistics">Statistics</a></li><li><a href="#Chance-To-Hit">Chance To Hit</a></li><li><a href="#Resistances">Resistances</a></li><li><a href="#Recovery-Time">Recovery Time</a></li><li><a href="#Dual-Weapons">Dual Weapons</a></li><li><a href="#Other">Other</a></li></ul></div>
 			
 <style>
 	.math {
@@ -545,7 +545,7 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 </b>N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that.<br>
 Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
 <br>
-<a id="Chance-To-Hit-and-Resistances" ></a><h2>Chance To Hit and Resistances</h2>
+<a id="Chance-To-Hit" ></a><h2>Chance To Hit</h2>
 Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass)</span>.<br>
 Chance that monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
 This includes elemental ranged attacks. Only spells always hit. You can distinguish between them with Identify Monster or spell-specific sounds.<br>
@@ -576,13 +576,13 @@ Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
 <div style="margin-left:40px">Steal Item:&nbsp;&nbsp;<span class="math">AccuracyEffect</span></div>
 <div><br>
 
-<p><b>Resistances</b></p>
+<a id="Resistances" ></a><h2>Resistances</h2>
 When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
 Dice is dropped. If you are unlucky, you get full 100% damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/8 (12.5%) damage.<br>
-If you are lucky, you get 1/16 (6.25%) damage.<br>
+If you are lucky, you get 1/16 (6.25%) damage.<br>|
 
 <br>
 To put it simple, I've calculated average damage for some values of resistance (with LuckEffect added to it):<br>
@@ -779,9 +779,7 @@ Both problems are fixed in my patches.<br>
                                 
 <p><b>'Increases rate of Recovery' enchantment<br>
 </b></p>
-This enchantment was supposed to make
-recovery 1.5 times (that's a huge bonus), but due to rounding
-it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>
+This enchantment was supposed to make recovery 1.5 times bigger (that's a huge bonus), but due to rounding it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>
 
 <br>
 <div>
