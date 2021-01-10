@@ -210,7 +210,8 @@ return {
 		Version = "2.2"
 	},
 	MMExtensionSrc = {
-		"https://github.com/GrayFace/MMExtension",
+		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
+		NameSuffix = " (`en|of older version 2.1|`ru|старой версии 2.1|)"
 	},
 	MMScripts = {
 		"https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/Decompiled%20Scripts"
