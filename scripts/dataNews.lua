@@ -734,5 +734,15 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MMArchive/v1.3.1/MMArchive.rar/download"
 		},
 		Title = "MMArchive v1.3.1"
-	}
+	},
+	{
+		Date = "2021-01-10T15:34:33Z",
+		Desc = "These scripts let you choose your party on game start. You can choose party of any size and it can include dragons, too. Requires MMExtension and my patch for MM8.",
+		DescRU = "Эти скрипты позволяют выбирать команду при старте игры. Можно выбирать команду любого размера, а также включать в неё драконов. Для работы требует MMExtension и мой патч для MM8.",
+		Files = {
+			"https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party"
+		},
+		Id = "MM8ChoosePartyFixed",
+		Title = "MM8 Choose Party (fixed)"
+	},
 }

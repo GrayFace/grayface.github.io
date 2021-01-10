@@ -168,7 +168,7 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 </b>`en|N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that|`ru|Для достижения уровеня N требуется N*1000 очков опыта в добавок к очкам предыдущего уровня. Для уровня 1 требуется 1000 опыта, для уровня 2 нужно еще 2000 опыта, т.е. в сумме 3000. Для уровня 3 нужно еще не 3000 больше|.<br>
 `en|Here's the formula for total experience for N'th level:|`ru|Таким образом, суммарный опыт для достижения уровня N определяется формулой| <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
 <br>
-<h2>`en|Chance To Hit and Resistances|`ru|Шанс попадания и Устойчивости|</h2>
+<h2>`en|Chance To Hit|`ru|Шанс попадания|</h2>
 `en|Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass|`ru|Шанс, что Ваш игрок ударит монстра равен <span class="math">(15 + АтакаИгрока*2)/(</span><span class="math">30 + АтакаИгрока*2 + КлассБрониМонстра</span><span class="math">|)</span>.<br>
 `en|Chance that monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass|`ru|Шанс, что монстр попадет в Вашего игрока, равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока|</span><span class="math">)</span>.<br>
 `en|This includes elemental ranged attacks. Only spells always hit. You can distinguish between them with Identify Monster or spell-specific sounds.|`ru|Это относится и к выстрелам магическими стихиями. Только заклинания всегда попадают. Чтобы отличить одно от другого, можно использовать умение Идентификации монстра или ориентироваться на наличие звуков, специфичных для заклинания.|<br>
@@ -199,7 +199,7 @@ Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
 <div style="margin-left:40px">Steal Item:&nbsp;&nbsp;<span class="math">AccuracyEffect</span></div>|
 <div><br>
 
-`en|<p><b>Resistances</b></p>
+<h2>`en|Resistances|`ru|Устойчивости|</h2>
 When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
 Dice is dropped. If you are unlucky, you get full 100% damage.<br>
 If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
@@ -439,9 +439,7 @@ Both problems are fixed in my patches.<br>|
                                 
 <p><b>`en|'Increases rate of Recovery' enchantment|`ru|Свойство 'Увеличивает скорость восстановления'</b> (в кривом переводе Буки 'Увеличивает скорость выздоровления')<b>|<br>
 </b></p>
-`en|This enchantment was supposed to make
-recovery 1.5 times (that's a huge bonus), but due to rounding
-it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>|
+`en|This enchantment was supposed to make recovery 1.5 times bigger (that's a huge bonus), but due to rounding it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>|
 `ru|Это свойство предметов должно было ускорять восстановление в 1.5 раза (огромный бонус!). Но, из-за ошибок округления, оно не работает на современных компьютерах. В моем патче к MM6 оно работает и увеличивает скорость восстановления на 10%.<br>|
 <br>
 <div>

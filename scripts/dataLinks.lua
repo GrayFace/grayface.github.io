@@ -169,7 +169,7 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0"
 	},
 	MM8ChooseParty = {
-		"https://www.dropbox.com/s/vz1maphmgkhcxl5/MM8ChooseParty.rar?dl=1"
+		"https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party"
 	},
 	["MM8ChooseParty.png"] = {
 		"img/MM8ChooseParty.png"
@@ -210,11 +210,10 @@ return {
 		Version = "2.2"
 	},
 	MMExtensionSrc = {
-		"https://www.dropbox.com/s/91xvgzbchx3h1bc/MMExtensionSrc.rar?dl=1",
-		NameSuffix = " (`en|of older version 2.1|`ru|старой версии 2.1|)"
+		"https://github.com/GrayFace/MMExtension",
 	},
 	MMScripts = {
-		"https://www.dropbox.com/s/kznafxub3lcbrv1/MMScripts.rar?dl=1"
+		"https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/Decompiled%20Scripts"
 	},
 	MapEdHelp = {
 		"https://sites.google.com/site/sergroj/wog/MapEdHelp.rar?attredirects=0"
