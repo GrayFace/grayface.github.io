@@ -745,4 +745,14 @@ return {
 		Id = "MM8ChoosePartyFixed",
 		Title = "MM8 Choose Party (fixed)"
 	},
+	{
+		Date = "2021-01-16T23:19:00Z",
+		Desc = "I've included a fix I made back in the day for a bug in the stonehenge quest.",
+		DescRU = "Включил в архив исправление бага в квесте со стоунхенджами, которое я сделал ещё очень давно.",
+		Files = {
+			"https://www.dropbox.com/s/71u2rwgubv3ofsg/Rev4_for_GrayFace_Patch.rar?dl=1"
+		},
+		Id = "Rev4",
+		Title = "MM7Rev4Mod"
+	}
 }
