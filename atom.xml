@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2021-01-10T15:34:33Z</updated>
+<updated>2021-01-16T23:19:00Z</updated>
+
+<entry>
+<title>MM7Rev4Mod</title>
+<link href="https://grayface.github.io/#Rev4"/>
+<updated>2021-01-16T23:19:00Z</updated>
+<id>https://grayface.github.io/#Rev4</id>
+<summary type="html">
+I've included a fix I made back in the day for a bug in the stonehenge quest.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/71u2rwgubv3ofsg/Rev4_for_GrayFace_Patch.rar?dl=1" title="Download"&gt;Download Rev4_for_GrayFace_Patch.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM8 Choose Party (fixed)</title>
@@ -106,16 +116,6 @@ Can be applied to any game made with ClickTeam Multimedia Fusion 2 or its predec
 <id>https://grayface.github.io/#MM6Patch-2.4</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Chests are populated with compact non-random stacking if more items fit this way.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Items are stacked vertically when you place them into chests.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Sprites dimensions are tweaked based on vertical view angle. This makes them behave more realistically, especially when looking up at big monsters.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Explosions won't cause mistargeting in software rendering mode anymore.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; If NoIntro=1 the intro is shown when you click the New Game button.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; And smaller changes...&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.v2.4.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.4.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6%20Patch%20v2.4.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.Buka.v2.4.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.4.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6%20Patch%20Buka%20v2.4.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.4/MM6.Patch.Loc.v2.4.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.4.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.4/MM6%20Patch%20Loc%20v2.4.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>Fixed Monster Treasure script for MMExtension</title>
-<link href="https://grayface.github.io/#FixedMonsterTreasure"/>
-<updated>2019-08-02T02:45:34Z</updated>
-<id>https://grayface.github.io/#FixedMonsterTreasure</id>
-<summary type="html">
-This script makes it so that moster treasure is generated when you enter a map and then doesn't change upon reloading the game.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1" title="Download"&gt;Download Fixed%20Monster%20Treasure.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
