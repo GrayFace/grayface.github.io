@@ -1,4 +1,5 @@
 package.loaded.dataLinks = nil
+require"misc"
 local utils = require"utils"
 local page = require"page"
 local dir = path.dir(path.noslash(path.dir(debug.FunctionFile(1))))
