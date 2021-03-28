@@ -542,8 +542,8 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 <br>
 <b>Experience<br>
 <br>
-</b>N'th level takes N*1000 more experience points to achieve. For level 1 you need 1000 exp, for level 2 you need 2000 more exp, which means 3000 in total. For level 3 you'll need another 3000 on top of that.<br>
-Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N+1)*500</span><br>
+</b>N'th level takes (N-1)*1000 more experience points to achieve. For level 2 you need 1000 exp, for level 3 you need 2000 more exp, which means 3000 in total. For level 4 you'll need another 3000 on top of that.<br>
+Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N-1)*500</span><br>
 <br>
 <a id="Chance-To-Hit" ></a><h2>Chance To Hit</h2>
 Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass)</span>.<br>
