@@ -546,13 +546,21 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N-1)*500</span><br>
 <br>
 <a id="Chance-To-Hit" ></a><h2>Chance To Hit</h2>
-Chance that your character will hit monster is <span class="math">(15 + PlayerAttack*2)/(</span><span class="math">30 + PlayerAttack*2 + </span><span class="math">MonsterArmorClass)</span>.<br>
-Chance that monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
+Chance that a monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
 This includes elemental ranged attacks. Only spells always hit. You can distinguish between them with Identify Monster or spell-specific sounds.<br>
 <br>
-Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8, but it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span> in MM6.<br>
+Chance that your character will hit a monster is 
+<span class="math">(15 + PlayerAttack*2 + Bonus &ndash; DistancePenalty)/(30 + PlayerAttack*2 + MonsterArmorClass)</span>.
+<br>
+<b>Bonus</b> is applied in 2 cases: When using a Blaster it's the skill if the player is Master or GM. When casting Blades in MM6 and MM7 it's <span class="math">skill*5</span>.
+<br>
+<b>DistancePenalty</b> is <span class="math">MonsterArmorClass/2</span> at 1024 &ndash; 2559 game units, <span class="math">MonsterArmorClass + 15</span> at 2560+ units.<br>Note that 5119 units is the maximum engagement distance.<br>
+With a Blaster, if the skill is Expert or above, the distance penalty isn't applied.
+<br>
  <br>
-Chance that an enemy will to do some bad thing to you (poison, break item and so on) is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where OtherEffect depends on that particular thing:<br>
+Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8.<br>In MM6 it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span>.<br>
+ <br>
+Chance that an enemy will to do some bad thing to you is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where <b>OtherEffect</b> depends on that particular thing:<br>
 <div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect</span><br>
 </div>
 <div style="margin-left:40px">Curse:&nbsp; <span class="math">PersonalityEffect</span><br>
@@ -571,21 +579,21 @@ In MM6 it's different:</div>
 <div style="margin-left:40px">Curse:&nbsp;&nbsp;<span class="math">PersonalityEffect</span><br>
 Insane:&nbsp;&nbsp;<span class="math">IntellectEffect</span><br>
 Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
-<div style="margin-left:40px">Paralyze,&nbsp;Stone,&nbsp;Dead, Eradicated,&nbsp;DrainSP,&nbsp;Age: &nbsp;<span class="math">MagicResistance</span></div>
+<div style="margin-left:40px">Paralyze, Stone, Dead, Eradicated, DrainSP, Age: &nbsp;<span class="math">MagicResistance</span></div>
 <div style="margin-left:40px">Break Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>
 <div style="margin-left:40px">Steal Item:&nbsp;&nbsp;<span class="math">AccuracyEffect</span></div>
 <div><br>
 
 <a id="Resistances" ></a><h2>Resistances</h2>
 When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
-Dice is dropped. If you are unlucky, you get full 100% damage.<br>
-If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
-If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
-If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/8 (12.5%) damage.<br>
-If you are lucky, you get 1/16 (6.25%) damage.<br>|
+The dice is dropped. If you are unlucky, you get full 100% damage.<br>
+If you are lucky, the dice is dropped again. If you are unlucky this time, you get 1/2 (50%) damage.<br>
+If you are lucky, the dice is dropped again. If you are unlucky this time, you get 1/4 (25%) damage.<br>
+If you are lucky, the dice is dropped again. If you are unlucky this time, you get 1/8 (12.5%) damage.<br>
+If you are lucky, you get 1/16 (6.25%) damage.<br>
 
 <br>
-To put it simple, I've calculated average damage for some values of resistance (with LuckEffect added to it):<br>
+To make it simpler, I've calculated average damage for some values of resistance (with LuckEffect added to it):<br>
 <table>
 <tbody>
 <tr>
@@ -626,7 +634,7 @@ To put it simple, I've calculated average damage for some values of resistance (
 When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage.<br>
 <br>
 <a id="Recovery-Time" ></a><h2>Recovery Time</h2>
-Recovery time is delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 (except for blasters and bows).<br>
+Recovery time is the delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 for melee attacks. Ranged can go as low as 0 in unpatched game or "BlasterRecovery" setting if my patch is used.<br>
 
 <br>
 </div>
@@ -654,9 +662,7 @@ Blaster: 30
 <br>
 
 <br>
-Unarmed combat: If you have Unarmed skill, recovery time will be
-the same as that of Dagger = 60. If you don't, recovery time will be
-the same as that of Staff = 100.
+Unarmed combat: If you have Unarmed skill, recovery time will be 60 as with a Dagger. If you don't, recovery time will be 100 as with a Staff.
 
 <br>
 Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30.<br>

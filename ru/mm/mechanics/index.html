@@ -543,13 +543,21 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 Таким образом, суммарный опыт для достижения уровня N определяется формулой <span class="math">TotalExp(N) = N*(N-1)*500</span><br>
 <br>
 <a id="Chance-To-Hit" ></a><h2>Шанс попадания</h2>
-Шанс, что Ваш игрок ударит монстра равен <span class="math">(15 + АтакаИгрока*2)/(</span><span class="math">30 + АтакаИгрока*2 + КлассБрониМонстра</span><span class="math">)</span>.<br>
 Шанс, что монстр попадет в Вашего игрока, равен <span class="math">(5 + УровеньМонстра*2)/(10 + УровеньМонстра</span><span class="math">*2 + КлассБрониИгрока</span><span class="math">)</span>.<br>
 Это относится и к выстрелам магическими стихиями. Только заклинания всегда попадают. Чтобы отличить одно от другого, можно использовать умение Идентификации монстра или ориентироваться на наличие звуков, специфичных для заклинания.<br>
 <br>
-В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>. В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>.<br>
+
+Шанс, что Ваш игрок ударит монстра с близкого расстояния (до 1024 игровых единиц) не из бластера равен <br>
+<span class="math">(15 + АтакаИгрока*2 + Бонус &ndash; ШтрафДальности)/(30 + АтакаИгрока*2 + КлассБрониМонстра)</span>.<br>
+
+<b>Бонус</b> добавляется в 2 случаях: при стрельбе из бластера он равен умению, если игрок Мастер или Гранд; при использовании заклинания Лезвие в ММ6 и ММ7 он равен <span class="math">умение*5</span>.<br>
+
+<b>ШтрафДальности</b> равен <span class="math">КлассБрониМонстра/2</span> на расстоянии 1024 &ndash; 2559 игровых единиц и <span class="math">КлассБрониМонстра + 15</span> на расстоянии 2560+ единиц.<br>Учтите, что 5119 единиц &ndash; максимальное расстояние, на котором можно взаимодействовать с монстрами.<br>
+При стрельбе из бластера с умением Эксперт и выше штраф дальности не накладывается.<br>
  <br>
-Шанс, что враг сделает игроку какую-нибудь пакость равен <span class="math">30/(30 + ЭффектУдачи + ДругойЭффект)</span>, где ДругойЭффект зависит от пакости:<br>
+В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>.<br>В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>.<br>
+ <br>
+Шанс, что враг сделает игроку какую-нибудь пакость равен <span class="math">30/(30 + ЭффектУдачи + ДругойЭффект)</span>, где <b>ДругойЭффект</b> зависит от пакости:<br>
 <div style="margin-left:40px">Слабость, Сон, Опьянение, Болезнь, Кома, Старение:&nbsp; <span class="math">ЭффектВыносливости</span><br>
 </div>
 <div style="margin-left:40px">Проклятие:&nbsp; <span class="math">ЭффектСилыДуха</span><br>
@@ -560,30 +568,21 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 Поломка предмета:&nbsp; <span class="math">Сила предмета</span><br>
 Кража предмета:&nbsp; <span class="math">ЭффектТочности</span><br>
 </div>
-
+<div style="margin-left:40px"><span class="math"><br>
+</span></div>
+В MM6 иначе:</div>
+<div style="margin-left:40px">Слабость, Сон, Опьянение, Болезнь, Кома, Испуг:&nbsp;&nbsp;<span class="math">ЭффектВыносливости</span><br>
+</div>
+<div style="margin-left:40px">Проклятие:&nbsp;&nbsp;<span class="math">ЭффектСилыДуха</span><br>
+Insane:&nbsp;&nbsp;<span class="math">ЭффектИнтеллекта</span><br>
+Poison:&nbsp;&nbsp;<span class="math">Устойчивость к Яду</span></div>
+<div style="margin-left:40px">Паралич, Окаменение, Смерть, Уничтожение, Высасывание очков магии, Старение: &nbsp;<span class="math">Устойчивость к Магии</span></div>
+<div style="margin-left:40px">Поломка предмета:&nbsp;&nbsp;<span class="math">Сила предмета</span></div>
+<div style="margin-left:40px">Кража предмета:&nbsp;&nbsp;<span class="math">ЭффектТочности</span></div>
 <div><br>
 
 <a id="Resistances" ></a><h2>Устойчивости</h2>
-When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
-Dice is dropped. If you are unlucky, you get full 100% damage.<br>
-If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/2 (50%) damage.<br>
-If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/4 (25%) damage.<br>
-If you are lucky, dice is dropped again. If you are  unlucky this time, you get 1/8 (12.5%) damage.<br>
-If you are lucky, you get 1/16 (6.25%) damage.<br>|
-</div>
-<div>
-<div>В MM6 иначе:</div>
-<div style="margin-left:40px">Слабость,&nbsp;Сон,&nbsp;Опьянение,&nbsp;Болезнь,&nbsp;Кома,&nbsp;Испуг:&nbsp;&nbsp;<span class="math">ЭффектВыносливости</span></div>
-<div style="margin-left:40px">Проклятие: &nbsp;<span class="math">ЭффектСилыДуха</span><br>
-Сумасшествие: &nbsp;<span class="math">ЭффектИнтеллекта</span><br>
-Отравление: &nbsp;<span class="math">Устойчивость к Яду</span></div>
-<div style="margin-left:40px">Паралич,&nbsp;Окаменение,&nbsp;Смерть,&nbsp;Уничтожение,&nbsp;Высасывание очков магии,&nbsp;Старение: &nbsp;<span class="math">Устойчивость к Магии</span></div>
-<div style="margin-left:40px">Поломка предмета:&nbsp;&nbsp;<span class="math">Сила предмета</span></div>
-<div style="margin-left:40px">Кража предмета:&nbsp;&nbsp;<span class="math">ЭффектТочности</span></div>
-<div><br></div>
-</div>
 
-<p><b>Устойчивости</b></p>
 Когда в Вашего героя ударили магической атакой, у него есть шанс уменьшить полученные поврждения. При каждом "броске кубика" шанс, что повезет, равен <span class="math">1 - 30/(30 + Устойчивость + ЭффектУдачи)</span>.<br>
 Первый бросок. Если не повезло, герой получает 100% повреждений.<br>
 Если повезло, кубик бросается во второй раз. Если не повезло, герой получает 1/2 (50%) повреждений.<br>
@@ -633,7 +632,7 @@ If you are lucky, you get 1/16 (6.25%) damage.<br>|
 <br>
 <a id="Recovery-Time" ></a><h2>Время восстановления</h2>
 
-Время восстановления &ndash; это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 (за исключением бластеров и луков). <br>
+Время восстановления &ndash; это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 в ближнем бою. При стрельбе из бластеров и луков оно может доходить до 0 в игре без патча или до настройки "BlasterRecovery", если используется мой патч.<br>
 <br>
 </div>
 <p><b>Базовое время восстановления оружия<br>
