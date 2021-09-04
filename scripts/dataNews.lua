@@ -757,8 +757,8 @@ return {
 	},
 	{
 		Date = "2021-09-04T16:45:03Z",
-		Desc = "Script-based command-line tool for working with Might and Magic and Heroes archives.",
-		DescRU = "Утилита командной строки для работы с архивами Might and Magic и Героев.",
+		Desc = "Script-based command-line tool for working with Might and Magic and Heroes 3 archives.",
+		DescRU = "Утилита командной строки для работы с архивами Might and Magic и Героев 3, использующая файл команд.",
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar"
 		},
