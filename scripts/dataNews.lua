@@ -754,5 +754,18 @@ return {
 		},
 		Id = "Rev4",
 		Title = "MM7Rev4Mod"
+	},
+	{
+		Date = "2021-09-04T16:45:03Z",
+		Desc = "Script-based command-line tool for working with Might and Magic and Heroes archives.",
+		DescRU = "Утилита командной строки для работы с архивами Might and Magic и Героев.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar"
+		},
+		Id = "LodTool-1.0",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/LodTool/v1.0/LodTool.rar/download"
+		},
+		Title = "Lod Tool v1.0"
 	}
 }

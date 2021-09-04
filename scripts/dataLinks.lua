@@ -106,6 +106,11 @@ return {
 	LodMergeSrc = {
 		"https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&d=1"
 	},
+	LodTool = {
+		"https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/LodTool/v1.0/LodTool.rar/download",
+		Version = "1.0"
+	},
 	MM6Controls = {
 		"https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0",
 		Version = "1.1"
