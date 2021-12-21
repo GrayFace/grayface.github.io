@@ -388,8 +388,6 @@ c1.2,1.1,2.1,2,3.1,3.2c0.4,0.5,1.2,1.5,1.1,2.1C40.8,34.5,36.2,33.2,34.6,33.7z"><
 		color: #048;
 	}
 </style>
-<div>
-<div>
 <a id="Statistics" ></a><h2>Statistics</h2>
 All statistics give bonus according to the table below.<br>
 The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic.<br>
@@ -560,10 +558,11 @@ With a Blaster, if the skill is Expert or above, the distance penalty isn't appl
  <br>
 Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8.<br>In MM6 it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span>.<br>
  <br>
-Chance that an enemy will to do some bad thing to you is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where <b>OtherEffect</b> depends on that particular thing:<br>
+Chance that an enemy will succeed in doing some bad thing to you is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where <b>OtherEffect</b> depends on that particular thing:<br>
 <div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect</span><br>
 </div>
-<div style="margin-left:40px">Curse:&nbsp; <span class="math">PersonalityEffect</span><br>
+<div style="margin-left:40px">
+Curse:&nbsp; <span class="math">PersonalityEffect</span><br>
 DrainSP, Dispel Magic:&nbsp; <span class="math">(PersonalityEffect + IntellectEffect)/2</span><br>
 Insane, Paralyze, Afraid:&nbsp; <span class="math">MindResistance</span><br>
 Stone:&nbsp; <span class="math">EarthResistance</span><br>
@@ -571,18 +570,20 @@ Poison, Dead, Eradicated:&nbsp; <span class="math">BodyResistance</span><br>
 Break Item:&nbsp; <span class="math">Item strength</span><br>
 Steal Item:&nbsp; <span class="math">AccuracyEffect</span><br>
 </div>
-<div style="margin-left:40px"><span class="math"><br>
-</span></div>
-In MM6 it's different:</div>
-<div style="margin-left:40px">Weak, Asleep, Drunk, Disease, Unconscious, Afraid:&nbsp;&nbsp;<span class="math">EnduranceEffect</span><br>
-</div>
-<div style="margin-left:40px">Curse:&nbsp;&nbsp;<span class="math">PersonalityEffect</span><br>
+<br>
+In MM6 it's different:
+<div style="margin-left:40px">
+Weak, Asleep, Drunk, Disease, Unconscious, Afraid:&nbsp;&nbsp;<span class="math">EnduranceEffect</span><br>
+Curse:&nbsp;&nbsp;<span class="math">PersonalityEffect</span><br>
 Insane:&nbsp;&nbsp;<span class="math">IntellectEffect</span><br>
-Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span></div>
-<div style="margin-left:40px">Paralyze, Stone, Dead, Eradicated, DrainSP, Age: &nbsp;<span class="math">MagicResistance</span></div>
-<div style="margin-left:40px">Break Item:&nbsp;&nbsp;<span class="math">Item strength</span></div>
-<div style="margin-left:40px">Steal Item:&nbsp;&nbsp;<span class="math">AccuracyEffect</span></div>
-<div><br>
+Poison:&nbsp;&nbsp;<span class="math">PoisonResistance</span><br>
+Paralyze, Stone, Dead, Eradicated, DrainSP, Age: &nbsp;<span class="math">MagicResistance</span><br>
+Break Item:&nbsp;&nbsp;<span class="math">Item strength</span><br>
+Steal Item:&nbsp;&nbsp;<span class="math">AccuracyEffect</span>
+</div>
+<br>
+That's the chance of the monster succeeding if he does attempt to do a bad thing. The chance that he attempts it during a strike is <span class="math">MonsterLevel*BonusMul</span>. BonusMul can be specified in Monsters.txt after the name of bad thing, e.g. "Age<b>x3</b>".<br>
+<br>
 
 <a id="Resistances" ></a><h2>Resistances</h2>
 When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
@@ -631,13 +632,14 @@ To make it simpler, I've calculated average damage for some values of resistance
 </tbody>
 </table>
 <br>
+Also note that in case the <span class="math">Resistance</span> is 0, the player is always dealt 100% of damage regardless of Luck.<br>
+<br>
 When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage.<br>
 <br>
 <a id="Recovery-Time" ></a><h2>Recovery Time</h2>
 Recovery time is the delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 for melee attacks. Ranged can go as low as 0 in unpatched game or "BlasterRecovery" setting if my patch is used.<br>
 
 <br>
-</div>
 <p><b>Base recovery times of weapons</b></p>
 Staff: 100
 <br>
@@ -665,7 +667,7 @@ Blaster: 30
 Unarmed combat: If you have Unarmed skill, recovery time will be 60 as with a Dagger. If you don't, recovery time will be 100 as with a Staff.
 
 <br>
-Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30.<br>
+Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30. In version 2.5 of my patches I've fixed if by giving them the same recovery as a Mace.<br>
 
 <br>
 <p><b>Recovery times of armor and shield</b></p>
@@ -697,7 +699,7 @@ Note that items that increase Bow/Axe/Sword skills are ignored here
 <br>
 <br>
 <p><b>Speed</b></p>
-The SpeedEffect is subtracted from recovery time.
+The <span class="math">SpeedEffect</span> is subtracted from recovery time.
 
 <br>
 
@@ -774,12 +776,11 @@ would be taken from Sword skill.<br>
 </b></p>
 Chance to do tripple damage by dagger is 10%. It doesn't depend
 on the skill. Only the damage of the dagger itself is tripled. In MM7
-and MM8 damage of a dagger in the second hand can be trippled (with the same 10% probability) even if you
+and MM8 damage of a dagger in the second hand can be tripled (with the same 10% probability) even if you
 are just Expert (it's a bug).<br>
 Both problems are fixed in my patches.<br>
 
 <br>
-</div>
                         
                         
                                 
@@ -788,21 +789,17 @@ Both problems are fixed in my patches.<br>
 This enchantment was supposed to make recovery 1.5 times bigger (that's a huge bonus), but due to rounding it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>
 
 <br>
-<div>
 <p><b>Vampiric weapons<br>
 </b></p>
-Vampiric weapons add 1/5 of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP.</div>
-<div>In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him.<br>
+Vampiric weapons add  to your HP 20% of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP.<br>
+In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him.<br>
 <br>
-</div>
-<div>
 <p><b>Staff<br>
 </b></p>
 In MM7 with GM Staff you gain Unarmed bonus, but lose Armsmaster bonus to damage. This is fixed in v2.1 of my patch.<br>
 
-</div>
-<div>In MM8 Staff skill is added to damage, not just attack. Armsmaster bonus is applied correctly.<br>
-</div>
+In MM8 Staff skill is added to damage, not just attack. Armsmaster bonus is applied correctly.<br>
+
 
 			</div>
 	</div>
