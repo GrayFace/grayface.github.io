@@ -816,5 +816,34 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5/MM7 Patch Loc v2.5.exe/download"
 		},
 		Title = "MM7Patch v2.5"
+	},
+	{
+		Date = "2021-12-21T22:20:47Z",
+		Desc = "[+] ShooterMode - FPS-like mode where you need to aim at the monsters and shoot by clicking left button click\
+[+] Now you can set a spell that would be used when you press regular attack button.\
+[+] In inventory screen unidentified items are now painted green while you're holding right mouse button.\
+[+] Fixed graphics of monsters that looked the same in all 3 variations, as well as thunderbirds and plane guardians.\
+[+] Set ExitDialogsWithRightButton=1 to make right mouse button act as Esc in houses, NPC, map entrance and message dialogs.\
+[+] ViewDistanceD3D option to set view distance in Hardware 3D mode, increased to 12000 by default.\
+[+] UI.txt: New FloatingScreens mode makes inventory, houses and other such screens open in a panel.\
+[-] Fixed DirectX 7 bug: inability to support big resolutions in Hardware accelerated mode.\
+[+] And other changes...",
+		DescRU = "[+] ShooterMode - режим шутера от первого лица, в котором надо прицеливаться в монстров и стрелять левой кнопкой мыши.\
+[+] Теперь можно установить заклинание, которое будет использоваться при нажатии кнопки обычной атаки.\
+[+] В инвентаре неидентифицированные предметы теперь показываются зелёным пока нажата правая кнопка мыши.\
+[+] Исправленная графика для монстров, которые во всех 3 вариациях выглядели одинаково, а также громовых птиц и защитников измерения.\
+[+] Если установить ExitDialogsWithRightButton=1, нажатие правой кнопки мыши будет закрывать (как Esc) многие диалоги (в домах, диалогах с людьми, при входе в локации и при показе сообщения).\
+[+] Опция \"ViewDistanceD3D\" для увеличения дальности обзора в режиме аппаратного 3D, по умолчанию уже увеличенная до 12000.\
+[+] UI.txt: В новом режиме \"FloatingScreens\" инвентарь, дома и другие подобные экраны показываются в панели.\
+[-] Исправлен баг DirectX 7: невозможность поддержки больших разрешений экрана в режиме аппаратного ускорения.\
+[+] И другие изменения...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5/MM8.Patch.v2.5.exe"
+		},
+		Id = "MM8Patch-2.5",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5/MM8 Patch v2.5.exe/download"
+		},
+		Title = "MM8Patch v2.5"
 	}
 }
