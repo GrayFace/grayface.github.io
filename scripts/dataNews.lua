@@ -445,19 +445,6 @@ return {
 		Title = "MM8Patch v2.3"
 	},
 	{
-		Date = "2019-06-05T14:22:52Z",
-		Desc = "I accidentally included a broken UI.txt in the previous upload.",
-		DescRU = "Случайно загрузил инсталятор с кривым UI.txt в прошлый раз.",
-		Files = {
-			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.3/MM8.Patch.v2.3.exe"
-		},
-		Id = "MM8Patch-2.3-fix",
-		MirrorSF = {
-			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.3/MM8 Patch v2.3.exe/download"
-		},
-		Title = "MM8Patch v2.3 (fixed)"
-	},
-	{
 		Date = "2019-06-09T23:27:45Z",
 		Desc = "[+] Right click menu works in item selection dialog of Enchant Item and similar spells. In MM7 it already works by default.\
 [-] My bug: Enchant Item and Golden Touch spells were bugged, effected by PaperDollInChests option.",
@@ -767,5 +754,34 @@ return {
 			"https://sourceforge.net/projects/grayface/files/LodTool/v1.0/LodTool.rar/download"
 		},
 		Title = "Lod Tool v1.0"
+	},
+	{
+		Date = "2021-12-21T21:09:47Z",
+		Desc = "[+] ShooterMode - FPS-like mode where you need to aim at the monsters and shoot by clicking left button click\
+[+] Now you can set a spell that would be used when you press regular attack button.\
+[+] In inventory screen unidentified items are now painted green while you're holding right mouse button.\
+[+] Fixed graphics of skeletons and enforcer units.\
+[+] Set ExitDialogsWithRightButton=1 to make right mouse button act as Esc in houses, NPC, map entrance and message dialogs.\
+[-] Now you can pick up items stolen from you from corpses of thieves, like in MM7.\
+[+] And other changes...",
+		DescRU = "[+] ShooterMode - режим шутера от первого лица, в котором надо прицеливаться в монстров и стрелять левой кнопкой мыши.\
+[+] Теперь можно установить заклинание, которое будет использоваться при нажатии кнопки обычной атаки.\
+[+] В инвентаре неидентифицированные предметы теперь показываются зелёным пока нажата правая кнопка мыши.\
+[+] Исправленная графика скелетов и \"роботов - инфорсеров\".\
+[+] Если установить ExitDialogsWithRightButton=1, нажатие правой кнопки мыши будет закрывать (как Esc) многие диалоги (в домах, диалогах с людьми, при входе в локации и при показе сообщения).\
+[-] Теперь предметы, украденные ворами, потом можно поднять с их трупов, как в MM7.\
+[+] И другие изменения...",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5/MM6.Patch.v2.5.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5/MM6.Patch.Buka.v2.5.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5/MM6.Patch.Loc.v2.5.exe"
+		},
+		Id = "MM6Patch-2.5",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5/MM6 Patch v2.5.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5/MM6 Patch Buka v2.5.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5/MM6 Patch Loc v2.5.exe/download"
+		},
+		Title = "MM6Patch v2.5"
 	}
 }

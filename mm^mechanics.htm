@@ -8,8 +8,6 @@ TOC()
 		color: #048;
 	}
 </style>
-<div>
-<div>
 <h2>`en|Statistics|`ru|Показатели|</h2>
 `en|All statistics give bonus according to the table below|`ru|Все показатели дают бонус в соответствии с приведенной таблицей|.<br>
 `en|The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic|`ru|Первый столбец - барьер показателя, второй - бонус, который дается, если показатель равен барьеру или выше его|.<br>
@@ -185,10 +183,11 @@ With a Blaster, if the skill is Expert or above, the distance penalty isn't appl
  <br>
 `en|Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8.<br>In MM6 it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span>|`ru|В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>.<br>В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>|.<br>
  <br>
-`en|Chance that an enemy will to do some bad thing to you is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where <b>OtherEffect</b> depends on that particular thing|`ru|Шанс, что враг сделает игроку какую-нибудь пакость равен <span class="math">30/(30 + ЭффектУдачи + ДругойЭффект)</span>, где <b>ДругойЭффект</b> зависит от пакости|:<br>
+`en|Chance that an enemy will succeed in doing some bad thing to you is <span class="math">30/(30 + LuckEffect + OtherEffect)</span>, where <b>OtherEffect</b> depends on that particular thing|`ru|Шанс, что враг сможет сделает игроку какую-нибудь пакость равен <span class="math">30/(30 + ЭффектУдачи + ДругойЭффект)</span>, где <b>ДругойЭффект</b> зависит от пакости|:<br>
 <div style="margin-left:40px">`en|Weak, Asleep, Drunk, Disease, Unconscious, Age:&nbsp; <span class="math">EnduranceEffect|`ru|Слабость, Сон, Опьянение, Болезнь, Кома, Старение:&nbsp; <span class="math">ЭффектВыносливости|</span><br>
 </div>
-<div style="margin-left:40px">`en|Curse:&nbsp; <span class="math">PersonalityEffect|`ru|Проклятие:&nbsp; <span class="math">ЭффектСилыДуха|</span><br>
+<div style="margin-left:40px">
+`en|Curse:&nbsp; <span class="math">PersonalityEffect|`ru|Проклятие:&nbsp; <span class="math">ЭффектСилыДуха|</span><br>
 `en|DrainSP, Dispel Magic:&nbsp; <span class="math">(PersonalityEffect + IntellectEffect|`ru|Высасывание очков магии, Рассеивание заклинаний:&nbsp; <span class="math">(ЭффектСилыДуха + ЭффектИнтеллекта|)/2</span><br>
 `en|Insane, Paralyze, Afraid:&nbsp; <span class="math">MindResistance|`ru|Сумасшествие, Паралич, Испуг:&nbsp; <span class="math">Устойчивость к Уму|</span><br>
 `en|Stone:&nbsp; <span class="math">EarthResistance|`ru|Окаменение:&nbsp; <span class="math">Устойчивость к Земле|</span><br>
@@ -196,18 +195,20 @@ With a Blaster, if the skill is Expert or above, the distance penalty isn't appl
 `en|Break Item:&nbsp; <span class="math">Item strength|`ru|Поломка предмета:&nbsp; <span class="math">Сила предмета|</span><br>
 `en|Steal Item:&nbsp; <span class="math">AccuracyEffect|`ru|Кража предмета:&nbsp; <span class="math">ЭффектТочности|</span><br>
 </div>
-<div style="margin-left:40px"><span class="math"><br>
-</span></div>
-`en|In MM6 it's different:|`ru|В MM6 иначе:|</div>
-<div style="margin-left:40px">`en|Weak, Asleep, Drunk, Disease, Unconscious, Afraid|`ru|Слабость, Сон, Опьянение, Болезнь, Кома, Испуг|:&nbsp;&nbsp;<span class="math">`en|EnduranceEffect|`ru|ЭффектВыносливости|</span><br>
+<br>
+`en|In MM6 it's different:|`ru|В MM6 иначе:|
+<div style="margin-left:40px">
+`en|Weak, Asleep, Drunk, Disease, Unconscious, Afraid|`ru|Слабость, Сон, Опьянение, Болезнь, Кома, Испуг|:&nbsp;&nbsp;<span class="math">`en|EnduranceEffect|`ru|ЭффектВыносливости|</span><br>
+`en|Curse|`ru|Проклятие|:&nbsp;&nbsp;<span class="math">`en|PersonalityEffect|`ru|ЭффектСилыДуха|</span><br>
+`en|Insane|`ru|Сумасшествие|:&nbsp;&nbsp;<span class="math">`en|IntellectEffect|`ru|ЭффектИнтеллекта|</span><br>
+`en|Poison|`ru|Отравление|:&nbsp;&nbsp;<span class="math">`en|PoisonResistance|`ru|Устойчивость к Яду|</span><br>
+`en|Paralyze, Stone, Dead, Eradicated, DrainSP, Age|`ru|Паралич, Окаменение, Смерть, Уничтожение, Высасывание очков магии, Старение|: &nbsp;<span class="math">`en|MagicResistance|`ru|Устойчивость к Магии|</span><br>
+`en|Break Item|`ru|Поломка предмета|:&nbsp;&nbsp;<span class="math">`en|Item strength|`ru|Сила предмета|</span><br>
+`en|Steal Item|`ru|Кража предмета|:&nbsp;&nbsp;<span class="math">`en|AccuracyEffect|`ru|ЭффектТочности|</span>
 </div>
-<div style="margin-left:40px">`en|Curse|`ru|Проклятие|:&nbsp;&nbsp;<span class="math">`en|PersonalityEffect|`ru|ЭффектСилыДуха|</span><br>
-Insane:&nbsp;&nbsp;<span class="math">`en|IntellectEffect|`ru|ЭффектИнтеллекта|</span><br>
-Poison:&nbsp;&nbsp;<span class="math">`en|PoisonResistance|`ru|Устойчивость к Яду|</span></div>
-<div style="margin-left:40px">`en|Paralyze, Stone, Dead, Eradicated, DrainSP, Age|`ru|Паралич, Окаменение, Смерть, Уничтожение, Высасывание очков магии, Старение|: &nbsp;<span class="math">`en|MagicResistance|`ru|Устойчивость к Магии|</span></div>
-<div style="margin-left:40px">`en|Break Item|`ru|Поломка предмета|:&nbsp;&nbsp;<span class="math">`en|Item strength|`ru|Сила предмета|</span></div>
-<div style="margin-left:40px">`en|Steal Item|`ru|Кража предмета|:&nbsp;&nbsp;<span class="math">`en|AccuracyEffect|`ru|ЭффектТочности|</span></div>
-<div><br>
+<br>
+`en|That's the chance of the monster succeeding if he does attempt to do a bad thing. The chance that he attempts it during a strike is <span class="math">MonsterLevel*BonusMul</span>. BonusMul can be specified in Monsters.txt after the name of bad thing, e.g.|`ru|Это шанс успеха монстра, когда он попытается сделать гадость. Шанс же, что монстр попытается её сделать при ударе, равен <span class="math">УровеньМонстра*Множитель</span>. Множитель может быть указан в Monsters.txt после названия гадости - например,| "Age<b>x3</b>".<br>
+<br>
 
 <h2>`en|Resistances|`ru|Устойчивости|</h2>
 `en|When your character gets hit by a magic attack, there is <span class="math">1 - 30/(30 + Resistance + LuckEffect)</span> chance of reducing damage on each 'dice drop'. Here's what happens:<br>
@@ -261,13 +262,14 @@ If you are lucky, you get 1/16 (6.25%) damage.<br>|
 </tbody>
 </table>
 <br>
+`en|Also note that in case the <span class="math">Resistance</span> is 0, the player is always dealt 100% of damage regardless of Luck.|`ru|Есть одно исключение - если <span class="math">Устойчивость</span> равна 0, игрок всегда получает 100% урона независимо от Удачи.|<br>
+<br>
 `en|When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage|`ru|Когда Вы попадаете по врагу, все происходит так же, только у него нет Удачи, так что формула такая: <span class="math">1 - 30/(30 + Устойчивость)</span>. В отличие от Вас, у монстров бывает устойчивость к физическому урону|.<br>
 <br>
 <h2>`en|Recovery Time|`ru|Время восстановления|</h2>
 `en|Recovery time is the delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 for melee attacks. Ranged can go as low as 0 in unpatched game or "BlasterRecovery" setting if my patch is used.<br>|
 `ru|Время восстановления - это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 в ближнем бою. При стрельбе из бластеров и луков оно может доходить до 0 в игре без патча или до настройки "BlasterRecovery", если используется мой патч.<br>|
 <br>
-</div>
 <p><b>`en|Base recovery times of weapons</b></p>|`ru|Базовое время восстановления оружия<br>|
 `en|Staff: 100
 <br>
@@ -296,7 +298,7 @@ Axe: 100|
 `en|Unarmed combat: If you have Unarmed skill, recovery time will be 60 as with a Dagger. If you don't, recovery time will be 100 as with a Staff.|
 `ru|Булава: 80|
 <br>
-`en|Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30.<br>|
+`en|Clubs have recovery time of 100 in MM6. In MM7 and MM8 developers forgot about them and clubs got 0 and 6 respectively as their recovery time. So, with a club you will always have recovery time of 30. In version 2.5 of my patches I've fixed if by giving them the same recovery as a Mace.<br>|
 `ru|Бластер: 30|
 <br>
 `en|<p><b>Recovery times of armor and shield</b></p>
@@ -304,7 +306,7 @@ Shield: 10|
 <br>
 `en|Leather: 10|
 `ru|Без оружия: Если герой имеет умение "Рукопашный бой", то время восстановления равно 60, как у Кинжала. Если умения нет, то 100, как у Посоха.<br>
-У дубинок в MM6 время восстановления 100 (как у посоха). В MM7 и MM8 разработчики недосмотрели и у дубинок получилось время восстановления 6 и 0 соответственно. Так что, с дубинкой в руках игрок всегда будет иметь время восстановления 30.<br>|
+У дубинок в MM6 время восстановления 100 (как у посоха). В MM7 и MM8 разработчики недосмотрели и у дубинок получилось время восстановления 0 и 6 соответственно. Так что, с дубинкой в руках игрок всегда будет иметь время восстановления 30. В версии 2.5 моих патчей я это исправил, дав им время восстановления, как у Булавы.<br>|
 <br>
 `en|Chain: 20|
 `ru|<p><b>Время восстановления брони и щита<br>
@@ -333,11 +335,11 @@ Shield: 10|
 <br>
 <br>
 `en|<p><b>Speed</b></p>
-The SpeedEffect is subtracted from recovery time.|
+The <span class="math">SpeedEffect</span> is subtracted from recovery time.|
 `ru|Баг: предметы, увеличивающие умение Лука, Топора или Меча, не влияют на время восстановления. Учитывается только умение самого героя. Предметы, увеличивающие навык "Оружейник" учитываются в полном объёме. Баг исправлен в моих патчах.<br>|
 <br>
 `ru|<p><b>Скорость</b></p>
-ЭффектСкорости вычитается из времени восстановления.|
+<span class="math">ЭффектСкорости</span> вычитается из времени восстановления.|
 <br>
 `en|<p><b>Special effects</b></p>
 Haste: -25 (in MM7 and MM8 it didn't work before Mok's patch)|
@@ -420,14 +422,13 @@ would be taken from Sword skill.<br>|
 </b></p>
 `en|Chance to do tripple damage by dagger is 10%. It doesn't depend
 on the skill. Only the damage of the dagger itself is tripled. In MM7
-and MM8 damage of a dagger in the second hand can be trippled (with the same 10% probability) even if you
+and MM8 damage of a dagger in the second hand can be tripled (with the same 10% probability) even if you
 are just Expert (it's a bug).<br>
 Both problems are fixed in my patches.<br>|
 `ru|Шанс нанесения тройного урона равен 10% и не зависит от умения. Утраивается только повреждение самого кинжала. Кинжалы в правой и левой руке обрабатываются раздельно. В MM7
 и MM8 повреждение кинжала во второй руке утраивается (с той же 10% вороятностью) даже на Эксперте (это баг).<br>
 Оба несоответстсвия описанию исправлены в моих патчах.<br>|
 <br>
-</div>
                         
                         
                                 
@@ -436,19 +437,15 @@ Both problems are fixed in my patches.<br>|
 `en|This enchantment was supposed to make recovery 1.5 times bigger (that's a huge bonus), but due to rounding it doesn't work on today's computers. In my MM6 patch it works and increases recovery rate by 10%.<br>|
 `ru|Это свойство предметов должно было ускорять восстановление в 1.5 раза (огромный бонус!). Но, из-за ошибок округления, оно не работает на современных компьютерах. В моем патче к MM6 оно работает и увеличивает скорость восстановления на 10%.<br>|
 <br>
-<div>
 <p><b>`en|Vampiric weapons|`ru|Оружие "Вампира"|<br>
 </b></p>
-`en|Vampiric weapons add 1/5 of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP|`ru|<div>Вампирское оружие добавляет к здоровью 1/5 всего нанесенного врагу физического урона (обоими руками, с учетом Героизма и бонусов умений). Если у персонажа 2 вампирских оружия, оба работают - добавляется в 2 раза больше. Здоровье не добавляется&nbsp;при убийстве монстра, а только если после удара у него осталась жизнь|.</div>
-<div>`en|In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him|`ru|В MM8 к здоровью добавляется <span class="math">min(повреждение/5, ОставшеесяЗдоровье/5)</span>, где&nbsp;<span class="math">ОставшеесяЗдоровье</span> - здоровье, которое осталось у монстра после удара|.<br>
+`en|Vampiric weapons add  to your HP 20% of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP|`ru|Вампирское оружие добавляет к здоровью 1/5 всего нанесенного врагу физического урона (обоими руками, с учетом Героизма и бонусов умений). Если у персонажа 2 вампирских оружия, оба работают - добавляется в 2 раза больше. Здоровье не добавляется&nbsp;при убийстве монстра, а только если после удара у него осталась жизнь|.<br>
+`en|In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him|`ru|В MM8 к здоровью добавляется <span class="math">min(повреждение/5, ОставшеесяЗдоровье/5)</span>, где&nbsp;<span class="math">ОставшеесяЗдоровье</span> - здоровье, которое осталось у монстра после удара|.<br>
 <br>
-`en|</div>|
-<div>
 <p><b>`en|Staff|`ru|Посох|<br>
 </b></p>
 `en|In MM7 with GM Staff you gain Unarmed bonus, but lose Armsmaster bonus to damage. This is fixed in v2.1 of my patch|`ru|В MM7 Магистр Посоха приобретает бонусы Рукопашного боя, но теряет бонус Оружейника к урону. В моём патче это исправлено в версии 2.1|.<br>
-`ru|</div>
-<div>В MM8 умение Посоха добавляется ещё и к урону, а не только к атаке. Бонус Оружейника добавляется корректно.</div>|
-</div>
-`en|<div>In MM8 Staff skill is added to damage, not just attack. Armsmaster bonus is applied correctly.<br>|
-</div>
+`ru|
+В MM8 умение Посоха добавляется ещё и к урону, а не только к атаке. Бонус Оружейника добавляется корректно.|
+`en|In MM8 Staff skill is added to damage, not just attack. Armsmaster bonus is applied correctly.<br>|
+
