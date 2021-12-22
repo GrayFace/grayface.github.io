@@ -145,7 +145,7 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0"
 	},
 	MM7MouseLook = {
-		"https://sites.google.com/site/sergroj/mm/MM7MouseLook.rar?attredirects=0"
+		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5/MM7MouseLook.rar"
 	},
 	["MM7PatchReadMe.TXT"] = {
 		"https://www.dropbox.com/s/9njf1z8b0l8s61y/MM7Patch%20ReadMe.TXT?dl=0",
@@ -180,7 +180,7 @@ return {
 		"img/MM8ChooseParty.png"
 	},
 	MM8MouseLook = {
-		"https://sites.google.com/site/sergroj/mm/MM8MouseLook.rar?attredirects=0"
+		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5/MM8MouseLook.rar"
 	},
 	["MM8PatchReadMe.TXT"] = {
 		"https://www.dropbox.com/s/6ddjn711anxm0vw/MM8Patch%20ReadMe.TXT?dl=0",
