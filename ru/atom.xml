@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2021-12-23T17:08:29Z</updated>
+<updated>2021-12-23T17:37:52Z</updated>
+
+<entry>
+<title>MM8Patch v2.5.1</title>
+<link href="https://grayface.github.io/ru/#MM8Patch-2.5.1"/>
+<updated>2021-12-23T17:37:52Z</updated>
+<id>https://grayface.github.io/ru/#MM8Patch-2.5.1</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Тип урона Энергия не показывался в свойствах монстра с умением идентификации.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Заставку невозможно было пропустить при первом запуске.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.1/MM8.Patch.v2.5.1.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.1/MM8%20Patch%20v2.5.1.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM7Patch v2.5.1</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#TxtEdit-1.4.1</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Команда "Копировать" иногда работала неверно.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4.1/TxtEdit.rar" title="Скачать с GitHub'а"&gt;Скачать TxtEdit.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4.1/TxtEdit.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>Txt Edit v1.4</title>
-<link href="https://grayface.github.io/ru/#TxtEdit-1.4"/>
-<updated>2020-02-01T10:23:24Z</updated>
-<id>https://grayface.github.io/ru/#TxtEdit-1.4</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Команда меню "Заполнить ячейки", которая работает, как "Вставить", но заполняет всю область выделения данными буфера обмена.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Улучшенное определение необходимой ширины столбцов.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Опции INI "Font Height" и "Font Name" позволяют выбрать основной шрифт.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Чешский язык за авторством Templayer'а.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Иногда всплывающая подсказка показывалась для полностью видимых ячеек.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Нажатие правой кнопки мыши сбрасывало содержащее более одной клетки выделение.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/TxtEdit-1.4/TxtEdit.rar" title="Скачать с GitHub'а"&gt;Скачать TxtEdit.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/TxtEdit/v1.4/TxtEdit.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
