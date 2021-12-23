@@ -862,5 +862,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Loc v2.5.1.exe/download"
 		},
 		Title = "MM6Patch v2.5.1"
+	},
+	{
+		Date = "2021-12-23T17:08:29Z",
+		Desc = "[-] My bug: Energy damage wasn't displayed in identify monster dialog",
+		DescRU = "[-] Мой баг: Тип урона Энергия не показывался в свойствах монстра с умением идентификации.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.1/MM7.Patch.v2.5.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.1/MM7.Patch.Buka.v2.5.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.1/MM7.Patch.Loc.v2.5.1.exe"
+		},
+		Id = "MM7Patch-2.5.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7 Patch v2.5.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7 Patch Buka v2.5.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7 Patch Loc v2.5.1.exe/download"
+		},
+		Title = "MM7Patch v2.5.1"
 	}
 }
