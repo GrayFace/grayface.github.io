@@ -845,5 +845,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5/MM8 Patch v2.5.exe/download"
 		},
 		Title = "MM8Patch v2.5"
+	},
+	{
+		Date = "2021-12-23T02:00:51Z",
+		Desc = "[-] My bug: Crash if character doesn't have a bow (due to \"N/A\" string not being initialized).",
+		DescRU = "[-] Мой баг: Вылет, если персонаж не имеет лука (вызванный тем, что строка \"N/A\" не инициализировалась).",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.v2.5.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Buka.v2.5.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Loc.v2.5.1.exe"
+		},
+		Id = "MM6Patch-2.5.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch v2.5.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Buka v2.5.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Loc v2.5.1.exe/download"
+		},
+		Title = "MM6Patch v2.5.1"
 	}
 }
