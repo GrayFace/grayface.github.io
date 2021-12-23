@@ -879,5 +879,20 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7 Patch Loc v2.5.1.exe/download"
 		},
 		Title = "MM7Patch v2.5.1"
+	},
+	{
+		Date = "2021-12-23T17:37:52Z",
+		Desc = "[-] My bug: Energy damage wasn't displayed in identify monster dialog\
+[-] Intro was unskippable on first launch.",
+		DescRU = "[-] Мой баг: Тип урона Энергия не показывался в свойствах монстра с умением идентификации.\
+[-] Заставку невозможно было пропустить при первом запуске.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.1/MM8.Patch.v2.5.1.exe"
+		},
+		Id = "MM8Patch-2.5.1",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.1/MM8 Patch v2.5.1.exe/download"
+		},
+		Title = "MM8Patch v2.5.1"
 	}
 }
