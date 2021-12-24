@@ -901,6 +901,7 @@ return {
 		DescRU = "Версии MM6Patch v2.5.1 (и v2.5) для локализаций (и \"Buka\", и \"Loc\") сдержали английские тексты. Скачайте их заново, если устананавливали:",
 		Id = "MM6Patch-2.5.1-fix",
 		Title = "Fixed MM6Patch v2.5.1 for localized games",
+		TitleRU = "Исправление MM6Patch v2.5.1 для локализованных игр",
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Buka.v2.5.1.exe",
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Loc.v2.5.1.exe"
