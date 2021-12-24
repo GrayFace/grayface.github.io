@@ -894,5 +894,20 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.1/MM8 Patch v2.5.1.exe/download"
 		},
 		Title = "MM8Patch v2.5.1"
+	},
+	{
+		Date = "2021-12-24T12:39:52Z",
+		Desc = "Versions of MM6Patch v2.5.1 (and v2.5) for localizations (both \"Buka\" and \"Loc\") contained English texts. Please redownload if you installed one of them:",
+		DescRU = "Версии MM6Patch v2.5.1 (и v2.5) для локализаций (и \"Buka\", и \"Loc\") сдержали английские тексты. Скачайте их заново, если устананавливали:",
+		Id = "MM6Patch-2.5.1-fix",
+		Title = "Fixed MM6Patch v2.5.1 for localized games",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Buka.v2.5.1.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Loc.v2.5.1.exe"
+		},
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Buka v2.5.1.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Loc v2.5.1.exe/download"
+		},
 	}
 }
