@@ -899,16 +899,35 @@ return {
 		Date = "2021-12-24T12:39:52Z",
 		Desc = "Versions of MM6Patch v2.5.1 (and v2.5) for localizations (both \"Buka\" and \"Loc\") contained English texts. Please redownload if you installed one of them:",
 		DescRU = "Версии MM6Patch v2.5.1 (и v2.5) для локализаций (и \"Buka\", и \"Loc\") сдержали английские тексты. Скачайте их заново, если устананавливали:",
-		Id = "MM6Patch-2.5.1-fix",
-		Title = "Fixed MM6Patch v2.5.1 for localized games",
-		TitleRU = "Исправление MM6Patch v2.5.1 для локализованных игр",
 		Files = {
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Buka.v2.5.1.exe",
 			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Loc.v2.5.1.exe"
 		},
+		Id = "MM6Patch-2.5.1-fix",
 		MirrorSF = {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Buka v2.5.1.exe/download",
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Loc v2.5.1.exe/download"
 		},
+		Title = "Fixed MM6Patch v2.5.1 for localized games",
+		TitleRU = "Исправление MM6Patch v2.5.1 для локализованных игр"
+	},
+	{
+		Date = "2021-12-25T04:16:42Z",
+		Desc = "[*] Now character's Stats screen displays a condition that determines stats, in all other places the most severe one is displayed.\
+[-] Now simple message dialog (e.g. obelisk message) isn't cancelled by any key press. In MM7 the message also doesn't stay on the screen after being cancelled anymore. Add DontSkipSimpleMessage=0 to INI to disable this fix.",
+		DescRU = "[*] Теперь на экране \"Данные\" персонажа показывается состояние, определяющее его показатели, а в других местах показывается наиболее серьёзное состояние.\
+[-] Теперь диалог простого сообщения (например, сообщение обелиска) не пропускается при нажатии любой клавиши. В MM7 оно так же не остаётся на экране после отмены. Чтобы отключить исправление, добавьте DontSkipSimpleMessage=0 в INI.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.v2.5.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Buka.v2.5.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Loc.v2.5.2.exe"
+		},
+		Id = "MM6Patch-2.5.2",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch v2.5.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch Buka v2.5.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch Loc v2.5.2.exe/download"
+		},
+		Title = "MM6Patch v2.5.2"
 	}
 }

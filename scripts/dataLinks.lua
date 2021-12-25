@@ -127,19 +127,19 @@ return {
 		MirrorSF = false
 	},
 	MM6patch = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.v2.5.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch v2.5.1.exe/download",
-		Version = "2.5.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.v2.5.2.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch v2.5.2.exe/download",
+		Version = "2.5.2"
 	},
 	MM6patchBuka = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Buka.v2.5.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Buka v2.5.1.exe/download",
-		Version = "2.5.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Buka.v2.5.2.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch Buka v2.5.2.exe/download",
+		Version = "2.5.2"
 	},
 	MM6patchLoc = {
-		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Loc.v2.5.1.exe",
-		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6 Patch Loc v2.5.1.exe/download",
-		Version = "2.5.1"
+		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Loc.v2.5.2.exe",
+		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch Loc v2.5.2.exe/download",
+		Version = "2.5.2"
 	},
 	MM6patchSrc = {
 		"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0"
