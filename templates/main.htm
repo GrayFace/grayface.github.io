@@ -366,13 +366,17 @@ local MainGradDark = MainGradLight*0.1
 				}
 
 				local function MenuItem(id)
-					local _, t = Include(id..".htm")
+					local PageTitle = events.PageTitle
+					if id ~= PageId then
+						local _, t = Include(id..".htm")
+						PageTitle = t.events.PageTitle
+					end
 					local href = GetPath(id, PageId)
 					]<div>-[
 					if id ~= PageId then
-						]<a href="$[href]">-[t.events.PageTitle(true)]</a>-[
+						]<a href="$[href]">-[PageTitle(true)]</a>-[
 					else
-						]<span class="menu-sel">-[t.events.PageTitle(true)]</span>-[
+						]<span class="menu-sel">-[PageTitle(true)]</span>-[
 					end
 					]</div>-[
 					local SubDone = {}

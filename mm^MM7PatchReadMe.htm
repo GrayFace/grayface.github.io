@@ -1,0 +1,8 @@
+-[
+local name = "MM7Patch ReadMe"
+local nameEN = name..'.TXT'
+local nameRU = name..'_rus.TXT'
+SetTitle(name, ("`en|%s|`ru|%s|"):format(nameEN, nameRU))
+local en = io.load('txt/'..nameEN)
+local ru = io.load('txt/'..nameRU):convert(0, 'utf8')
+]`en|$[en]|`ru|$[ru]|

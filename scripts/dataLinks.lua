@@ -119,11 +119,11 @@ return {
 		"https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0"
 	},
 	["MM6PatchReadMe.TXT"] = {
-		"https://www.dropbox.com/s/l4pdz00ipn7hmwr/MM6Patch%20ReadMe.TXT?dl=0",
+		"mm/MM6PatchReadMe",
 		MirrorSF = false
 	},
 	["MM6PatchReadMe_rus.TXT"] = {
-		"https://www.dropbox.com/s/xuuw6gv33ecfehi/MM6Patch%20ReadMe_rus.TXT?dl=0",
+		"mm/MM6PatchReadMe",
 		MirrorSF = false
 	},
 	MM6patch = {
@@ -148,11 +148,11 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5/MM7MouseLook.rar"
 	},
 	["MM7PatchReadMe.TXT"] = {
-		"https://www.dropbox.com/s/9njf1z8b0l8s61y/MM7Patch%20ReadMe.TXT?dl=0",
+		"mm/MM7PatchReadMe",
 		MirrorSF = false
 	},
 	["MM7PatchReadMe_rus.TXT"] = {
-		"https://www.dropbox.com/s/z60ltmlwh8fw6le/MM7Patch%20ReadMe_rus.TXT?dl=0",
+		"mm/MM7PatchReadMe",
 		MirrorSF = false
 	},
 	MM7patch = {
@@ -183,11 +183,11 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5/MM8MouseLook.rar"
 	},
 	["MM8PatchReadMe.TXT"] = {
-		"https://www.dropbox.com/s/6ddjn711anxm0vw/MM8Patch%20ReadMe.TXT?dl=0",
+		"mm/MM8PatchReadMe",
 		MirrorSF = false
 	},
 	["MM8PatchReadMe_rus.TXT"] = {
-		"https://www.dropbox.com/s/q8ijvy5uvt554wb/MM8Patch%20ReadMe_rus.TXT?dl=0",
+		"mm/MM8PatchReadMe",
 		MirrorSF = false
 	},
 	MM8patch = {
