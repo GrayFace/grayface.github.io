@@ -929,5 +929,28 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6 Patch Loc v2.5.2.exe/download"
 		},
 		Title = "MM6Patch v2.5.2"
+	},
+	{
+		Date = "2021-12-25T04:28:25Z",
+		Desc = "[*] Now character's Stats screen displays a condition that determines stats, in all other places the most severe one is displayed.\
+[-] Now simple message dialog (e.g. obelisk message) isn't cancelled by any key press. In MM7 the message also doesn't stay on the screen after being cancelled anymore. Add DontSkipSimpleMessage=0 to INI to disable this fix.\
+[-] \"Nothing here\" was shown on the screen after a dialog with a guard.\
+[-] My bug: List of all conditions wasn't displayed in right click menu for Condition in Stats screen.",
+		DescRU = "[*] Теперь на экране \"Данные\" персонажа показывается состояние, определяющее его показатели, а в других местах показывается наиболее серьёзное состояние.\
+[-] Теперь диалог простого сообщения (например, сообщение обелиска) не пропускается при нажатии любой клавиши. В MM7 оно так же не остаётся на экране после отмены. Чтобы отключить исправление, добавьте DontSkipSimpleMessage=0 в INI.\
+[-] После диалога со стражем показывалось сообщение \"Здесь ничего нет\".\
+[-] Мой баг: Список всех состояний не показывался при правом клике по строке \"Состояние\" в экране персонажа.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.2/MM7.Patch.v2.5.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.2/MM7.Patch.Buka.v2.5.2.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.2/MM7.Patch.Loc.v2.5.2.exe"
+		},
+		Id = "MM7Patch-2.5.2",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7 Patch v2.5.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7 Patch Buka v2.5.2.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7 Patch Loc v2.5.2.exe/download"
+		},
+		Title = "MM7Patch v2.5.2"
 	}
 }
