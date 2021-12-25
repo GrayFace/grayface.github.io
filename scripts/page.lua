@@ -53,6 +53,9 @@ local function DoGetPath(s, base)
 		end
 		s, base = s2, b2
 	end
+	if s:sub(1, #base + 1) == base..'/' then
+		s, base = s:sub(#base + 2), ''
+	end
 	local ret = (base:gsub("[^/]*/[^/]*", "/..")..s):gsub("^/", "")
 	return ret
 end
