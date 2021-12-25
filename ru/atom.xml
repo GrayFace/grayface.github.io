@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2021-12-25T04:28:25Z</updated>
+<updated>2021-12-25T04:54:11Z</updated>
+
+<entry>
+<title>MM8Patch v2.5.2</title>
+<link href="https://grayface.github.io/ru/#MM8Patch-2.5.2"/>
+<updated>2021-12-25T04:54:11Z</updated>
+<id>https://grayface.github.io/ru/#MM8Patch-2.5.2</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;*&lt;/span&gt;]&lt;/span&gt; Теперь на экране "Данные" персонажа показывается состояние, определяющее его показатели, а в других местах показывается наиболее серьёзное состояние.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; После диалога со стражем показывалось сообщение "Здесь ничего нет".&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Список всех состояний не показывался при правом клике по строке "Состояние" в экране персонажа.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Использование опции "ExitDialogsWithRightButton" в диалоге со стражем приводило к вылету.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.2/MM8.Patch.v2.5.2.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.2/MM8%20Patch%20v2.5.2.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM7Patch v2.5.2</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#LodTool-1.0</id>
 <summary type="html">
 Утилита командной строки для работы с архивами Might and Magic и Героев 3, использующая файл команд.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar" title="Скачать с GitHub'а"&gt;Скачать LodTool.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/LodTool/v1.0/LodTool.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM7Rev4Mod</title>
-<link href="https://grayface.github.io/ru/#Rev4"/>
-<updated>2021-01-16T23:19:00Z</updated>
-<id>https://grayface.github.io/ru/#Rev4</id>
-<summary type="html">
-Включил в архив исправление бага в квесте со стоунхенджами, которое я сделал ещё очень давно.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/71u2rwgubv3ofsg/Rev4_for_GrayFace_Patch.rar?dl=1" title="Скачать"&gt;Скачать Rev4_for_GrayFace_Patch.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
