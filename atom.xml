@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2021-12-24T12:39:52Z</updated>
+<updated>2021-12-25T04:16:42Z</updated>
+
+<entry>
+<title>MM6Patch v2.5.2</title>
+<link href="https://grayface.github.io/#MM6Patch-2.5.2"/>
+<updated>2021-12-25T04:16:42Z</updated>
+<id>https://grayface.github.io/#MM6Patch-2.5.2</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;*&lt;/span&gt;]&lt;/span&gt; Now character's Stats screen displays a condition that determines stats, in all other places the most severe one is displayed.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Now simple message dialog (e.g. obelisk message) isn't cancelled by any key press. In MM7 the message also doesn't stay on the screen after being cancelled anymore. Add DontSkipSimpleMessage=0 to INI to disable this fix.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.v2.5.2.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6%20Patch%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Buka.v2.5.2.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6%20Patch%20Buka%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Loc.v2.5.2.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6%20Patch%20Loc%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>Fixed MM6Patch v2.5.1 for localized games</title>
@@ -106,16 +116,6 @@ I've included a fix I made back in the day for a bug in the stonehenge quest.&lt
 <id>https://grayface.github.io/#MM8ChoosePartyFixed</id>
 <summary type="html">
 These scripts let you choose your party on game start. You can choose party of any size and it can include dragons, too. Requires MMExtension and my patch for MM8.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party" title="Download"&gt;Download MM8%20Choose%20Party&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MMArchive v1.3.1</title>
-<link href="https://grayface.github.io/#MMArchive-1.3.1"/>
-<updated>2020-02-08T23:49:01Z</updated>
-<id>https://grayface.github.io/#MMArchive-1.3.1</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; When importing a texture or a sprite that isn't 8 bit, previous palette is used if the file exists in the archive.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Mipmaps for transparent textures were generated with a blue border.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3.1/MMArchive.rar" title="Download from GitHub"&gt;Download MMArchive.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MMArchive/v1.3.1/MMArchive.rar/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 

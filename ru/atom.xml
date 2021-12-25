@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2021-12-24T12:39:52Z</updated>
+<updated>2021-12-25T04:16:42Z</updated>
+
+<entry>
+<title>MM6Patch v2.5.2</title>
+<link href="https://grayface.github.io/ru/#MM6Patch-2.5.2"/>
+<updated>2021-12-25T04:16:42Z</updated>
+<id>https://grayface.github.io/ru/#MM6Patch-2.5.2</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;*&lt;/span&gt;]&lt;/span&gt; Теперь на экране "Данные" персонажа показывается состояние, определяющее его показатели, а в других местах показывается наиболее серьёзное состояние.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Теперь диалог простого сообщения (например, сообщение обелиска) не пропускается при нажатии любой клавиши. В MM7 оно так же не остаётся на экране после отмены. Чтобы отключить исправление, добавьте DontSkipSimpleMessage=0 в INI.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.v2.5.2.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6%20Patch%20v2.5.2.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Buka.v2.5.2.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Buka v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6%20Patch%20Buka%20v2.5.2.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.2/MM6.Patch.Loc.v2.5.2.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Loc v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.2/MM6%20Patch%20Loc%20v2.5.2.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>Исправление MM6Patch v2.5.1 для локализованных игр</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#MM8ChoosePartyFixed</id>
 <summary type="html">
 Эти скрипты позволяют выбирать команду при старте игры. Можно выбирать команду любого размера, а также включать в неё драконов. Для работы требует MMExtension и мой патч для MM8.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party" title="Скачать"&gt;Скачать MM8%20Choose%20Party&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MMArchive v1.3.1</title>
-<link href="https://grayface.github.io/ru/#MMArchive-1.3.1"/>
-<updated>2020-02-08T23:49:01Z</updated>
-<id>https://grayface.github.io/ru/#MMArchive-1.3.1</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; При импорте текстур или спрайтов без палитры используется предыдущая палитра, если файл с таким именем есть в архиве.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; При генерации мипмэпок для прозрачных текстур у них появлялся голубой край.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3.1/MMArchive.rar" title="Скачать с GitHub'а"&gt;Скачать MMArchive.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MMArchive/v1.3.1/MMArchive.rar/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
