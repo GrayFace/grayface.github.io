@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2021-12-25T04:16:42Z</updated>
+<updated>2021-12-25T04:28:25Z</updated>
+
+<entry>
+<title>MM7Patch v2.5.2</title>
+<link href="https://grayface.github.io/#MM7Patch-2.5.2"/>
+<updated>2021-12-25T04:28:25Z</updated>
+<id>https://grayface.github.io/#MM7Patch-2.5.2</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;*&lt;/span&gt;]&lt;/span&gt; Now character's Stats screen displays a condition that determines stats, in all other places the most severe one is displayed.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Now simple message dialog (e.g. obelisk message) isn't cancelled by any key press. In MM7 the message also doesn't stay on the screen after being cancelled anymore. Add DontSkipSimpleMessage=0 to INI to disable this fix.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; "Nothing here" was shown on the screen after a dialog with a guard.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: List of all conditions wasn't displayed in right click menu for Condition in Stats screen.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.2/MM7.Patch.v2.5.2.exe" title="Download from GitHub"&gt;Download MM7 Patch v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7%20Patch%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.2/MM7.Patch.Buka.v2.5.2.exe" title="Download from GitHub"&gt;Download MM7 Patch Buka v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7%20Patch%20Buka%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.2/MM7.Patch.Loc.v2.5.2.exe" title="Download from GitHub"&gt;Download MM7 Patch Loc v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7%20Patch%20Loc%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM6Patch v2.5.2</title>
@@ -106,16 +116,6 @@ Script-based command-line tool for working with Might and Magic and Heroes 3 arc
 <id>https://grayface.github.io/#Rev4</id>
 <summary type="html">
 I've included a fix I made back in the day for a bug in the stonehenge quest.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://www.dropbox.com/s/71u2rwgubv3ofsg/Rev4_for_GrayFace_Patch.rar?dl=1" title="Download"&gt;Download Rev4_for_GrayFace_Patch.rar&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8 Choose Party (fixed)</title>
-<link href="https://grayface.github.io/#MM8ChoosePartyFixed"/>
-<updated>2021-01-10T15:34:33Z</updated>
-<id>https://grayface.github.io/#MM8ChoosePartyFixed</id>
-<summary type="html">
-These scripts let you choose your party on game start. You can choose party of any size and it can include dragons, too. Requires MMExtension and my patch for MM8.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party" title="Download"&gt;Download MM8%20Choose%20Party&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
