@@ -952,5 +952,24 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.2/MM7 Patch Loc v2.5.2.exe/download"
 		},
 		Title = "MM7Patch v2.5.2"
+	},
+	{
+		Date = "2021-12-25T04:54:11Z",
+		Desc = "[*] Now character's Stats screen displays a condition that determines stats, in all other places the most severe one is displayed.\
+[-] \"Nothing here\" was shown on the screen after a dialog with a guard.\
+[-] My bug: List of all conditions wasn't displayed in right click menu for Condition in Stats screen.\
+[-] My bug: Using ExitDialogsWithRightButton was causing a crash in a dialog with a guard.",
+		DescRU = "[*] Теперь на экране \"Данные\" персонажа показывается состояние, определяющее его показатели, а в других местах показывается наиболее серьёзное состояние.\
+[-] После диалога со стражем показывалось сообщение \"Здесь ничего нет\".\
+[-] Мой баг: Список всех состояний не показывался при правом клике по строке \"Состояние\" в экране персонажа.\
+[-] Мой баг: Использование опции \"ExitDialogsWithRightButton\" в диалоге со стражем приводило к вылету.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.2/MM8.Patch.v2.5.2.exe"
+		},
+		Id = "MM8Patch-2.5.2",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.2/MM8 Patch v2.5.2.exe/download"
+		},
+		Title = "MM8Patch v2.5.2"
 	}
 }
