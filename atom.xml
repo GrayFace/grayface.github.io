@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2021-12-25T04:54:11Z</updated>
+<updated>2021-12-27T14:36:51Z</updated>
+
+<entry>
+<title>MM6Patch v2.5.3</title>
+<link href="https://grayface.github.io/#MM6Patch-2.5.3"/>
+<updated>2021-12-27T14:36:51Z</updated>
+<id>https://grayface.github.io/#MM6Patch-2.5.3</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: Auto-targeting wasn't working when shooting or casting spells.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.v2.5.3.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20v2.5.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Buka.v2.5.3.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20Buka%20v2.5.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Loc.v2.5.3.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20Loc%20v2.5.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM8Patch v2.5.2</title>
@@ -106,16 +116,6 @@ Versions of MM6Patch v2.5.1 (and v2.5) for localizations (both "Buka" and "Loc")
 <id>https://grayface.github.io/#MM6Patch-2.5</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; ShooterMode &amp;ndash; FPS-like mode where you need to aim at the monsters and shoot by clicking left button click&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Now you can set a spell that would be used when you press regular attack button.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; In inventory screen unidentified items are now painted green while you're holding right mouse button.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Fixed graphics of skeletons and enforcer units.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; Set ExitDialogsWithRightButton=1 to make right mouse button act as Esc in houses, NPC, map entrance and message dialogs.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Now you can pick up items stolen from you from corpses of thieves, like in MM7.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;+&lt;/span&gt;]&lt;/span&gt; And other changes...&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5/MM6.Patch.v2.5.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.5.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5/MM6%20Patch%20v2.5.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5/MM6.Patch.Buka.v2.5.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.5.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5/MM6%20Patch%20Buka%20v2.5.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5/MM6.Patch.Loc.v2.5.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.5.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5/MM6%20Patch%20Loc%20v2.5.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>Lod Tool v1.0</title>
-<link href="https://grayface.github.io/#LodTool-1.0"/>
-<updated>2021-09-04T16:45:03Z</updated>
-<id>https://grayface.github.io/#LodTool-1.0</id>
-<summary type="html">
-Script-based command-line tool for working with Might and Magic and Heroes 3 archives.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar" title="Download from GitHub"&gt;Download LodTool.rar&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/LodTool/v1.0/LodTool.rar/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
