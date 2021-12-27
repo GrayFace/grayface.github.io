@@ -971,5 +971,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.2/MM8 Patch v2.5.2.exe/download"
 		},
 		Title = "MM8Patch v2.5.2"
+	},
+	{
+		Date = "2021-12-27T14:36:51Z",
+		Desc = "[-] My bug: Auto-targeting wasn't working when shooting or casting spells.",
+		DescRU = "[-] Мой баг: Стрелы и быстрые заклинания летели в центр экрана, а не в монстра.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.v2.5.3.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Buka.v2.5.3.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Loc.v2.5.3.exe"
+		},
+		Id = "MM6Patch-2.5.3",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6 Patch v2.5.3.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6 Patch Buka v2.5.3.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6 Patch Loc v2.5.3.exe/download"
+		},
+		Title = "MM6Patch v2.5.3"
 	}
 }

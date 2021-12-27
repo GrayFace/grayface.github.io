@@ -1,4 +1,4 @@
-GrayFace MM6 Patch v2.5.2
+GrayFace MM6 Patch v2.5.3
 By Sergey Rozhenko <mailto:sergroj@mail.ru>
 https://grayface.github.io/
 
@@ -10,6 +10,10 @@ For all exploits the patch fixes an option to disable the fix shoud be described
 At the end of ReadMe you'll find info on how to report errors.
 
 ([+] - feature, [-] - fixed bug, [*] - other)
+
+New in version 2.5.3:
+  << MM6 >>
+[-] My bug: Auto-targeting wasn't working when shooting or casting spells.
 
 New in version 2.5.2:
   << MM6 - MM8 >>
