@@ -1009,5 +1009,30 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6 Patch Loc v2.5.4.exe/download"
 		},
 		Title = "MM6Patch v2.5.4"
+	},
+	{
+		Date = "2021-12-29T21:47:08Z",
+		Desc = "[-] Now, when a location re-spawns, all artifacts generated in chests you've never opened get cleared from \"obtained artifacts\" list.\
+[-] My bug: FixMonstersBlockingShots option didn't work right.\
+[*] I've disabled FixUnmarkedArtifacts by default, because Titan's Stronghold had an unreachable chest with an artifact, still present in Rev4 mod or games started before this version of patch.\
+[-] My bug: IndoorFovMul option was only working in UILayout mode.\
+[-] The Titans' Stronghold (d09), Temple of the Dark (t02): Artifacts could be generated in inaccessible chests, reducing the number of artifacts the party can get.",
+		DescRU = "[-] Теперь, при респауне локации, все сгенерированные артефакты из не открытых сундуков убираются из списка найденных артефактов.\
+[-] Мой баг: Опция \"FixMonstersBlockingShots\" работала неверно.\
+[*] Я отключил опцию \"FixUnmarkedArtifacts\" по умолчанию, т.к. в Цитадели Титанов был артефакт в недоступном сундуке, который также остался в моде Rev4 и в играх, начатых до этой версии патча.\
+[-] Мой баг: Опция \"IndoorFovMul\" работала только в режиме UILayout.\
+[-] Цитадель Титанов (d09), Храм Тьмы (t02): В недоступных сундуках могли генерироваться артефакты, учитывающиеся, как найденные командой.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.4/MM7.Patch.v2.5.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.4/MM7.Patch.Buka.v2.5.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.4/MM7.Patch.Loc.v2.5.4.exe"
+		},
+		Id = "MM7Patch-2.5.4",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.4/MM7 Patch v2.5.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.4/MM7 Patch Buka v2.5.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.4/MM7 Patch Loc v2.5.4.exe/download"
+		},
+		Title = "MM7Patch v2.5.4"
 	}
 }
