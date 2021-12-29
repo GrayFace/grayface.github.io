@@ -988,5 +988,26 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6 Patch Loc v2.5.3.exe/download"
 		},
 		Title = "MM6Patch v2.5.3"
+	},
+	{
+		Date = "2021-12-29T21:39:56Z",
+		Desc = "[-] Now, when a location re-spawns, all artifacts generated in chests you've never opened get cleared from \"obtained artifacts\" list.\
+[-] Routine for generation of artifacts exclusively (unused on standard maps) was completely broken. They get counted as found, which can be changed by adding FixUnmarkedArtifacts=0 to INI.\
+[-] Temple of Tsantsa (t3): Spear under a pillow in final area wasn't obtainable due to variables conflict.",
+		DescRU = "[-] Теперь, при респауне локации, все сгенерированные артефакты из не открытых сундуков убираются из списка найденных артефактов.\
+[-] Генерация артефактов, когда тип предмета - \"только артефакт\" (не используется на стандартных картах), была полностью поломана. Сгенерированные так артефакты отмечаются, как найденные, но это можно отключить, добавив FixUnmarkedArtifacts=0 в INI.\
+[-] Храм Цанца (t3): Копьё под подушкой в финальных комнатах невозможно было получить из-за конфликта переменных.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.4/MM6.Patch.v2.5.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.4/MM6.Patch.Buka.v2.5.4.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.4/MM6.Patch.Loc.v2.5.4.exe"
+		},
+		Id = "MM6Patch-2.5.4",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6 Patch v2.5.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6 Patch Buka v2.5.4.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6 Patch Loc v2.5.4.exe/download"
+		},
+		Title = "MM6Patch v2.5.4"
 	}
 }
