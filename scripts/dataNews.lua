@@ -1034,5 +1034,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.4/MM7 Patch Loc v2.5.4.exe/download"
 		},
 		Title = "MM7Patch v2.5.4"
+	},
+	{
+		Date = "2021-12-29T21:59:30Z",
+		Desc = "[-] Now, when a location re-spawns, all artifacts generated in chests you've never opened get cleared from \"obtained artifacts\" list.\
+[-] My bug: FixMonstersBlockingShots option didn't work right.\
+[-] Prison of the Lord of Water (d38): An artifact was being generated in an inaccessible chest, leading to it not being obtainable by the party anymore.",
+		DescRU = "[-] Теперь, при респауне локации, все сгенерированные артефакты из не открытых сундуков убираются из списка найденных артефактов.\
+[-] Мой баг: Опция \"FixMonstersBlockingShots\" работала неверно.\
+[-] Тюрьма Повелителя Воды (d38): В недоступных сундуках генерировался артефакт, учитывающиеся, как найденный командой.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.4/MM8.Patch.v2.5.4.exe"
+		},
+		Id = "MM8Patch-2.5.4",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.4/MM8 Patch v2.5.4.exe/download"
+		},
+		Title = "MM8Patch v2.5.4"
 	}
 }
