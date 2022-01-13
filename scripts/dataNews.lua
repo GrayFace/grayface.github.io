@@ -1051,5 +1051,24 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.4/MM8 Patch v2.5.4.exe/download"
 		},
 		Title = "MM8Patch v2.5.4"
+	},
+	{
+		Date = "2022-01-13T20:55:40Z",
+		Desc = "[-] My bug: A bug when taking an item from character's inventory that could lead to immunities corruption in MM8.\
+[-] My bug: FixChests option got broken by 2.5.4 changes.",
+		DescRU = "[-] Мой баг: Баг при взятии предмета из инвентаря, который мог приводить к повреждению данных об иммунитетах персонажа в MM8.\
+[-] Мой баг: Изменения версии 2.5.4 сломали опцию \"FixChests\".",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.5/MM6.Patch.v2.5.5.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.5/MM6.Patch.Buka.v2.5.5.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.5/MM6.Patch.Loc.v2.5.5.exe"
+		},
+		Id = "MM6Patch-2.5.5",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.5/MM6 Patch v2.5.5.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.5/MM6 Patch Buka v2.5.5.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.5/MM6 Patch Loc v2.5.5.exe/download"
+		},
+		Title = "MM6Patch v2.5.5"
 	}
 }
