@@ -1112,5 +1112,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.5/MM7 Patch Loc v2.5.5.exe/download"
 		},
 		Title = "MM7Patch v2.5.5"
+	},
+	{
+		Date = "2022-01-13T21:26:18Z",
+		Desc = "[-] My bug: A bug when taking an item from character's inventory that could lead to immunities corruption in MM8.\
+[-] My bug: FixChests option got broken by 2.5.4 changes.\
+[*] FixUnmarkedArtifacts option now also respects the 13 artifacts limit imposed by the game.",
+		DescRU = "[-] Мой баг: Баг при взятии предмета из инвентаря, который мог приводить к повреждению данных об иммунитетах персонажа в MM8.\
+[-] Мой баг: Изменения версии 2.5.4 сломали опцию \"FixChests\".\
+[*] Опция \"FixUnmarkedArtifacts\" теперь учитывает лимит в 13 найденных артефактов, устанавливаемый игрой.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.5/MM8.Patch.v2.5.5.exe"
+		},
+		Id = "MM8Patch-2.5.5",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.5/MM8 Patch v2.5.5.exe/download"
+		},
+		Title = "MM8Patch v2.5.5"
 	}
 }
