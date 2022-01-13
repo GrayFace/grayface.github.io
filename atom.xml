@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2021-12-29T21:59:30Z</updated>
+<updated>2022-01-13T20:55:40Z</updated>
+
+<entry>
+<title>MM6Patch v2.5.5</title>
+<link href="https://grayface.github.io/#MM6Patch-2.5.5"/>
+<updated>2022-01-13T20:55:40Z</updated>
+<id>https://grayface.github.io/#MM6Patch-2.5.5</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: A bug when taking an item from character's inventory that could lead to immunities corruption in MM8.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: FixChests option got broken by 2.5.4 changes.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.5/MM6.Patch.v2.5.5.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.5.5.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.5/MM6%20Patch%20v2.5.5.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.5/MM6.Patch.Buka.v2.5.5.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.5.5.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.5/MM6%20Patch%20Buka%20v2.5.5.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.5/MM6.Patch.Loc.v2.5.5.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.5.5.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.5/MM6%20Patch%20Loc%20v2.5.5.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM8Patch v2.5.4</title>
@@ -106,16 +116,6 @@ Versions of MM6Patch v2.5.1 (and v2.5) for localizations (both "Buka" and "Loc")
 <id>https://grayface.github.io/#MM7Patch-2.5.1</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: Energy damage wasn't displayed in identify monster dialog&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.1/MM7.Patch.v2.5.1.exe" title="Download from GitHub"&gt;Download MM7 Patch v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7%20Patch%20v2.5.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.1/MM7.Patch.Buka.v2.5.1.exe" title="Download from GitHub"&gt;Download MM7 Patch Buka v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7%20Patch%20Buka%20v2.5.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.1/MM7.Patch.Loc.v2.5.1.exe" title="Download from GitHub"&gt;Download MM7 Patch Loc v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.1/MM7%20Patch%20Loc%20v2.5.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM6Patch v2.5.1</title>
-<link href="https://grayface.github.io/#MM6Patch-2.5.1"/>
-<updated>2021-12-23T02:00:51Z</updated>
-<id>https://grayface.github.io/#MM6Patch-2.5.1</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: Crash if character doesn't have a bow (due to "N/A" string not being initialized).&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.v2.5.1.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6%20Patch%20v2.5.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Buka.v2.5.1.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6%20Patch%20Buka%20v2.5.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.1/MM6.Patch.Loc.v2.5.1.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.5.1.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.1/MM6%20Patch%20Loc%20v2.5.1.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
