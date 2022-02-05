@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/</id>
 <author><name>Sergey Rozhenko</name></author>
-<updated>2022-02-05T13:16:04Z</updated>
+<updated>2022-02-05T13:30:44Z</updated>
+
+<entry>
+<title>MM7Patch v2.5.6</title>
+<link href="https://grayface.github.io/#MM7Patch-2.5.6"/>
+<updated>2022-02-05T13:30:44Z</updated>
+<id>https://grayface.github.io/#MM7Patch-2.5.6</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Items laying on the ground in one map were appearing in another when traveling by foot sometimes.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: DisableHooks option wasn't working for some new hooks.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: When custom *.games.lod archives are used, incorrect data was written to autosave on New Game start. It was fully inconsequential until version 2.5.4.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: The DirectX 7 bug/limitation fix was being applied prematurely, causing a crash on Wine.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug caused by abnormal localization: In German version of the game the party was shooting torches with patch version 2.5.*. This fix also fixes abnormalities of some sprites in that localization.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Fixes in maps: It was possible for artifacts to be generated in inaccessible chests.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.6/MM7.Patch.v2.5.6.exe" title="Download from GitHub"&gt;Download MM7 Patch v2.5.6.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7%20Patch%20v2.5.6.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.6/MM7.Patch.Buka.v2.5.6.exe" title="Download from GitHub"&gt;Download MM7 Patch Buka v2.5.6.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7%20Patch%20Buka%20v2.5.6.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.6/MM7.Patch.Loc.v2.5.6.exe" title="Download from GitHub"&gt;Download MM7 Patch Loc v2.5.6.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7%20Patch%20Loc%20v2.5.6.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM6Patch v2.5.6</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/#MM6Patch-2.5.3</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: Auto-targeting wasn't working when shooting or casting spells.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.v2.5.3.exe" title="Download from GitHub"&gt;Download MM6 Patch v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20v2.5.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Buka.v2.5.3.exe" title="Download from GitHub"&gt;Download MM6 Patch Buka v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20Buka%20v2.5.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Loc.v2.5.3.exe" title="Download from GitHub"&gt;Download MM6 Patch Loc v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20Loc%20v2.5.3.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM8Patch v2.5.2</title>
-<link href="https://grayface.github.io/#MM8Patch-2.5.2"/>
-<updated>2021-12-25T04:54:11Z</updated>
-<id>https://grayface.github.io/#MM8Patch-2.5.2</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;*&lt;/span&gt;]&lt;/span&gt; Now character's Stats screen displays a condition that determines stats, in all other places the most severe one is displayed.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; "Nothing here" was shown on the screen after a dialog with a guard.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: List of all conditions wasn't displayed in right click menu for Condition in Stats screen.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; My bug: Using ExitDialogsWithRightButton was causing a crash in a dialog with a guard.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.2/MM8.Patch.v2.5.2.exe" title="Download from GitHub"&gt;Download MM8 Patch v2.5.2.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.2/MM8%20Patch%20v2.5.2.exe/download" title="SourceForge Mirror"&gt;(Mirror)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
