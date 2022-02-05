@@ -7,7 +7,17 @@
 <logo>https://grayface.github.io/img/rss_logo.png</logo>
 <id>https://grayface.github.io/ru/</id>
 <author><name>Сергей Роженко</name></author>
-<updated>2022-02-05T13:30:44Z</updated>
+<updated>2022-02-05T13:39:55Z</updated>
+
+<entry>
+<title>MM8Patch v2.5.6</title>
+<link href="https://grayface.github.io/ru/#MM8Patch-2.5.6"/>
+<updated>2022-02-05T13:39:55Z</updated>
+<id>https://grayface.github.io/ru/#MM8Patch-2.5.6</id>
+<summary type="html">
+&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Иногда лежащие на земле предметы из одной карты появлялись в другой при перемещении пешком.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; В трупах огров находился самый слабый меч вместо дубинки.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Опция "DisableHooks" не работала для некоторых новых хуков.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: При использовании своих архивов *.games.lod неверные данные писались в автосохранение при старте новой игры. Это ни на что не влияло до версии 2.5.4.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Исправление для бага/ограничения DirectX 7 применялась слишком рано, приводя к вылету под Wine.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.6/MM8.Patch.v2.5.6.exe" title="Скачать с GitHub'а"&gt;Скачать MM8 Patch v2.5.6.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.6/MM8%20Patch%20v2.5.6.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
+</summary>
+</entry>
 
 <entry>
 <title>MM7Patch v2.5.6</title>
@@ -106,16 +116,6 @@
 <id>https://grayface.github.io/ru/#MM6Patch-2.5.4</id>
 <summary type="html">
 &lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Теперь, при респауне локации, все сгенерированные артефакты из не открытых сундуков убираются из списка найденных артефактов.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Генерация артефактов, когда тип предмета &amp;ndash; "только артефакт" (не используется на стандартных картах), была полностью поломана. Сгенерированные так артефакты отмечаются, как найденные, но это можно отключить, добавив FixUnmarkedArtifacts=0 в INI.&lt;br&gt;&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Храм Цанца (t3): Копьё под подушкой в финальных комнатах невозможно было получить из-за конфликта переменных.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.4/MM6.Patch.v2.5.4.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch v2.5.4.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6%20Patch%20v2.5.4.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.4/MM6.Patch.Buka.v2.5.4.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Buka v2.5.4.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6%20Patch%20Buka%20v2.5.4.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.4/MM6.Patch.Loc.v2.5.4.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Loc v2.5.4.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.4/MM6%20Patch%20Loc%20v2.5.4.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
-</summary>
-</entry>
-
-<entry>
-<title>MM6Patch v2.5.3</title>
-<link href="https://grayface.github.io/ru/#MM6Patch-2.5.3"/>
-<updated>2021-12-27T14:36:51Z</updated>
-<id>https://grayface.github.io/ru/#MM6Patch-2.5.3</id>
-<summary type="html">
-&lt;span style="white-space:nowrap;display:inline-block;margin-right:0.12em;"&gt;[&lt;span style="display:inline-block;min-width:0.8em;text-align:center;"&gt;&amp;ndash;&lt;/span&gt;]&lt;/span&gt; Мой баг: Стрелы и быстрые заклинания летели в центр экрана, а не в монстра.&lt;div style="margin-top:0.5em;"&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.v2.5.3.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20v2.5.3.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Buka.v2.5.3.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Buka v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20Buka%20v2.5.3.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;a href="https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.3/MM6.Patch.Loc.v2.5.3.exe" title="Скачать с GitHub'а"&gt;Скачать MM6 Patch Loc v2.5.3.exe&lt;/a&gt; &amp;nbsp;&lt;i&gt;&lt;a href="https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.3/MM6%20Patch%20Loc%20v2.5.3.exe/download" title="Зеркало на SourceForge"&gt;(Зеркало)&lt;/a&gt;&lt;/i&gt;&lt;/div&gt;&lt;/div&gt;
 </summary>
 </entry>
 
