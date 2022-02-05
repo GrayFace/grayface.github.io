@@ -1206,5 +1206,26 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7 Patch Loc v2.5.6.exe/download"
 		},
 		Title = "MM7Patch v2.5.6"
+	},
+	{
+		Date = "2022-02-05T13:39:55Z",
+		Desc = "[-] Items laying on the ground in one map were appearing in another when traveling by foot sometimes.\
+[-] Ogre corpses were containing most basic sword instead of a club.\
+[-] My bug: DisableHooks option wasn't working for some new hooks.\
+[-] My bug: When custom *.games.lod archives are used, incorrect data was written to autosave on New Game start. It was fully inconsequential until version 2.5.4.\
+[-] My bug: The DirectX 7 bug/limitation fix was being applied prematurely, causing a crash on Wine.",
+		DescRU = "[-] Иногда лежащие на земле предметы из одной карты появлялись в другой при перемещении пешком.\
+[-] В трупах огров находился самый слабый меч вместо дубинки.\
+[-] Мой баг: Опция \"DisableHooks\" не работала для некоторых новых хуков.\
+[-] Мой баг: При использовании своих архивов *.games.lod неверные данные писались в автосохранение при старте новой игры. Это ни на что не влияло до версии 2.5.4.\
+[-] Мой баг: Исправление для бага/ограничения DirectX 7 применялась слишком рано, приводя к вылету под Wine.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.6/MM8.Patch.v2.5.6.exe"
+		},
+		Id = "MM8Patch-2.5.6",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.6/MM8 Patch v2.5.6.exe/download"
+		},
+		Title = "MM8Patch v2.5.6"
 	}
 }
