@@ -1179,5 +1179,32 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.6/MM6 Patch Loc v2.5.6.exe/download"
 		},
 		Title = "MM6Patch v2.5.6"
+	},
+	{
+		Date = "2022-02-05T13:30:44Z",
+		Desc = "[-] Items laying on the ground in one map were appearing in another when traveling by foot sometimes.\
+[-] My bug: DisableHooks option wasn't working for some new hooks.\
+[-] My bug: When custom *.games.lod archives are used, incorrect data was written to autosave on New Game start. It was fully inconsequential until version 2.5.4.\
+[-] My bug: The DirectX 7 bug/limitation fix was being applied prematurely, causing a crash on Wine.\
+[-] My bug caused by abnormal localization: In German version of the game the party was shooting torches with patch version 2.5.*. This fix also fixes abnormalities of some sprites in that localization.\
+[-] Fixes in maps: It was possible for artifacts to be generated in inaccessible chests.",
+		DescRU = "[-] Иногда лежащие на земле предметы из одной карты появлялись в другой при перемещении пешком.\
+[-] Мой баг: Опция \"DisableHooks\" не работала для некоторых новых хуков.\
+[-] Мой баг: При использовании своих архивов *.games.lod неверные данные писались в автосохранение при старте новой игры. Это ни на что не влияло до версии 2.5.4.\
+[-] Мой баг: Исправление для бага/ограничения DirectX 7 применялась слишком рано, приводя к вылету под Wine.\
+[-] Мой баг, вызванный странной локализацией: В немецкой версии игры команда начинала стрелять факелами при установке патча 2.5.*. Это исправление также правит нестандартные размеры некоторых спрайтов в этой локализации.\
+[-] Исправления на картах: В недоступных сундуках могли генерироваться артефакты.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.6/MM7.Patch.v2.5.6.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.6/MM7.Patch.Buka.v2.5.6.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5.6/MM7.Patch.Loc.v2.5.6.exe"
+		},
+		Id = "MM7Patch-2.5.6",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7 Patch v2.5.6.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7 Patch Buka v2.5.6.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.6/MM7 Patch Loc v2.5.6.exe/download"
+		},
+		Title = "MM7Patch v2.5.6"
 	}
 }
