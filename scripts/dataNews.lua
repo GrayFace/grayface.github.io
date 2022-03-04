@@ -1263,5 +1263,20 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.7/MM7 Patch Loc v2.5.7.exe/download"
 		},
 		Title = "MM7Patch v2.5.7"
+	},
+	{
+		Date = "2022-03-04T13:51:40Z",
+		Desc = "[*] Support (i.e. no problems like crashes) for old saves with inconsequential incorrect data caused by my bug fixed in the previous version.\
+[-] My bug: The Acid Burst fix that changes its element from Physical to Water was doing so even if it's explicitly set Physical in spells.txt. Now you can also disable the Acid Burst fix by adding FixAcidBurst=0 to INI.",
+		DescRU = "[*] Поддержка сохранений с неверными данными, вызванными моим багом, исправленным в предыдущей версии. Теперь эти данные снова ни на что не влияют.\
+[-] Мой баг: Исправление Всплеска кислоты, меняющее элемент заклинания с Физического на Воду, делало это даже когда он явно указан физическим в spells.txt. Теперь исправление также можно отключить, добавив FixAcidBurst=0 в INI.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.7/MM8.Patch.v2.5.7.exe"
+		},
+		Id = "MM8Patch-2.5.7",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.7/MM8 Patch v2.5.7.exe/download"
+		},
+		Title = "MM8Patch v2.5.7"
 	}
 }
