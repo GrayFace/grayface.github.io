@@ -1227,5 +1227,22 @@ return {
 			"https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.6/MM8 Patch v2.5.6.exe/download"
 		},
 		Title = "MM8Patch v2.5.6"
+	},
+	{
+		Date = "2022-03-04T13:00:49Z",
+		Desc = "[*] Support (i.e. no problems like crashes) for old saves with inconsequential incorrect data caused by my bug fixed in the previous version.",
+		DescRU = "[*] Поддержка сохранений с неверными данными, вызванными моим багом, исправленным в предыдущей версии. Теперь эти данные снова ни на что не влияют.",
+		Files = {
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.7/MM6.Patch.v2.5.7.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.7/MM6.Patch.Buka.v2.5.7.exe",
+			"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.7/MM6.Patch.Loc.v2.5.7.exe"
+		},
+		Id = "MM6Patch-2.5.7",
+		MirrorSF = {
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.7/MM6 Patch v2.5.7.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.7/MM6 Patch Buka v2.5.7.exe/download",
+			"https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.7/MM6 Patch Loc v2.5.7.exe/download"
+		},
+		Title = "MM6Patch v2.5.7"
 	}
 }
