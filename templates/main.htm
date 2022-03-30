@@ -258,6 +258,15 @@ local MainGradDark = MainGradLight*0.1
 	#menu-contact .contact-youtube svg {
 		opacity: 0.75;
 	}
+	.mail-at::after {
+		content: "@";
+		padding: 0 0.09em;
+		cursor: text;
+	}
+	.mail-dot::after {
+		content: ".";
+		cursor: text;
+	}
 /* Resolutions */
 @media (max-width: 900px) {
 	#content2 {
@@ -411,7 +420,7 @@ local MainGradDark = MainGradLight*0.1
 			<h4>`en|Contacts|`ru|Контакты|</h4>
 			<div>
 				<span title="`en|Email|`ru|Почта|" aria-label="Email: ">-[(Include"svg/mail.svg")]</span>
-				sergroj at mail ru
+				<span class="mail-at">sergroj</span><span class="mail-dot">mail</span>ru
 			</div>
 			<div>
 				<a href="https://twitter.com/sergrojGrayFace" tabindex="-1" title="Twitter" aria-label="Twitter: ">-[(Include"svg/twitter.svg")]</a>
