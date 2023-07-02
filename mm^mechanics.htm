@@ -10,7 +10,7 @@ TOC()
 </style>
 <h2>`en|Statistics|`ru|Показатели|</h2>
 `en|All statistics give bonus according to the table below|`ru|Все показатели дают бонус в соответствии с приведенной таблицей|.<br>
-`en|The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic|`ru|Первый столбец - барьер показателя, второй - бонус, который дается, если показатель равен барьеру или выше его|.<br>
+`en|The first row is statistic barrier (or breakpoint). The second is effect you get from getting equal or bigger statistic|`ru|Первый столбец `- барьер показателя, второй `- бонус, который дается, если показатель равен барьеру или выше его|.<br>
 `en|Example: If 400 &lt;= Might &lt; 500, then you will get +25 to melee damage.|
 `ru|Например, если 400 &lt;= Сила &lt; 500, к повреждению добавится +25.|
 <br>
@@ -178,7 +178,7 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 `ru|<b>Бонус</b> добавляется в 2 случаях: при стрельбе из бластера он равен умению, если игрок Мастер или Гранд; при использовании заклинания Лезвие в ММ6 и ММ7 он равен <span class="math">умение*5</span>.|<br>
 `en|<b>DistancePenalty</b> is <span class="math">MonsterArmorClass/2</span> at 1024 &ndash; 2559 game units, <span class="math">MonsterArmorClass + 15</span> at 2560+ units.<br>Note that 5119 units is the maximum engagement distance.<br>
 With a Blaster, if the skill is Expert or above, the distance penalty isn't applied.|
-`ru|<b>ШтрафДальности</b> равен <span class="math">КлассБрониМонстра/2</span> на расстоянии 1024 &ndash; 2559 игровых единиц и <span class="math">КлассБрониМонстра + 15</span> на расстоянии 2560+ единиц.<br>Учтите, что 5119 единиц - максимальное расстояние, на котором можно взаимодействовать с монстрами.<br>
+`ru|<b>ШтрафДальности</b> равен <span class="math">КлассБрониМонстра/2</span> на расстоянии 1024 &ndash; 2559 игровых единиц и <span class="math">КлассБрониМонстра + 15</span> на расстоянии 2560+ единиц.<br>Учтите, что 5119 единиц `- максимальное расстояние, на котором можно взаимодействовать с монстрами.<br>
 При стрельбе из бластера с умением Эксперт и выше штраф дальности не накладывается.|<br>
  <br>
 `en|Chance of spells like Paralyze or Slow to succeed is <span class="math">30/(30 + MonsterResistance + MonsterLevel/4)</span> in MM7 and MM8.<br>In MM6 it's <span class="math">30/(30 + MonsterResistance + MonsterLevel)</span>|`ru|В MM7 и MM8 шанс удачи таких заклинаний, как Паралич и Замедление, равен <span class="math">30/(30 + УстойчивостьМонстра + УровеньМонстра/4)</span>.<br>В MM6 он равен <span class="math">30/(30 + </span><span class="math">УстойчивостьМонстра</span><span class="math"> + </span><span class="math">УровеньМонстра</span><span class="math">)</span>|.<br>
@@ -207,7 +207,7 @@ With a Blaster, if the skill is Expert or above, the distance penalty isn't appl
 `en|Steal Item|`ru|Кража предмета|:&nbsp;&nbsp;<span class="math">`en|AccuracyEffect|`ru|ЭффектТочности|</span>
 </div>
 <br>
-`en|That's the chance of the monster succeeding if he does attempt to do a bad thing. The chance that he attempts it during a strike is <span class="math">MonsterLevel*BonusMul</span>. BonusMul can be specified in Monsters.txt after the name of bad thing, e.g.|`ru|Это шанс успеха монстра, когда он попытается сделать гадость. Шанс же, что монстр попытается её сделать при ударе, равен <span class="math">УровеньМонстра*Множитель</span>. Множитель может быть указан в Monsters.txt после названия гадости - например,| "Age<b>x3</b>".<br>
+`en|That's the chance of the monster succeeding if he does attempt to do a bad thing. The chance that he attempts it during a strike is <span class="math">MonsterLevel*BonusMul</span>. BonusMul can be specified in Monsters.txt after the name of bad thing, e.g.|`ru|Это шанс успеха монстра, когда он попытается сделать гадость. Шанс же, что монстр попытается её сделать при ударе, равен <span class="math">УровеньМонстра*Множитель</span>. Множитель может быть указан в Monsters.txt после названия гадости `- например,| "Age<b>x3</b>".<br>
 <br>
 
 <h2>`en|Resistances|`ru|Устойчивости|</h2>
@@ -262,13 +262,13 @@ If you are lucky, you get 1/16 (6.25%) damage.<br>|
 </tbody>
 </table>
 <br>
-`en|Also note that in case the <span class="math">Resistance</span> is 0, the player is always dealt 100% of damage regardless of Luck.|`ru|Есть одно исключение - если <span class="math">Устойчивость</span> равна 0, игрок всегда получает 100% урона независимо от Удачи.|<br>
+`en|Also note that in case the <span class="math">Resistance</span> is 0, the player is always dealt 100% of damage regardless of Luck.|`ru|Есть одно исключение `- если <span class="math">Устойчивость</span> равна 0, игрок всегда получает 100% урона независимо от Удачи.|<br>
 <br>
 `en|When you hit enemy, he has the same chances to reduce damage, except he doesn't have bonus from Luck statistic. So, the chance is <span class="math">1 - 30/(30 + Resistance)</span>. Unlike you, monsters can also have resistance to physical damage|`ru|Когда Вы попадаете по врагу, все происходит так же, только у него нет Удачи, так что формула такая: <span class="math">1 - 30/(30 + Устойчивость)</span>. В отличие от Вас, у монстров бывает устойчивость к физическому урону|.<br>
 <br>
 <h2>`en|Recovery Time|`ru|Время восстановления|</h2>
 `en|Recovery time is the delay between your strikes. It is the sum of factors described below, but it can't go lower than 30 for melee attacks. Ranged can go as low as 0 in unpatched game or "BlasterRecovery" setting if my patch is used.<br>|
-`ru|Время восстановления - это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 в ближнем бою. При стрельбе из бластеров и луков оно может доходить до 0 в игре без патча или до настройки "BlasterRecovery", если используется мой патч.<br>|
+`ru|Время восстановления `- это задержка между ударами игрока. Она равна сумме приведенных ниже факторов, но не опускается ниже 30 в ближнем бою. При стрельбе из бластеров и луков оно может доходить до 0 в игре без патча или до настройки "BlasterRecovery", если используется мой патч.<br>|
 <br>
 <p><b>`en|Base recovery times of weapons</b></p>|`ru|Базовое время восстановления оружия<br>|
 `en|Staff: 100
@@ -363,7 +363,7 @@ Sum up these factors and you'll get the final value. If it is lower than 30, rec
 <br>
 `en|Example 1:|
 `ru|<p><b>Итого</b></p>
-Просуммируйте это все и получите время восстановления. Если получилось меньше 30, то время восстановления будет 30. Но есть одно исключение - в реальном времени время восстановления бластера и лука не ограничено - оно может опускаться до нуля.<br>|
+Просуммируйте это все и получите время восстановления. Если получилось меньше 30, то время восстановления будет 30. Но есть одно исключение `- в реальном времени время восстановления бластера и лука не ограничено `- оно может опускаться до нуля.<br>|
 <br>
 `en|Mace, Shield, Leather, 15 Speed. All skills are at initial level, no Armsmaster.|
 `ru|Пример 1:|
@@ -398,7 +398,7 @@ second weapon was useless. Starting with version 1.4 of my patch this is fixed (
 |
 `ru|</b></p>
 Если игрок держит 2 оружия, то учитывается только то, у которого больше базовое время восстановления. Если оба оружия имеют одинаковое базовое время восстановления, то учитывается оружие в основной (правой) руке. Умение и свойства другого оружия не влияют на время восстановления.<br>
-Пример 1: если игрок держит копьё и меч, то время восстановления полностью определяется мечом - его свойствами и умением Меч.<br>
+Пример 1: если игрок держит копьё и меч, то время восстановления полностью определяется мечом `- его свойствами и умением Меч.<br>
 Пример 2: если у Вас есть 2 меча, один из которых увеличивает скорость нанесения ударов, то берите его в основную руку. Иначе его свойство не будет учитываться.<br>
 В MM6 к полученному времени восстановления добавлялось базовое время восстановления оружия во второй руке. В результате использовать второе оружие было бессмысленно. В версии 1.4 моего патча это исправлено (при желании это исправление можно отключить).<br>|
 <br>
@@ -407,7 +407,7 @@ second weapon was useless. Starting with version 1.4 of my patch this is fixed (
 `en|When using dual weapons only skill of the weapon in your second (left) hand
 is used in calculation of attack and|
 `ru|При использовании 2 оружий только умение оружия во второй (левой) руке влияет на атаку и повреждение.<br>
-В MM6 умение оружия в первой (правой) руке влияет на повреждение, а оружие во второй (левой) - на атаку.<br>|
+В MM6 умение оружия в первой (правой) руке влияет на повреждение, а оружие во второй (левой) `- на атаку.<br>|
 `en|damage|`ru|Пример 1: В MM7 и MM8, если игрок использует копьё и меч, то бонусы умения Копьё  к атаке, повреждению и времени восстановления игнорируются. Умение Меч дает все свои бонусы|.<br>
 `en|In MM6 the first (right) hand weapon skill is used for damage and the second (left) hand weapon skill is used for attack|`ru|Пример 2: В MM6, если игрок использует копьё и меч, то умение Копьё дает только бонус к повреждению, а бонусы к атаке и времени восстановления игнорируются. Умение Меч дает все свои бонусы|.<br>
 `en|Example 1: in MM7 and MM8 if you wield a Spear and a Sword, the Spear skill will only
@@ -439,8 +439,8 @@ Both problems are fixed in my patches.<br>|
 <br>
 <p><b>`en|Vampiric weapons|`ru|Оружие "Вампира"|<br>
 </b></p>
-`en|Vampiric weapons add  to your HP 20% of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP|`ru|Вампирское оружие добавляет к здоровью 1/5 всего нанесенного врагу физического урона (обоими руками, с учетом Героизма и бонусов умений). Если у персонажа 2 вампирских оружия, оба работают - добавляется в 2 раза больше. Здоровье не добавляется&nbsp;при убийстве монстра, а только если после удара у него осталась жизнь|.<br>
-`en|In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him|`ru|В MM8 к здоровью добавляется <span class="math">min(повреждение/5, ОставшеесяЗдоровье/5)</span>, где&nbsp;<span class="math">ОставшеесяЗдоровье</span> - здоровье, которое осталось у монстра после удара|.<br>
+`en|Vampiric weapons add  to your HP 20% of whole physical damage done to monster (by both weapons, including Heroism and skills bonuses). If you have 2 vampiric weapons, they both work. You don't get HP when you kill a monster, only non-lethal strikes add you HP|`ru|Вампирское оружие добавляет к здоровью 1/5 всего нанесенного врагу физического урона (обоими руками, с учетом Героизма и бонусов умений). Если у персонажа 2 вампирских оружия, оба работают `- добавляется в 2 раза больше. Здоровье не добавляется&nbsp;при убийстве монстра, а только если после удара у него осталась жизнь|.<br>
+`en|In MM8 you get <span class="math">min(damage/5, LeftHP/5)</span> where <span class="math">LeftHP</span> is amount of HP monster has after you hit him|`ru|В MM8 к здоровью добавляется <span class="math">min(повреждение/5, ОставшеесяЗдоровье/5)</span>, где&nbsp;<span class="math">ОставшеесяЗдоровье</span> `- здоровье, которое осталось у монстра после удара|.<br>
 <br>
 <p><b>`en|Staff|`ru|Посох|<br>
 </b></p>

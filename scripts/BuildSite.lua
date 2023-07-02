@@ -28,6 +28,7 @@ for fname in path.find("*.txt") do
 		t.Content = page.Escape(s)
 		t.SetTitle(name, name..path.ext(fname))
 		s = page.Include("templates/main.htm", t)
+		s = s:gsub(" %- ([^%d])", " &ndash; %1")
 		local en, ru = utils.enru(s)
 		fname = t.GetPath(t.PageId, "").."/index.html"
 		io.save(ReadyPath..fname, en)

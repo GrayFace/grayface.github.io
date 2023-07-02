@@ -3,6 +3,6 @@ local name = "MM8Patch ReadMe"
 local nameEN = name..'.TXT'
 local nameRU = name..'_rus.TXT'
 SetTitle(name, ("`en|%s|`ru|%s|"):format(nameEN, nameRU))
-local en = io.load('txt/'..nameEN)
-local ru = io.load('txt/'..nameRU):convert(0, 'utf8')
+local en = io.load('txt/'..nameEN):gsub(" %- ([^%d])", " &ndash; %1")
+local ru = io.load('txt/'..nameRU):gsub(" %- ([^%d])", " &ndash; %1"):convert(0, 'utf8')
 ]`en|$[en]|`ru|$[ru]|
