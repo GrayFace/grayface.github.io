@@ -97,14 +97,14 @@ return {
 		Version = "1.3.1"
 	},
 	LodCompareSrc = {
-		"files/mm/LodCompareSrc.rar&d=1"
+		"files/mm/LodCompareSrc.rar"
 	},
 	LodMerge = {
 		"files/mm/LodMerge.rar",
 		Version = "1.1.1"
 	},
 	LodMergeSrc = {
-		"files/mm/LodMergeSrc.rar&d=1"
+		"files/mm/LodMergeSrc.rar"
 	},
 	LodTool = {
 		"https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar",
@@ -253,7 +253,7 @@ return {
 		Version = "1.3"
 	},
 	SimpleLodSrc = {
-		"files/wog/SimpleLodSrc.rar&d=1"
+		"files/wog/SimpleLodSrc.rar"
 	},
 	SkillTeachersMM8 = {
 		"files/mm/SkillTeachersMM8.rar"
