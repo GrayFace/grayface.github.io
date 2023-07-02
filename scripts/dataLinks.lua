@@ -1,6 +1,6 @@
 return {
 	["32BitPatch"] = {
-		"https://sites.google.com/site/sergroj/wog/32BitPatch.rar?attredirects=0"
+		"files/wog/32BitPatch.rar"
 	},
 	AggPack = {
 		"https://github.com/GrayFace/Misc/releases/download/AggPack-1.3.2/AggPack.rar",
@@ -24,35 +24,35 @@ return {
 		Version = "1.2.1"
 	},
 	DefTool2 = {
-		"https://sites.google.com/site/sergroj/wog/DefTool2.rar?attredirects=0",
+		"files/wog/DefTool2.rar",
 		Version = "2.1.1"
 	},
 	["Fixed Monster Treasure"] = {
 		"https://www.dropbox.com/s/aj5tm0jat21nqr8/Fixed%20Monster%20Treasure.rar?dl=1"
 	},
 	GrayFacHLgr = {
-		"https://sites.google.com/site/sergroj/elma/GrayFacHLgr.rar?attredirects=0"
+		"files/elma/GrayFacHLgr.rar"
 	},
 	GrayFacHLgr175 = {
-		"https://sites.google.com/site/sergroj/elma/GrayFacHLgr175.rar?attredirects=0"
+		"files/elma/GrayFacHLgr175.rar"
 	},
 	["GrayFace - Ball Tutorial.knytt.bin"] = {
-		"https://sites.google.com/site/sergroj/ks/GrayFace - Ball Tutorial.knytt.bin?attredirects=0"
+		"files/ks/GrayFace - Ball Tutorial.knytt.bin"
 	},
 	["GrayFace - Extended Version Example.knytt.bin"] = {
-		"https://sites.google.com/site/sergroj/ks/GrayFace - Extended Version Example.knytt.bin?attredirects=0"
+		"files/ks/GrayFace - Extended Version Example.knytt.bin"
 	},
 	["GrayFace - Platforms Room.knytt.bin"] = {
-		"https://sites.google.com/site/sergroj/ks/GrayFace - Platforms Room.knytt.bin?attredirects=0"
+		"files/ks/GrayFace - Platforms Room.knytt.bin"
 	},
 	GrayFaceLgr = {
-		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr.rar?attredirects=0"
+		"files/elma/GrayFaceLgr.rar"
 	},
 	["GrayFaceLgr.png"] = {
-		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr.png"
+		"files/elma/GrayFaceLgr.png"
 	},
 	GrayFaceLgr175 = {
-		"https://sites.google.com/site/sergroj/elma/GrayFaceLgr175.rar?attredirects=0"
+		"files/elma/GrayFaceLgr175.rar"
 	},
 	H1GogPal = {
 		"https://www.dropbox.com/s/esel2710rjxzxvi/H1GogPal.rar?dl=1"
@@ -63,14 +63,14 @@ return {
 		Version = "3.4.2"
 	},
 	H3DialogsDL = {
-		"https://sites.google.com/site/sergroj/wog/H3DialogsDL.rar?attredirects=0"
+		"files/wog/H3DialogsDL.rar"
 	},
 	H3FavoritesRus = {
 		"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.2.1/H3FavoritesRus.rar",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/MMArchive/v1.2.1/H3FavoritesRus.rar/download"
 	},
 	H3MonPower = {
-		"https://sites.google.com/site/sergroj/wog/H3MonPower.rar?attredirects=0"
+		"files/wog/H3MonPower.rar"
 	},
 	HEROES2W_Ida = {
 		"https://www.dropbox.com/s/znrrq6mowgtlklx/HEROES2W_Ida.rar?dl=1"
@@ -84,27 +84,27 @@ return {
 		Version = "1.3.2"
 	},
 	KSEx = {
-		"https://sites.google.com/site/sergroj/ks/KSEx.rar?attredirects=0"
+		"files/ks/KSEx.rar"
 	},
 	KSExFull = {
 		"https://www.dropbox.com/s/xxfob4am8epxjxh/KSExFull.rar?dl=1"
 	},
 	KSExSrc = {
-		"https://sites.google.com/site/sergroj/ks/KSExSrc.rar?attredirects=0"
+		"files/ks/KSExSrc.rar"
 	},
 	LodCompare = {
-		"https://sites.google.com/site/sergroj/mm/LodCompare.rar?attredirects=0",
+		"files/mm/LodCompare.rar",
 		Version = "1.3.1"
 	},
 	LodCompareSrc = {
-		"https://sites.google.com/site/sergroj/mm/LodCompareSrc.rar?attredirects=0&d=1"
+		"files/mm/LodCompareSrc.rar&d=1"
 	},
 	LodMerge = {
-		"https://sites.google.com/site/sergroj/mm/LodMerge.rar?attredirects=0",
+		"files/mm/LodMerge.rar",
 		Version = "1.1.1"
 	},
 	LodMergeSrc = {
-		"https://sites.google.com/site/sergroj/mm/LodMergeSrc.rar?attredirects=0&d=1"
+		"files/mm/LodMergeSrc.rar&d=1"
 	},
 	LodTool = {
 		"https://github.com/GrayFace/Misc/releases/download/LodTool-1.0/LodTool.rar",
@@ -112,11 +112,11 @@ return {
 		Version = "1.0"
 	},
 	MM6Controls = {
-		"https://sites.google.com/site/sergroj/mm/MM6Controls.rar?attredirects=0",
+		"files/mm/MM6Controls.rar",
 		Version = "1.1"
 	},
 	MM6MouseLook = {
-		"https://sites.google.com/site/sergroj/mm/MM6MouseLook.rar?attredirects=0"
+		"files/mm/MM6MouseLook.rar"
 	},
 	["MM6PatchReadMe.TXT"] = {
 		"mm/MM6PatchReadMe",
@@ -140,9 +140,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/MM6Patch-2.5.7/MM6.Patch.Loc.v2.5.7.exe",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM6Patch/v2.5.7/MM6 Patch Loc v2.5.7.exe/download",
 		Version = "2.5.7"
-	},
-	MM6patchSrc = {
-		"https://sites.google.com/site/sergroj/mm/MM6patchSrc.rar?attredirects=0"
 	},
 	MM7MouseLook = {
 		"https://github.com/GrayFace/Misc/releases/download/MM7Patch-2.5/MM7MouseLook.rar"
@@ -170,9 +167,6 @@ return {
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM7Patch/v2.5.7/MM7 Patch Loc v2.5.7.exe/download",
 		Version = "2.5.7"
 	},
-	MM7patchSrc = {
-		"https://sites.google.com/site/sergroj/mm/MM7patchSrc.rar?attredirects=0"
-	},
 	MM8ChooseParty = {
 		"https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/MM8%20Choose%20Party"
 	},
@@ -194,9 +188,6 @@ return {
 		"https://github.com/GrayFace/Misc/releases/download/MM8Patch-2.5.7/MM8.Patch.v2.5.7.exe",
 		MirrorSF = "https://sourceforge.net/projects/grayface/files/MM8Patch/v2.5.7/MM8 Patch v2.5.7.exe/download",
 		Version = "2.5.7"
-	},
-	MM8patchSrc = {
-		"https://sites.google.com/site/sergroj/mm/MM8patchSrc.rar?attredirects=0"
 	},
 	MMArchive = {
 		"https://github.com/GrayFace/Misc/releases/download/MMArchive-1.3.1/MMArchive.rar",
@@ -222,31 +213,31 @@ return {
 		"https://gitlab.com/GrayFace/mmext-scripts/-/tree/master/Decompiled%20Scripts"
 	},
 	MapEdHelp = {
-		"https://sites.google.com/site/sergroj/wog/MapEdHelp.rar?attredirects=0"
+		"files/wog/MapEdHelp.rar"
 	},
 	MapEdHelpRus = {
-		"https://sites.google.com/site/sergroj/wog/MapEdHelpRus.rar?attredirects=0"
+		"files/wog/MapEdHelpRus.rar"
 	},
 	MapEdPatch = {
-		"https://sites.google.com/site/sergroj/wog/MapEdPatch.rar?attredirects=0"
+		"files/wog/MapEdPatch.rar"
 	},
 	MapEdPatchRus = {
-		"https://sites.google.com/site/sergroj/wog/MapEdPatchRus.rar?attredirects=0"
+		"files/wog/MapEdPatchRus.rar"
 	},
 	NewGrids = {
-		"https://sites.google.com/site/sergroj/wog/NewGrids.rar?attredirects=0"
+		"files/wog/NewGrids.rar"
 	},
 	["Nifflas - The Machine 1 4.png"] = {
-		"https://sites.google.com/site/sergroj/ks/Nifflas - The Machine 1 4.png"
+		"files/ks/Nifflas-TheMachine_Ball.png"
 	},
 	PLAYERS = {
-		"https://sites.google.com/site/sergroj/wog/PLAYERS.rar?attredirects=0"
+		"files/wog/PLAYERS.rar"
 	},
 	PortraitsManager = {
-		"https://sites.google.com/site/sergroj/wog/PortraitsManager.rar?attredirects=0"
+		"files/wog/PortraitsManager.rar"
 	},
 	RSBinkPlayer = {
-		"https://sites.google.com/site/sergroj/wog/RSBinkPlayer.rar?attredirects=0",
+		"files/wog/RSBinkPlayer.rar",
 		Version = "1.2.5"
 	},
 	Rev4_for_GrayFace_Patch = {
@@ -258,23 +249,23 @@ return {
 		Version = "1.0"
 	},
 	SimpleLod = {
-		"https://sites.google.com/site/sergroj/wog/SimpleLod.rar?attredirects=0",
+		"files/wog/SimpleLod.rar",
 		Version = "1.3"
 	},
 	SimpleLodSrc = {
-		"https://sites.google.com/site/sergroj/wog/SimpleLodSrc.rar?attredirects=0&d=1"
+		"files/wog/SimpleLodSrc.rar&d=1"
 	},
 	SkillTeachersMM8 = {
-		"https://sites.google.com/site/sergroj/mm/SkillTeachersMM8.rar?attredirects=0"
+		"files/mm/SkillTeachersMM8.rar"
 	},
 	SkillTeachersMM8_pl = {
-		"https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_pl.rar?attredirects=0"
+		"files/mm/SkillTeachersMM8_pl.rar"
 	},
 	SkillTeachersMM8_ru = {
-		"https://sites.google.com/site/sergroj/mm/SkillTeachersMM8_ru.rar?attredirects=0"
+		"files/mm/SkillTeachersMM8_ru.rar"
 	},
 	SndSync = {
-		"https://sites.google.com/site/sergroj/wog/SndSync.rar?attredirects=0"
+		"files/wog/SndSync.rar"
 	},
 	SoloGame = {
 		"https://www.dropbox.com/s/b3l3mk66vxyfh47/SoloGame.rar?dl=1"
@@ -293,10 +284,10 @@ return {
 		Version = "1.4.1"
 	},
 	fntedit = {
-		"https://sites.google.com/site/sergroj/wog/fntedit.rar?attredirects=0"
+		"files/wog/fntedit.rar"
 	},
 	heroes2w = {
-		"https://sites.google.com/site/sergroj/heroes/heroes2w.rar?attredirects=0"
+		"files/heroes/heroes2w.rar"
 	},
 	mm6hd = {
 		"https://www.dropbox.com/s/313uxife6akzrav/mm6hd.rar?dl=1"
