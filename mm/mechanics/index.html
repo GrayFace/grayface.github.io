@@ -539,7 +539,7 @@ Intellect</b> and/or <b>Personality</b> effects are multiplied by mana multiplie
 Accuracy</b> effect is added to Attack and Shoot.<br>
 <b>
 Endurance</b> effect is multiplied by HP multiplier of the class and added to HP. It also decreases time of recovery from enemy attacks. 
-The formula is <span class="math">20 &ndash; EnduranceEffect</span>. So, with Endurance of 350 and more the recovery is immediate.<br>
+The formula is <span class="math">20 - EnduranceEffect</span>. So, with Endurance of 350 and more the recovery is immediate.<br>
 <b>
 Speed</b> effect is added to Armor Class and subtracted from recovery time.<br>
 <b>
@@ -553,11 +553,11 @@ Luck</b> effect is added to all non-zero resistances, although this is not shown
 Here's the formula for total experience for N'th level: <span class="math">TotalExp(N) = N*(N-1)*500</span><br>
 <br>
 <a id="Chance-To-Hit" ></a><h2>Chance To Hit</h2>
-Chance that a monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + </span><span class="math">MonsterLevel*2 + PlayerArmorClass</span><span class="math">)</span>.<br>
+Chance that a monster will hit your character is <span class="math">(5 + MonsterLevel*2)/(10 + MonsterLevel*2 + PlayerArmorClass)</span>.<br>
 This includes elemental ranged attacks. Only spells always hit. You can distinguish between them with Identify Monster or spell-specific sounds.<br>
 <br>
 Chance that your character will hit a monster is 
-<span class="math">(15 + PlayerAttack*2 + Bonus &ndash; DistancePenalty)/(30 + PlayerAttack*2 + MonsterArmorClass)</span>.
+<span class="math">(15 + PlayerAttack*2 + Bonus - DistancePenalty)/(30 + PlayerAttack*2 + MonsterArmorClass)</span>.
 <br>
 <b>Bonus</b> is applied in 2 cases: When using a Blaster it's the skill if the player is Master or GM. When casting Blades in MM6 and MM7 it's <span class="math">skill*5</span>.
 <br>
