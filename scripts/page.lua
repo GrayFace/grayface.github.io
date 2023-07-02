@@ -109,6 +109,10 @@ function P.Escape(s, cont)
 	return s
 end
 
+function P.ConvDash(s)
+	return (s:gsub(" %- ([^%d])", " &ndash; %1"))
+end
+
 -- incomplete on purpose, so that ecs(esc(s)) = esc(s) if it's an URL with %20 etc.
 function P.EscapeURL(s, cont)
 	return P.Escape(s, cont):gsub('[%z\001- ]', |s| ('%%%x'):format(s:byte()))
@@ -139,7 +143,7 @@ local TextMirrorLink = [[<a href="%s" title="`en|Download from GitHub|`ru|Ска
 
 function P.CustomLink(lnk, title, mirrorSF)
 	lnk = ToLink(lnk)
-	title = P.Escape(title, 'main')
+	title = P.ConvDash(P.Escape(title, 'main'))
 	if mirrorSF then
 		_WRITE(MirrorLink:format(lnk, title, ToLink(mirrorSF)))
 	else
@@ -149,7 +153,7 @@ end
 
 function P.TextLink(lnk, title, mirrorSF)
 	lnk = ToLink(lnk)
-	title = P.Escape(title, 'main')
+	title = P.ConvDash(P.Escape(title, 'main'))
 	if mirrorSF then
 		_WRITE(TextMirrorLink:format(lnk, title, ToLink(mirrorSF)))
 	else
@@ -179,7 +183,7 @@ function P.ProcessNewsItem(t)
 	local mirrors = t.MirrorSF or {}
 	local q = {
 		Title = a"Title",
-		Desc = P.Escape(a"Desc", 'main'):gsub("%[([%+%-%*])%] ", '<span class="change">[<span>%1</span>]</span> '):gsub("<span>%-</span>", "<span>&ndash;</span>"),
+		Desc = P.ConvDash(P.Escape(a"Desc", 'main'):gsub("%[([%+%-%*])%] ", '<span class="change">[<span>%1</span>]</span> '):gsub("<span>%-</span>", "<span>&ndash;</span>")),
 		Files = {},
 		TitleURL = files[1] and not files[2] and not info[1] or t.TitleURL,
 		Date = t.Date,
