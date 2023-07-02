@@ -96,6 +96,7 @@ local function Conv(s, ru)
 		main = {
 			{"`en|", gsub = ru and "\1" or "", call = (ru and "close1" or "close")},
 			{"`ru|", gsub = ru and "" or "\1", call = (ru and "close" or "close1")},
+			{" %- ([^%d])", gsub = " &ndash; %1"}
 			-- {"|", gsub = error},
 		},
 		close1 = {
