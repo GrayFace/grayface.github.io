@@ -10,11 +10,11 @@ for fname in path.find("*.htm") do
 	local s, t = page.Include(fname)
 	if not t.CancelGeneration then
 		t.Content = s
-		s = page.Include("templates/main.htm", t)
+		s = page.Include("templates/main.htm", t):gsub('\r?\n', '\r\n')
 		local en, ru = utils.enru(s)
 		fname = t.GetPath(t.PageId, "").."/index.html"
-		io.save(ReadyPath..fname, en)
-		io.save(ReadyPath.."ru/"..fname, ru)
+		io.save(ReadyPath..fname, (en:gsub('\r?\n', '\r\n')))
+		io.save(ReadyPath.."ru/"..fname, (ru:gsub('\r?\n', '\r\n')))
 	end
 end
 
@@ -27,7 +27,7 @@ for fname in path.find("*.txt") do
 	if not t.CancelGeneration then
 		t.Content = page.Escape(s)
 		t.SetTitle(name, name..path.ext(fname))
-		s = page.Include("templates/main.htm", t)
+		s = page.Include("templates/main.htm", t):gsub('\r?\n', '\r\n')
 		s = s:gsub(" %- ([^%d])", " &ndash; %1")
 		local en, ru = utils.enru(s)
 		fname = t.GetPath(t.PageId, "").."/index.html"
@@ -38,8 +38,8 @@ end
 
 for fname in path.find("*.xml") do
 	fname = path.name(fname)
-	local s, t = page.Include(fname)
+	local s, t = page.Include(fname):gsub('\r?\n', '\r\n')
 	local en, ru = utils.enru(s)
-	io.save(ReadyPath..fname, en)
-	io.save(ReadyPath.."ru/"..fname, ru)
+	io.save(ReadyPath..fname, (en:gsub('\r?\n', '\r\n')))
+	io.save(ReadyPath.."ru/"..fname, (ru:gsub('\r?\n', '\r\n')))
 end
